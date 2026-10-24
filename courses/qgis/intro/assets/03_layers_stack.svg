@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="590" viewBox="0 0 1120 590" role="img" aria-label="Τα γεωγραφικά επίπεδα συνδυάζονται στον ίδιο χάρτη">
+<rect x="0" y="0" width="1120" height="590" fill="#f5f9fb"/>
+<text x="38" y="53" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#16344b">Τα γεωγραφικά επίπεδα συνδυάζονται στον ίδιο χάρτη</text>
+<text x="38" y="86" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#536d7b">Μπορούμε να εμφανίσουμε πολλά σύνολα χωρίς να συγχωνεύουμε τα αρχεία τους</text>
+<rect x="58" y="142" width="350" height="84" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<circle cx="91" cy="184" r="11" fill="#389879" stroke="#ffffff" stroke-width="3"/>
+<text x="123" y="192" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#234658" text-anchor="start">Πάρκα</text>
+<rect x="58" y="240" width="350" height="84" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<circle cx="91" cy="282" r="11" fill="#286caa" stroke="#ffffff" stroke-width="3"/>
+<text x="123" y="290" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#234658" text-anchor="start">Δρόμοι</text>
+<rect x="58" y="338" width="350" height="84" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<circle cx="91" cy="380" r="11" fill="#e59a41" stroke="#ffffff" stroke-width="3"/>
+<text x="123" y="388" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#234658" text-anchor="start">Κτίρια</text>
+<line x1="423" y1="326" x2="518" y2="326" stroke="#536d7b" stroke-width="4" stroke-linecap="round"  />
+<polygon points="512,315 535,326 512,337" fill="#536d7b"/>
+<rect x="553" y="125" width="522" height="404" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<text x="578" y="163" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#16344b" text-anchor="start">Συνδυασμένη απεικόνιση</text>
+<path d="M 585 253 L 1042 253 M 602 444 L 1030 212 M 766 209 L 766 491 M 1014 272 L 1014 466" fill="none" stroke="#286caa" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="635" y="304" width="51" height="35" rx="4" fill="#f5ddb9" stroke="#e59a41" stroke-width="2"/>
+<rect x="700" y="356" width="51" height="35" rx="4" fill="#f5ddb9" stroke="#e59a41" stroke-width="2"/>
+<rect x="841" y="292" width="51" height="35" rx="4" fill="#f5ddb9" stroke="#e59a41" stroke-width="2"/>
+<rect x="912" y="405" width="51" height="35" rx="4" fill="#f5ddb9" stroke="#e59a41" stroke-width="2"/>
+<rect x="647" y="452" width="51" height="35" rx="4" fill="#f5ddb9" stroke="#e59a41" stroke-width="2"/>
+<path d="M 861 325 L 946 295 L 984 335 L 952 374 L 860 360 Z" fill="#d4ede0" stroke="#389879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 631 377 L 713 378 L 718 413 L 632 417 Z" fill="#d4ede0" stroke="#389879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="811" y="492" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#536d7b" text-anchor="middle">Ενδεικτική αστική περιοχή</text>
+<text x="36" y="570" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#536d7b" text-anchor="start">Αλλαγή χρώματος ή σειράς επιπέδων ≠ τροποποίηση γεωμετρίας/γνωρισμάτων</text>
+</svg>

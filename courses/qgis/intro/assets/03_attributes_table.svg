@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="590" viewBox="0 0 1120 590" role="img" aria-label="Γεωμετρία + γνωρίσματα = γεωγραφικά αντικείμενα">
+<rect x="0" y="0" width="1120" height="590" fill="#f5f9fb"/>
+<text x="38" y="53" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#16344b">Γεωμετρία + γνωρίσματα = γεωγραφικά αντικείμενα</text>
+<text x="38" y="86" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#536d7b">Κάθε κωδικός στον χάρτη συνδέεται με συγκεκριμένη εγγραφή πίνακα</text>
+<rect x="34" y="125" width="410" height="396" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<text x="58" y="164" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#16344b" text-anchor="start">Σχηματικός χάρτης</text>
+<path d="M 95 235 L 195 210 L 210 285 L 135 308 Z" fill="#cee8d7" stroke="#389879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 260 210 L 365 221 L 355 300 L 275 307 Z" fill="#fae7d0" stroke="#e59a41" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 134 363 L 254 345 L 278 451 L 148 454 Z" fill="#cee8d7" stroke="#389879" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="155" cy="260" r="25" fill="#389879" stroke="#ffffff" stroke-width="3"/>
+<text x="155" y="267" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">101</text>
+<circle cx="317" cy="260" r="25" fill="#e59a41" stroke="#ffffff" stroke-width="3"/>
+<text x="317" y="267" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">102</text>
+<circle cx="205" cy="406" r="25" fill="#389879" stroke="#ffffff" stroke-width="3"/>
+<text x="205" y="413" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">103</text>
+<line x1="444" y1="324" x2="500" y2="324" stroke="#536d7b" stroke-width="3" stroke-linecap="round"  />
+<polygon points="498,316 514,324 498,332" fill="#536d7b"/>
+<rect x="520" y="125" width="565" height="396" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<text x="545" y="165" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#16344b" text-anchor="start">Πίνακας γνωρισμάτων</text>
+<rect x="545" y="205" width="515" height="52" rx="8" fill="#dfedf5" stroke="none" stroke-width="0"/>
+<text x="565" y="240" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#16344b" text-anchor="start">id</text>
+<text x="655" y="240" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#16344b" text-anchor="start">Όνομα</text>
+<text x="814" y="240" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#16344b" text-anchor="start">Πρόσβαση</text>
+<text x="975" y="240" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#16344b" text-anchor="start">στρ.</text>
+<rect x="545" y="258" width="515" height="65" rx="4" fill="#f2f8fa" stroke="none" stroke-width="0"/>
+<text x="565" y="301" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">101</text>
+<text x="655" y="301" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">Πάρκο Α</text>
+<text x="814" y="301" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">Δημόσια</text>
+<text x="985" y="301" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">12</text>
+<rect x="545" y="327" width="515" height="65" rx="4" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="565" y="370" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">102</text>
+<text x="655" y="370" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">Κήπος Β</text>
+<text x="814" y="370" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">Ιδιωτική</text>
+<text x="985" y="370" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">4</text>
+<rect x="545" y="396" width="515" height="65" rx="4" fill="#f2f8fa" stroke="none" stroke-width="0"/>
+<text x="565" y="439" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">103</text>
+<text x="655" y="439" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">Πάρκο Γ</text>
+<text x="814" y="439" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">Δημόσια</text>
+<text x="985" y="439" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#234658" text-anchor="start">9</text>
+<text x="36" y="570" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#536d7b" text-anchor="start">Οι κωδικοί, οι εκτάσεις και τα πολύγωνα είναι υποθετικά, όχι πραγματικά στοιχεία</text>
+</svg>

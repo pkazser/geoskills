@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="590" viewBox="0 0 1120 590" role="img" aria-label="Το αρχείο έργου δεν αντικαθιστά τα δεδομένα">
+<rect x="0" y="0" width="1120" height="590" fill="#f5f9fb"/>
+<text x="38" y="53" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#16344b">Το αρχείο έργου δεν αντικαθιστά τα δεδομένα</text>
+<text x="38" y="86" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#536d7b">Για φορητή εργασία χρειάζονται οι εξωτερικές πηγές που χρησιμοποιεί το έργο</text>
+<rect x="34" y="131" width="1050" height="393" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<rect x="76" y="176" width="930" height="61" rx="10" fill="#dfedf5" stroke="none" stroke-width="0"/>
+<text x="110" y="215" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#16344b" text-anchor="start">GeoSkills / GQ00 /</text>
+<rect x="117" y="276" width="324" height="108" rx="10" fill="#f0f8fb" stroke="#cbdfe7" stroke-width="2"/>
+<text x="136" y="308" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#16344b" text-anchor="start">projects/</text>
+<text x="136" y="349" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" fill="#286caa" text-anchor="start">GQ00_map.qgz</text>
+<rect x="597" y="260" width="381" height="191" rx="10" fill="#f2faf6" stroke="#cbdfe7" stroke-width="2"/>
+<text x="620" y="298" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#16344b" text-anchor="start">data/</text>
+<text x="620" y="343" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#389879" text-anchor="start">world_countries.gpkg</text>
+<text x="620" y="388" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#389879" text-anchor="start">terrain.tif</text>
+<path d="M 443 332 L 591 332" fill="none" stroke="#286caa" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="577,322 603,332 577,342" fill="#286caa"/>
+<text x="508" y="309" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#536d7b" text-anchor="middle">συνδέσεις</text>
+<text x="132" y="461" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#536d7b" text-anchor="start">Ρυθμίσεις εμφάνισης / πηγών</text>
+<text x="650" y="482" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#536d7b" text-anchor="start">Πραγματικά αρχεία δεδομένων</text>
+<text x="36" y="570" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#536d7b" text-anchor="start">Τα ονόματα είναι ενδεικτικά • η μεταφορά απαιτεί έλεγχο διαδρομών</text>
+</svg>

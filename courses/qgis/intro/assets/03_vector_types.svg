@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="590" viewBox="0 0 1120 590" role="img" aria-label="Οι τρεις βασικοί τύποι διανυσματικών δεδομένων">
+<rect x="0" y="0" width="1120" height="590" fill="#f5f9fb"/>
+<text x="38" y="53" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#16344b">Οι τρεις βασικοί τύποι διανυσματικών δεδομένων</text>
+<text x="38" y="86" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#536d7b">Η επιλογή γεωμετρίας σχετίζεται με όσα θέλουμε να περιγράψουμε</text>
+<rect x="40" y="125" width="320" height="405" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<text x="200" y="172" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="700" fill="#16344b" text-anchor="middle">Σημείο</text>
+<text x="200" y="207" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#536d7b" text-anchor="middle">Μία θέση</text>
+<rect x="82" y="238" width="236" height="205" rx="11" fill="#f8fbfd" stroke="#dce8ee" stroke-width="1"/>
+<rect x="400" y="125" width="320" height="405" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<text x="560" y="172" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="700" fill="#16344b" text-anchor="middle">Γραμμή</text>
+<text x="560" y="207" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#536d7b" text-anchor="middle">Πορεία ή άξονας</text>
+<rect x="442" y="238" width="236" height="205" rx="11" fill="#f8fbfd" stroke="#dce8ee" stroke-width="1"/>
+<rect x="760" y="125" width="320" height="405" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<text x="920" y="172" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="700" fill="#16344b" text-anchor="middle">Πολύγωνο</text>
+<text x="920" y="207" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#536d7b" text-anchor="middle">Κλειστή επιφάνεια</text>
+<rect x="802" y="238" width="236" height="205" rx="11" fill="#f8fbfd" stroke="#dce8ee" stroke-width="1"/>
+<circle cx="140" cy="301" r="9" fill="#286caa" stroke="#ffffff" stroke-width="3"/>
+<circle cx="238" cy="370" r="9" fill="#286caa" stroke="#ffffff" stroke-width="3"/>
+<circle cx="200" cy="268" r="9" fill="#286caa" stroke="#ffffff" stroke-width="3"/>
+<text x="200" y="472" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="600" fill="#234658" text-anchor="middle">Φωτιστικά</text>
+<path d="M 465 389 L 494 352 L 558 366 L 602 279 L 665 304" fill="none" stroke="#286caa" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="465" cy="389" r="6" fill="#ffffff" stroke="#286caa" stroke-width="3"/>
+<circle cx="494" cy="352" r="6" fill="#ffffff" stroke="#286caa" stroke-width="3"/>
+<circle cx="558" cy="366" r="6" fill="#ffffff" stroke="#286caa" stroke-width="3"/>
+<circle cx="602" cy="279" r="6" fill="#ffffff" stroke="#286caa" stroke-width="3"/>
+<circle cx="665" cy="304" r="6" fill="#ffffff" stroke="#286caa" stroke-width="3"/>
+<text x="560" y="472" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="600" fill="#234658" text-anchor="middle">Άξονας δρόμου</text>
+<path d="M 817 353 L 852 267 L 964 282 L 1017 357 L 957 421 L 852 403 Z" fill="#d4ede0" stroke="#389879" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="817" cy="353" r="5" fill="#ffffff" stroke="#389879" stroke-width="2"/>
+<circle cx="852" cy="267" r="5" fill="#ffffff" stroke="#389879" stroke-width="2"/>
+<circle cx="964" cy="282" r="5" fill="#ffffff" stroke="#389879" stroke-width="2"/>
+<circle cx="1017" cy="357" r="5" fill="#ffffff" stroke="#389879" stroke-width="2"/>
+<circle cx="957" cy="421" r="5" fill="#ffffff" stroke="#389879" stroke-width="2"/>
+<circle cx="852" cy="403" r="5" fill="#ffffff" stroke="#389879" stroke-width="2"/>
+<text x="920" y="472" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="600" fill="#234658" text-anchor="middle">Περίγραμμα πάρκου</text>
+<text x="36" y="570" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#536d7b" text-anchor="start">Οι μικροί κύκλοι σε γραμμές/πολύγωνα δείχνουν κορυφές, όχι ξεχωριστά αντικείμενα</text>
+</svg>

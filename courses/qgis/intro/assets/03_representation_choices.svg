@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="590" viewBox="0 0 1120 590" role="img" aria-label="Το ίδιο αντικείμενο, διαφορετική αναπαράσταση">
+<rect x="0" y="0" width="1120" height="590" fill="#f5f9fb"/>
+<text x="38" y="53" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700" fill="#16344b">Το ίδιο αντικείμενο, διαφορετική αναπαράσταση</text>
+<text x="38" y="86" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#536d7b">Επιλέγουμε γεωμετρία σύμφωνα με το ερώτημα της εργασίας</text>
+<rect x="40" y="122" width="500" height="398" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<text x="290" y="163" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#16344b" text-anchor="middle">Δέντρο</text>
+<line x1="290" y1="194" x2="290" y2="453" stroke="#cbdfe7" stroke-width="2" stroke-linecap="round"  />
+<text x="164" y="212" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="#536d7b" text-anchor="middle">Θέση</text>
+<text x="413" y="212" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="#536d7b" text-anchor="middle">Έκταση / περίγραμμα</text>
+<rect x="580" y="122" width="500" height="398" rx="16" fill="#ffffff" stroke="#cbdfe7" stroke-width="2"/>
+<text x="830" y="163" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#16344b" text-anchor="middle">Δέντρο</text>
+<line x1="830" y1="194" x2="830" y2="453" stroke="#cbdfe7" stroke-width="2" stroke-linecap="round"  />
+<text x="704" y="212" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="#536d7b" text-anchor="middle">Θέση</text>
+<text x="953" y="212" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="#536d7b" text-anchor="middle">Έκταση / περίγραμμα</text>
+<circle cx="165" cy="329" r="12" fill="#286caa" stroke="#ffffff" stroke-width="3"/>
+<line x1="165" y1="352" x2="165" y2="385" stroke="#536d7b" stroke-width="3" stroke-linecap="round"  />
+<text x="165" y="408" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#536d7b" text-anchor="middle">Σημείο κορμού</text>
+<path d="M 766 290 C 786 260 826 250 855 276 C 894 274 919 303 912 338 C 907 372 876 388 845 381 C 803 394 770 366 766 340 Z" fill="#cce9d5" stroke="#389879" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="844" cy="327" r="7" fill="#e59a41" stroke="#ffffff" stroke-width="3"/>
+<text x="849" y="415" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#536d7b" text-anchor="middle">Πολύγωνο κόμης</text>
+<rect x="73" y="460" width="432" height="37" rx="18" fill="#eaf7f4" stroke="none" stroke-width="0"/>
+<text x="289.0" y="486" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#087f86" text-anchor="middle">Στόχος: απογραφή θέσεων</text>
+<rect x="604" y="460" width="445" height="37" rx="18" fill="#eaf7f4" stroke="none" stroke-width="0"/>
+<text x="826.5" y="486" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#087f86" text-anchor="middle">Στόχος: υπολογισμός επιφάνειας</text>
+<text x="36" y="570" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#536d7b" text-anchor="start">Σχηματικό εκπαιδευτικό παράδειγμα • η μορφή δεν είναι πραγματική μέτρηση</text>
+</svg>
