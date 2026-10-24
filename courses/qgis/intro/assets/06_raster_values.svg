@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Raster: η τιμή στο κελί δεν είναι το χρώμα">
+<rect width="1200" height="600" fill="white"/>
+<text x="48" y="61" font-family="DejaVu Sans,sans-serif" font-size="29" font-weight="700" fill="#18384A">Raster: η τιμή στο κελί δεν είναι το χρώμα</text>
+<line x1="48" y1="84" x2="1152" y2="84" stroke="#D9E7ED" stroke-width="2"/>
+<rect x="50" y="132" width="513" height="388" rx="18" fill="#FFFFFF" stroke="#D9E7ED" stroke-width="2"/>
+<rect x="637" y="132" width="513" height="388" rx="18" fill="#FFFFFF" stroke="#D9E7ED" stroke-width="2"/>
+<text x="77" y="177" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#18384A">Αριθμητικές τιμές (παράδειγμα)</text>
+<text x="667" y="177" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="20" font-weight="700" fill="#18384A">Ενδεικτικός συμβολισμός</text>
+<rect x="100" y="212" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="148" y="254" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">12</text>
+<rect x="688" y="212" width="97" height="68" rx="4" fill="#F9E8C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="202" y="212" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="250" y="254" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">25</text>
+<rect x="790" y="212" width="97" height="68" rx="4" fill="#D7E7C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="304" y="212" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="352" y="254" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">30</text>
+<rect x="892" y="212" width="97" height="68" rx="4" fill="#D7E7C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="406" y="212" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="454" y="254" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">18</text>
+<rect x="994" y="212" width="97" height="68" rx="4" fill="#F9E8C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="100" y="285" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="148" y="327" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">8</text>
+<rect x="688" y="285" width="97" height="68" rx="4" fill="#F9E8C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="202" y="285" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="250" y="327" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">45</text>
+<rect x="790" y="285" width="97" height="68" rx="4" fill="#8BC6A9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="304" y="285" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="352" y="327" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">62</text>
+<rect x="892" y="285" width="97" height="68" rx="4" fill="#3C9580" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="406" y="285" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="454" y="327" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">36</text>
+<rect x="994" y="285" width="97" height="68" rx="4" fill="#D7E7C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="100" y="358" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="148" y="400" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">10</text>
+<rect x="688" y="358" width="97" height="68" rx="4" fill="#F9E8C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="202" y="358" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="250" y="400" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">58</text>
+<rect x="790" y="358" width="97" height="68" rx="4" fill="#3C9580" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="304" y="358" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="352" y="400" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">81</text>
+<rect x="892" y="358" width="97" height="68" rx="4" fill="#18795F" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="406" y="358" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="454" y="400" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">49</text>
+<rect x="994" y="358" width="97" height="68" rx="4" fill="#8BC6A9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="100" y="431" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="148" y="473" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">5</text>
+<rect x="688" y="431" width="97" height="68" rx="4" fill="#F9E8C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="202" y="431" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="250" y="473" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">32</text>
+<rect x="790" y="431" width="97" height="68" rx="4" fill="#D7E7C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="304" y="431" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="352" y="473" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">61</text>
+<rect x="892" y="431" width="97" height="68" rx="4" fill="#3C9580" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="406" y="431" width="97" height="68" rx="4" fill="#EEF5F8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="454" y="473" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#18384A">27</text>
+<rect x="994" y="431" width="97" height="68" rx="4" fill="#D7E7C8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="48" y="575" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Υποθετικές τιμές. Ο συμβολισμός μπορεί να αλλάξει χωρίς αλλαγή των τιμών.</text>
+</svg>

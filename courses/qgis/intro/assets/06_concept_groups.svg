@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-label="Πώς είναι οργανωμένο το λεξιλόγιο GIS">
+<rect width="1200" height="610" fill="white"/>
+<text x="48" y="61" font-family="DejaVu Sans,sans-serif" font-size="29" font-weight="700" fill="#18384A">Πώς είναι οργανωμένο το λεξιλόγιο GIS</text>
+<line x1="48" y1="84" x2="1152" y2="84" stroke="#D9E7ED" stroke-width="2"/>
+<rect x="48" y="134" width="257" height="162" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<circle cx="90" cy="177" r="24" fill="#0B7F87" stroke="white" stroke-width="2"/>
+<text x="90" y="184" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">1</text>
+<text x="63" y="232" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#18384A">Έννοιες GIS</text>
+<text x="63" y="266" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Ποιος κάνει τι;</text>
+<rect x="328" y="134" width="257" height="162" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<circle cx="370" cy="177" r="24" fill="#0B7F87" stroke="white" stroke-width="2"/>
+<text x="370" y="184" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">2</text>
+<text x="343" y="232" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#18384A">Αντικείμενα &amp; raster</text>
+<text x="343" y="266" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Πώς αποθηκεύεται;</text>
+<rect x="608" y="134" width="257" height="162" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<circle cx="650" cy="177" r="24" fill="#0B7F87" stroke="white" stroke-width="2"/>
+<text x="650" y="184" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">3</text>
+<text x="623" y="232" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#18384A">Συντεταγμένες</text>
+<text x="623" y="266" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Πού ακριβώς;</text>
+<rect x="888" y="134" width="257" height="162" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<circle cx="930" cy="177" r="24" fill="#0B7F87" stroke="white" stroke-width="2"/>
+<text x="930" y="184" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">4</text>
+<text x="903" y="232" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#18384A">Χάρτες</text>
+<text x="903" y="266" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Πώς παρουσιάζεται;</text>
+<rect x="183" y="344" width="257" height="162" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<circle cx="225" cy="387" r="24" fill="#236CA6" stroke="white" stroke-width="2"/>
+<text x="225" y="394" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">5</text>
+<text x="198" y="442" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#18384A">Ανάλυση</text>
+<text x="198" y="476" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Τι υπολογίζουμε;</text>
+<rect x="463" y="344" width="257" height="162" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<circle cx="505" cy="387" r="24" fill="#236CA6" stroke="white" stroke-width="2"/>
+<text x="505" y="394" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">6</text>
+<text x="478" y="442" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#18384A">Ποιότητα</text>
+<text x="478" y="476" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Πόσο το εμπιστευόμαστε;</text>
+<rect x="743" y="344" width="257" height="162" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<circle cx="785" cy="387" r="24" fill="#236CA6" stroke="white" stroke-width="2"/>
+<text x="785" y="394" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">7</text>
+<text x="758" y="442" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#18384A">Αρχεία &amp; υπηρεσίες</text>
+<text x="758" y="476" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Πώς το μοιραζόμαστε;</text>
+<text x="48" y="585" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Οι ομάδες περιλαμβάνουν ορισμούς, αγγλικούς όρους και πρακτικά παραδείγματα.</text>
+</svg>

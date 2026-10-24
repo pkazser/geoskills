@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="615" viewBox="0 0 1200 615" role="img" aria-label="Τέσσερις διαφορετικές εργασίες GIS">
+<rect width="1200" height="615" fill="white"/>
+<text x="48" y="61" font-family="DejaVu Sans,sans-serif" font-size="29" font-weight="700" fill="#18384A">Τέσσερις διαφορετικές εργασίες GIS</text>
+<line x1="48" y1="84" x2="1152" y2="84" stroke="#D9E7ED" stroke-width="2"/>
+<rect x="50" y="127" width="533" height="188" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<text x="69" y="170" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#18384A">Επιλογή</text>
+<text x="69" y="209" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#496476">Διαλέγω εγγραφές</text>
+<text x="69" y="236" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#496476">με βάση ένα κριτήριο</text>
+<circle cx="335" cy="239" r="14" fill="#2C8065" stroke="white" stroke-width="2"/>
+<circle cx="387" cy="239" r="14" fill="#2C8065" stroke="white" stroke-width="2"/>
+<circle cx="439" cy="239" r="14" fill="#AFC4CD" stroke="white" stroke-width="2"/>
+<circle cx="491" cy="239" r="14" fill="#AFC4CD" stroke="white" stroke-width="2"/>
+<rect x="606" y="127" width="533" height="188" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<text x="625" y="170" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#18384A">Ζώνη εγγύτητας</text>
+<text x="625" y="209" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#496476">Σχηματίζω περιοχή</text>
+<text x="625" y="236" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#496476">σε ορισμένη απόσταση</text>
+<rect x="906" y="217" width="145" height="70" rx="30" fill="#DDEEE6" stroke="none" stroke-width="0"/>
+<line x1="928" y1="252" x2="1032" y2="252" stroke="#236CA6" stroke-width="8" />
+<rect x="50" y="341" width="533" height="188" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<text x="69" y="384" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#18384A">Αποκοπή</text>
+<text x="69" y="423" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#496476">Κρατώ το μέρος</text>
+<text x="69" y="450" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#496476">μέσα σε όριο</text>
+<rect x="350" y="416" width="85" height="78" rx="0" fill="#CEE7DB" stroke="#2C8065" stroke-width="2"/>
+<rect x="402" y="444" width="95" height="67" rx="0" fill="#DAE7F4" stroke="#236CA6" stroke-width="2"/>
+<rect x="606" y="341" width="533" height="188" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<text x="625" y="384" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#18384A">Σύνδεση</text>
+<text x="625" y="423" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#496476">Προσθέτω πληροφορίες</text>
+<text x="625" y="450" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#496476">από άλλο πίνακα</text>
+<rect x="916" y="416" width="77" height="76" rx="5" fill="#EAF3F6" stroke="#D9E7ED" stroke-width="2"/>
+<rect x="1017" y="416" width="77" height="76" rx="5" fill="#EAF3F6" stroke="#D9E7ED" stroke-width="2"/>
+<text x="950" y="448" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="16" font-weight="700" fill="#0B7F87">ID</text>
+<text x="1055" y="448" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="16" font-weight="700" fill="#0B7F87">Τιμή</text>
+<line x1="993" y1="453" x2="1017" y2="453" stroke="#0B7F87" stroke-width="4" />
+<text x="48" y="590" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Δεν είναι τα ίδια εργαλεία: πριν από την εκτέλεση διατυπώνουμε το ερώτημα.</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-label="Δεδομένα, έργο QGIS και παράδοση αρχείων">
+<rect width="1200" height="610" fill="white"/>
+<text x="48" y="61" font-family="DejaVu Sans,sans-serif" font-size="29" font-weight="700" fill="#18384A">Δεδομένα, έργο QGIS και παράδοση αρχείων</text>
+<line x1="48" y1="84" x2="1152" y2="84" stroke="#D9E7ED" stroke-width="2"/>
+<rect x="50" y="132" width="520" height="322" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<rect x="632" y="132" width="520" height="322" rx="18" fill="#F1F8FA" stroke="#D9E7ED" stroke-width="2"/>
+<text x="78" y="179" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="24" font-weight="700" fill="#18384A">GeoPackage (.gpkg)</text>
+<text x="662" y="179" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="24" font-weight="700" fill="#18384A">Έργο QGIS (.qgz)</text>
+<circle cx="94" cy="231" r="10" fill="#2C8065" stroke="white" stroke-width="2"/>
+<text x="118" y="238" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#18384A">Γεωμετρίες</text>
+<circle cx="94" cy="301" r="10" fill="#2C8065" stroke="white" stroke-width="2"/>
+<text x="118" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#18384A">Γνωρίσματα</text>
+<circle cx="94" cy="371" r="10" fill="#2C8065" stroke="white" stroke-width="2"/>
+<text x="118" y="378" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#18384A">Πολλαπλά επίπεδα</text>
+<circle cx="678" cy="231" r="10" fill="#236CA6" stroke="white" stroke-width="2"/>
+<text x="702" y="238" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#18384A">Σύνδεσμοι στα δεδομένα</text>
+<circle cx="678" cy="301" r="10" fill="#236CA6" stroke="white" stroke-width="2"/>
+<text x="702" y="308" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#18384A">Συμβολισμός και προβολή</text>
+<circle cx="678" cy="371" r="10" fill="#236CA6" stroke="white" stroke-width="2"/>
+<text x="702" y="378" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="400" fill="#18384A">Ρυθμίσεις έργου</text>
+<rect x="180" y="478" width="845" height="65" rx="13" fill="#DDEFE9" stroke="#2C8065" stroke-width="2"/>
+<text x="605" y="519" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#18384A">Για μεταφορά: κρατάμε μαζί το έργο και τα αρχεία δεδομένων</text>
+<text x="48" y="585" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="17" font-weight="400" fill="#496476">Ένα αρχείο έργου δεν ενσωματώνει κατ’ ανάγκην τις πηγές δεδομένων.</text>
+</svg>
