@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Οι οκτώ έλεγχοι ενός γεωχωρικού συνόλου">
+<rect x="0" y="0" width="1200" height="675" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<rect x="0" y="0" width="1200" height="14" rx="0" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="48" y="78" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="700" fill="#13344a">Οι οκτώ έλεγχοι ενός γεωχωρικού συνόλου</text>
+<text x="48" y="116" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">Καταγράφουμε τεκμήρια και κενά — δεν απονέμουμε μια αυθαίρετη «βαθμολογία»</text>
+<rect x="48" y="167" width="268" height="181" rx="15" fill="#f4f9fc" stroke="#d3e1e9" stroke-width="2"/>
+<circle cx="86" cy="211" r="24" fill="#1769a9" stroke="none" stroke-width="2"/>
+<text x="86" y="219" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">1</text>
+<text x="66" y="269" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Προέλευση</text>
+<text x="66" y="310" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Ποιος; Πώς;</text>
+<rect x="332" y="167" width="268" height="181" rx="15" fill="#f4f9fc" stroke="#d3e1e9" stroke-width="2"/>
+<circle cx="370" cy="211" r="24" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="370" y="219" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">2</text>
+<text x="350" y="269" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Χρόνος</text>
+<text x="350" y="310" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Πότε παρατηρήθηκε;</text>
+<rect x="616" y="167" width="268" height="181" rx="15" fill="#f4f9fc" stroke="#d3e1e9" stroke-width="2"/>
+<circle cx="654" cy="211" r="24" fill="#1769a9" stroke="none" stroke-width="2"/>
+<text x="654" y="219" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">3</text>
+<text x="634" y="269" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Κάλυψη</text>
+<text x="634" y="310" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Πού εφαρμόζεται;</text>
+<rect x="900" y="167" width="268" height="181" rx="15" fill="#f4f9fc" stroke="#d3e1e9" stroke-width="2"/>
+<circle cx="938" cy="211" r="24" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="938" y="219" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">4</text>
+<text x="918" y="269" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Πληρότητα</text>
+<text x="918" y="310" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Τι λείπει;</text>
+<rect x="48" y="369" width="268" height="181" rx="15" fill="#f4f9fc" stroke="#d3e1e9" stroke-width="2"/>
+<circle cx="86" cy="413" r="24" fill="#1769a9" stroke="none" stroke-width="2"/>
+<text x="86" y="421" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">5</text>
+<text x="66" y="471" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Ακρίβεια</text>
+<text x="66" y="512" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Πόση αβεβαιότητα;</text>
+<rect x="332" y="369" width="268" height="181" rx="15" fill="#f4f9fc" stroke="#d3e1e9" stroke-width="2"/>
+<circle cx="370" cy="413" r="24" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="370" y="421" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">6</text>
+<text x="350" y="471" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">CRS &amp; μονάδες</text>
+<text x="350" y="512" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Τι σημαίνουν οι αριθμοί;</text>
+<rect x="616" y="369" width="268" height="181" rx="15" fill="#f4f9fc" stroke="#d3e1e9" stroke-width="2"/>
+<circle cx="654" cy="413" r="24" fill="#1769a9" stroke="none" stroke-width="2"/>
+<text x="654" y="421" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">7</text>
+<text x="634" y="471" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Άδεια</text>
+<text x="634" y="512" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Τι επιτρέπεται;</text>
+<rect x="900" y="369" width="268" height="181" rx="15" fill="#f4f9fc" stroke="#d3e1e9" stroke-width="2"/>
+<circle cx="938" cy="413" r="24" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="938" y="421" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">8</text>
+<text x="918" y="471" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Μεταδεδομένα</text>
+<text x="918" y="512" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Πώς τεκμηριώνεται;</text>
+<text x="600" y="589" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" fill="#cc692c">Ένας ανεπίλυτος κρίσιμος περιορισμός μπορεί να αποκλείει τη χρήση.</text>
+<line x1="48" y1="624" x2="1152" y2="624" stroke="#d3e1e9" stroke-width="2" stroke-linecap="round" />
+<text x="49" y="654" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">GeoSkills  •  GQ-START / Κεφάλαιο 5</text>
+<text x="1150" y="654" text-anchor="end" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">Σχηματικό εκπαιδευτικό διάγραμμα</text>
+</svg>

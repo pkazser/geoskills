@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Τρεις τρόποι διάθεσης: εικόνα, αντικείμενα, αρχείο">
+<rect x="0" y="0" width="1200" height="675" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<rect x="0" y="0" width="1200" height="14" rx="0" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="48" y="78" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="700" fill="#13344a">Τρεις τρόποι διάθεσης: εικόνα, αντικείμενα, αρχείο</text>
+<text x="48" y="116" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">Το ίδιο οπτικό αποτέλεσμα δεν σημαίνει ίδια δυνατότητα ανάλυσης</text>
+<rect x="48" y="173" width="354" height="364" rx="18" fill="#f4f8fb" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="68" y="193" width="314" height="59" rx="12" fill="#1769a9" stroke="none" stroke-width="2"/>
+<text x="225" y="234" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" fill="#ffffff">WMS</text>
+<text x="225" y="302" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="600" fill="#13344a">Εικόνα χάρτη</text>
+<text x="225" y="474" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">προβολή</text>
+<rect x="125" y="334" width="200" height="106" rx="3" fill="#ddeef4" stroke="none" stroke-width="2"/>
+<line x1="127" y1="355" x2="322" y2="373" stroke="#95becb" stroke-width="8" stroke-linecap="round" />
+<line x1="127" y1="386" x2="322" y2="396" stroke="#95becb" stroke-width="8" stroke-linecap="round" />
+<line x1="127" y1="417" x2="322" y2="419" stroke="#95becb" stroke-width="8" stroke-linecap="round" />
+<circle cx="212" cy="382" r="13" fill="#cc692c" stroke="none" stroke-width="2"/>
+<circle cx="285" cy="409" r="13" fill="#cc692c" stroke="none" stroke-width="2"/>
+<rect x="430" y="173" width="354" height="364" rx="18" fill="#f4f8fb" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="450" y="193" width="314" height="59" rx="12" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="607" y="234" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" fill="#ffffff">WFS / OGC API</text>
+<text x="607" y="302" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="600" fill="#13344a">Γεωμετρίες + γνωρίσματα</text>
+<text x="607" y="474" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">ερωτήματα</text>
+<path d="M516 424 L561 349 L647 382 L700 338" fill="none" stroke="#087f86" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="561" cy="349" r="10" fill="#cc692c" stroke="none" stroke-width="2"/>
+<circle cx="647" cy="382" r="10" fill="#cc692c" stroke="none" stroke-width="2"/>
+<circle cx="700" cy="338" r="10" fill="#cc692c" stroke="none" stroke-width="2"/>
+<text x="607" y="448" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" fill="#456174">ID · όνομα · γεωμετρία</text>
+<rect x="812" y="173" width="354" height="364" rx="18" fill="#f4f8fb" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="832" y="193" width="314" height="59" rx="12" fill="#cc692c" stroke="none" stroke-width="2"/>
+<text x="989" y="234" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" fill="#ffffff">GeoPackage</text>
+<text x="989" y="302" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="600" fill="#13344a">Αποθηκευμένο σύνολο</text>
+<text x="989" y="474" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">offline εργασία</text>
+<rect x="916" y="331" width="145" height="108" rx="10" fill="#e8d9cb" stroke="#cc692c" stroke-width="2"/>
+<text x="988" y="377" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" fill="#cc692c">.gpkg</text>
+<text x="988" y="411" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="500" fill="#13344a">δεδομένα</text>
+<text x="600" y="583" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="600" fill="#cc692c">Πριν κάνω buffer, πρέπει να έχω κατάλληλες γεωμετρίες.</text>
+<line x1="48" y1="624" x2="1152" y2="624" stroke="#d3e1e9" stroke-width="2" stroke-linecap="round" />
+<text x="49" y="654" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">GeoSkills  •  GQ-START / Κεφάλαιο 5</text>
+<text x="1150" y="654" text-anchor="end" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">Σχηματικό εκπαιδευτικό διάγραμμα</text>
+</svg>

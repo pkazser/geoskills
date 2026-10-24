@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Δελτίο μεταδεδομένων — τι χρειάζεται να ξέρω;">
+<rect x="0" y="0" width="1200" height="675" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<rect x="0" y="0" width="1200" height="14" rx="0" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="48" y="78" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="700" fill="#13344a">Δελτίο μεταδεδομένων — τι χρειάζεται να ξέρω;</text>
+<text x="48" y="116" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">Υποθετικό σχολικό σύνολο: η ημερομηνία του αρχείου δεν είναι χρόνος μέτρησης</text>
+<rect x="48" y="166" width="1104" height="424" rx="18" fill="#f4f8fb" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="74" y="183" width="1052" height="65" rx="18" fill="#1769a9" stroke="none" stroke-width="2"/>
+<text x="98" y="227" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" fill="#ffffff">Υποθετικό σύνολο: «Σχολικές μονάδες Δήμου Δ»</text>
+<rect x="77" y="254" width="1047" height="42" rx="7" fill="#e7f0f6" stroke="none" stroke-width="2"/>
+<text x="96" y="279" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="600" fill="#087f86">Φορέας και μέθοδος</text>
+<text x="440" y="279" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#13344a">Υπηρεσία Δ / μη επιβεβαιωμένη καταγραφή</text>
+<text x="96" y="327" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="600" fill="#087f86">Παρατήρηση θέσεων</text>
+<text x="440" y="327" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#13344a">2022 — απαιτείται επικαιροποίηση</text>
+<rect x="77" y="350" width="1047" height="42" rx="7" fill="#e7f0f6" stroke="none" stroke-width="2"/>
+<text x="96" y="375" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="600" fill="#087f86">Ενημέρωση αρχείου</text>
+<text x="440" y="375" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#13344a">Οκτώβριος 2026 — μόνο πεδία</text>
+<text x="96" y="423" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="600" fill="#087f86">Κάλυψη και ορισμός</text>
+<text x="440" y="423" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#13344a">Δήμος Δ · δημόσιες σχολικές μονάδες</text>
+<rect x="77" y="446" width="1047" height="42" rx="7" fill="#e7f0f6" stroke="none" stroke-width="2"/>
+<text x="96" y="471" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="600" fill="#087f86">CRS / μονάδες</text>
+<text x="440" y="471" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#13344a">π.χ. EPSG:2100 · μέτρα</text>
+<text x="96" y="519" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="600" fill="#087f86">Όροι / περιορισμοί</text>
+<text x="440" y="519" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#13344a">Έλεγχος άδειας και θέσης κάθε σημείου</text>
+<line x1="48" y1="624" x2="1152" y2="624" stroke="#d3e1e9" stroke-width="2" stroke-linecap="round" />
+<text x="49" y="654" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">GeoSkills  •  GQ-START / Κεφάλαιο 5</text>
+<text x="1150" y="654" text-anchor="end" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">Σχηματικό εκπαιδευτικό διάγραμμα</text>
+</svg>

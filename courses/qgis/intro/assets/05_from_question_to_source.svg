@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Από το γεωγραφικό ερώτημα στην πηγή">
+<rect x="0" y="0" width="1200" height="675" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<rect x="0" y="0" width="1200" height="14" rx="0" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="48" y="78" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="700" fill="#13344a">Από το γεωγραφικό ερώτημα στην πηγή</text>
+<text x="48" y="116" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">Η διαθεσιμότητα δεν ισοδυναμεί με καταλληλότητα</text>
+<rect x="48" y="186" width="293" height="316" rx="18" fill="#ebf4fd" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="66" y="207" width="256" height="52" rx="10" fill="#1769a9" stroke="none" stroke-width="2"/>
+<text x="77" y="243" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#ffffff">1. ΕΡΩΤΗΜΑ</text>
+<text x="70" y="320" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#13344a">Ποια σχολεία βρίσκονται</text>
+<text x="70" y="364" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#13344a">έως 300 m από δρόμους;</text>
+<text x="70" y="445" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="600" fill="#1769a9">Έλεγχος πριν τη χρήση</text>
+<rect x="454" y="186" width="293" height="316" rx="18" fill="#e8f7f4" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="472" y="207" width="256" height="52" rx="10" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="483" y="243" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#ffffff">2. ΑΠΑΙΤΗΣΕΙΣ</text>
+<text x="476" y="320" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#13344a">Ορισμοί, κάλυψη, χρόνος</text>
+<text x="476" y="364" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#13344a">ακρίβεια, CRS και άδεια</text>
+<text x="476" y="445" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="600" fill="#087f86">Έλεγχος πριν τη χρήση</text>
+<rect x="860" y="186" width="293" height="316" rx="18" fill="#fff3e8" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="878" y="207" width="256" height="52" rx="10" fill="#cc692c" stroke="none" stroke-width="2"/>
+<text x="889" y="243" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#ffffff">3. ΠΗΓΕΣ</text>
+<text x="882" y="320" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#13344a">Αναζητούμε πηγές</text>
+<text x="882" y="364" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#13344a">και ελέγχουμε τα σύνολα</text>
+<text x="882" y="445" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="600" fill="#cc692c">Έλεγχος πριν τη χρήση</text>
+<line x1="352" y1="336" x2="443" y2="336" stroke="#087f86" stroke-width="5" stroke-linecap="round" /><path d="M 429.616597601357,344.76838298867 L 443,336 L 429.616597601357,327.23161701133" fill="none" stroke="#087f86" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="756" y1="336" x2="851" y2="336" stroke="#087f86" stroke-width="5" stroke-linecap="round" /><path d="M 837.6165976013571,344.76838298867 L 851,336 L 837.6165976013571,327.23161701133" fill="none" stroke="#087f86" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="600" y="570" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" fill="#13344a">Τελική απόφαση: κατάλληλο, υπό όρους ή χρειάζεται επαλήθευση</text>
+<line x1="48" y1="624" x2="1152" y2="624" stroke="#d3e1e9" stroke-width="2" stroke-linecap="round" />
+<text x="49" y="654" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">GeoSkills  •  GQ-START / Κεφάλαιο 5</text>
+<text x="1150" y="654" text-anchor="end" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">Σχηματικό εκπαιδευτικό διάγραμμα</text>
+</svg>

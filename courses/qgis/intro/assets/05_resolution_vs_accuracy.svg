@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Ανάλυση raster ≠ γεωμετρική ακρίβεια">
+<rect x="0" y="0" width="1200" height="675" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<rect x="0" y="0" width="1200" height="14" rx="0" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="48" y="78" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="700" fill="#13344a">Ανάλυση raster ≠ γεωμετρική ακρίβεια</text>
+<text x="48" y="116" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">Περισσότερα pixels δεν διορθώνουν αυτομάτως μετατοπισμένες θέσεις</text>
+<text x="212" y="191" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Μεγαλύτερα κελιά</text>
+<rect x="92.0" y="231.0" width="60.0" height="60.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="152.0" y="231.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="212.0" y="231.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="272.0" y="231.0" width="60.0" height="60.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="92.0" y="291.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="152.0" y="291.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="212.0" y="291.0" width="60.0" height="60.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="272.0" y="291.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="92.0" y="351.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="152.0" y="351.0" width="60.0" height="60.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="212.0" y="351.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="272.0" y="351.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="92.0" y="411.0" width="60.0" height="60.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="152.0" y="411.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="212.0" y="411.0" width="60.0" height="60.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="272.0" y="411.0" width="60.0" height="60.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<circle cx="214" cy="349" r="17" fill="#e99b49" stroke="none" stroke-width="2"/>
+<text x="212" y="520" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Τιμή raster ανά κελί</text>
+<text x="593" y="191" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Μικρότερα κελιά</text>
+<rect x="473.0" y="231.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="503.0" y="231.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="533.0" y="231.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="563.0" y="231.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="593.0" y="231.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="623.0" y="231.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="653.0" y="231.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="683.0" y="231.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="473.0" y="261.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="503.0" y="261.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="533.0" y="261.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="563.0" y="261.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="593.0" y="261.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="623.0" y="261.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="653.0" y="261.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="683.0" y="261.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="473.0" y="291.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="503.0" y="291.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="533.0" y="291.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="563.0" y="291.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="593.0" y="291.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="623.0" y="291.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="653.0" y="291.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="683.0" y="291.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="473.0" y="321.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="503.0" y="321.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="533.0" y="321.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="563.0" y="321.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="593.0" y="321.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="623.0" y="321.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="653.0" y="321.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="683.0" y="321.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="473.0" y="351.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="503.0" y="351.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="533.0" y="351.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="563.0" y="351.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="593.0" y="351.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="623.0" y="351.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="653.0" y="351.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="683.0" y="351.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="473.0" y="381.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="503.0" y="381.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="533.0" y="381.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="563.0" y="381.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="593.0" y="381.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="623.0" y="381.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="653.0" y="381.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="683.0" y="381.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="473.0" y="411.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="503.0" y="411.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="533.0" y="411.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="563.0" y="411.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="593.0" y="411.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="623.0" y="411.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="653.0" y="411.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="683.0" y="411.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="473.0" y="441.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="503.0" y="441.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="533.0" y="441.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="563.0" y="441.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="593.0" y="441.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="623.0" y="441.0" width="30.0" height="30.0" rx="0" fill="#b0d5e3" stroke="#ffffff" stroke-width="2"/>
+<rect x="653.0" y="441.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<rect x="683.0" y="441.0" width="30.0" height="30.0" rx="0" fill="#d7e9f1" stroke="#ffffff" stroke-width="2"/>
+<circle cx="595" cy="349" r="17" fill="#e99b49" stroke="none" stroke-width="2"/>
+<text x="593" y="520" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Τιμή raster ανά κελί</text>
+<text x="992" y="191" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#13344a">Απόκλιση θέσης</text>
+<rect x="836" y="231" width="312" height="240" rx="18" fill="#eff7f5" stroke="#d3e1e9" stroke-width="2"/>
+<line x1="858" y1="418" x2="1124" y2="269" stroke="#afced7" stroke-width="8" stroke-linecap="round" />
+<circle cx="937" cy="320" r="14" fill="#087f86" stroke="none" stroke-width="2"/>
+<circle cx="1035" cy="380" r="14" fill="#d96b3f" stroke="none" stroke-width="2"/>
+<line x1="954" y1="327" x2="1017" y2="373" stroke="#cc692c" stroke-width="5" stroke-linecap="round" /><path d="M 1001.020544353922,372.18944632810275 L 1017,373 L 1011.3618898283486,358.02629926530113" fill="none" stroke="#cc692c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="990" y="520" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Πραγματική vs δηλωμένη θέση</text>
+<circle cx="882" cy="573" r="8" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="900" y="580" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#13344a">πραγματική</text>
+<circle cx="1044" cy="573" r="8" fill="#cc692c" stroke="none" stroke-width="2"/>
+<text x="1062" y="580" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#13344a">δηλωμένη</text>
+<line x1="48" y1="624" x2="1152" y2="624" stroke="#d3e1e9" stroke-width="2" stroke-linecap="round" />
+<text x="49" y="654" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">GeoSkills  •  GQ-START / Κεφάλαιο 5</text>
+<text x="1150" y="654" text-anchor="end" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">Σχηματικό εκπαιδευτικό διάγραμμα</text>
+</svg>

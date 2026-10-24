@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Τρεις υποθετικές πηγές — καμία δεν αρκεί αυτομάτως">
+<rect x="0" y="0" width="1200" height="675" rx="0" fill="#ffffff" stroke="none" stroke-width="2"/>
+<rect x="0" y="0" width="1200" height="14" rx="0" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="48" y="78" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="700" fill="#13344a">Τρεις υποθετικές πηγές — καμία δεν αρκεί αυτομάτως</text>
+<text x="48" y="116" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#456174">Επιλογή με βάση το ερώτημα, τα κενά και τους επιτρεπτούς όρους χρήσης</text>
+<rect x="49" y="180" width="350" height="303" rx="18" fill="#f4f8fb" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="67" y="200" width="314" height="60" rx="10" fill="#1769a9" stroke="none" stroke-width="2"/>
+<text x="224" y="238" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#ffffff">Α · Υπηρεσία</text>
+<text x="70" y="313" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#13344a">Ορισμός από φορέα</text>
+<text x="70" y="382" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Περιορισμός:</text>
+<text x="70" y="424" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" fill="#cc692c">Παλιές θέσεις</text>
+<rect x="433" y="180" width="350" height="303" rx="18" fill="#f4f8fb" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="451" y="200" width="314" height="60" rx="10" fill="#087f86" stroke="none" stroke-width="2"/>
+<text x="608" y="238" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#ffffff">Β · Συνεργατική</text>
+<text x="454" y="313" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#13344a">Πιθανώς νεότερα σημεία</text>
+<text x="454" y="382" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Περιορισμός:</text>
+<text x="454" y="424" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" fill="#cc692c">Άγνωστη πληρότητα</text>
+<rect x="817" y="180" width="350" height="303" rx="18" fill="#f4f8fb" stroke="#d3e1e9" stroke-width="2"/>
+<rect x="835" y="200" width="314" height="60" rx="10" fill="#cc692c" stroke="none" stroke-width="2"/>
+<text x="992" y="238" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#ffffff">Γ · Αυτοψία</text>
+<text x="838" y="313" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#13344a">Ελεγμένες είσοδοι</text>
+<text x="838" y="382" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#456174">Περιορισμός:</text>
+<text x="838" y="424" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="600" fill="#cc692c">Μερική κάλυψη</text>
+<line x1="264" y1="531" x2="584" y2="531" stroke="#087f86" stroke-width="5" stroke-linecap="round" /><path d="M 570.6165976013571,539.7683829886699 L 584,531 L 570.6165976013571,522.2316170113301" fill="none" stroke="#087f86" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="937" y1="531" x2="619" y2="531" stroke="#087f86" stroke-width="5" stroke-linecap="round" /><path d="M 632.3834023986429,522.2316170113301 L 619,531 L 632.3834023986429,539.7683829886699" fill="none" stroke="#087f86" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="480" y="495" width="244" height="82" rx="12" fill="#ddf0eb" stroke="#087f86" stroke-width="2"/>
+<text x="602" y="546" text-anchor="middle" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#087f86">Διασταύρωση</text>
+<line x1="48" y1="624" x2="1152" y2="624" stroke="#d3e1e9" stroke-width="2" stroke-linecap="round" />
+<text x="49" y="654" text-anchor="start" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">GeoSkills  •  GQ-START / Κεφάλαιο 5</text>
+<text x="1150" y="654" text-anchor="end" font-family="Noto Sans,DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#456174">Σχηματικό εκπαιδευτικό διάγραμμα</text>
+</svg>
