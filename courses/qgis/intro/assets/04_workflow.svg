@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" role="img" aria-label="Η ροή μιας μικρής εργασίας GIS">
+<rect width="1200" height="640" fill="#FFFFFF"/>
+<text x="54" y="65" font-family="Noto Sans Display, DejaVu Sans, sans-serif" font-size="31" font-weight="700" fill="#173247">Η ροή μιας μικρής εργασίας GIS</text>
+<line x1="54" y1="91" x2="1146" y2="91" stroke="#d7e5ed" stroke-width="2"/>
+<rect x="58" y="144" width="260" height="160" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="94" cy="186" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="94" y="194" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="76" y="239" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Ερώτημα</text>
+<text x="76" y="270" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Τι ακριβώς ζητάμε;</text>
+<path d="M322 224 L340 224" stroke="#067982" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M332 218 L340 224 L332 230" stroke="#067982" stroke-width="3" fill="none" />
+<rect x="345" y="144" width="260" height="160" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="381" cy="186" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="381" y="194" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="363" y="239" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Δεδομένα</text>
+<text x="363" y="270" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Τι είναι απαραίτητο;</text>
+<path d="M609 224 L627 224" stroke="#067982" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M619 218 L627 224 L619 230" stroke="#067982" stroke-width="3" fill="none" />
+<rect x="632" y="144" width="260" height="160" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="668" cy="186" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="668" y="194" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="650" y="239" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Προετοιμασία</text>
+<text x="650" y="270" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Είναι κατάλληλα;</text>
+<path d="M896 224 L914 224" stroke="#067982" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M906 218 L914 224 L906 230" stroke="#067982" stroke-width="3" fill="none" />
+<rect x="919" y="144" width="260" height="160" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="955" cy="186" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="955" y="194" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="937" y="239" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Ανάλυση</text>
+<text x="937" y="270" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Ποιος υπολογισμός;</text>
+<rect x="202" y="355" width="260" height="160" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="238" cy="397" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="238" y="405" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="220" y="450" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Έλεγχος</text>
+<text x="220" y="481" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Στέκει το αποτέλεσμα;</text>
+<path d="M466 435 L484 435" stroke="#067982" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M476 429 L484 435 L476 441" stroke="#067982" stroke-width="3" fill="none" />
+<rect x="489" y="355" width="260" height="160" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="525" cy="397" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="525" y="405" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="507" y="450" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Παρουσίαση</text>
+<text x="507" y="481" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Τι δείχνουμε;</text>
+<path d="M753 435 L771 435" stroke="#067982" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M763 429 L771 435 L763 441" stroke="#067982" stroke-width="3" fill="none" />
+<rect x="776" y="355" width="260" height="160" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="812" cy="397" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="812" y="405" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">7</text>
+<text x="794" y="450" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Τεκμηρίωση</text>
+<text x="794" y="481" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Πώς επαναλαμβάνεται;</text>
+<path d="M1074 311 L1074 344 L1050 344" stroke="#4b6475" stroke-width="2" fill="none" stroke-dasharray="5 7"/>
+<text x="54" y="614" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Αν ένας έλεγχος αποτύχει, επιστρέφουμε στο κατάλληλο προηγούμενο στάδιο.</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-label="Σχολεία και κεντρικοί οδικοί άξονες">
+<rect width="1200" height="660" fill="#FFFFFF"/>
+<text x="54" y="65" font-family="Noto Sans Display, DejaVu Sans, sans-serif" font-size="31" font-weight="700" fill="#173247">Σχολεία και κεντρικοί οδικοί άξονες</text>
+<line x1="54" y1="91" x2="1146" y2="91" stroke="#d7e5ed" stroke-width="2"/>
+<rect x="55" y="113" width="1090" height="486" rx="18" fill="#f3f8fa" stroke="#d7e5ed" stroke-width="2"/>
+<rect x="110" y="150" width="165" height="84" rx="8" fill="#e5eff3" stroke="none" stroke-width="0"/>
+<rect x="315" y="302" width="130" height="103" rx="8" fill="#e5eff3" stroke="none" stroke-width="0"/>
+<rect x="830" y="140" width="105" height="65" rx="8" fill="#e5eff3" stroke="none" stroke-width="0"/>
+<rect x="915" y="325" width="145" height="92" rx="8" fill="#e5eff3" stroke="none" stroke-width="0"/>
+<rect x="400" y="145" width="95" height="72" rx="8" fill="#e5eff3" stroke="none" stroke-width="0"/>
+<rect x="190" y="420" width="125" height="77" rx="8" fill="#e5eff3" stroke="none" stroke-width="0"/>
+<path d="M100 295 L1110 295" stroke="#b5cbd5" stroke-width="6" fill="none" />
+<path d="M330 135 L330 575" stroke="#b5cbd5" stroke-width="6" fill="none" />
+<path d="M935 135 L935 575" stroke="#b5cbd5" stroke-width="6" fill="none" />
+<path d="M98 274 L1093 274" stroke="#dcefdc" stroke-width="122" fill="none" stroke-linecap="round"/>
+<path d="M686 149 L686 565" stroke="#dcefdc" stroke-width="118" fill="none" stroke-linecap="round"/>
+<path d="M98 274 L1093 274" stroke="#206aaa" stroke-width="13" fill="none" stroke-linecap="round"/>
+<path d="M686 149 L686 565" stroke="#206aaa" stroke-width="13" fill="none" stroke-linecap="round"/>
+<circle cx="168" cy="485" r="13" fill="#e18a27" stroke="#FFFFFF" stroke-width="4"/>
+<text x="184" y="471" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#173247" text-anchor="start">S01</text>
+<circle cx="230" cy="235" r="13" fill="#18765c" stroke="#FFFFFF" stroke-width="4"/>
+<text x="246" y="221" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#173247" text-anchor="start">S02</text>
+<circle cx="475" cy="135" r="13" fill="#e18a27" stroke="#FFFFFF" stroke-width="4"/>
+<text x="491" y="121" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#173247" text-anchor="start">S03</text>
+<circle cx="650" cy="380" r="13" fill="#18765c" stroke="#FFFFFF" stroke-width="4"/>
+<text x="666" y="366" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#173247" text-anchor="start">S04</text>
+<circle cx="430" cy="490" r="13" fill="#e18a27" stroke="#FFFFFF" stroke-width="4"/>
+<text x="446" y="476" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#173247" text-anchor="start">S05</text>
+<circle cx="854" cy="244" r="13" fill="#18765c" stroke="#FFFFFF" stroke-width="4"/>
+<text x="870" y="230" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#173247" text-anchor="start">S06</text>
+<circle cx="811" cy="463" r="13" fill="#e18a27" stroke="#FFFFFF" stroke-width="4"/>
+<text x="827" y="449" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#173247" text-anchor="start">S07</text>
+<circle cx="1053" cy="480" r="13" fill="#e18a27" stroke="#FFFFFF" stroke-width="4"/>
+<text x="1069" y="466" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="19" font-weight="700" fill="#173247" text-anchor="start">S08</text>
+<rect x="75" y="550" width="685" height="42" rx="8" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<circle cx="98" cy="568" r="8" fill="#18765c" stroke="#FFFFFF" stroke-width="1"/>
+<text x="116" y="574" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="16" font-weight="400" fill="#173247" text-anchor="start">Εντός ζώνης (ενδεικτικό)</text>
+<circle cx="395" cy="568" r="8" fill="#e18a27" stroke="#FFFFFF" stroke-width="1"/>
+<text x="413" y="574" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="16" font-weight="400" fill="#173247" text-anchor="start">Εκτός ζώνης</text>
+<text x="54" y="634" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Σχηματική απεικόνιση — όχι αληθινή κλίμακα, συντεταγμένες ή μετρήσεις.</text>
+</svg>

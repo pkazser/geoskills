@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 545" width="1200" height="545" role="img" aria-label="Από το οδικό δίκτυο στη λίστα σχολείων">
+<rect width="1200" height="545" fill="#FFFFFF"/>
+<text x="54" y="65" font-family="Noto Sans Display, DejaVu Sans, sans-serif" font-size="31" font-weight="700" fill="#173247">Από το οδικό δίκτυο στη λίστα σχολείων</text>
+<line x1="54" y1="91" x2="1146" y2="91" stroke="#d7e5ed" stroke-width="2"/>
+<rect x="45" y="142" width="272" height="269" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="85" cy="189" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="85" y="197" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="63" y="247" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Φιλτράρω δρόμους</text>
+<text x="63" y="282" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Μόνο οι κεντρικοί</text>
+<path d="M320 267 L336 267" stroke="#206aaa" stroke-width="3" fill="none" />
+<path d="M329 260 L336 267 L329 274" stroke="#206aaa" stroke-width="3" fill="none" />
+<path d="M80 335 L280 335" stroke="#206aaa" stroke-width="8" fill="none" />
+<path d="M80 361 L280 361" stroke="#b0c4ce" stroke-width="5" fill="none" />
+<rect x="338" y="142" width="272" height="269" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="378" cy="189" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="378" y="197" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="356" y="247" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Δημιουργώ ζώνη</text>
+<text x="356" y="282" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">300 m από τον άξονα</text>
+<path d="M613 267 L629 267" stroke="#206aaa" stroke-width="3" fill="none" />
+<path d="M622 260 L629 267 L622 274" stroke="#206aaa" stroke-width="3" fill="none" />
+<path d="M373 346 L573 346" stroke="#d7eddc" stroke-width="62" fill="none" stroke-linecap="round"/>
+<path d="M373 346 L573 346" stroke="#206aaa" stroke-width="8" fill="none" />
+<rect x="631" y="142" width="272" height="269" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="671" cy="189" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="671" y="197" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="649" y="247" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Επιλέγω σχολεία</text>
+<text x="649" y="282" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Εντός ή στο όριο</text>
+<path d="M906 267 L922 267" stroke="#206aaa" stroke-width="3" fill="none" />
+<path d="M915 260 L922 267 L915 274" stroke="#206aaa" stroke-width="3" fill="none" />
+<circle cx="696" cy="337" r="12" fill="#18765c" stroke="#FFFFFF" stroke-width="3"/>
+<circle cx="751" cy="360" r="12" fill="#18765c" stroke="#FFFFFF" stroke-width="3"/>
+<circle cx="826" cy="335" r="12" fill="#e18a27" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="924" y="142" width="272" height="269" rx="18" fill="#FFFFFF" stroke="#d7e5ed" stroke-width="2"/>
+<circle cx="964" cy="189" r="23" fill="#067982" stroke="#FFFFFF" stroke-width="3"/>
+<text x="964" y="197" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="942" y="247" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#173247" text-anchor="start">Μετρώ μοναδικά</text>
+<text x="942" y="282" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Μία εγγραφή / σχολείο</text>
+<text x="1059" y="345" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="35" font-weight="700" fill="#18765c" text-anchor="middle">3 / 8</text>
+<text x="1059" y="378" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="14" font-weight="400" fill="#4b6475" text-anchor="middle">στο υποθετικό παράδειγμα</text>
+<text x="54" y="519" font-family="Noto Sans Display,DejaVu Sans,sans-serif" font-size="18" font-weight="400" fill="#4b6475" text-anchor="start">Τα μενού και οι παράμετροι QGIS θα διδαχθούν σε μεταγενέστερο πρακτικό μάθημα.</text>
+</svg>
