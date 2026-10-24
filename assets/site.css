@@ -1,0 +1,7 @@
+/* Minimal accessible refinements, without depending on undocumented theme internals */
+:root { color-scheme: light; }
+main h1 { letter-spacing: -0.02em; }
+main h2 { margin-top: 2rem; }
+main p { line-height: 1.75; }
+main table { font-size: 0.94em; }
+main .sd-card, main .card { border-radius: 1rem; }

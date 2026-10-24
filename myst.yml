@@ -1,0 +1,47 @@
+version: 1
+project:
+  title: GeoSkills — Ανοιχτή Πλατφόρμα Δεξιοτήτων Γεωπληροφορικής
+  description: Ελληνόφωνη εκπαιδευτική πλατφόρμα για GIS, QGIS, Python και εργασίες πεδίου.
+  keywords: [GIS, QGIS, GeoPython, Γεωπληροφορική, εκπαίδευση]
+  toc:
+    - file: index.md
+    - file: start/index.md
+    - file: courses/qgis/index.md
+      children:
+        - file: courses/qgis/intro/index.md
+          children:
+            - file: courses/qgis/intro/01-ti-einai-gis.md
+            - file: courses/qgis/intro/02-efarmoges.md
+            - file: courses/qgis/intro/03-dedomena.md
+            - file: courses/qgis/intro/04-roi-ergasias.md
+            - file: courses/qgis/intro/05-piges-poiotita.md
+            - file: courses/qgis/intro/06-orologia.md
+            - file: courses/qgis/intro/07-senario-quiz.md
+        - file: courses/qgis/gq00/index.md
+    - file: courses/python/index.md
+    - file: courses/field-surveying/index.md
+    - file: courses/remote-sensing/index.md
+    - file: about.md
+site:
+  template: .geoskills-cache/book-theme
+  title: GeoSkills
+  options:
+    folders: true
+    style: ./assets/site.css
+  nav:
+    - title: Αρχική
+      url: /index
+    - title: Μαθήματα
+      children:
+        - title: GIS / QGIS Core
+          url: /courses/qgis
+        - title: GeoPython Core
+          url: /courses/python
+        - title: Field Surveying Core
+          url: /courses/field-surveying
+        - title: Remote Sensing Core
+          url: /courses/remote-sensing
+    - title: Οδηγός χρήσης
+      url: /start
+    - title: Σχετικά
+      url: /about

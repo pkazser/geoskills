@@ -1,0 +1,8 @@
+_build/
+node_modules/
+.myst/
+.geoskills-cache/
+.DS_Store
+*.log
+__pycache__/
+*.py[cod]
