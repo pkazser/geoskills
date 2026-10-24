@@ -27,6 +27,7 @@ site:
   title: GeoSkills
   options:
     folders: true
+    logo_text: GeoSkills
     style: ./assets/site.css
   nav:
     - title: Αρχική

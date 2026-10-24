@@ -1,7 +1,124 @@
-/* Minimal accessible refinements, without depending on undocumented theme internals */
-:root { color-scheme: light; }
+/* GeoSkills visual identity; selectors target documented MyST blocks and local classes. */
+:root {
+  color-scheme: light;
+  --geoskills-ink: #123044;
+  --geoskills-blue: #1769aa;
+  --geoskills-teal: #087f86;
+  --geoskills-surface: #f5f9fb;
+  --geoskills-border: #c9dce5;
+}
+
 main h1 { letter-spacing: -0.02em; }
 main h2 { margin-top: 2rem; }
 main p { line-height: 1.75; }
 main table { font-size: 0.94em; }
 main .sd-card, main .card { border-radius: 1rem; }
+
+/* Keep normal lesson pages comfortable while giving the homepage more room. */
+main:has(.geoskills-home) article.content { max-width: 92rem; }
+
+.geoskills-home { color: var(--geoskills-ink); }
+
+.geoskills-hero {
+  margin: 0 0 2.5rem;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  border: 1px solid #b9d8e3;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #eaf7fb 0%, #f7fbfc 58%, #eef6ff 100%);
+  box-shadow: 0 1.25rem 2.5rem rgba(18, 48, 68, 0.08);
+}
+
+.geoskills-hero h1 {
+  max-width: 13ch;
+  margin: 0 0 1rem;
+  color: var(--geoskills-ink);
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  line-height: 1.05;
+}
+
+.geoskills-hero > p {
+  max-width: 48rem;
+  margin-bottom: 0.65rem;
+  color: #355466;
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+}
+
+.geoskills-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.geoskills-hero-actions a.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.1rem;
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.geoskills-button-primary { color: #fff !important; background: var(--geoskills-blue); }
+.geoskills-button-secondary {
+  color: var(--geoskills-blue) !important;
+  border-color: #8fb8ca !important;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.geoskills-hero-actions a.button:hover,
+.geoskills-hero-actions a.button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.25);
+  text-decoration: underline;
+}
+
+.geoskills-paths {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.geoskills-paths .myst-card {
+  min-height: 12rem;
+  margin: 0 !important;
+  border: 1px solid var(--geoskills-border) !important;
+  border-top: 0.35rem solid var(--geoskills-teal) !important;
+  background: var(--geoskills-surface);
+  box-shadow: 0 0.5rem 1.25rem rgba(18, 48, 68, 0.06) !important;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.geoskills-paths .myst-card:hover,
+.geoskills-paths .myst-card:focus-visible {
+  border-color: var(--geoskills-teal) !important;
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 48, 68, 0.12) !important;
+  transform: translateY(-2px);
+}
+
+.geoskills-paths .myst-card .myst-card-title { color: var(--geoskills-ink); font-size: 1.15rem; }
+.geoskills-paths .myst-card p:first-of-type {
+  margin-top: 0.6rem;
+  color: var(--geoskills-teal);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.geoskills-home .myst-admonition {
+  border-radius: 0.9rem;
+  box-shadow: 0 0.5rem 1rem rgba(18, 48, 68, 0.05);
+}
+
+@media (max-width: 700px) {
+  .geoskills-hero { padding: 1.5rem; border-radius: 1rem; }
+  .geoskills-hero h1 { font-size: clamp(2rem, 11vw, 3rem); }
+  .geoskills-paths { grid-template-columns: 1fr; }
+  .geoskills-hero-actions a.button { width: 100%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .geoskills-paths .myst-card { transition: none; }
+}
