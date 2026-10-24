@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="695.52pt" height="336.384pt" viewBox="0 0 695.52 336.384" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-24T18:34:39.289817</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 336.384
+L 695.52 336.384
+L 695.52 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 36.954 202.945433
+L 228.906 202.945433
+Q 238.95 202.945433 238.95 194.604609
+L 238.95 124.634364
+Q 238.95 116.29354 228.906 116.29354
+L 36.954 116.29354
+Q 26.91 116.29354 26.91 124.634364
+L 26.91 194.604609
+Q 26.91 202.945433 36.954 202.945433
+z
+" clip-path="url(#p2db735fe93)" style="fill: #e9f3f5; stroke: #d8e4e9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 256.806 202.945433
+L 448.758 202.945433
+Q 458.802 202.945433 458.802 194.604609
+L 458.802 124.634364
+Q 458.802 116.29354 448.758 116.29354
+L 256.806 116.29354
+Q 246.762 116.29354 246.762 124.634364
+L 246.762 194.604609
+Q 246.762 202.945433 256.806 202.945433
+z
+" clip-path="url(#p2db735fe93)" style="fill: #f3f7f9; stroke: #d8e4e9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 476.658 202.945433
+L 668.61 202.945433
+Q 678.654 202.945433 678.654 194.604609
+L 678.654 124.634364
+Q 678.654 116.29354 668.61 116.29354
+L 476.658 116.29354
+Q 466.614 116.29354 466.614 124.634364
+L 466.614 194.604609
+Q 466.614 202.945433 476.658 202.945433
+z
+" clip-path="url(#p2db735fe93)" style="fill: #e9f3f5; stroke: #d8e4e9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 36.954 297.47477
+L 228.906 297.47477
+Q 238.95 297.47477 238.95 289.133946
+L 238.95 219.163701
+Q 238.95 210.822878 228.906 210.822878
+L 36.954 210.822878
+Q 26.91 210.822878 26.91 219.163701
+L 26.91 289.133946
+Q 26.91 297.47477 36.954 297.47477
+z
+" clip-path="url(#p2db735fe93)" style="fill: #f3f7f9; stroke: #d8e4e9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 256.806 297.47477
+L 448.758 297.47477
+Q 458.802 297.47477 458.802 289.133946
+L 458.802 219.163701
+Q 458.802 210.822878 448.758 210.822878
+L 256.806 210.822878
+Q 246.762 210.822878 246.762 219.163701
+L 246.762 289.133946
+Q 246.762 297.47477 256.806 297.47477
+z
+" clip-path="url(#p2db735fe93)" style="fill: #e9f3f5; stroke: #d8e4e9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 476.658 297.47477
+L 668.61 297.47477
+Q 678.654 297.47477 678.654 289.133946
+L 678.654 219.163701
+Q 678.654 210.822878 668.61 210.822878
+L 476.658 210.822878
+Q 466.614 210.822878 466.614 219.163701
+L 466.614 289.133946
+Q 466.614 297.47477 476.658 297.47477
+z
+" clip-path="url(#p2db735fe93)" style="fill: #f3f7f9; stroke: #d8e4e9; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3646" x="29.7" y="42.775612" transform="rotate(-0 29.7 42.775612)">Ποια δεδομένα χρειαζόμαστε;</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5c6f7b" x="29.7" y="62.789471" transform="rotate(-0 29.7 62.789471)">Κάθε σύνολο προσθέτει διαφορετική πληροφορία στην ερώτηση.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3646" x="43.65" y="140.846711" transform="rotate(-0 43.65 140.846711)">Πάρκα</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(43.65 166.346438)">Πολύγωνα</text>
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(43.65 178.941659)">Πού είναι και αν είναι δημόσια</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3646" x="263.502" y="140.406711" transform="rotate(-0 263.502 140.406711)">Είσοδοι</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(263.502 166.346438)">Σημεία</text>
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(263.502 178.941659)">Σε ποιο σημείο φτάνουμε</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3646" x="483.354" y="140.846711" transform="rotate(-0 483.354 140.846711)">Δίκτυο πεζών</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(483.354 166.346438)">Γραμμές</text>
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(483.354 178.959331)">Πού επιτρέπεται να περπατήσουμε</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3646" x="43.65" y="235.376048" transform="rotate(-0 43.65 235.376048)">Κατοίκηση</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(43.65 260.875775)">Θέσεις ή ζώνες</text>
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(43.65 273.488668)">Από πού αρχίζει η διαδρομή</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3646" x="263.502" y="235.376048" transform="rotate(-0 263.502 235.376048)">Πληθυσμός</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(263.502 260.875775)">Γνωρίσματα / πλέγμα</text>
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(263.502 273.470996)">Πόσοι εκτιμάται ότι εξυπηρετούνται</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3646" x="483.354" y="235.376048" transform="rotate(-0 483.354 235.376048)">Γειτονιές</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(483.354 260.875775)">Πολύγωνα</text>
+    <text style="font-size: 8.7px; font-family: 'DejaVu Sans'; fill: #5c6f7b" transform="translate(483.354 273.470996)">Σε ποιες ενότητες συγκρίνουμε</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2db735fe93">
+   <rect x="12.96" y="12.96" width="669.6" height="310.464"/>
+  </clipPath>
+ </defs>
+</svg>
