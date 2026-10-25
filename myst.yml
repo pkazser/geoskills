@@ -21,6 +21,7 @@ project:
         - file: courses/qgis/gq01/index.md
         - file: courses/qgis/gq02/index.md
         - file: courses/qgis/gq03/index.md
+        - file: courses/qgis/gq04/index.md
     - file: courses/python/index.md
       children:
         - file: courses/python/start-here.md
