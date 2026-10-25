@@ -1,0 +1,9 @@
+name,category,longitude,latitude,elevation_m,status
+P01,urban,23.5498,41.0912,52.3,checked
+P02,water,23.5561,41.0965,61.8,checked
+P03,forest,23.5634,41.0876,88.4,pending
+P04,urban,23.5712,41.1021,74.6,checked
+P05,water,23.5783,41.0942,58.7,checked
+P06,forest,23.5845,41.1084,102.1,checked
+P07,urban,23.5911,41.0998,69.2,pending
+P08,water,23.5987,41.1131,63.4,checked

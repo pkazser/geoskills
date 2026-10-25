@@ -22,6 +22,151 @@ project:
         - file: courses/qgis/gq02/index.md
         - file: courses/qgis/gq03/index.md
     - file: courses/python/index.md
+      children:
+        - file: courses/python/start-here.md
+        - file: courses/python/gp00/index.md
+          children:
+            - file: courses/python/gp00/01-python-colab.md
+            - file: courses/python/gp00/02-variables-types.md
+            - file: courses/python/gp00/03-lists-dictionaries.md
+            - file: courses/python/gp00/04-if-for.md
+            - file: courses/python/gp00/05-functions-imports.md
+            - file: courses/python/gp00/06-pandas.md
+            - file: courses/python/gp00/07-geopandas-intro.md
+            - file: courses/python/gp00/08-errors-ai-help.md
+            - file: courses/python/gp00/09-mini-challenge.md
+            - file: courses/python/gp00/10-summary.md
+        - file: courses/python/gp01/index.md
+          children:
+            - file: courses/python/gp01/01-workflow.md
+            - file: courses/python/gp01/02-load.md
+            - file: courses/python/gp01/03-inspect.md
+            - file: courses/python/gp01/04-understand.md
+            - file: courses/python/gp01/05-filter.md
+            - file: courses/python/gp01/06-map.md
+            - file: courses/python/gp01/07-validate.md
+            - file: courses/python/gp01/08-export.md
+            - file: courses/python/gp01/09-mini-challenge.md
+            - file: courses/python/gp01/10-summary.md
+        - file: courses/python/gp02/index.md
+          children:
+            - file: courses/python/gp02/01-data-problems.md
+            - file: courses/python/gp02/02-missing-values.md
+            - file: courses/python/gp02/03-data-types.md
+            - file: courses/python/gp02/04-duplicates.md
+            - file: courses/python/gp02/05-coordinates.md
+            - file: courses/python/gp02/06-geometries.md
+            - file: courses/python/gp02/07-clean-workflow.md
+            - file: courses/python/gp02/08-qa.md
+            - file: courses/python/gp02/09-mini-challenge.md
+            - file: courses/python/gp02/10-summary.md
+        - file: courses/python/gp03/index.md
+          children:
+            - file: courses/python/gp03/01-csv-schema.md
+            - file: courses/python/gp03/02-read-csv.md
+            - file: courses/python/gp03/03-coordinates.md
+            - file: courses/python/gp03/04-crs.md
+            - file: courses/python/gp03/05-geodataframe.md
+            - file: courses/python/gp03/06-qa.md
+            - file: courses/python/gp03/07-geojson.md
+            - file: courses/python/gp03/08-geopackage.md
+            - file: courses/python/gp03/09-mini-challenge.md
+            - file: courses/python/gp03/10-summary.md
+        - file: courses/python/gp04/index.md
+          children:
+            - file: courses/python/gp04/01-geopackage.md
+            - file: courses/python/gp04/02-layers.md
+            - file: courses/python/gp04/03-read-layer.md
+            - file: courses/python/gp04/04-schema.md
+            - file: courses/python/gp04/05-crs-geometry.md
+            - file: courses/python/gp04/06-bounds-map.md
+            - file: courses/python/gp04/07-filter.md
+            - file: courses/python/gp04/08-qa.md
+            - file: courses/python/gp04/09-mini-challenge.md
+            - file: courses/python/gp04/10-summary.md
+        - file: courses/python/gp05/index.md
+          children:
+            - file: courses/python/gp05/01-what-is-crs.md
+            - file: courses/python/gp05/02-geographic-projected.md
+            - file: courses/python/gp05/03-epsg-codes.md
+            - file: courses/python/gp05/04-set-crs.md
+            - file: courses/python/gp05/05-to-crs.md
+            - file: courses/python/gp05/06-units.md
+            - file: courses/python/gp05/07-wrong-crs.md
+            - file: courses/python/gp05/08-choose-crs.md
+            - file: courses/python/gp05/09-mini-challenge.md
+            - file: courses/python/gp05/10-summary.md
+        - file: courses/python/gp06/index.md
+          children:
+            - file: courses/python/gp06/01-why-filter.md
+            - file: courses/python/gp06/02-boolean-conditions.md
+            - file: courses/python/gp06/03-multiple-conditions.md
+            - file: courses/python/gp06/04-isin-strings.md
+            - file: courses/python/gp06/05-numeric-ranges.md
+            - file: courses/python/gp06/06-missing-values.md
+            - file: courses/python/gp06/07-geometry-aware-filter.md
+            - file: courses/python/gp06/08-filter-qa.md
+            - file: courses/python/gp06/09-mini-challenge.md
+            - file: courses/python/gp06/10-summary.md
+        - file: courses/python/gp07/index.md
+          children:
+            - file: courses/python/gp07/01-why-measure.md
+            - file: courses/python/gp07/02-length.md
+            - file: courses/python/gp07/03-area.md
+            - file: courses/python/gp07/04-distance.md
+            - file: courses/python/gp07/05-units.md
+            - file: courses/python/gp07/06-sanity-checks.md
+            - file: courses/python/gp07/07-comparison.md
+            - file: courses/python/gp07/08-export-fields.md
+            - file: courses/python/gp07/09-mini-challenge.md
+            - file: courses/python/gp07/10-summary.md
+        - file: courses/python/gp08/index.md
+          children:
+            - file: courses/python/gp08/01-what-is-buffer.md
+            - file: courses/python/gp08/02-point-buffers.md
+            - file: courses/python/gp08/03-line-polygon-buffers.md
+            - file: courses/python/gp08/04-crs-and-units.md
+            - file: courses/python/gp08/05-distances-and-overlap.md
+            - file: courses/python/gp08/06-select-within-buffer.md
+            - file: courses/python/gp08/07-dissolve-and-qa.md
+            - file: courses/python/gp08/08-export-map.md
+            - file: courses/python/gp08/09-mini-challenge.md
+            - file: courses/python/gp08/10-summary.md
+        - file: courses/python/gp09/index.md
+          children:
+            - file: courses/python/gp09/01-what-is-spatial-join.md
+            - file: courses/python/gp09/02-attribute-vs-spatial.md
+            - file: courses/python/gp09/03-left-right-predicate.md
+            - file: courses/python/gp09/04-sjoin-types.md
+            - file: courses/python/gp09/05-one-to-many.md
+            - file: courses/python/gp09/06-unmatched-and-crs.md
+            - file: courses/python/gp09/07-aggregate.md
+            - file: courses/python/gp09/08-qa-export-map.md
+            - file: courses/python/gp09/09-mini-challenge.md
+            - file: courses/python/gp09/10-summary.md
+        - file: courses/python/gp10/index.md
+          children:
+            - file: courses/python/gp10/01-what-is-clip.md
+            - file: courses/python/gp10/02-intersection-overlay.md
+            - file: courses/python/gp10/03-compare-tools.md
+            - file: courses/python/gp10/04-study-area.md
+            - file: courses/python/gp10/05-clip-workflow.md
+            - file: courses/python/gp10/06-overlay-workflow.md
+            - file: courses/python/gp10/07-geometry-qa.md
+            - file: courses/python/gp10/08-area-export.md
+            - file: courses/python/gp10/09-mini-challenge.md
+            - file: courses/python/gp10/10-summary.md
+        - file: courses/python/core-capstone/index.md
+          children:
+            - file: courses/python/core-capstone/01-mission.md
+            - file: courses/python/core-capstone/02-data-audit.md
+            - file: courses/python/core-capstone/03-clean-data.md
+            - file: courses/python/core-capstone/04-spatial-framework.md
+            - file: courses/python/core-capstone/05-explore.md
+            - file: courses/python/core-capstone/06-spatial-analysis.md
+            - file: courses/python/core-capstone/07-qa.md
+            - file: courses/python/core-capstone/08-deliverables.md
+            - file: courses/python/core-capstone/09-self-assessment.md
     - file: courses/field-surveying/index.md
     - file: courses/remote-sensing/index.md
     - file: about.md

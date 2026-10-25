@@ -1,0 +1,6 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","properties":{"area_id":"A01","name":"Περιοχή μελέτης"},"geometry":{"type":"Polygon","coordinates":[[[23.53,41.07],[23.66,41.07],[23.66,41.14],[23.53,41.14],[23.53,41.07]]]}}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","properties":{"road_id":"R01","name":"Κεντρικός άξονας"},"geometry":{"type":"LineString","coordinates":[[23.53,41.08],[23.57,41.10],[23.61,41.12],[23.65,41.12]]}},
+    {"type":"Feature","properties":{"road_id":"R02","name":"Δυτική σύνδεση"},"geometry":{"type":"LineString","coordinates":[[23.54,41.07],[23.55,41.10],[23.56,41.13]]}}
+  ]
+}

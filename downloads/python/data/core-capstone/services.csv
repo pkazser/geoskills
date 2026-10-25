@@ -1,0 +1,12 @@
+service_id,name,category,longitude,latitude,status
+S01,Health Centre,Health,23.550,41.090,active
+S02,Primary School West,Education,23.570,41.100,active
+S03,Town Hall,Public Administration,23.600,41.110,active
+S04,Fire Station,Emergency,23.640,41.100,active
+S05,Primary School East,Education,23.640,41.120,active
+S06,Rural Clinic,Health,23.580,41.125,active
+S07,Closed Clinic,Health,23.610,41.090,inactive
+S08,Missing Coordinate,Education,,41.105,active
+S08,Missing Coordinate Duplicate,Education,,41.105,active
+S09,Invalid Coordinate,Health,not_available,41.115,active
+S10,Outside Study Area,Emergency,23.700,41.170,active

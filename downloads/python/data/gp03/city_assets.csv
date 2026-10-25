@@ -1,0 +1,9 @@
+asset_id,asset_type,condition,longitude,latitude
+A01,bench,good,23.5498,41.0912
+A02,light,good,23.5561,41.0965
+A03,tree,needs_review,23.5634,41.0876
+A04,bench,good,23.5712,41.1021
+A05,water_fountain,good,23.5783,41.0942
+A06,light,needs_review,23.5845,41.1084
+A07,tree,good,23.5911,41.0998
+A08,bench,needs_review,23.5987,41.1131

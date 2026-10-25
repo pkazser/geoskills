@@ -1,0 +1,7 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"area_id":"A01","name":"Περιοχή Α"},"geometry":{"type":"Polygon","coordinates":[[[23.54,41.08],[23.57,41.08],[23.57,41.10],[23.54,41.10],[23.54,41.08]]]}},
+    {"type":"Feature","properties":{"area_id":"A02","name":"Περιοχή Β"},"geometry":{"type":"Polygon","coordinates":[[[23.58,41.10],[23.62,41.10],[23.62,41.13],[23.58,41.13],[23.58,41.10]]]}}
+  ]
+}

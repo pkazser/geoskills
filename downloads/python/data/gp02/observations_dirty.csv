@@ -1,0 +1,11 @@
+observation_id,category,longitude,latitude,elevation_m,status
+O01,urban,23.5498,41.0912,52.3,active
+O02,water,23.5561,41.0965,61.8,active
+O03,forest,23.5634,41.0876,88.4,pending
+O04,urban,23.5712,41.1021,74.6,active
+O04,urban,23.5712,41.1021,74.6,active
+O05,water,999,41.0942,58.7,active
+O06,forest,23.5845,,102.1,active
+O07,,23.5911,41.0998,not_available,pending
+O08,urban,23.5987,41.1131,69.2,active
+O09,water,23.6042,41.1177,81.0,active

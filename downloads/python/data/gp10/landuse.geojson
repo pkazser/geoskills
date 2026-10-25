@@ -1,0 +1,7 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","properties":{"landuse_id":"L01","landuse":"residential"},"geometry":{"type":"Polygon","coordinates":[[[23.52,41.07],[23.59,41.07],[23.59,41.12],[23.52,41.12],[23.52,41.07]]]}},
+    {"type":"Feature","properties":{"landuse_id":"L02","landuse":"green"},"geometry":{"type":"Polygon","coordinates":[[[23.58,41.10],[23.66,41.10],[23.66,41.15],[23.58,41.15],[23.58,41.10]]]}}
+  ]
+}

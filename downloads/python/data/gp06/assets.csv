@@ -1,0 +1,9 @@
+asset_id,asset_type,condition,status,priority,score,longitude,latitude
+F01,park,good,active,high,92,23.550,41.090
+F02,school,needs_review,active,medium,75,23.560,41.100
+F03,clinic,good,inactive,high,88,23.570,41.080
+F04,park,poor,active,low,42,23.580,41.110
+F05,library,good,active,medium,81,23.590,41.090
+F06,school,good,active,high,95,23.600,41.120
+F07,clinic,needs_review,active,low,68,23.610,41.100
+F08,park,good,inactive,medium,77,23.620,41.110

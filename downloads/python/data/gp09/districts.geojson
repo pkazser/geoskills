@@ -1,0 +1,8 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","properties":{"district_id":"D01","district_name":"Δυτικός Τομέας"},"geometry":{"type":"Polygon","coordinates":[[[23.52,41.07],[23.58,41.07],[23.58,41.14],[23.52,41.14],[23.52,41.07]]]}},
+    {"type":"Feature","properties":{"district_id":"D02","district_name":"Κεντρικός Τομέας"},"geometry":{"type":"Polygon","coordinates":[[[23.58,41.07],[23.64,41.07],[23.64,41.14],[23.58,41.14],[23.58,41.07]]]}},
+    {"type":"Feature","properties":{"district_id":"D03","district_name":"Ανατολικός Τομέας"},"geometry":{"type":"Polygon","coordinates":[[[23.64,41.07],[23.70,41.07],[23.70,41.14],[23.64,41.14],[23.64,41.07]]]}}
+  ]
+}

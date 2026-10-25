@@ -1,0 +1,6 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","properties":{"zone_id":"Z01","zone_name":"Ζώνη προστασίας"},"geometry":{"type":"Polygon","coordinates":[[[23.57,41.09],[23.62,41.09],[23.62,41.12],[23.57,41.12],[23.57,41.09]]]}}
+  ]
+}
