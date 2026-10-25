@@ -4,22 +4,24 @@
 
 Θα εντοπίζεις υπηρεσίες που βρίσκονται μέσα σε ζώνη επιρροής.
 
-## Κώδικας
-
 ## Τι αλλάζει στο αποτέλεσμα
 
-Το spatial join διατηρεί τα points και προσθέτει buffer attributes. Αν ένα point βρίσκεται σε δύο buffers, μπορεί να εμφανιστεί δύο φορές. Για μοναδικές υπηρεσίες χρησιμοποίησε `nunique`, όχι απλό row count.
+Το spatial join διατηρεί τα points και προσθέτει buffer attributes. Αν ένα point βρίσκεται σε δύο buffers, μπορεί να εμφανιστεί δύο φορές. Για μοναδικές υπηρεσίες χρησιμοποίησε `nunique`, όχι απλό row count. Δώσε διαφορετικό όνομα στο αναγνωριστικό του buffer, όπως `school_id`, ώστε το αρχικό `service_id` να παραμένει σαφές.
 
 ```python
 near_school = gpd.sjoin(
     services_m,
-    school_buffers[["service_id", "geometry"]],
+    school_buffers[["school_id", "geometry"]],
     how="inner",
     predicate="within",
 )
 ```
 
 Τα services είναι το left dataset και οι buffers το right. Με `within` κρατάς points που βρίσκονται μέσα σε polygon buffer.
+
+## Πρόβλεψε → Εκτέλεσε → Έλεγξε
+
+Πριν από το join πρόβλεψε ότι το αποτέλεσμα μπορεί να έχει περισσότερες rows από μοναδικές υπηρεσίες, επειδή μία υπηρεσία μπορεί να ταιριάξει με δύο buffers. Μετά έλεγξε `len(matched)`, `matched['service_id'].nunique()`, duplicates ανά service, `school_id` και αν το CRS των δύο layers είναι ίδιο. Τα διαφορετικά ονόματα αποφεύγουν σύγχυση από ομώνυμα πεδία και κάνουν το αποτέλεσμα αναγνώσιμο.
 
 ## Εφαρμογή
 
@@ -29,7 +31,7 @@ near_school = gpd.sjoin(
 
 Έλεγξε ότι όλα τα matched points είναι `Point`, ότι το CRS είναι ίδιο και ότι κάθε match έχει valid `service_id` και buffer ID. Μην εξισώνεις το πλήθος matches με το πλήθος μοναδικών υπηρεσιών χωρίς `nunique()`.
 
-Πρώτα διατύπωσε το ερώτημα: “ποια features βρίσκονται μέσα στη ζώνη 500 m από σχολείο;”. Μετά χρησιμοποίησε spatial relationship, όχι απλό attribute filter. Το αποτέλεσμα μπορεί να έχει λιγότερα rows και να κρατά attributes από τα selected features· έλεγξε predicate, CRS και unmatched/empty αποτέλεσμα.
+Πρώτα διατύπωσε το ερώτημα: “ποια features βρίσκονται μέσα στη ζώνη 500 m από σχολείο;”. Μετά χρησιμοποίησε spatial relationship, όχι απλό attribute filter. Το αποτέλεσμα μπορεί να έχει λιγότερα rows και να κρατά attributes από τα selected features· έλεγξε predicate, CRS και unmatched/empty αποτέλεσμα. Το `within` σημαίνει ότι το σημείο βρίσκεται στο εσωτερικό του polygon· feature ακριβώς στο όριο μπορεί να χρειάζεται διαφορετικό predicate ή ρητή τεκμηρίωση του κανόνα.
 
 ## Επόμενο βήμα
 

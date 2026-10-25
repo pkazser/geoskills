@@ -4,8 +4,6 @@
 
 Θα εξηγήσεις γιατί το `buffer(500)` είναι σωστό μόνο σε κατάλληλο projected CRS.
 
-## Το κρίσιμο σημείο
-
 ## QA πριν από την πράξη
 
 Έλεγξε αρχικό CRS, target CRS, units και bounds πριν καλέσεις `buffer`. Μετά έλεγξε area/extent σε σχέση με την αναμενόμενη απόσταση. Έτσι εντοπίζεις το λάθος πριν το export.
@@ -27,7 +25,7 @@ schools = services_m.geometry.buffer(500)
 
 Το να αλλάξεις μόνο την ετικέτα CRS με `set_crs` δεν διορθώνει τις συντεταγμένες. Χρειάζεται πραγματικός μετασχηματισμός.
 
-Το σωστό workflow είναι: **inspect CRS → reproject → buffer → validate**. Σε EPSG:4326 το `buffer(500)` χρησιμοποιεί degrees, άρα δεν σημαίνει 500 m. Σε projected CRS με metre units μπορείς να ερμηνεύσεις το αποτέλεσμα ως τοπική ζώνη 500 m. Έλεγξε CRS και `total_bounds` πριν και μετά.
+Το σωστό workflow είναι: **inspect CRS → reproject → buffer → validate**. Σε EPSG:4326 το `buffer(500)` χρησιμοποιεί degrees, άρα δεν σημαίνει 500 m. Σε projected CRS με metre units μπορείς να ερμηνεύσεις το αποτέλεσμα ως τοπική ζώνη 500 m. Έλεγξε CRS και `total_bounds` πριν και μετά. Το `set_crs` δηλώνει ποιο CRS έχουν ήδη οι συντεταγμένες· δεν κάνει μετασχηματισμό.
 
 ## Επόμενο βήμα
 

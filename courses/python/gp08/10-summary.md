@@ -10,7 +10,15 @@
 
 ## Τελικός έλεγχος
 
-Γράψε report με source CRS, working CRS, distance, units, rows, geometry types, bounds και export path. Πρόσθεσε μία εικόνα ή plot για οπτικό QA.
+Γράψε report με source CRS, working CRS, distance, units, rows, geometry types, bounds και export path. Πρόσθεσε μία εικόνα ή plot για οπτικό QA. Για κάθε σημαντικό αποτέλεσμα κράτησε μία πρόβλεψη, την πραγματική παρατήρηση και την ερμηνεία της διαφοράς.
+
+Έχεις ολοκληρώσει το GP08 όταν μπορείς να:
+
+- δημιουργήσεις και να επαναφορτώσεις ένα buffer GeoPackage,
+- εξηγήσεις τη διαφορά matches και μοναδικών υπηρεσιών,
+- αιτιολογήσεις radius και predicate,
+- τεκμηριώσεις γιατί το buffer δεν είναι χρόνος μετακίνησης,
+- διαλέξεις μόνος ή μόνη σου την κατάλληλη πράξη στο mini challenge.
 
 Η κοινή ακολουθία ολοκληρώνεται: GP06 επιλέγει features, GP07 μετρά geometry characteristics και GP08 μοντελοποιεί proximity με νέα Polygon zones. Το buffer είναι υπόθεση απόστασης, όχι αυτόματη απόδειξη πρόσβασης ή χρόνος διαδρομής.
 
