@@ -18,6 +18,7 @@ project:
             - file: courses/qgis/intro/06-orologia.md
             - file: courses/qgis/intro/07-senario-quiz.md
         - file: courses/qgis/gq00/index.md
+        - file: courses/qgis/gq01/index.md
     - file: courses/python/index.md
     - file: courses/field-surveying/index.md
     - file: courses/remote-sensing/index.md

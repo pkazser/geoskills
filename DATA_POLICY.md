@@ -43,3 +43,23 @@ GQ00_student_v1.1.zip
 - SHA256 GPKG: `e597ae8e68718a5b29e9b1045c36ba23cf668ce29c5db67ac9a692a99716e58c`.
 - Εγγραφές `countries`: 177, `greece`: 1 (πηγή: προηγούμενο πακέτο GQ00 v1.1).
 - Πρόσβαση σε λύσεις διδασκόντων: **όχι από δημόσιο αποθετήριο**. Φυλάσσονται ξεχωριστά.
+
+## Δημοσιευμένα πακέτα QGIS
+
+### GQ00 v2.0
+
+Το GQ00 v2.0 διατίθεται ως δημοσιευμένο εκπαιδευτικό πακέτο μέσα στο repository:
+
+- `downloads/qgis/GQ00_student_v2.0.zip`
+- `downloads/qgis/GQ00_Odigos_Foititi_v2.0.docx`
+
+### GQ01 v1.0
+
+Το GQ01 v1.0 διατίθεται ως δημοσιευμένο πακέτο:
+
+- `downloads/qgis/GQ01_student_v1.0.zip`
+- `downloads/qgis/GQ01_Odigos_Foititi_v1.0.docx`
+
+Το `data/geoskills_learning_area_v0.1.gpkg` είναι συνθετικό εκπαιδευτικό dataset και διατίθεται υπό την άδεια **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Η άδεια εφαρμόζεται στο συγκεκριμένο dataset και όχι αυτόματα σε ολόκληρο το GeoSkills.
+
+Τα πακέτα δεν περιλαμβάνουν λύσεις διδάσκοντα ή εσωτερικές σημειώσεις.
