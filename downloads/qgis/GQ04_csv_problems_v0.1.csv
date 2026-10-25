@@ -1,0 +1,5 @@
+point_id,name,category,longitude,latitude,observation_date,status,notes
+E01,Observation A,access,,41.10,2025-03-20,check,coordinate value requires review
+E02,Observation B,water,41.10,23.56,2025-03-21,check,coordinate order requires review
+E03,Observation C,vegetation,23.57,unknown,2025-03-22,check,coordinate type requires review
+E04,Observation D,transport,23,58,41,12,2025-03-23,check,decimal notation requires review
