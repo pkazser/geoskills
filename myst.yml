@@ -20,6 +20,7 @@ project:
         - file: courses/qgis/gq00/index.md
         - file: courses/qgis/gq01/index.md
         - file: courses/qgis/gq02/index.md
+        - file: courses/qgis/gq03/index.md
     - file: courses/python/index.md
     - file: courses/field-surveying/index.md
     - file: courses/remote-sensing/index.md
