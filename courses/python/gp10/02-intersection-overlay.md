@@ -1,33 +1,18 @@
 # 2. Intersection και overlay
 
-## Τι θα μάθεις
+## Στόχος
 
-## Τι αλλάζει
-
-Το overlay δημιουργεί νέο layer με geometries τομής και attributes από τα δύο inputs. Το row count δεν χρειάζεται να ισούται με κανένα input, επειδή μία geometry μπορεί να κοπεί σε τμήματα.
-
-Θα καταλάβεις το `gpd.overlay(..., how="intersection")`.
-
-## Έννοια
-
-Η intersection κρατά το κοινό τμήμα δύο layers. Το overlay δημιουργεί νέα γεωμετρία και συνδυάζει attributes από τα δύο inputs.
+Θα υπολογίσεις την κοινή geometry land-use και protected zone.
 
 ```python
-overlap = gpd.overlay(landuse, protected, how="intersection")
+overlay = gpd.overlay(clipped, protected, how="intersection")
+overlay["area_m2"] = overlay.geometry.area
 ```
 
-Ένα residential ή green polygon κόβεται στη protected zone και το αποτέλεσμα έχει πεδία και από τα δύο layers.
+Το output παίρνει attributes και από τα δύο layers και περιέχει μόνο την κοινή έκταση. Μπορεί να έχει Polygon ή MultiPolygon. Έλεγξε bounds, validity, empties και θετικό area.
 
-## Πρακτική
+Μην το παρουσιάζεις ως απλό attribute transfer.
 
-Χρησιμοποίησε το clipped landuse ως πρώτο input και την protected zone ως δεύτερο. Δες τα νέα `landuse` και `zone_name` fields.
+## Checkpoint
 
-## QA
-
-Έλεγξε ότι το output έχει μη κενές, valid Polygon/MultiPolygon geometries και θετικά areas. Το συνολικό area του overlap δεν μπορεί να ξεπερνά το clipped landuse area.
-
-Η intersection κρατά την κοινή spatial περιοχή δύο layers. Το output μπορεί να έχει νέα geometry και attributes από το input και τη mask. Το `gpd.overlay(..., how="intersection")` είναι οικογένεια spatial operations· εδώ εστιάζουμε στην τομή, όχι σε πλήρη θεωρία όλων των modes.
-
-## Επόμενο βήμα
-
-Θα συγκρίνεις καθαρά τα τρία εργαλεία.
+Έλεγξε ότι υπάρχει τουλάχιστον ένα θετικό area και ότι τα bounds του output βρίσκονται στα inputs, με μικρή ανοχή όπου χρειάζεται. Επόμενο βήμα: θα επιλέξεις εργαλείο από το ερώτημα και όχι από συνήθεια.

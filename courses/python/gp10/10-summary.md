@@ -1,19 +1,19 @@
 # 10. Readiness checkpoint
 
-## Πρέπει να μπορείς να εξηγήσεις
+## Στόχος
 
-- Τη διαφορά clip, spatial join και overlay/intersection.
-- Τι είναι η mask και γιατί χρειάζεται έλεγχο.
-- Πώς αλλάζουν geometry, attributes και feature counts.
-- Πώς αντιμετωπίζεις multipart, invalid και empty geometries.
-- Πώς χρησιμοποιείς bounds, validity, area και map ως QA.
+Να ελέγξεις ότι μπορείς να τεκμηριώσεις ολόκληρο το clip/overlay workflow.
 
-## Τελικός έλεγχος
+Μπορείς να εξηγήσεις πότε χρησιμοποιείς clip, spatial join ή overlay/intersection;
 
-Παράδωσε μαζί με το GeoPackage ένα σύντομο report με CRS, rows πριν/μετά, geometry types, validity, empties, bounds και area before/after. Έτσι το output είναι ελέγξιμο και όχι απλώς αποτέλεσμα μιας εντολής.
+Μπορείς να ελέγξεις CRS πριν από metric area, valid/non-empty geometries, Polygon/MultiPolygon, bounds και attributes;
 
-Το GP09 συσχέτισε spatial objects και κράτησε συνήθως τη geometry του left. Το GP10 δημιουργεί νέα geometries από χωρικές σχέσεις. Αυτή είναι η μετάβαση από attribute transfer σε geometry transformation και η βάση για το CORE CAPSTONE.
+Μπορείς να διακρίνεις άθροισμα επιμέρους εμβαδών από γεωμετρική ένωση και να εντοπίσεις διπλομέτρηση;
 
-## Μετάβαση
+Μπορείς να κάνεις export/reload και να ερμηνεύσεις κάθε assertion χωρίς να υπερεκτιμάς τι αποδεικνύει;
 
-Με το GP10 ολοκληρώνεις τον βασικό κύκλο vector analysis: CRS, filtering, measurements, buffers, joins και geometry operations.
+Το GP10 ολοκληρώνει τη μετάβαση από μεταφορά attributes του GP09 σε δημιουργία νέων γεωμετριών.
+
+## Τελικό παραδοτέο
+
+Παρέδωσε clipped και overlay layers, area/union report, round-trip QA και σύντομη ερμηνεία των περιορισμών των συνθετικών δεδομένων.

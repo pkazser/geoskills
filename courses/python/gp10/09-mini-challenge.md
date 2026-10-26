@@ -1,27 +1,19 @@
-# 9. Mini Challenge — Περιοχή μελέτης και προστασία
+# 9. Mini Challenge — Land-use μέσα σε protected zone
 
 ## Στόχος
 
-Περιόρισε το land-use στη study area και υπολόγισε πόσα m² κάθε χρήση γης intersect την protected zone.
+Να συνθέσεις και να τεκμηριώσεις νέο ερώτημα για κοινή έκταση χωρίς να αντιγράψεις το guided example.
 
-## Βήματα
+## Ανεξάρτητη αποστολή
 
-1. Διάβασε τα τρία polygon layers και έλεγξε CRS/validity.
-2. Μετέτρεψέ τα σε EPSG:2100.
-3. Κάνε clip landuse με study area.
-4. Κάνε overlay intersection με protected zone.
-5. Πρόσθεσε area fields, κάνε map και export σε GeoPackage.
+Ανάφερε την επιφάνεια κάθε χρήσης γης μέσα στην protected zone, σύγκρινε το αποτέλεσμα με τη study area και εξέτασε αν υπάρχει διπλομέτρηση λόγω επικάλυψης L01/L02.
 
-## Αναμενόμενο αποτέλεσμα
+Διάλεξε μόνος σου clip/intersection ή άλλη τεκμηριωμένη πράξη, πρόβλεψε rows/areas, έλεγξε CRS, geometry, validity, bounds και attributes και κάνε export με round-trip QA.
 
-Το overlay έχει μόνο κοινές εκτάσεις, θετικά areas και attributes από landuse και protected layers.
+## Κριτήριο επιτυχίας
 
-## Ερμηνεία
+Η αναφορά εξηγεί τι μετρά κάθε area, ποια επιφάνεια είναι union coverage και τι δεν μπορούν να αποδείξουν τα συνθετικά δεδομένα.
 
-Σύγκρινε το area πριν και μετά. Εξήγησε γιατί το clipped layer μπορεί να έχει περισσότερη συνολική έκταση από το overlay.
+## Περιορισμός
 
-Πριν γράψεις κώδικα, διάλεξε operation και αιτιολόγησέ το: filter για attributes, spatial join για μεταφορά attributes, clip για περιορισμό τμήματος ή intersection για νέα κοινή geometry. Έλεγξε counts, CRS, geometry και area πριν από το export.
-
-## Επόμενο βήμα
-
-Ολοκλήρωσε το readiness checkpoint.
+Η επικάλυψη των συνθετικών L01/L02 δεν είναι απόδειξη πραγματικής χρήσης γης. Τεκμηρίωσε αν αναφέρεις component areas ή μοναδική κάλυψη.

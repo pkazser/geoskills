@@ -1,35 +1,17 @@
 # 1. Τι είναι clip
 
-## Τι θα μάθεις
+## Στόχος
 
-## Νοητικό μοντέλο
+Θα περιορίσεις το land-use layer στη study area, δημιουργώντας νέα κομμένα geometries.
 
-Το clip έχει input layer και mask. Αλλάζει τη geometry των input features, κρατά τα input attributes και περιορίζει το spatial extent. Δεν προσθέτει attributes από τη mask όπως ένα spatial join.
-
-Θα περιορίσεις ένα layer σε μια περιοχή μελέτης.
-
-## Γιατί είναι χρήσιμο
-
-Συχνά ένα dataset καλύπτει ολόκληρη χώρα, ενώ η ανάλυση αφορά έναν δήμο ή μια ζώνη έργου. Το `clip` κρατά μόνο το γεωγραφικό τμήμα που σε ενδιαφέρει.
-
-## Παράδειγμα
+Πρόβλεψε ότι τα attributes του land-use θα διατηρηθούν, ενώ οι geometries που τέμνονται με τη mask μπορεί να αλλάξουν. Το clip δεν είναι spatial join: εδώ αλλάζει geometry.
 
 ```python
-clipped = gpd.clip(landuse, study_area)
+clipped = gpd.clip(landuse, study)
 ```
 
-Το `landuse` είναι input και το `study_area` mask. Οι γεωμετρίες του input κόβονται στα όρια της mask, ενώ τα attributes του landuse διατηρούνται.
+Έλεγξε rows, CRS, valid/non-empty geometries, bounds και `area_m2`. Η απουσία exception δεν αρκεί.
 
-## Εφαρμογή / QA
+## Συνηθισμένο λάθος και μετάβαση
 
-Κάνε clip σε EPSG:2100 και έλεγξε rows, geometry types, validity και bounds. Όλα τα clipped bounds πρέπει να βρίσκονται μέσα ή πάνω στα bounds της study area.
-
-## Πρόσεξε
-
-Το clip αλλάζει geometry. Αν θέλεις μόνο να προσθέσεις το όνομα της περιοχής, χρειάζεσαι spatial join.
-
-Το clip απαντά «ποιο τμήμα του input βρίσκεται μέσα στη mask;». Σε Points κρατά ή απορρίπτει σημεία, σε Lines μπορεί να κόψει τη γραμμή στο boundary και σε Polygons μπορεί να κόψει το polygon. Άρα το clip μπορεί να αλλάξει geometry, σε αντίθεση με ένα απλό attribute filter.
-
-## Επόμενο βήμα
-
-Θα δεις πώς η intersection αποτελεί overlay operation.
+Μην υπολογίζεις area σε μοίρες και μην θεωρείς ότι ίδιο πλήθος rows σημαίνει ίδια geometry. Στο επόμενο κεφάλαιο θα δημιουργήσεις τη νέα κοινή geometry με intersection.

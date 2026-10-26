@@ -1,19 +1,17 @@
 # 10. Readiness checkpoint
 
-## Πρέπει να μπορείς να εξηγήσεις
+## Στόχος
 
-- Τη διαφορά attribute join και spatial join.
-- Τους ρόλους left/right και των predicates `within`, `contains`, `intersects`.
-- Γιατί `left` και `inner` δίνουν διαφορετική εικόνα.
-- Πώς προκύπτουν one-to-many matches και unmatched features.
-- Πώς κάνεις aggregation και QA πριν από export.
+Να ελέγξεις ότι μπορείς να τεκμηριώσεις ολόκληρο το spatial-join workflow.
 
-## Τελικός έλεγχος
+Μπορείς να εξηγήσεις τη διαφορά attribute/spatial join, τους ρόλους left/right, `within`/`contains`/`intersects`, `left`/`inner`, one-to-many και unmatched;
 
-Δώσε μαζί με το output ένα μικρό report: rows πριν/μετά, null matches, CRS, geometry type, bounds και map. Αυτά αποδεικνύουν ότι το join έχει γεωγραφικό νόημα.
+Μπορείς να δείξεις πριν/μετά rows, null matches, unique source IDs, CRS, geometry type, bounds και map;
 
-Το GP09 περνά από “αναλύω ένα layer” σε “συσχετίζω δύο spatial datasets χωρίς να αλλάξω απαραίτητα τη geometry”. Στο GP10 θα δημιουργήσεις νέα geometries με clip, intersection και overlay.
+Μπορείς να κρατήσεις joined layer, summary table και export χωριστά και να εξηγήσεις τι αποδεικνύει κάθε assertion;
 
-## Μετάβαση
+Το GP09 οδηγεί από τα buffers του GP08 στη μεταφορά attributes βάσει χωρικής σχέσης. Στο GP10 θα δημιουργήσεις νέες geometries με clip και overlay.
 
-Στο GP10 θα αλλάξεις geometry χρησιμοποιώντας clip και overlay.
+## Τελικό παραδοτέο
+
+Παρέδωσε joined layer, summary table, unmatched report και σύντομο QA report. Επόμενη μετάβαση: στο GP10 η χωρική πράξη δεν μεταφέρει μόνο attributes αλλά μετασχηματίζει geometry.

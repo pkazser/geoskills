@@ -1,34 +1,21 @@
-# 7. Geometry QA
+# 7. Geometry QA και οπτικός έλεγχος
 
-## Τι θα μάθεις
+## Στόχος
 
-Θα προστατεύσεις το workflow από invalid και empty geometries.
-
-## Checklist
-
-## Γιατί χρειάζονται πολλοί έλεγχοι
-
-Το `is_valid` ελέγχει τεχνική εγκυρότητα, το `is_empty` αν υπάρχει πραγματική έκταση, το CRS τις μονάδες και το bounds τη θέση. Multipart geometry μπορεί να είναι απολύτως σωστή, αν ταιριάζει στο αποτέλεσμα της τομής.
+Θα ελέγξεις τεχνική εγκυρότητα, έκταση και γεωμετρικό νόημα.
 
 ```python
-assert frame.geometry.notna().all()
-assert frame.geometry.is_empty.sum() == 0
-assert frame.geometry.is_valid.all()
-assert frame.crs.to_epsg() == 2100
+for frame in (study, clipped, overlay):
+    assert frame.geometry.notna().all()
+    assert frame.geometry.is_valid.all()
+    assert (~frame.geometry.is_empty).all()
+    assert frame.crs.to_epsg() == 2100
 ```
 
-Μετά από overlay έλεγξε επίσης geometry types, rows και bounds. Multipart geometries δεν είναι απαραίτητα σφάλμα· σημασία έχει να συμφωνούν με το ερώτημα.
+Έλεγξε `geom_type`, bounds και positive areas. Polygon/MultiPolygon είναι αναμενόμενα. Αν βρεις invalid geometry, σταμάτησε, τεκμηρίωσε και μην εφαρμόσεις μηχανικά `make_valid()`.
 
-## Πρακτική
+Κάνε plot των input και output layers με διαφορετικά χρώματα.
 
-Εφάρμοσε τους ελέγχους σε `study`, `clipped` και `overlay`. Αν εμφανιστεί invalid geometry, σταμάτησε και τεκμηρίωσε τη διόρθωση πριν συνεχίσεις.
+## Συνηθισμένο λάθος και μετάβαση
 
-## Οπτικός έλεγχος
-
-Κάνε plot τα τρία layers με διαφορετικά χρώματα. Η overlay geometry πρέπει να βρίσκεται ακριβώς στην κοινή περιοχή, όχι απλώς κοντά στα inputs.
-
-Invalid polygons μπορεί να έχουν self-intersections ή προβληματικά boundaries και να επηρεάσουν overlay. Πολύ μικρά sliver polygons μπορεί να δημιουργηθούν από μικρές ασυμφωνίες boundaries. Το `make_valid()` δεν είναι μηχανικό κουμπί: πρώτα εντόπισε το πρόβλημα, κατέγραψε τι άλλαξε και ξαναέλεγξε geometry type, rows και area.
-
-## Επόμενο βήμα
-
-Θα προσθέσεις area fields και θα κάνεις export.
+Μην θεωρείς το `is_valid` απόδειξη σωστής ερμηνείας. Συνδύασέ το με bounds, area και οπτικό έλεγχο. Μετά θα κάνεις export και αριθμητική σύγκριση.

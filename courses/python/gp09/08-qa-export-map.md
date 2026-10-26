@@ -1,37 +1,19 @@
 # 8. QA, map και export
 
-## Τι θα μάθεις
+## Στόχος
 
-## Τελική λογική επικύρωση
-
-Το QA πρέπει να συμφωνεί με το ερώτημα: rows πριν/μετά, null matches, μοναδικά IDs, CRS, geometry retention, bounds και map. Η απουσία exception δεν αποδεικνύει σωστό spatial relationship.
-
-Θα ελέγχεις αν το spatial join είναι λογικά σωστό πριν το παραδώσεις.
-
-## Checklist
-
-Έλεγξε counts πριν/μετά, null matches, μοναδικά IDs, CRS, `Point` geometry, bounds και map. Επιβεβαίωσε ότι τα matched points εμφανίζονται μέσα στα σωστά polygons.
+Θα ελέγξεις ότι το αποτέλεσμα απαντά στο ερώτημα πριν το εξαγάγεις.
 
 ```python
-assert joined_left.crs.to_epsg() == 4326
 assert joined_left.geometry.geom_type.eq("Point").all()
+assert joined_left.crs.to_epsg() == 4326
 assert joined_left["service_id"].nunique() == len(services)
 ```
 
-## Export
+Κατέγραψε before/after rows, null matches, unique IDs, CRS, geometry type και bounds. Κάνε plot services, districts και unmatched S06. Μετά κάνε export σε GeoPackage και επαναφόρτωσε το layer, ελέγχοντας rows, columns και geometry.
 
-```python
-joined_left.to_file("gp09_services_by_district.gpkg", layer="services", driver="GPKG")
-```
+Ο χάρτης είναι QA βοήθημα, όχι απόδειξη μόνος του.
 
-Το export κρατά geometry και attributes. Το summary counts μπορεί να αποθηκευτεί ως CSV.
+## Checkpoint και μετάβαση
 
-## Πρόσεξε
-
-“Ο κώδικας έτρεξε” δεν σημαίνει ότι το predicate, το CRS ή το πλήθος matches είναι σωστά.
-
-Το τελικό QA πρέπει να απαντά: ποιο ήταν το before count, πόσα rows προέκυψαν, πόσα unique source IDs υπάρχουν, πόσα unmatched matches έχουμε, αν το CRS/geometry διατηρήθηκε και αν ο χάρτης δείχνει λογική αντιστοίχιση. Ο χάρτης των unmatched points είναι ιδιαίτερα χρήσιμος, γιατί αποκαλύπτει outliers ή gaps που ένας πίνακας δεν εξηγεί.
-
-## Επόμενο βήμα
-
-Στο Mini Challenge θα επαναλάβεις ολόκληρο το workflow.
+Μετά το reload σύγκρινε source IDs, CRS, geometry types, bounds και τα βασικά attributes. Το `len` μόνο του δεν πιστοποιεί export. Στο Mini Challenge θα επιλέξεις εσύ τη λεπτομερή οργάνωση της αναφοράς.

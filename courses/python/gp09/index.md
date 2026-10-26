@@ -1,19 +1,23 @@
-# GP09 — Spatial Join
+# GP09 — Χωρική σύζευξη (Spatial Join)
 
-Στο GP09 συνδέεις σημεία υπηρεσιών με τις διοικητικές περιοχές όπου βρίσκονται. Η ροή είναι **Κατανοώ → Ελέγχω → Επεξεργάζομαι → Επαληθεύω → Εξάγω**.
+> Κατάσταση: πιλοτική έκδοση v2.0.
+
+Στο GP09 συνδέεις τις έξι υπηρεσίες με τους τρεις διοικητικούς τομείς χωρίς να κόψεις τα σημεία. Η ροή είναι **Πρόβλεψε → Εκτέλεσε → Έλεγξε → Ερμήνευσε**.
 
 ## Τι θα μάθεις
 
-Θα ξεχωρίζεις attribute join από spatial join, θα επιλέγεις left/right dataset και predicate, θα χρησιμοποιείς `gpd.sjoin()`, θα διαβάζεις one-to-many matches και θα κάνεις aggregation. Το dataset `../../../downloads/python/data/gp09/` έχει υπηρεσίες και τρεις διοικητικούς τομείς.
+Θα μετατρέψεις το `services.csv` σε GeoDataFrame, θα ελέγξεις CRS και bounds, θα επιλέξεις left/right και predicate, θα συγκρίνεις `left` με `inner`, θα εντοπίσεις την unmatched S06, θα κάνεις aggregation και export.
 
 ## Πρακτική άσκηση στο Colab
 
 [Άνοιγμα στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/gp09_spatial_join_starter.ipynb)
 
-## Ενδεικτική λύση
+Το notebook περιέχει πλήρες καθοδηγούμενο παράδειγμα, ελεγχόμενες ασκήσεις και ανεξάρτητο mini challenge. Δεν δημοσιεύεται solution notebook.
 
-> Ενδεικτική λύση: δεν δημοσιεύεται σύνδεσμος έτοιμης λύσης.
+## Κριτήρια επιτυχίας
 
-## Mini Challenge και readiness checkpoint
+Στο αρχικό dataset αναμένονται 6 services, 3 districts, 5 matched υπηρεσίες και 1 unmatched υπηρεσία (S06). Η unmatched εγγραφή δεν είναι από μόνη της σφάλμα.
 
-Σύνδεσε όλες τις υπηρεσίες με τον τομέα τους, εντόπισε τις unmatched και υπολόγισε πλήθος υπηρεσιών ανά τομέα. Είσαι έτοιμος όταν μπορείς να εξηγήσεις κάθε row του αποτελέσματος και όχι μόνο το ότι ο κώδικας έτρεξε.
+## Mini Challenge
+
+Παρήγαγε αναφορά ανά `district_id` και `service_type`, μαζί με ξεχωριστή αναφορά unmatched υπηρεσιών. Διάλεξε μόνος σου join type, aggregation και QA ελέγχους.

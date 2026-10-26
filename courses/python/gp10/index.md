@@ -1,25 +1,25 @@
-# GP10 — Clip / Intersection / Overlay
+# GP10 — Αποκοπή και χωρική επικάλυψη
 
-Το GP10 είναι το πρώτο module όπου η χωρική πράξη αλλάζει ουσιαστικά τις geometries. Θα περιορίσεις δεδομένα σε περιοχή μελέτης και θα συνδυάσεις polygon layers. Η ροή είναι **Κατανοώ → Ελέγχω → Επεξεργάζομαι → Επαληθεύω → Εξάγω**.
+> Κατάσταση: πιλοτική έκδοση v2.0.
+
+Στο GP10 δημιουργείς νέες geometries με `clip` και `overlay`. Η ροή είναι **Πρόβλεψε → Εκτέλεσε → Έλεγξε → Ερμήνευσε**.
 
 ## Τι θα μάθεις
 
-Θα ξεχωρίζεις `clip`, spatial join και overlay/intersection, θα δουλεύεις με mask, θα ελέγχεις validity και empty geometries και θα συγκρίνεις area πριν/μετά. Το `../../../downloads/python/data/gp10/` περιέχει study area, land-use polygons και protected zone.
+Θα ελέγξεις τρία polygon layers, θα τα μετατρέψεις σε EPSG:2100, θα επιλέξεις πράξη, θα συγκρίνεις rows/areas/attributes και θα κάνεις round-trip export.
 
-| Εργαλείο | Τι αλλάζει στη geometry | Τι γίνεται στα attributes | Πότε το χρησιμοποιούμε |
-|---|---|---|---|
-| Clip | Κόβει το input στη mask | Κρατά κυρίως attributes του input | Περιοχή μελέτης |
-| Spatial join | Δεν κόβει geometry | Προσθέτει attributes βάσει σχέσης | Αντιστοίχιση features |
-| Overlay / intersection | Δημιουργεί γεωμετρία τομής | Συνδυάζει attributes και των δύο layers | Ανάλυση κοινής έκτασης |
+| Ερώτηση | Πράξη |
+|---|---|
+| Περιορισμός σε mask | `gpd.clip()` |
+| Μεταφορά attributes χωρίς κόψιμο | `gpd.sjoin()` |
+| Νέα κοινή geometry και attributes | `gpd.overlay(..., how="intersection")` |
 
 ## Πρακτική άσκηση στο Colab
 
 [Άνοιγμα στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/gp10_clip_intersection_overlay_starter.ipynb)
 
-## Ενδεικτική λύση
+Το notebook περιέχει guided example, ελεγχόμενη σύγκριση και ανεξάρτητο Mini Challenge. Δεν δημοσιεύεται solution notebook.
 
-> Ενδεικτική λύση: δεν δημοσιεύεται σύνδεσμος έτοιμης λύσης.
+## Κρίσιμο κριτήριο ερμηνείας
 
-## Mini Challenge και readiness checkpoint
-
-Κόψε το land-use στη study area και βρες την τομή του με την protected zone. Είσαι έτοιμος όταν μπορείς να εξηγήσεις γιατί αλλάζουν rows, geometries, attributes και areas.
+Τα L01 και L02 επικαλύπτονται. Σύγκρινε άθροισμα επιμέρους εμβαδών, εμβαδόν γεωμετρικής ένωσης και τυχόν διπλομετρούμενη επιφάνεια. Το απλό άθροισμα δεν είναι πάντοτε μοναδικό coverage area.

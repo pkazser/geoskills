@@ -1,36 +1,18 @@
-# 4. Mask και περιοχή μελέτης
+# 4. Έλεγχος study area
 
-## Τι θα μάθεις
+## Στόχος
 
-Θα ελέγξεις τη mask πριν την εφαρμόσεις.
+Θα ελέγξεις τη mask πριν από κάθε spatial operation.
 
-## Προετοιμασία
-
-## Τι πρόβλημα λύνουμε
-
-Η mask είναι επιχειρησιακή απόφαση: ορίζει ποια έκταση ανήκει στη μελέτη και ποια όχι. Αν είναι λάθος ή άδεια, κάθε downstream αποτέλεσμα θα είναι λάθος ακόμη κι αν το `clip` τρέξει.
+Η study area πρέπει να έχει μία Polygon geometry, σωστό αρχικό CRS, valid/non-empty geometry και bounds που τέμνουν landuse και protected. Μετέτρεψε όλα τα layers στο EPSG:2100 πριν υπολογίσεις εμβαδά.
 
 ```python
-study = gpd.read_file("../../../downloads/python/data/gp10/study_area.geojson")
+study = gpd.read_file(root / "study_area.geojson")
 study = study.to_crs("EPSG:2100")
 ```
 
-Η mask είναι polygon που ορίζει την έκταση ανάλυσης. Πρέπει να έχει σωστό CRS, valid geometry και λογικά bounds.
+Αν το clip δώσει κενό output, έλεγξε πρώτα bounds και CRS, όχι μόνο τον κώδικα.
 
-## Πρακτική / αναμενόμενο αποτέλεσμα
+## Checkpoint και μετάβαση
 
-Η study area έχει ένα polygon. Σύγκρινέ το οπτικά με landuse και protected zone: πρέπει να τέμνει και τα δύο.
-
-## QA
-
-Έλεγξε rows, `Polygon` geometry, `notna`, `not is_empty`, `is_valid`, bounds και EPSG:2100. Αν η mask είναι άδεια ή βρίσκεται αλλού, το clip θα δώσει παραπλανητικό κενό αποτέλεσμα.
-
-## Πρόσεξε
-
-Όλα τα layers που συμμετέχουν σε clip/overlay πρέπει να έχουν συμβατό CRS. Το `to_crs` απαιτεί σωστό αρχικό CRS.
-
-Η study area είναι mask που περιορίζει το spatial extent και συχνά μειώνει το dataset πριν από ακριβότερη ανάλυση. Πριν από clip έλεγξε ότι input και mask έχουν συμβατό CRS, valid/non-empty geometry και bounds που επικαλύπτονται. Αν δεν υπάρχει overlap, το αποτέλεσμα μπορεί να είναι κενό χωρίς να υπάρχει Python error.
-
-## Επόμενο βήμα
-
-Θα εφαρμόσεις clip στο land-use layer.
+Κατέγραψε rows, bounds και geometry validity της mask. Η σωστή mask είναι προϋπόθεση για κάθε downstream συμπέρασμα. Επόμενο βήμα: guided clip και σύγκριση πριν/μετά.
