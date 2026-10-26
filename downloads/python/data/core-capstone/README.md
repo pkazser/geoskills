@@ -15,6 +15,6 @@
 
 ## Αναμενόμενα outputs
 
-Το solution notebook δημιουργεί `output/core-capstone/capstone_results.gpkg` με τα layers `cleaned_services`, `services_with_zones`, `service_buffers`, `coverage_by_zone` και `clipped_roads`, καθώς και `summary.csv`, `final_map.png` και `short_findings.md`.
+Η ολοκληρωμένη εργασία αναμένεται να παράγει `output/core-capstone/capstone_results.gpkg` με τα layers `cleaned_services`, `services_with_zones`, `service_buffers`, `coverage_by_zone` και `clipped_roads`, καθώς και `summary.csv`, `final_map.png` και `short_findings.md`.
 
-Τα δεδομένα είναι εκπαιδευτικά και δεν αντιπροσωπεύουν πραγματική απογραφή ή πραγματικό επίπεδο δημόσιων υπηρεσιών.
+Τα αναμενόμενα outputs της άσκησης είναι εκπαιδευτικά παραδοτέα και δεν αντιπροσωπεύουν πραγματική απογραφή ή πραγματικό επίπεδο δημόσιων υπηρεσιών. Δεν δημοσιεύεται έτοιμο solution notebook μαζί με το πακέτο.

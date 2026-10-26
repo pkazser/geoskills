@@ -31,7 +31,7 @@
 
 [Άνοιγμα στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/gp01_first_geopython_workflow_starter.ipynb)
 
-Το starter notebook περιέχει οδηγίες και κενά σημεία. Η solution έκδοση περιέχει ενδεικτική λύση.
+Το starter notebook περιέχει οδηγίες και σκόπιμα κενά σημεία που πρέπει να συμπληρώσεις. Δεν δημοσιεύεται solution notebook· χρησιμοποίησε τα checkpoints και τους ελέγχους του μαθήματος για να αξιολογήσεις τη δική σου προσπάθεια.
 
 ## Η βασική ιδέα
 

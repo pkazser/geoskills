@@ -21,8 +21,6 @@
 - `summary.csv`, `final_map.png` και σύντομα ευρήματα,
 - ένα GeoPackage με λογικά ονοματισμένα layers.
 
-## Colab
-
 ## Πρακτική άσκηση στο Colab
 
 [Άνοιγμα στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/core_capstone_public_services_starter.ipynb)
@@ -33,7 +31,7 @@
 
 ## Πώς να δουλέψεις
 
-Διάβασε τα lessons με τη σειρά και κράτησε τα checkpoints. Το starter notebook δεν είναι έτοιμη λύση: έχει σκόπιμα κενά, αποφάσεις και ελέγχους που πρέπει να συμπληρώσεις. Το solution notebook είναι για σύγκριση αφού ολοκληρώσεις τη δική σου προσπάθεια.
+Διάβασε τα lessons με τη σειρά και κράτησε τα checkpoints. Το starter notebook δεν είναι έτοιμη λύση: έχει σκόπιμα κενά, αποφάσεις και ελέγχους που πρέπει να συμπληρώσεις. Δεν δημοσιεύεται solution notebook· η αξιολόγηση βασίζεται στα checkpoints, στα αναμενόμενα outputs και στο readiness checkpoint.
 
 ## Δεδομένα
 
