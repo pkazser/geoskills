@@ -1,9 +1,9 @@
 ---
 title: GQ05 — Ψηφιοποίηση στο QGIS
 downloads:
-  - file: ../../../downloads/qgis/GQ05_student_v1.0.zip
-    title: Πακέτο φοιτητή GQ05 v1.0 (ZIP)
-  - file: ../../../downloads/qgis/GQ05_Odigos_Foititi_v1.0.docx
+  - file: ../../../downloads/qgis/GQ05_student_v1.1.zip
+    title: Πακέτο φοιτητή GQ05 v1.1 (ZIP)
+  - file: ../../../downloads/qgis/GQ05_Odigos_Foititi_v1.1.docx
     title: Οδηγός φοιτητή GQ05 v1.0 (Word)
 ---
 
@@ -11,11 +11,11 @@ downloads:
 
 ## Συνοδευτικό υλικό
 
-Κατέβασε το {download}`πλήρες πακέτο φοιτητή GQ05 v1.0 (ZIP) <../../../downloads/qgis/GQ05_student_v1.0.zip>`, τον {download}`οδηγό φοιτητή GQ05 v1.0 (Word) <../../../downloads/qgis/GQ05_Odigos_Foititi_v1.0.docx>`, το {download}`reference GeoPackage GQ05 <../../../downloads/qgis/GQ05_reference_v0.1.gpkg>` ή το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ05_Fyllo_Ergasias_v1.0.docx>`.
+Κατέβασε το {download}`πλήρες πακέτο φοιτητή GQ05 v1.1 (ZIP) <../../../downloads/qgis/GQ05_student_v1.1.zip>`, τον {download}`οδηγό φοιτητή GQ05 v1.1 (Word) <../../../downloads/qgis/GQ05_Odigos_Foititi_v1.1.docx>`, το {download}`reference GeoPackage GQ05 <../../../downloads/qgis/GQ05_reference_v0.1.gpkg>` ή το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ05_Fyllo_Ergasias_v1.0.docx>`. Το Word είναι η προτεινόμενη μορφή συμπλήρωσης· το Markdown φύλλο μέσα στο ZIP παραμένει αποδεκτό.
 
 Μπορείς να προετοιμάσεις την εργασία με έναν από δύο τρόπους:
 
-- **Επιλογή Α — πλήρες πακέτο:** κατέβασε το `GQ05_student_v1.0.zip` και αποσυμπίεσέ το. Χρησιμοποίησε τους φακέλους `data/`, `projects/`, `outputs/` και `exercises/` που περιέχει.
+- **Επιλογή Α — πλήρες πακέτο:** κατέβασε το `GQ05_student_v1.1.zip` και αποσυμπίεσέ το. Χρησιμοποίησε τους φακέλους `data/`, `projects/`, `outputs/` και `exercises/` που περιέχει.
 - **Επιλογή Β — μόνο GeoPackage:** κατέβασε το `gq05_reference_v0.1.gpkg` και δημιούργησε χειροκίνητα έναν φάκελο `GQ05_εργασία/` με υποφακέλους `data/`, `projects/` και `outputs/`. Τοποθέτησε το GeoPackage μέσα στον `data/`.
 
 Το φύλλο εργασίας μπορεί να συμπληρωθεί είτε ως `exercises/GQ05_fyllo_ergasias.md` από το ZIP είτε ως ξεχωριστό επεξεργάσιμο Word. Το παραδοτέο μπορεί να είναι το συμπληρωμένο φύλλο εργασίας (`.md` ή `.docx`).

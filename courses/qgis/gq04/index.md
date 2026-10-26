@@ -1,9 +1,9 @@
 ---
 title: GQ04 — Από έναν πίνακα CSV σε γεωχωρικά δεδομένα
 downloads:
-  - file: ../../../downloads/qgis/GQ04_student_v1.0.zip
-    title: Πακέτο φοιτητή GQ04 v1.0 (ZIP)
-  - file: ../../../downloads/qgis/GQ04_Odigos_Foititi_v1.0.docx
+  - file: ../../../downloads/qgis/GQ04_student_v1.1.zip
+    title: Πακέτο φοιτητή GQ04 v1.1 (ZIP)
+  - file: ../../../downloads/qgis/GQ04_Odigos_Foititi_v1.1.docx
     title: Οδηγός φοιτητή GQ04 v1.0 (Word)
 ---
 
@@ -11,7 +11,7 @@ downloads:
 
 ## Συνοδευτικό υλικό
 
-Κατέβασε το {download}`πλήρες πακέτο φοιτητή GQ04 v1.0 (ZIP) <../../../downloads/qgis/GQ04_student_v1.0.zip>`, τον {download}`οδηγό φοιτητή GQ04 v1.0 (Word) <../../../downloads/qgis/GQ04_Odigos_Foititi_v1.0.docx>` και το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ04_Fyllo_Ergasias_v1.0.docx>`.
+Κατέβασε το {download}`πλήρες πακέτο φοιτητή GQ04 v1.1 (ZIP) <../../../downloads/qgis/GQ04_student_v1.1.zip>`, τον {download}`οδηγό φοιτητή GQ04 v1.1 (Word) <../../../downloads/qgis/GQ04_Odigos_Foititi_v1.1.docx>` και το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ04_Fyllo_Ergasias_v1.0.docx>`. Το Word είναι η προτεινόμενη μορφή συμπλήρωσης· το Markdown φύλλο μέσα στο ZIP παραμένει αποδεκτό.
 
 Για άμεση λήψη, χρησιμοποίησε το {download}`κύριο CSV παρατηρήσεων <../../../downloads/qgis/GQ04_field_observations_v0.1.csv>` ή το {download}`CSV προβληματικών εγγραφών <../../../downloads/qgis/GQ04_csv_problems_v0.1.csv>`. Αν κατεβάσεις μόνο CSV, αποθήκευσέ το στον φάκελο `data/` μιας αποσυμπιεσμένης άσκησης.
 
@@ -121,7 +121,7 @@ downloads:
 
 ## 16. Παραδοτέα, αυτοαξιολόγηση και σύνδεση με το GQ05
 
-Συμπλήρωσε το φύλλο εργασίας και παρέδωσε το `outputs/GQ04_observations.gpkg`, το `projects/GQ04_my_observations.qgz` και τις απαντήσεις σου. Το τελικό αποτέλεσμα πρέπει να περιέχει 16 σημεία, layer name `field_observations`, CRS EPSG:2100 και όλα τα αρχικά πεδία.
+Συμπλήρωσε το φύλλο εργασίας ως Word ή Markdown· στο ZIP το Markdown είναι `exercises/GQ04_fyllo_ergasias.md`. Παρέδωσε το `outputs/GQ04_observations.gpkg`, το `projects/GQ04_my_observations.qgz` και το συμπληρωμένο φύλλο εργασίας. Το τελικό αποτέλεσμα πρέπει να περιέχει 16 σημεία, layer name `field_observations`, CRS EPSG:2100 και όλα τα αρχικά πεδία.
 
 Πριν συνεχίσεις στο GQ05, απάντησε: γιατί το CSV δεν αρκεί μόνο του για χάρτη; ποια είναι η διαφορά ανάμεσα σε προσωρινό layer και αποθηκευμένο GeoPackage; γιατί το X είναι longitude και το Y latitude; και γιατί η εξαγωγή σε νέο CRS δεν τροποποιεί το αρχικό CSV;
 

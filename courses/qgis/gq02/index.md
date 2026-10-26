@@ -1,9 +1,9 @@
 ---
 title: GQ02 — Συστήματα αναφοράς συντεταγμένων
 downloads:
-  - file: ../../../downloads/qgis/GQ02_student_v1.0.zip
-    title: Πακέτο φοιτητή GQ02 v1.0 (ZIP)
-  - file: ../../../downloads/qgis/GQ02_Odigos_Foititi_v1.0.docx
+  - file: ../../../downloads/qgis/GQ02_student_v1.1.zip
+    title: Πακέτο φοιτητή GQ02 v1.1 (ZIP)
+  - file: ../../../downloads/qgis/GQ02_Odigos_Foititi_v1.1.docx
     title: Οδηγός φοιτητή GQ02 v1.0 (Word)
 ---
 
@@ -11,7 +11,7 @@ downloads:
 
 ## Συνοδευτικό υλικό
 
-Κατέβασε το {download}`πλήρες πακέτο φοιτητή GQ02 v1.0 (ZIP) <../../../downloads/qgis/GQ02_student_v1.0.zip>`, τον {download}`οδηγό φοιτητή GQ02 v1.0 (Word) <../../../downloads/qgis/GQ02_Odigos_Foititi_v1.0.docx>` και το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ02_Fyllo_Ergasias_v1.0.docx>`.
+Κατέβασε το {download}`πλήρες πακέτο φοιτητή GQ02 v1.1 (ZIP) <../../../downloads/qgis/GQ02_student_v1.1.zip>`, τον {download}`οδηγό φοιτητή GQ02 v1.1 (Word) <../../../downloads/qgis/GQ02_Odigos_Foititi_v1.1.docx>` και το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ02_Fyllo_Ergasias_v1.1.docx>`. Το Word είναι η προτεινόμενη μορφή συμπλήρωσης· το Markdown φύλλο μέσα στο ZIP παραμένει αποδεκτό.
 
 Οι άμεσες λήψεις είναι το {download}`κύριο GeoPackage GQ02 <../../../downloads/qgis/GQ02_geoskills_learning_area_v0.1.gpkg>` και το {download}`reference GeoPackage WGS84 <../../../downloads/qgis/GQ02_services_wgs84_reference_v0.1.gpkg>`. Αν κατεβάσεις μόνο ένα αρχείο, αποθήκευσέ το στον κατάλληλο φάκελο `data/` ή `reference/` μιας αποσυμπιεσμένης άσκησης.
 
@@ -67,7 +67,7 @@ downloads:
 
 ## 6. Γνωριμία με τα δύο GeoPackages
 
-Αποσυμπίεσε το `GQ02_student_v1.0.zip` σε έναν φάκελο εργασίας. Μην εργάζεσαι μέσα από το ίδιο το ZIP.
+Αποσυμπίεσε το `GQ02_student_v1.1.zip` σε έναν φάκελο εργασίας. Μην εργάζεσαι μέσα από το ίδιο το ZIP.
 
 Στον φάκελο `data/` βρίσκεται το αρχικό `geoskills_learning_area_v0.1.gpkg`. Στον φάκελο `reference/` βρίσκεται το `gq02_services_wgs84_reference_v0.1.gpkg`. Το δεύτερο είναι **δεδομένο ελέγχου**, όχι το παραγόμενο αρχείο σου.
 
@@ -167,7 +167,7 @@ downloads:
 
 ## 15. Φύλλο εργασίας, αυτοέλεγχος και προβλήματα
 
-Συμπλήρωσε το `exercises/GQ02_fyllo_ergasias.md` καθώς εργάζεσαι. Κατέγραψε CRS, μονάδες, πλήθη, τη μεταβολή του CRS έργου, τη σύγκριση της S01, τη διαφορά Assign projection/Reproject layer και τον έλεγχο επαναφόρτωσης.
+Συμπλήρωσε το Word ή, εναλλακτικά, το `exercises/GQ02_fyllo_ergasias.md` καθώς εργάζεσαι. Κατέγραψε CRS, μονάδες, πλήθη, τη μεταβολή του CRS έργου, τη σύγκριση της S01, τη διαφορά Assign projection/Reproject layer και τον έλεγχο επαναφόρτωσης.
 
 Αν κάτι δεν συμφωνεί, έλεγξε πρώτα:
 
@@ -186,7 +186,7 @@ downloads:
 
 - `outputs/services_wgs84_student.gpkg`, με 10 σημεία σε EPSG:4326,
 - `projects/GQ02_crs_workflow.qgz`, που επαναφορτώνεται χωρίς χαμένες πηγές,
-- `exercises/GQ02_fyllo_ergasias.md`, συμπληρωμένο με παρατηρήσεις και αιτιολόγηση.
+- το συμπληρωμένο φύλλο εργασίας ως Word ή Markdown· στο ZIP το Markdown είναι `exercises/GQ02_fyllo_ergasias.md`.
 
 Το GQ02 κλείνει τον κύκλο από την αναγνώριση δεδομένων του GQ01 στη συνειδητή επιλογή CRS και στη δημιουργία νέου, ελεγμένου αρχείου. Στο επόμενο μάθημα της διαδρομής θα αξιοποιήσεις τα γνωρίσματα και τις επιλογές αντικειμένων για ερωτήματα και φίλτρα.
 

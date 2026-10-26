@@ -1,9 +1,9 @@
 ---
 title: GQ03 — Αναζητώ πληροφορίες στον χάρτη
 downloads:
-  - file: ../../../downloads/qgis/GQ03_student_v1.0.zip
-    title: Πακέτο φοιτητή GQ03 v1.0 (ZIP)
-  - file: ../../../downloads/qgis/GQ03_Odigos_Foititi_v1.0.docx
+  - file: ../../../downloads/qgis/GQ03_student_v1.1.zip
+    title: Πακέτο φοιτητή GQ03 v1.1 (ZIP)
+  - file: ../../../downloads/qgis/GQ03_Odigos_Foititi_v1.1.docx
     title: Οδηγός φοιτητή GQ03 v1.0 (Word)
 ---
 
@@ -11,7 +11,7 @@ downloads:
 
 ## Συνοδευτικό υλικό
 
-Κατέβασε το {download}`πλήρες πακέτο φοιτητή GQ03 v1.0 (ZIP) <../../../downloads/qgis/GQ03_student_v1.0.zip>`, τον {download}`οδηγό φοιτητή GQ03 v1.0 (Word) <../../../downloads/qgis/GQ03_Odigos_Foititi_v1.0.docx>`, το {download}`GeoPackage πανεπιστημιούπολης GQ03 <../../../downloads/qgis/GQ03_geoskills_campus_v0.1.gpkg>` ή το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ03_Fyllo_Ergasias_v1.0.docx>`.
+Κατέβασε το {download}`πλήρες πακέτο φοιτητή GQ03 v1.1 (ZIP) <../../../downloads/qgis/GQ03_student_v1.1.zip>`, τον {download}`οδηγό φοιτητή GQ03 v1.1 (Word) <../../../downloads/qgis/GQ03_Odigos_Foititi_v1.1.docx>`, το {download}`GeoPackage πανεπιστημιούπολης GQ03 <../../../downloads/qgis/GQ03_geoskills_campus_v0.1.gpkg>` ή το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ03_Fyllo_Ergasias_v1.1.docx>`. Το Word είναι η προτεινόμενη μορφή συμπλήρωσης· το Markdown φύλλο μέσα στο ZIP παραμένει αποδεκτό.
 
 Αν κατεβάσεις μόνο το GeoPackage, αποθήκευσέ το στον φάκελο `data/` μιας αποσυμπιεσμένης άσκησης. Το `projects/` παραμένει χώρος για το δικό σου QGIS project.
 
@@ -44,7 +44,7 @@ downloads:
 
 ## 3. Γνωριμία με το συνθετικό dataset
 
-Αποσυμπίεσε το `GQ03_student_v1.0.zip` σε έναν μόνιμο φάκελο. Το GeoPackage βρίσκεται στον φάκελο `data/` και περιέχει το επίπεδο `campus_places` με 20 σημειακά αντικείμενα.
+Αποσυμπίεσε το `GQ03_student_v1.1.zip` σε έναν μόνιμο φάκελο. Το GeoPackage βρίσκεται στον φάκελο `data/` και περιέχει το επίπεδο `campus_places` με 20 σημειακά αντικείμενα.
 
 Τα πεδία είναι:
 
@@ -210,7 +210,7 @@ AND "capacity" >= 40
 
 ## 15. Παραδοτέο και αυτοέλεγχος
 
-Συμπλήρωσε το `exercises/GQ03_fyllo_ergasias.md`. Το παραδοτέο είναι το αρχικό έργο, η καταγεγραμμένη τελική έκφραση και το συμπληρωμένο φύλλο εργασίας. Δεν χρειάζεται να τροποποιήσεις το GeoPackage. Μην βασιστείς στην υπόθεση ότι η ενεργή επιλογή θα αποθηκευτεί και θα επανέλθει αυτόματα· κράτησε την έκφραση και το πλήθος ώστε να μπορείς να την επαναλάβεις.
+Συμπλήρωσε το φύλλο εργασίας ως Word ή Markdown· στο ZIP το Markdown είναι `exercises/GQ03_fyllo_ergasias.md`. Το παραδοτέο είναι το αρχικό έργο, η καταγεγραμμένη τελική έκφραση και το συμπληρωμένο φύλλο εργασίας. Δεν χρειάζεται να τροποποιήσεις το GeoPackage. Μην βασιστείς στην υπόθεση ότι η ενεργή επιλογή θα αποθηκευτεί και θα επανέλθει αυτόματα· κράτησε την έκφραση και το πλήθος ώστε να μπορείς να την επαναλάβεις.
 
 Πριν ολοκληρώσεις, έλεγξε:
 

@@ -1,9 +1,9 @@
 ---
 title: GQ00 — Ο πρώτος μου χάρτης στο QGIS
 downloads:
-  - file: ../../../downloads/qgis/GQ00_student_v2.0.zip
-    title: Πακέτο φοιτητή GQ00 v2.0 (ZIP)
-  - file: ../../../downloads/qgis/GQ00_Odigos_Foititi_v2.0.docx
+  - file: ../../../downloads/qgis/GQ00_student_v2.1.zip
+    title: Πακέτο φοιτητή GQ00 v2.1 (ZIP)
+  - file: ../../../downloads/qgis/GQ00_Odigos_Foititi_v2.1.docx
     title: Οδηγός φοιτητή GQ00 v2.0 (Word)
 ---
 
@@ -11,9 +11,9 @@ downloads:
 
 ## Συνοδευτικό υλικό
 
-Κατέβασε το πλήρες {download}`πακέτο φοιτητή GQ00 v2.0 (ZIP) <../../../downloads/qgis/GQ00_student_v2.0.zip>` και, αν θέλεις αναλυτικό έντυπο, τον {download}`οδηγό φοιτητή GQ00 v2.0 (Word) <../../../downloads/qgis/GQ00_Odigos_Foititi_v2.0.docx>`.
+Κατέβασε το πλήρες {download}`πακέτο φοιτητή GQ00 v2.1 (ZIP) <../../../downloads/qgis/GQ00_student_v2.1.zip>` και, αν θέλεις αναλυτικές οδηγίες, τον {download}`οδηγό φοιτητή GQ00 v2.1 (Word) <../../../downloads/qgis/GQ00_Odigos_Foititi_v2.1.docx>`.
 
-Μπορείς επίσης να κατεβάσεις απευθείας το {download}`GeoPackage δεδομένων GQ00 <../../../downloads/qgis/GQ00_world_countries_v2.0.gpkg>` και το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ00_Fyllo_Ergasias_v2.0.docx>`. Αν κατεβάσεις μόνο το GeoPackage, αποθήκευσέ το στον φάκελο `data/` μιας αποσυμπιεσμένης άσκησης. Τα `projects/` και `exercises/` παραμένουν χώροι εργασίας του φοιτητή.
+Μπορείς επίσης να κατεβάσεις απευθείας το {download}`GeoPackage δεδομένων GQ00 <../../../downloads/qgis/GQ00_world_countries_v2.0.gpkg>` και το {download}`επεξεργάσιμο φύλλο εργασίας Word <../../../downloads/qgis/GQ00_Fyllo_Ergasias_v2.1.docx>`. Το Word είναι η προτεινόμενη μορφή συμπλήρωσης· το `exercises/GQ00_fyllo_ergasias.md` μέσα στο ZIP παραμένει αποδεκτή εναλλακτική. Αν κατεβάσεις μόνο το GeoPackage, αποθήκευσέ το στον φάκελο `data/` μιας αποσυμπιεσμένης άσκησης. Τα `projects/` και `exercises/` παραμένουν χώροι εργασίας του φοιτητή.
 
 Σε αυτή την πρακτική άσκηση θα δημιουργήσεις το πρώτο σου έργο QGIS με πραγματικά γεωχωρικά δεδομένα. Θα φορτώσεις έναν παγκόσμιο χάρτη, θα εντοπίσεις την Ελλάδα, θα ξεχωρίσεις την προσωρινή επιλογή από τον μόνιμο συμβολισμό και θα αποθηκεύσεις ένα έργο που μπορεί να ξανανοίξει.
 
@@ -27,12 +27,12 @@ downloads:
 projects/GQ00_my_first_map.qgz
 ```
 
-Το έργο πρέπει να περιλαμβάνει τα επίπεδα `countries` και `greece`, με μόνιμη οπτική έμφαση στην Ελλάδα. Θα συμπληρώσεις επίσης το `exercises/GQ00_fyllo_ergasias.md` με σύντομες απαντήσεις. Η εξαγωγή εικόνας PNG είναι προαιρετική.
+Το έργο πρέπει να περιλαμβάνει τα επίπεδα `countries` και `greece`, με μόνιμη οπτική έμφαση στην Ελλάδα. Θα συμπληρώσεις επίσης το Word ή, εναλλακτικά, το `exercises/GQ00_fyllo_ergasias.md` με σύντομες απαντήσεις. Η εξαγωγή εικόνας PNG είναι προαιρετική.
 
 ## 2. Προετοιμασία υπολογιστή και αρχείων
 
 1. Εγκατάστησε ή άνοιξε το QGIS 3.44 LTR από το [qgis.org](https://qgis.org/download/). Οι ονομασίες των μενού μπορεί να εμφανίζονται στα ελληνικά ή στα αγγλικά.
-2. Αποσυμπίεσε ολόκληρο το `GQ00_student_v2.0.zip` σε έναν μόνιμο φάκελο. Μην εργάζεσαι μέσα από το ZIP.
+2. Αποσυμπίεσε ολόκληρο το `GQ00_student_v2.1.zip` σε έναν μόνιμο φάκελο. Μην εργάζεσαι μέσα από το ZIP.
 3. Έλεγξε ότι ο φάκελος περιέχει τα `data/`, `projects/` και `exercises/`.
 4. Έλεγξε ότι υπάρχει το `data/world_countries.gpkg` και ότι το `projects/` περιέχει μόνο το υπόδειγμα οδηγιών πριν δημιουργήσεις το δικό σου έργο.
 
@@ -130,7 +130,7 @@ projects/GQ00_my_first_map.qgz
 
 ## 11. Αυτοέλεγχος
 
-Συμπλήρωσε το `exercises/GQ00_fyllo_ergasias.md` και επιβεβαίωσε:
+Συμπλήρωσε το φύλλο εργασίας σε Word ή, εναλλακτικά, το `exercises/GQ00_fyllo_ergasias.md` και επιβεβαίωσε:
 
 - [ ] Φόρτωσα το `countries` και είδα τον παγκόσμιο χάρτη.
 - [ ] Εντόπισα την Ελλάδα με την έκφραση επιλογής.
@@ -157,4 +157,4 @@ projects/GQ00_my_first_map.qgz
 
 ## Τι παραδίδεις
 
-Παρέδωσε το `projects/GQ00_my_first_map.qgz` και το συμπληρωμένο `exercises/GQ00_fyllo_ergasias.md`. Αν χρειαστεί να μεταφέρεις το έργο σε άλλον υπολογιστή, κράτησε μαζί του το `data/world_countries.gpkg` και την ίδια σχετική δομή φακέλων. Η PNG εικόνα είναι προαιρετική.
+Παρέδωσε το `projects/GQ00_my_first_map.qgz` και το συμπληρωμένο φύλλο εργασίας ως Word ή Markdown. Αν χρησιμοποιήσεις το ZIP, το Markdown είναι `exercises/GQ00_fyllo_ergasias.md`. Αν χρειαστεί να μεταφέρεις το έργο σε άλλον υπολογιστή, κράτησε μαζί του το `data/world_countries.gpkg` και την ίδια σχετική δομή φακέλων. Η PNG εικόνα είναι προαιρετική.
