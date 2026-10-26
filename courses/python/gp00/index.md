@@ -30,6 +30,8 @@
 
 Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
 
+[Άνοιγμα του πρώτου notebook στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/gp00_python_basics_starter.ipynb)
+
 - {download}`Λήψη starter notebook: gp00_python_basics_starter.ipynb <../../../downloads/python/notebooks/starter/gp00_python_basics_starter.ipynb>`
 - {download}`Λήψη starter notebook: gp00_02_variables_types_starter.ipynb <../../../downloads/python/notebooks/starter/gp00_02_variables_types_starter.ipynb>`
 - {download}`Λήψη starter notebook: gp00_03_lists_dictionaries_starter.ipynb <../../../downloads/python/notebooks/starter/gp00_03_lists_dictionaries_starter.ipynb>`
