@@ -3,6 +3,10 @@ project:
   title: GeoSkills — Ανοιχτή Πλατφόρμα Δεξιοτήτων Γεωπληροφορικής
   description: Ελληνόφωνη εκπαιδευτική πλατφόρμα για GIS, QGIS, Python και εργασίες πεδίου.
   keywords: [GIS, QGIS, GeoPython, Γεωπληροφορική, εκπαίδευση]
+  static_files:
+    - downloads/qgis/GQ_START_05_fyllo_axiologisis.docx
+    - downloads/qgis/GQ_START_06_quick_reference.docx
+    - downloads/qgis/GQ_START_07_fyllo_ergasias.docx
   toc:
     - file: index.md
     - file: start/index.md
