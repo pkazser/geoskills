@@ -21,3 +21,11 @@
 ## Mini Challenge
 
 Παρήγαγε αναφορά ανά `district_id` και `service_type`, μαζί με ξεχωριστή αναφορά unmatched υπηρεσιών. Διάλεξε μόνος σου join type, aggregation και QA ελέγχους.
+
+## Άμεσες λήψεις starter notebook και δεδομένων
+
+Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
+
+- {download}`Λήψη starter notebook: gp09_spatial_join_starter.ipynb <../../../downloads/python/notebooks/starter/gp09_spatial_join_starter.ipynb>`
+- {download}`Λήψη dataset: districts.geojson <../../../downloads/python/data/gp09/districts.geojson>`
+- {download}`Λήψη dataset: services.csv <../../../downloads/python/data/gp09/services.csv>`

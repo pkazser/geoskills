@@ -17,3 +17,10 @@
 ## Mini Challenge και readiness checkpoint
 
 Υπολόγισε την απόσταση Αθήνας–Θεσσαλονίκης σε projected CRS, έλεγξε ότι η τιμή είναι σε λογική τάξη μεγέθους και εξήγησε γιατί το ίδιο `distance` σε EPSG:4326 δεν είναι μέτρα. Είσαι έτοιμος για GP06 όταν μπορείς να αιτιολογήσεις κάθε CRS που χρησιμοποιείς.
+
+## Άμεσες λήψεις starter notebook και δεδομένων
+
+Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
+
+- {download}`Λήψη starter notebook: gp05_crs_without_fear_starter.ipynb <../../../downloads/python/notebooks/starter/gp05_crs_without_fear_starter.ipynb>`
+- {download}`Λήψη dataset: greek_sites.csv <../../../downloads/python/data/gp05/greek_sites.csv>`

@@ -17,3 +17,10 @@
 ## Mini Challenge και readiness checkpoint
 
 Επίλεξε ενεργά πάρκα ή σχολεία με score τουλάχιστον 75 μέσα σε συγκεκριμένο bbox και κάνε export. Είσαι έτοιμος για GP07 όταν μπορείς να εξηγήσεις όχι μόνο ποια rows επέλεξες αλλά και γιατί το QA αποδεικνύει ότι το φίλτρο εφαρμόστηκε σωστά.
+
+## Άμεσες λήψεις starter notebook και δεδομένων
+
+Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
+
+- {download}`Λήψη starter notebook: gp06_filtering_starter.ipynb <../../../downloads/python/notebooks/starter/gp06_filtering_starter.ipynb>`
+- {download}`Λήψη dataset: assets.csv <../../../downloads/python/data/gp06/assets.csv>`

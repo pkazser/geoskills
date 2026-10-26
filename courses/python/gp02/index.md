@@ -30,3 +30,10 @@
 ## Το dataset
 
 Το `../../../downloads/python/data/gp02/observations_dirty.csv` είναι σκόπιμα ατελές. Δεν διορθώνουμε σιωπηλά τα πάντα: πρώτα μετράμε το πρόβλημα, μετά επιλέγουμε κανόνα και στο τέλος ελέγχουμε το αποτέλεσμα.
+
+## Άμεσες λήψεις starter notebook και δεδομένων
+
+Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
+
+- {download}`Λήψη starter notebook: gp02_clean_geospatial_data_starter.ipynb <../../../downloads/python/notebooks/starter/gp02_clean_geospatial_data_starter.ipynb>`
+- {download}`Λήψη dataset: observations_dirty.csv <../../../downloads/python/data/gp02/observations_dirty.csv>`

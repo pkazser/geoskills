@@ -46,3 +46,10 @@
 ## Ενδεικτική λύση
 
 > Ενδεικτική λύση: δεν δημοσιεύεται σύνδεσμος έτοιμης λύσης.
+
+## Άμεσες λήψεις starter notebook και δεδομένων
+
+Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
+
+- {download}`Λήψη starter notebook: gp01_first_geopython_workflow_starter.ipynb <../../../downloads/python/notebooks/starter/gp01_first_geopython_workflow_starter.ipynb>`
+- {download}`Λήψη dataset: survey_points.csv <../../../downloads/python/data/gp01/survey_points.csv>`

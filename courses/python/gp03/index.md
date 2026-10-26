@@ -28,3 +28,10 @@
 ## Το dataset
 
 Το `../../../downloads/python/data/gp03/city_assets.csv` περιέχει σημεία αστικού εξοπλισμού στις Σέρρες. Το CSV δεν περιέχει geometry· θα τη δημιουργήσουμε εμείς.
+
+## Άμεσες λήψεις starter notebook και δεδομένων
+
+Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
+
+- {download}`Λήψη starter notebook: gp03_csv_to_gis_dataset_starter.ipynb <../../../downloads/python/notebooks/starter/gp03_csv_to_gis_dataset_starter.ipynb>`
+- {download}`Λήψη dataset: city_assets.csv <../../../downloads/python/data/gp03/city_assets.csv>`

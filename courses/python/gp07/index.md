@@ -17,3 +17,12 @@
 ## Mini Challenge και readiness checkpoint
 
 Υπολόγισε area/length/distance, έλεγξε τις τάξεις μεγέθους και κάνε export layers με νέα πεδία. Είσαι έτοιμος για το επόμενο επίπεδο όταν μπορείς να εξηγήσεις γιατί κάθε μέτρηση έγινε σε συγκεκριμένο CRS.
+
+## Άμεσες λήψεις starter notebook και δεδομένων
+
+Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
+
+- {download}`Λήψη starter notebook: gp07_measurements_starter.ipynb <../../../downloads/python/notebooks/starter/gp07_measurements_starter.ipynb>`
+- {download}`Λήψη dataset: measurement_areas.geojson <../../../downloads/python/data/gp07/measurement_areas.geojson>`
+- {download}`Λήψη dataset: measurement_routes.geojson <../../../downloads/python/data/gp07/measurement_routes.geojson>`
+- {download}`Λήψη dataset: measurement_sites.csv <../../../downloads/python/data/gp07/measurement_sites.csv>`

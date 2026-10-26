@@ -19,3 +19,12 @@
 ## Mini Challenge και readiness checkpoint
 
 Διάλεξε ένα διαφορετικό συγγενές ερώτημα με τα ίδια δεδομένα, αιτιολόγησε την ακτίνα και τη χωρική πράξη, έλεγξε CRS/μονάδες/γεωμετρίες/counts και κατέγραψε περιορισμούς. Στο καθοδηγούμενο παράδειγμα οι οδικοί buffers χρησιμοποιούν ακτίνα 500 m· τα 250 m παραμένουν διαθέσιμα ως ελεγχόμενη σύγκριση όπου αυτό βοηθά την ερμηνεία. Είσαι έτοιμος όταν μπορείς να εξηγήσεις γιατί ένα buffer 500 m δεν αποδεικνύει πρόσβαση σε πέντε λεπτά και να ελέγξεις ένα εξαγόμενο GeoPackage μετά την επαναφόρτωσή του.
+
+## Άμεσες λήψεις starter notebook και δεδομένων
+
+Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
+
+- {download}`Λήψη starter notebook: gp08_buffer_analysis_starter.ipynb <../../../downloads/python/notebooks/starter/gp08_buffer_analysis_starter.ipynb>`
+- {download}`Λήψη dataset: roads.geojson <../../../downloads/python/data/gp08/roads.geojson>`
+- {download}`Λήψη dataset: services.csv <../../../downloads/python/data/gp08/services.csv>`
+- {download}`Λήψη dataset: study_area.geojson <../../../downloads/python/data/gp08/study_area.geojson>`
