@@ -19,15 +19,16 @@ service_buffers = active_essential.copy()
 service_buffers["geometry"] = service_buffers.geometry.buffer(500)
 clipped_roads = gpd.clip(roads_p, study_p)
 coverage_union = service_buffers[["geometry"]].dissolve()
+zones_p["zone_area_m2"] = zones_p.geometry.area
 coverage_by_zone = gpd.overlay(zones_p, coverage_union, how="intersection")
 coverage_by_zone["covered_m2"] = coverage_by_zone.geometry.area
 ```
 
-Το dissolve πριν από το overlay αποφεύγει διπλή καταμέτρηση στις επικαλυπτόμενες buffers. Για πλήρη πίνακα όλων των ζωνών, κάνε `zones_p.overlay(..., how="difference")` ή spatially combine με τρόπο που κρατά και μη καλυμμένες ζώνες.
+Το dissolve πριν από το overlay αποφεύγει διπλή καταμέτρηση στις επικαλυπτόμενες buffers. Για πλήρη πίνακα όλων των ζωνών, κράτησε τις τρεις ζώνες ως ξεχωριστό reference table και πρόσθεσε μηδενική κάλυψη όπου δεν υπάρχει αποτέλεσμα intersection. Η έξοδος του intersection από μόνη της μπορεί να περιέχει μόνο τις καλυμμένες ζώνες.
 
 ## Εφαρμογή στο dataset
 
-Οι ενεργές Health/Emergency υπηρεσίες είναι τρία σημεία. Το `service_buffers` πρέπει να έχει τρία polygons, τα `clipped_roads` τρεις γραμμές ή λιγότερα τμήματα και το τελικό coverage να μπορεί να συγκριθεί ανά `zone_id`. Για ποσοστό κάλυψης χρησιμοποίησε `zone_area_m2 = zones_p.geometry.area` και όχι degrees.
+Οι ενεργές Health/Emergency υπηρεσίες είναι τρία σημεία. Το `service_buffers` πρέπει να έχει τρία polygons, τα `clipped_roads` τρεις γραμμές ή λιγότερα τμήματα και το τελικό coverage να μπορεί να συγκριθεί ανά `zone_id`. Δημιούργησε πριν από τα assertions `zones_p["zone_area_m2"] = zones_p.geometry.area` και χρησιμοποίησε αυτό το πεδίο για coverage και για το τελικό summary. Για ποσοστό κάλυψης χρησιμοποίησε μέτρα και όχι degrees.
 
 ## QA και λογικός έλεγχος
 

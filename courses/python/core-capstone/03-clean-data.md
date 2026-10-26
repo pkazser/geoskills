@@ -39,11 +39,11 @@ cleaned = services_gdf[services_gdf["inside_study"]].copy()
 
 ## Εφαρμογή στο dataset
 
-Το αναμενόμενο καθαρό αποτέλεσμα έχει 7 features: οι γραμμές με missing/μη αριθμητική coordinate δεν γίνονται σημεία και το record εκτός study area αποκλείεται μετά τον χωρικό έλεγχο. Η ακριβής πολιτική πρέπει να αναφέρεται στο `short_findings.md`.
+Το αναμενόμενο καθαρό αποτέλεσμα έχει 7 features. Με την πολιτική του project η ακολουθία είναι: 11 raw rows, 10 μετά την αφαίρεση της δεύτερης εγγραφής `S08`, 8 μετά την απόρριψη του `S08` με missing longitude και του `S09` με `not_available`, και 7 μετά τον αποκλεισμό του `S10` εκτός study area. Η ακριβής πολιτική πρέπει να αναφέρεται στο `short_findings.md`.
 
 ## QA πριν και μετά
 
-Έλεγξε `service_id.nunique()`, `geometry.notna()`, `geometry.is_valid`, ότι longitude είναι μεταξύ -180 και 180 και latitude μεταξύ -90 και 90. Σύγκρινε raw rows, numeric rows, inside rows και final rows. Αν δεν μπορείς να εξηγήσεις κάθε μείωση, σταμάτα.
+Έλεγξε `service_id.nunique()`, `geometry.notna()`, `geometry.is_valid`, ότι longitude είναι μεταξύ -180 και 180 και latitude μεταξύ -90 και 90. Σύγκρινε raw rows, rows μετά το duplicate handling, numeric rows, inside rows και final rows. Αν δεν μπορείς να εξηγήσεις κάθε μείωση, σταμάτα.
 
 ## Πρόσεξε / checkpoint
 

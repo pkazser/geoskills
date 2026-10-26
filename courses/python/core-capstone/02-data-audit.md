@@ -24,7 +24,7 @@ services_raw = pd.read_csv("../../../downloads/python/data/core-capstone/service
 
 ## Εφαρμογή στο dataset
 
-Αναμένεται ένα study polygon, τρεις ζώνες, τρεις γραμμές roads και δέκα γραμμές υπηρεσιών. Το `services_raw` πρέπει να δείξει ότι οι longitude/latitude δεν είναι όλες καθαρές αριθμητικές τιμές και ότι υπάρχει duplicate service id.
+Αναμένεται ένα study polygon, τρεις ζώνες, τρεις γραμμές roads και **έντεκα raw γραμμές υπηρεσιών**. Το `services_raw` πρέπει να δείξει ότι οι longitude/latitude δεν είναι όλες καθαρές αριθμητικές τιμές και ότι υπάρχει duplicate service id.
 
 ```python
 print(services_raw.dtypes)
@@ -35,6 +35,17 @@ print(services_raw["service_id"].duplicated(keep=False))
 ## Αναμενόμενο αποτέλεσμα
 
 Το audit πρέπει να αποκαλύψει τουλάχιστον μία missing coordinate, ένα duplicate, μία μη αριθμητική coordinate και μία υπηρεσία που θα βρεθεί έξω από τη study area.
+
+Για το συγκεκριμένο dataset, κράτησε τον παρακάτω πίνακα αναφοράς και εξήγησε κάθε μετάβαση:
+
+| Στάδιο | Rows | Τι σημαίνει |
+|---|---:|---|
+| Raw CSV | 11 | όλες οι αρχικές εγγραφές |
+| Μετά `drop_duplicates(subset="service_id", keep="first")` | 10 | αφαιρείται η δεύτερη εγγραφή του `S08` |
+| Μετά αριθμητική μετατροπή και απόρριψη μη έγκυρων coordinates | 8 | απορρίπτονται το `S08` με missing longitude και το `S09` με `not_available` |
+| Εντός study area | 7 | απορρίπτεται το `S10`, που βρίσκεται εκτός περιοχής |
+
+Οι αριθμοί ισχύουν με αυτή τη σειρά πολιτικής. Αν επιλέξεις διαφορετική πολιτική, κατέγραψε ρητά την απόφαση και τους νέους counts.
 
 ## GeoTip
 

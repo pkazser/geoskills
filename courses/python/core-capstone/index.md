@@ -21,6 +21,18 @@
 - `summary.csv`, `final_map.png` και σύντομα ευρήματα,
 - ένα GeoPackage με λογικά ονοματισμένα layers.
 
+## Integration checkpoint πριν από το Capstone
+
+Πριν ξεκινήσεις, ολοκλήρωσε μια σύντομη δοκιμή συνδυασμού γνώσεων:
+
+1. Διάβασε ένα CSV και ένα GeoPackage και κατέγραψε rows, schema και CRS.
+2. Εντόπισε μία προβληματική συντεταγμένη και εξήγησε αν είναι missing, μη αριθμητική ή εκτός περιοχής.
+3. Διάλεξε ποια πράξη ταιριάζει σε κάθε ερώτημα: `spatial join` για αντιστοίχιση σε ζώνη, `buffer` για ζώνη απόστασης, `clip` για περιορισμό σε mask και `overlay` για κοινή γεωμετρία/έκταση.
+4. Περιέγραψε έναν αριθμητικό και έναν οπτικό έλεγχο που θα έκανες πριν από export.
+5. Εξήγαγε ένα μικρό αποτέλεσμα και ξαναδιάβασέ το, ελέγχοντας rows, CRS και geometry.
+
+Αν δυσκολευτείς, επέστρεψε στα GP02–GP05 για καθαρισμό, CRS και export, και στα GP08–GP10 για τις χωρικές πράξεις. Η δοκιμή ελέγχει ετοιμότητα· δεν είναι λύση του Capstone.
+
 ## Πρακτική άσκηση στο Colab
 
 [Άνοιγμα στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/core_capstone_public_services_starter.ipynb)
@@ -36,6 +48,8 @@
 ## Δεδομένα
 
 Τα συνθετικά δεδομένα βρίσκονται στο `../../../downloads/python/data/core-capstone/`. Το `services.csv` περιέχει ελεγχόμενα προβλήματα: missing coordinate, duplicate, μη αριθμητική coordinate και υπηρεσία εκτός study area. Τα προβλήματα είναι μέρος της άσκησης, όχι τυχαίο σφάλμα.
+
+Στο audit αναμένεται η ακολουθία **11 raw records → 10 μετά την αφαίρεση του duplicate service ID → 8 με έγκυρες αριθμητικές συντεταγμένες → 7 εντός study area**. Η σειρά αυτή είναι μέρος της τεκμηρίωσης και πρέπει να εξηγηθεί στο `short_findings.md`.
 
 ## Readiness checkpoint
 

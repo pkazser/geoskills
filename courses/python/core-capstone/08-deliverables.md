@@ -8,6 +8,40 @@
 
 Το σωστό export είναι μέρος της ανάλυσης. Ένα layer χωρίς CRS, ονόματα ή περιγραφή δεν είναι επαναχρησιμοποιήσιμο ακόμη κι αν ο υπολογισμός ήταν σωστός.
 
+## Υποχρεωτικό output contract
+
+Ο φοιτητής παραδίδει τον φάκελο `output/core-capstone/` με τα παρακάτω.
+
+### `capstone_results.gpkg`
+
+Το GeoPackage πρέπει να περιέχει τα layers `cleaned_services`, `services_with_zones`, `service_buffers`, `coverage_by_zone` και `clipped_roads`.
+
+- `cleaned_services`: `Point`, `EPSG:2100`, 7 features, μοναδικά `service_id` και χωρίς κενές ή μη έγκυρες geometries.
+- `services_with_zones`: `Point`, `EPSG:2100`, τα cleaned services με `zone_id`, χωρίς missing zone assignment.
+- `service_buffers`: `Polygon` ή `MultiPolygon`, `EPSG:2100`, τα τρία active Health/Emergency services και buffer distance 500 m.
+- `coverage_by_zone`: αποτέλεσμα intersection/coverage με `zone_id`, geometry και θετικό `covered_m2` όπου υπάρχει κάλυψη.
+- `clipped_roads`: γραμμικά features σε `EPSG:2100`, περιορισμένα στη study area.
+
+Για κάθε layer έλεγξε όνομα, CRS, πλήθος, geometry type, validity, required fields και λογικά bounds. Τα counts πρέπει να δηλώνουν αν αφορούν features, matches ή μοναδικές υπηρεσίες.
+
+### `summary.csv`
+
+Το `summary.csv` είναι πίνακας αναφοράς με **και τις τρεις διοικητικές ζώνες**, ακόμη και όταν μία έχει μηδενική κάλυψη. Πρέπει να περιέχει τουλάχιστον `zone_id`, `zone_name`, `zone_area_m2`, `covered_m2` και, εφόσον χρησιμοποιείται, `coverage_pct`. Η μηδενική κάλυψη εμφανίζεται ως αριθμητικό 0 και όχι ως απουσία γραμμής.
+
+Το `coverage_by_zone` είναι αποτέλεσμα χωρικής πράξης και μπορεί να περιέχει μόνο καλυπτόμενες γεωμετρίες. Το `summary.csv` είναι τελικός πίνακας αναφοράς και δημιουργείται με βάση όλες τις ζώνες.
+
+### `final_map.png`
+
+Ο χάρτης πρέπει να έχει τίτλο, legend, σαφή διάκριση zones/services/buffers/roads και αρκετό context για οπτικό QA. Δεν αποτελεί μόνος του απόδειξη ορθότητας.
+
+### `short_findings.md`
+
+Η αναφορά καταγράφει μέθοδο, counts 11→10→8→7, target CRS, buffer distance, κανόνα δημιουργίας summary, βασικά ευρήματα και τουλάχιστον δύο περιορισμούς. Δηλώνει ότι το buffer των 500 m είναι απλοποίηση ευθύγραμμης απόστασης και όχι routing, χρόνος διαδρομής ή πληθυσμιακή κάλυψη.
+
+### Κριτήρια αποδοχής
+
+Το output γίνεται αποδεκτό μόνο όταν τα layers ξαναδιαβάζονται επιτυχώς, τα CRS και geometry types συμφωνούν, οι 7 cleaned services έχουν μοναδικά IDs, το summary έχει 3 zones, το `covered_m2` δεν υπερβαίνει το `zone_area_m2` και τα ευρήματα εξηγούν τις αποφάσεις. Η επιτυχής εκτέλεση κώδικα ή η ύπαρξη αρχείων δεν αρκεί.
+
 ## Προτεινόμενη δομή
 
 ```python

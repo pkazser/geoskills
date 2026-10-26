@@ -12,7 +12,6 @@
 
 ```python
 print(services_p.groupby(["category", "status"]).size())
-print(services_p["zone_id"].value_counts(dropna=False))
 ax = zones_p.plot(facecolor="none", edgecolor="black")
 services_p.plot(ax=ax, column="category", legend=True)
 ```
@@ -22,6 +21,18 @@ services_p.plot(ax=ax, column="category", legend=True)
 ## Εφαρμογή στο dataset
 
 Οι καθαρές υπηρεσίες είναι 7. Με `gpd.sjoin(services_p, zones_p[["zone_id", "geometry"]], predicate="within", how="left")` κάθε σημείο πρέπει να πάρει μία ζώνη. Κράτησε το αποτέλεσμα ως `services_with_zones` και έλεγξε unmatched rows.
+
+Το `zone_id` δεν υπάρχει ακόμη στο `services_p`. Εμφάνισε την κατανομή των ζωνών μόνο μετά τη σύζευξη:
+
+```python
+services_with_zones = gpd.sjoin(
+    services_p,
+    zones_p[["zone_id", "geometry"]],
+    predicate="within",
+    how="left",
+)
+print(services_with_zones["zone_id"].value_counts(dropna=False))
+```
 
 ## QA
 
