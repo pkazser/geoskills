@@ -136,6 +136,34 @@ try {
         const articleBox = article.getBoundingClientRect();
         const style = getComputedStyle(img);
         const visibleText = document.body.innerText || '';
+        const box = element => {
+          if (!element) return null;
+          const rect = element.getBoundingClientRect();
+          const computed = getComputedStyle(element);
+          return {
+            tag: element.tagName,
+            className: typeof element.className === 'string' ? element.className : '',
+            width: rect.width,
+            height: rect.height,
+            display: computed.display,
+          };
+        };
+        const ancestors = [];
+        for (let node = parent; node && ancestors.length < 3; node = node.parentElement) {
+          ancestors.push(box(node));
+        }
+        const paragraphs = [...article.querySelectorAll('p')];
+        const imageParagraphIndex = paragraphs.indexOf(parent);
+        const caption = paragraphs.find(candidate => /^\s*Σχήμα\s+\d+\s*[.:]/i.test(candidate.innerText || ''));
+        const nearbyParagraphs = paragraphs
+          .map((candidate, index) => ({ candidate, index, distance: Math.abs(index - imageParagraphIndex) }))
+          .filter(({ candidate }) => candidate !== parent && candidate !== caption && (candidate.innerText || '').trim().length >= 80)
+          .sort((left, right) => left.distance - right.distance)
+          .slice(0, 3);
+        const reference = nearbyParagraphs[0]?.candidate || caption;
+        const referenceBox = box(reference);
+        const referenceKind = nearbyParagraphs[0] ? 'nearby-text-paragraph' : (caption ? 'figure-caption' : 'none');
+        const referenceWidth = referenceBox?.width || 0;
         return {
           src: img.getAttribute('src'),
           alt: img.getAttribute('alt') || '',
@@ -143,12 +171,20 @@ try {
           imageHeight: imageBox.height,
           parentWidth: parentBox.width,
           articleWidth: articleBox.width,
-          contentWidth: parentBox.width,
-          ratio: imageBox.width / parentBox.width,
+          contentWidth: referenceWidth,
+          referenceKind,
+          reference: referenceBox,
+          caption: box(caption),
+          nearbyParagraphs: nearbyParagraphs.map(({ candidate, distance }) => ({ ...box(candidate), distance, text: (candidate.innerText || '').slice(0, 120) })),
+          imageElement: box(img),
+          ancestors,
+          ratio: referenceWidth ? imageBox.width / referenceWidth : 0,
           viewportWidth: window.innerWidth,
           cssWidth: style.width,
+          cssMaxWidth: style.maxWidth,
           cssMaxHeight: style.maxHeight,
           cssHeight: style.height,
+          cssDisplay: style.display,
           visibleWidth100: visibleText.includes('{width=100%}'),
           visibleWidth15cm: visibleText.includes('{width=15cm}'),
           naturalWidth: img.naturalWidth,
@@ -165,11 +201,15 @@ try {
       }
       measurements.push({ ...test, viewport, page: path.relative(root, pageFile), ...result });
       await page.screenshot({ path: `screenshots/${test.id.replace('.', '-')}-${viewport.name}.png`, fullPage: false });
+      console.log(`[${test.id} ${viewport.name}] diagnostic ${JSON.stringify({ image: result.imageElement, parent: result.ancestors[0], ancestors: result.ancestors, caption: result.caption, nearbyParagraphs: result.nearbyParagraphs, articleWidth: result.articleWidth, viewportWidth: result.viewportWidth, css: { width: result.cssWidth, maxWidth: result.cssMaxWidth, maxHeight: result.cssMaxHeight, height: result.cssHeight, display: result.cssDisplay }, referenceKind: result.referenceKind, textColumnWidth: result.contentWidth })}`);
+      if (result.referenceKind === 'none' || result.contentWidth <= 0) recordFailure(`${test.id} ${viewport.name}: reliable text-column reference not found`);
       if (!result.alt.trim()) recordFailure(`${test.id} ${viewport.name}: empty alt text`);
       if (result.visibleWidth100) recordFailure(`${test.id} ${viewport.name}: visible image attribute text {width=100%}`);
       if (result.visibleWidth15cm) recordFailure(`${test.id} ${viewport.name}: visible image attribute text {width=15cm}`);
       if (result.naturalWidth === 0) recordFailure(`${test.id} ${viewport.name}: image failed to load src=${result.src}`);
       if (result.ratio < 0.8) recordFailure(`${test.id} ${viewport.name}: width ratio ${result.ratio.toFixed(3)} < 0.8; image=${result.imageWidth}; parent=${result.parentWidth}; article=${result.articleWidth}`);
+      if (viewport.name === 'desktop' && result.imageWidth < 600) recordFailure(`${test.id} ${viewport.name}: image is unexpectedly small; image=${result.imageWidth}`);
+      if (result.cssMaxHeight !== 'none' && result.cssMaxHeight !== '0px') recordFailure(`${test.id} ${viewport.name}: max-height restricts image: ${result.cssMaxHeight}`);
       if (result.imageWidth > result.viewportWidth + 1) recordFailure(`${test.id} ${viewport.name}: image exceeds viewport; image=${result.imageWidth}; viewport=${result.viewportWidth}`);
       if (result.horizontalOverflow) recordFailure(`${test.id} ${viewport.name}: horizontal overflow; image=${result.imageWidth}; viewport=${viewport.width}`);
       const naturalRatio = result.naturalWidth / result.naturalHeight;
@@ -184,8 +224,12 @@ try {
 }
 
 await fs.writeFile('measurements.json', JSON.stringify(measurements, null, 2));
-const lines = ['# AL00 figure rendering measurements', '', '| Figure | Viewport | Image px | Content px | Ratio | Overflow |', '|---|---|---:|---:|---:|---|'];
-for (const row of measurements) lines.push(`| ${row.id} | ${row.viewport.name} | ${row.imageWidth.toFixed(1)} | ${row.parentWidth.toFixed(1)} | ${(row.ratio * 100).toFixed(1)}% | ${row.horizontalOverflow ? 'yes' : 'no'} |`);
+const lines = ['# AL00 figure rendering measurements', '', '| Figure | Viewport | Image width | Text column width | Ratio | Visible attribute | Result |', '|---|---|---:|---:|---:|---|---|'];
+for (const row of measurements) {
+  const visibleAttribute = row.visibleWidth100 ? '{width=100%}' : (row.visibleWidth15cm ? '{width=15cm}' : 'none');
+  const result = row.alt.trim() && row.naturalWidth > 0 && row.ratio >= 0.8 && !row.horizontalOverflow && row.cssMaxHeight === 'none' && !(row.viewport.name === 'desktop' && row.imageWidth < 600) && row.referenceKind !== 'none' ? 'PASS' : 'FAIL';
+  lines.push(`| ${row.id} | ${row.viewport.name} | ${row.imageWidth.toFixed(1)} | ${row.contentWidth.toFixed(1)} | ${(row.ratio * 100).toFixed(1)}% | ${visibleAttribute} | ${result} |`);
+}
 await fs.writeFile('measurements.md', `${lines.join('\n')}\n`);
 console.log(JSON.stringify(measurements, null, 2));
 if (failures.length) {
