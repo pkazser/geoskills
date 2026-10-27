@@ -135,6 +135,7 @@ try {
         const parentBox = parent.getBoundingClientRect();
         const articleBox = article.getBoundingClientRect();
         const style = getComputedStyle(img);
+        const visibleText = document.body.innerText || '';
         return {
           src: img.getAttribute('src'),
           alt: img.getAttribute('alt') || '',
@@ -148,6 +149,8 @@ try {
           cssWidth: style.width,
           cssMaxHeight: style.maxHeight,
           cssHeight: style.height,
+          visibleWidth100: visibleText.includes('{width=100%}'),
+          visibleWidth15cm: visibleText.includes('{width=15cm}'),
           naturalWidth: img.naturalWidth,
           naturalHeight: img.naturalHeight,
           display: style.display,
@@ -163,6 +166,8 @@ try {
       measurements.push({ ...test, viewport, page: path.relative(root, pageFile), ...result });
       await page.screenshot({ path: `screenshots/${test.id.replace('.', '-')}-${viewport.name}.png`, fullPage: false });
       if (!result.alt.trim()) recordFailure(`${test.id} ${viewport.name}: empty alt text`);
+      if (result.visibleWidth100) recordFailure(`${test.id} ${viewport.name}: visible image attribute text {width=100%}`);
+      if (result.visibleWidth15cm) recordFailure(`${test.id} ${viewport.name}: visible image attribute text {width=15cm}`);
       if (result.naturalWidth === 0) recordFailure(`${test.id} ${viewport.name}: image failed to load src=${result.src}`);
       if (result.ratio < 0.8) recordFailure(`${test.id} ${viewport.name}: width ratio ${result.ratio.toFixed(3)} < 0.8; image=${result.imageWidth}; parent=${result.parentWidth}; article=${result.articleWidth}`);
       if (result.imageWidth > result.viewportWidth + 1) recordFailure(`${test.id} ${viewport.name}: image exceeds viewport; image=${result.imageWidth}; viewport=${result.viewportWidth}`);
