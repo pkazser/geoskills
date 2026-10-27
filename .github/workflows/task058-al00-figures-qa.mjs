@@ -79,13 +79,23 @@ await fs.mkdir('screenshots', { recursive: true });
 
 const browser = await chromium.launch({ headless: true });
 const measurements = [];
+const failures = [];
+function recordFailure(message) {
+  const text = String(message).replace(/\s+/g, ' ').trim();
+  failures.push(text);
+  console.error(text);
+  console.log(`::error title=AL00 figure rendering QA::${text}`);
+}
 try {
   for (const test of cases) {
     const expected = path.join(root, 'courses', 'ai-learning', 'al00', test.slug, 'index.html');
     const pageFile = pageContents.has(expected)
       ? expected
       : [...pageContents.entries()].find(([, html]) => html.includes(test.slug))?.[0];
-    if (!pageFile) fail(`${test.id}: page not found; expected=${expected}`);
+    if (!pageFile) {
+      recordFailure(`${test.id}: page not found; expected=${expected}`);
+      continue;
+    }
     const pageUrl = `http://127.0.0.1:${port}${baseUrl}/${path.relative(root, pageFile).replaceAll(path.sep, '/')}`;
     for (const viewport of viewports) {
       const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height } });
@@ -94,33 +104,47 @@ try {
       try {
         await page.goto(pageUrl, { waitUntil: 'networkidle' });
       } catch (error) {
-        fail(`${test.id} ${viewport.name}: page navigation failed: ${error.message}`);
+        recordFailure(`${test.id} ${viewport.name}: page navigation failed: ${error.message}`);
+        await page.close();
+        continue;
       }
       const image = page.locator(`img[src*="${test.image}"]`).first();
       if (await image.count() === 0) {
         const candidates = await page.locator('img').evaluateAll((images) => images.map(img => ({ src: img.getAttribute('src'), alt: img.getAttribute('alt') })));
-        fail(`${test.id}: image source not found; candidates=${JSON.stringify(candidates)}`);
+        recordFailure(`${test.id} ${viewport.name}: image source not found; candidates=${JSON.stringify(candidates)}`);
+        await page.close();
+        continue;
       }
       await image.scrollIntoViewIfNeeded();
       try {
         await image.evaluate(img => img.complete ? undefined : new Promise((resolve, reject) => { img.addEventListener('load', resolve, { once: true }); img.addEventListener('error', reject, { once: true }); }));
       } catch (error) {
-        fail(`${test.id} ${viewport.name}: image load failed: ${error.message}`);
+        recordFailure(`${test.id} ${viewport.name}: image load failed: ${error.message}`);
+        await page.close();
+        continue;
       }
       let result;
       try {
         result = await image.evaluate(img => {
-        const article = img.closest('article') || img.closest('main') || img.parentElement;
+        const parent = img.parentElement;
+        const article = img.closest('article') || img.closest('main') || parent;
         const imageBox = img.getBoundingClientRect();
-        const contentBox = article.getBoundingClientRect();
+        const parentBox = parent.getBoundingClientRect();
+        const articleBox = article.getBoundingClientRect();
         const style = getComputedStyle(img);
         return {
           src: img.getAttribute('src'),
           alt: img.getAttribute('alt') || '',
           imageWidth: imageBox.width,
           imageHeight: imageBox.height,
-          contentWidth: contentBox.width,
-          ratio: imageBox.width / contentBox.width,
+          parentWidth: parentBox.width,
+          articleWidth: articleBox.width,
+          contentWidth: parentBox.width,
+          ratio: imageBox.width / parentBox.width,
+          viewportWidth: window.innerWidth,
+          cssWidth: style.width,
+          cssMaxHeight: style.maxHeight,
+          cssHeight: style.height,
           naturalWidth: img.naturalWidth,
           naturalHeight: img.naturalHeight,
           display: style.display,
@@ -129,14 +153,20 @@ try {
         };
         });
       } catch (error) {
-        fail(`${test.id} ${viewport.name}: measurement failed: ${error.message}`);
+        recordFailure(`${test.id} ${viewport.name}: measurement failed: ${error.message}`);
+        await page.close();
+        continue;
       }
-      if (!result.alt.trim()) fail(`${test.id} ${viewport.name}: empty alt text`);
-      if (result.naturalWidth === 0) fail(`${test.id} ${viewport.name}: image failed to load src=${result.src}`);
-      if (result.ratio < 0.8) fail(`${test.id} ${viewport.name}: width ratio ${result.ratio.toFixed(3)} < 0.8; image=${result.imageWidth}; content=${result.contentWidth}`);
-      if (result.horizontalOverflow) fail(`${test.id} ${viewport.name}: horizontal overflow; image=${result.imageWidth}; viewport=${viewport.width}`);
       measurements.push({ ...test, viewport, page: path.relative(root, pageFile), ...result });
       await page.screenshot({ path: `screenshots/${test.id.replace('.', '-')}-${viewport.name}.png`, fullPage: false });
+      if (!result.alt.trim()) recordFailure(`${test.id} ${viewport.name}: empty alt text`);
+      if (result.naturalWidth === 0) recordFailure(`${test.id} ${viewport.name}: image failed to load src=${result.src}`);
+      if (result.ratio < 0.8) recordFailure(`${test.id} ${viewport.name}: width ratio ${result.ratio.toFixed(3)} < 0.8; image=${result.imageWidth}; parent=${result.parentWidth}; article=${result.articleWidth}`);
+      if (result.imageWidth > result.viewportWidth + 1) recordFailure(`${test.id} ${viewport.name}: image exceeds viewport; image=${result.imageWidth}; viewport=${result.viewportWidth}`);
+      if (result.horizontalOverflow) recordFailure(`${test.id} ${viewport.name}: horizontal overflow; image=${result.imageWidth}; viewport=${viewport.width}`);
+      const naturalRatio = result.naturalWidth / result.naturalHeight;
+      const renderedRatio = result.imageWidth / result.imageHeight;
+      if (Math.abs(renderedRatio - naturalRatio) > 0.02) recordFailure(`${test.id} ${viewport.name}: aspect ratio changed; natural=${naturalRatio.toFixed(4)} rendered=${renderedRatio.toFixed(4)}`);
       await page.close();
     }
   }
@@ -147,6 +177,16 @@ try {
 
 await fs.writeFile('measurements.json', JSON.stringify(measurements, null, 2));
 const lines = ['# AL00 figure rendering measurements', '', '| Figure | Viewport | Image px | Content px | Ratio | Overflow |', '|---|---|---:|---:|---:|---|'];
-for (const row of measurements) lines.push(`| ${row.id} | ${row.viewport.name} | ${row.imageWidth.toFixed(1)} | ${row.contentWidth.toFixed(1)} | ${(row.ratio * 100).toFixed(1)}% | ${row.horizontalOverflow ? 'yes' : 'no'} |`);
+for (const row of measurements) lines.push(`| ${row.id} | ${row.viewport.name} | ${row.imageWidth.toFixed(1)} | ${row.parentWidth.toFixed(1)} | ${(row.ratio * 100).toFixed(1)}% | ${row.horizontalOverflow ? 'yes' : 'no'} |`);
 await fs.writeFile('measurements.md', `${lines.join('\n')}\n`);
 console.log(JSON.stringify(measurements, null, 2));
+if (failures.length) {
+  console.error(`AL00 visual QA FAIL: ${failures.length} issue(s)`);
+  for (const failure of failures) console.error(`- ${failure}`);
+  process.exitCode = 1;
+} else if (measurements.length !== cases.length * viewports.length) {
+  console.error(`AL00 visual QA FAIL: expected ${cases.length * viewports.length} measurements, got ${measurements.length}`);
+  process.exitCode = 1;
+} else {
+  console.log(`AL00 visual QA PASS: ${measurements.length} measurements`);
+}
