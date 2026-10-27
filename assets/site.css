@@ -112,6 +112,16 @@ main:has(.geoskills-home) article.content { max-width: 92rem; }
   box-shadow: 0 0.5rem 1rem rgba(18, 48, 68, 0.05);
 }
 
+/* AL00 figures: override the theme's inline-image max-height rule only for these five figures. */
+.article p > img[data-canonical-url^="figures/AL00_fig"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  height: auto;
+  margin: 2em auto;
+}
+
 @media (max-width: 700px) {
   .geoskills-hero { padding: 1.5rem; border-radius: 1rem; }
   .geoskills-hero h1 { font-size: clamp(2rem, 11vw, 3rem); }
