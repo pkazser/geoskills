@@ -108,7 +108,10 @@ try {
         await page.close();
         continue;
       }
-      const image = page.locator(`img[src*="${test.image}"]`).first();
+      // MyST may shorten the source basename before adding its content hash.
+      // Each target page has one AL00 figure asset; select that asset by its
+      // stable AL00 figure prefix rather than the pre-build filename.
+      const image = page.locator('img[src*="AL00_fig"]').first();
       if (await image.count() === 0) {
         const candidates = await page.locator('img').evaluateAll((images) => images.map(img => ({ src: img.getAttribute('src'), alt: img.getAttribute('alt') })));
         recordFailure(`${test.id} ${viewport.name}: image source not found; candidates=${JSON.stringify(candidates)}`);
