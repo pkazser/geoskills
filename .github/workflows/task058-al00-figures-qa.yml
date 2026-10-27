@@ -1,0 +1,70 @@
+name: Task 058B AL00 figure rendering QA
+
+on:
+  push:
+    branches:
+      - qa/task058-al00-image-size
+
+permissions:
+  contents: read
+
+env:
+  BASE_URL: /geoskills
+  CI: true
+
+jobs:
+  figures-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.22.1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+
+      - name: Install MyST Markdown
+        run: npm install -g mystmd@1.11.0
+
+      - name: Prepare pinned MyST Book Theme
+        run: python scripts/prepare_myst_theme.py
+
+      - name: Build static website
+        run: set -o pipefail; myst build --html --ci 2>&1 | tee myst-build.log
+
+      - name: Verify build outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -d _build/html
+          test -f _build/html/index.html
+          test -f _build/html/courses/ai-learning/al00/index.html
+          test -f _build/html/courses/qgis/index.html
+          test -f _build/html/courses/python/index.html
+          if grep -Eqi '(image|width).*(error|invalid)' myst-build.log; then
+            echo 'FAIL: MyST reported an image-width error'
+            grep -Ein '(image|width).*(error|invalid)' myst-build.log
+            exit 1
+          fi
+
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      - name: Measure AL00 figures on desktop and mobile
+        run: node .github/workflows/task058-al00-figures-qa.mjs
+
+      - name: Upload rendering evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: task058-al00-figure-rendering-evidence
+          path: |
+            measurements.json
+            measurements.md
+            screenshots/
+            myst-build.log
