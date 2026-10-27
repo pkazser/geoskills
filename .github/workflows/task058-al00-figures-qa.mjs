@@ -58,8 +58,16 @@ const server = http.createServer(async (request, response) => {
   if (requested === baseUrl) requested = `${baseUrl}/`;
   if (requested.startsWith(`${baseUrl}/`)) requested = requested.slice(baseUrl.length);
   const relative = requested.replace(/^\/+/, '') || 'index.html';
-  const file = path.resolve(root, relative);
-  if (!file.startsWith(root) || !(await fs.stat(file).catch(() => null))) {
+  let file = path.resolve(root, relative);
+  if (!file.startsWith(root)) {
+    response.writeHead(404); response.end('Not found'); return;
+  }
+  let stat = await fs.stat(file).catch(() => null);
+  if (stat?.isDirectory()) {
+    file = path.join(file, 'index.html');
+    stat = await fs.stat(file).catch(() => null);
+  }
+  if (!stat?.isFile()) {
     response.writeHead(404); response.end('Not found'); return;
   }
   response.writeHead(200, { 'Content-Type': contentType(file) });
