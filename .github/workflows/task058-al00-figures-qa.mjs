@@ -1,10 +1,10 @@
 import fs from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
 const root = path.resolve('_build/html');
+const baseUrl = '/geoskills';
 const cases = [
   { id: 'AL00.1', title: 'AL00.1 — Τι είναι η Τεχνητή Νοημοσύνη;', image: 'AL00_fig01_ai_system' },
   { id: 'AL00.2', title: 'AL00.2 — AI, ML, DL και Παραγωγική ΤΝ', image: 'AL00_fig02_ai_ml_dl_genai' },
@@ -40,7 +40,9 @@ const pageContents = new Map();
 for (const file of pages) pageContents.set(file, await fs.readFile(file, 'utf8'));
 
 const server = http.createServer(async (request, response) => {
-  const requested = decodeURIComponent((request.url || '/').split('?')[0]);
+  let requested = decodeURIComponent((request.url || '/').split('?')[0]);
+  if (requested === baseUrl) requested = `${baseUrl}/`;
+  if (requested.startsWith(`${baseUrl}/`)) requested = requested.slice(baseUrl.length);
   const relative = requested.replace(/^\/+/, '') || 'index.html';
   const file = path.resolve(root, relative);
   if (!file.startsWith(root) || !(await fs.stat(file).catch(() => null))) {
@@ -59,12 +61,17 @@ try {
   for (const test of cases) {
     const pageFile = [...pageContents.entries()].find(([, html]) => html.includes(test.title))?.[0];
     if (!pageFile) throw new Error(`Page not found for ${test.id}`);
-    const pageUrl = `http://127.0.0.1:${port}/${path.relative(root, pageFile).replaceAll(path.sep, '/')}`;
+    const pageUrl = `http://127.0.0.1:${port}${baseUrl}/${path.relative(root, pageFile).replaceAll(path.sep, '/')}`;
     for (const viewport of viewports) {
       const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height } });
+      page.on('console', message => console.log(`[${test.id} ${viewport.name}] browser ${message.type()}: ${message.text()}`));
+      page.on('pageerror', error => console.log(`[${test.id} ${viewport.name}] pageerror: ${error.message}`));
       await page.goto(pageUrl, { waitUntil: 'networkidle' });
       const image = page.locator(`img[src*="${test.image}"]`).first();
-      if (await image.count() === 0) throw new Error(`${test.id}: image source not found`);
+      if (await image.count() === 0) {
+        const candidates = await page.locator('img').evaluateAll((images) => images.map(img => ({ src: img.getAttribute('src'), alt: img.getAttribute('alt') })));
+        throw new Error(`${test.id}: image source not found; candidates=${JSON.stringify(candidates)}`);
+      }
       await image.scrollIntoViewIfNeeded();
       await image.evaluate(img => img.complete ? undefined : new Promise((resolve, reject) => { img.addEventListener('load', resolve, { once: true }); img.addEventListener('error', reject, { once: true }); }));
       const result = await image.evaluate(img => {
