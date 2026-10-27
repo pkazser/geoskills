@@ -17,6 +17,13 @@ const viewports = [
   { name: 'mobile', width: 390, height: 844 },
 ];
 
+process.on('unhandledRejection', error => {
+  const text = `Unhandled Playwright error: ${error?.stack || error}`.replace(/\s+/g, ' ').trim();
+  console.error(text);
+  console.log(`::error title=AL00 figure rendering QA::${text}`);
+  process.exitCode = 1;
+});
+
 async function htmlFiles(directory) {
   const result = [];
   for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
@@ -76,15 +83,25 @@ try {
       const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height } });
       page.on('console', message => console.log(`[${test.id} ${viewport.name}] browser ${message.type()}: ${message.text()}`));
       page.on('pageerror', error => console.log(`[${test.id} ${viewport.name}] pageerror: ${error.message}`));
-      await page.goto(pageUrl, { waitUntil: 'networkidle' });
+      try {
+        await page.goto(pageUrl, { waitUntil: 'networkidle' });
+      } catch (error) {
+        fail(`${test.id} ${viewport.name}: page navigation failed: ${error.message}`);
+      }
       const image = page.locator(`img[src*="${test.image}"]`).first();
       if (await image.count() === 0) {
         const candidates = await page.locator('img').evaluateAll((images) => images.map(img => ({ src: img.getAttribute('src'), alt: img.getAttribute('alt') })));
         fail(`${test.id}: image source not found; candidates=${JSON.stringify(candidates)}`);
       }
       await image.scrollIntoViewIfNeeded();
-      await image.evaluate(img => img.complete ? undefined : new Promise((resolve, reject) => { img.addEventListener('load', resolve, { once: true }); img.addEventListener('error', reject, { once: true }); }));
-      const result = await image.evaluate(img => {
+      try {
+        await image.evaluate(img => img.complete ? undefined : new Promise((resolve, reject) => { img.addEventListener('load', resolve, { once: true }); img.addEventListener('error', reject, { once: true }); }));
+      } catch (error) {
+        fail(`${test.id} ${viewport.name}: image load failed: ${error.message}`);
+      }
+      let result;
+      try {
+        result = await image.evaluate(img => {
         const article = img.closest('article') || img.closest('main') || img.parentElement;
         const imageBox = img.getBoundingClientRect();
         const contentBox = article.getBoundingClientRect();
@@ -102,7 +119,10 @@ try {
           objectFit: style.objectFit,
           horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth + 1,
         };
-      });
+        });
+      } catch (error) {
+        fail(`${test.id} ${viewport.name}: measurement failed: ${error.message}`);
+      }
       if (!result.alt.trim()) fail(`${test.id} ${viewport.name}: empty alt text`);
       if (result.naturalWidth === 0) fail(`${test.id} ${viewport.name}: image failed to load src=${result.src}`);
       if (result.ratio < 0.8) fail(`${test.id} ${viewport.name}: width ratio ${result.ratio.toFixed(3)} < 0.8; image=${result.imageWidth}; content=${result.contentWidth}`);
