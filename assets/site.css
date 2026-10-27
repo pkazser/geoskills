@@ -113,12 +113,13 @@ main:has(.geoskills-home) article.content { max-width: 92rem; }
 }
 
 /* AL00 figures: override the theme's inline-image max-height rule only for these five figures. */
-.article p > img[data-canonical-url^="figures/AL00_fig"] {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  max-height: none;
-  height: auto;
+.article p > img[data-canonical-url^="figures/AL00_fig"],
+.article p > img[src*="AL00_fig"] {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  height: auto !important;
   margin: 2em auto;
 }
 
