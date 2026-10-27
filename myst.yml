@@ -28,6 +28,21 @@ project:
         - file: courses/qgis/gq04/index.md
         - file: courses/qgis/gq05/index.md
         - file: courses/qgis/gq06/index.md
+    - file: courses/ai-learning/index.md
+      children:
+        - file: courses/ai-learning/al00/index.md
+          children:
+            - file: courses/ai-learning/al00/01-ai-introduction.md
+            - file: courses/ai-learning/al00/02-ai-ml-dl-generative.md
+            - file: courses/ai-learning/al00/03-model-training.md
+            - file: courses/ai-learning/al00/04-language-models.md
+            - file: courses/ai-learning/al00/05-prompts-context.md
+            - file: courses/ai-learning/al00/06-ai-errors.md
+            - file: courses/ai-learning/al00/07-search-sources-tools.md
+            - file: courses/ai-learning/al00/08-ai-for-learning.md
+            - file: courses/ai-learning/al00/09-guided-learning-activity.md
+            - file: courses/ai-learning/al00/10-self-assessment.md
+            - file: courses/ai-learning/al00/review.md
     - file: courses/python/index.md
       children:
         - file: courses/python/start-here.md
@@ -193,6 +208,8 @@ site:
           url: /courses/qgis
         - title: GeoPython Core
           url: /courses/python
+        - title: AI Learning Core
+          url: /courses/ai-learning
         - title: Field Surveying Core
           url: /courses/field-surveying
         - title: Remote Sensing Core
