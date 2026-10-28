@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 800 1200" preserveAspectRatio="xMidYMin meet" role="img" aria-labelledby="title desc">
+  <title id="title">Χρήστης, εφαρμογή chatbot και γλωσσικό μοντέλο</title>
+  <desc id="desc">Ο χρήστης επικοινωνεί αμφίδρομα με την εφαρμογή chatbot. Η εφαρμογή μεταφέρει την είσοδο στο γλωσσικό μοντέλο και επιστρέφει την παραγόμενη έξοδο μέσω της εφαρμογής. Ο χρήστης δεν επικοινωνεί απευθείας με το μοντέλο.</desc>
+  <defs>
+    <marker id="arrow-down" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L12,6 L0,12 z" fill="#c35b2d"/></marker>
+    <marker id="arrow-up" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L12,6 L0,12 z" fill="#c35b2d"/></marker>
+  </defs>
+  <rect width="800" height="1120" fill="#ffffff"/>
+  <text x="400" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#17324d">Η σχέση ανάμεσα στον χρήστη,</text>
+  <text x="400" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#17324d">στην εφαρμογή και στο μοντέλο</text>
+
+  <rect x="90" y="145" width="620" height="220" rx="24" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="4"/>
+  <text x="400" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17324d">Χρήστης</text>
+  <line x1="180" y1="242" x2="620" y2="242" stroke="#8ab5d3" stroke-width="2"/>
+  <text x="400" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#17324d">Υποβάλλει ερώτηση ή οδηγία</text>
+  <text x="400" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#35566f">Λαμβάνει την απάντηση</text>
+
+  <line x1="330" y1="385" x2="330" y2="465" stroke="#c35b2d" stroke-width="5" marker-end="url(#arrow-down)"/>
+  <line x1="470" y1="465" x2="470" y2="405" stroke="#c35b2d" stroke-width="5" marker-end="url(#arrow-up)"/>
+  <text x="250" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#8c3d20">Ερώτημα</text>
+  <text x="550" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#8c3d20">Απάντηση</text>
+
+  <rect x="90" y="485" width="620" height="250" rx="24" fill="#fff4df" stroke="#c58b2b" stroke-width="4"/>
+  <text x="400" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17324d">Εφαρμογή chatbot</text>
+  <line x1="180" y1="582" x2="620" y2="582" stroke="#d8b76c" stroke-width="2"/>
+  <text x="400" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#17324d">Διαχειρίζεται τη συνομιλία</text>
+  <text x="400" y="672" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#17324d">και πρόσθετες λειτουργίες</text>
+  <text x="400" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6a5525">Μεταφέρει είσοδο και έξοδο</text>
+
+  <line x1="330" y1="755" x2="330" y2="835" stroke="#c35b2d" stroke-width="5" marker-end="url(#arrow-down)"/>
+  <line x1="470" y1="835" x2="470" y2="775" stroke="#c35b2d" stroke-width="5" marker-end="url(#arrow-up)"/>
+  <text x="250" y="800" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#8c3d20">Είσοδος</text>
+  <text x="550" y="800" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#8c3d20">Έξοδος</text>
+
+  <rect x="90" y="855" width="620" height="220" rx="24" fill="#eaf6ed" stroke="#3b8b57" stroke-width="4"/>
+  <text x="400" y="925" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17324d">Γλωσσικό μοντέλο</text>
+  <line x1="180" y1="952" x2="620" y2="952" stroke="#8ac39a" stroke-width="2"/>
+  <text x="400" y="1005" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#17324d">Επεξεργάζεται την είσοδο</text>
+  <text x="400" y="1043" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#17324d">και παράγει έξοδο</text>
+
+  <rect x="130" y="1100" width="540" height="42" rx="12" fill="#f5f7fa" stroke="#9aa9b6" stroke-width="2"/>
+  <text x="400" y="1127" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#17324d">Ο χρήστης δεν επικοινωνεί απευθείας με το μοντέλο.</text>
+</svg>

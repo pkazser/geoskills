@@ -20,6 +20,15 @@ myst start
 myst build --html
 ```
 
+Σε Windows/Codex, όταν απαιτείται η έμπιστη αλυσίδα πιστοποιητικών του συστήματος, εκτέλεσε:
+
+```powershell
+$env:NODE_OPTIONS="--use-system-ca"
+npx --no-install myst build --html
+```
+
+Η ρύθμιση ισχύει μόνο για την τρέχουσα διεργασία PowerShell και δεν απενεργοποιεί την επαλήθευση TLS. Η επιτυχής φάση παραγωγής ολοκληρώνεται πριν από τυχόν εκκίνηση preview server. Αν το `myst build` εμφανίσει μήνυμα ότι ξεκινά preview server, η χειροκίνητη διακοπή του server μετά την παραγωγή δεν αποτελεί από μόνη της αποτυχία του build.
+
 Τα παραγόμενα αρχεία βρίσκονται στο `_build/html`.
 
 Η πλατφόρμα προετοιμάζει αυτόματα το pinned MyST Book Theme πριν από το build:

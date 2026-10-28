@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Έλεγχος κατανόησης — Μοντέλο ή εφαρμογή;</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, sans-serif; color: #17324d; }
+    html, body { max-width: 100%; }
+    body { box-sizing: border-box; width: 100%; margin: 0; padding: 1rem; background: #fff; }
+    main { box-sizing: border-box; width: min(100%, calc(100vw - 2rem)); max-width: 48rem; margin: auto; }
+    h1 { font-size: 1.35rem; margin: 0 0 .75rem; }
+    p { line-height: 1.5; overflow-wrap: anywhere; }
+    fieldset { box-sizing: border-box; min-width: 0; border: 1px solid #b8c7d3; border-radius: .6rem; margin: 1rem 0; padding: .8rem 1rem; }
+    legend { display: block; box-sizing: border-box; width: 100%; max-width: 100%; white-space: normal; overflow-wrap: anywhere; font-weight: 700; padding: 0 .3rem; }
+    label { display: block; margin: .55rem 0; cursor: pointer; }
+    input { accent-color: #2b6f9f; margin-right: .45rem; }
+    button { border: 0; border-radius: .4rem; padding: .6rem .9rem; margin: .25rem .35rem .25rem 0; background: #2b6f9f; color: #fff; cursor: pointer; font-weight: 700; }
+    button[data-action="reset"] { background: #647889; }
+    .feedback { padding: .55rem .7rem; border-radius: .35rem; }
+    .correct { background: #e6f4ea; border-left: .3rem solid #2e7d32; }
+    .incorrect { background: #fff0ed; border-left: .3rem solid #b23b2b; }
+    [hidden] { display: none; }
+    @media (max-width: 32rem) { body { padding: .65rem; } fieldset { padding: .7rem; } button { width: 100%; margin-right: 0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a id="return-to-course" href="courses/ai-learning/al00/language-models/">← Επιστροφή στο AL00.4</a></p>
+    <h1>Έλεγχος κατανόησης</h1>
+    <p>Για καθεμία από τις τέσσερις περιπτώσεις, επίλεξε αν περιγράφει κυρίως λειτουργία του γλωσσικού μοντέλου ή πρόσθετη λειτουργία της εφαρμογής.</p>
+    <form id="quiz" novalidate>
+      <fieldset><legend>1. Το chatbot δημιουργεί μια απλή εξήγηση για την επιστημονική μέθοδο.</legend><label><input type="radio" name="q1" value="model"> Κυρίως λειτουργία γλωσσικού μοντέλου</label><label><input type="radio" name="q1" value="app"> Κυρίως πρόσθετη λειτουργία εφαρμογής</label><p class="feedback" id="f1" hidden aria-live="polite"></p></fieldset>
+      <fieldset><legend>2. Η εφαρμογή εμφανίζει μια παλαιότερη αποθηκευμένη συνομιλία.</legend><label><input type="radio" name="q2" value="model"> Κυρίως λειτουργία γλωσσικού μοντέλου</label><label><input type="radio" name="q2" value="app"> Κυρίως πρόσθετη λειτουργία εφαρμογής</label><p class="feedback" id="f2" hidden aria-live="polite"></p></fieldset>
+      <fieldset><legend>3. Το chatbot αναδιατυπώνει μια παράγραφο με απλούστερο λεξιλόγιο.</legend><label><input type="radio" name="q3" value="model"> Κυρίως λειτουργία γλωσσικού μοντέλου</label><label><input type="radio" name="q3" value="app"> Κυρίως πρόσθετη λειτουργία εφαρμογής</label><p class="feedback" id="f3" hidden aria-live="polite"></p></fieldset>
+      <fieldset><legend>4. Η εφαρμογή πραγματοποιεί διαδικτυακή αναζήτηση για πρόσφατες δημοσιεύσεις.</legend><label><input type="radio" name="q4" value="model"> Κυρίως λειτουργία γλωσσικού μοντέλου</label><label><input type="radio" name="q4" value="app"> Κυρίως πρόσθετη λειτουργία εφαρμογής</label><p class="feedback" id="f4" hidden aria-live="polite"></p></fieldset>
+      <button type="submit">Έλεγχος απαντήσεων</button><button type="reset" data-action="reset">Νέα προσπάθεια</button>
+      <p id="result" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <script>
+    (() => {
+      const returnLink = document.getElementById('return-to-course');
+      const fallbackPath = window.location.pathname.startsWith('/geoskills/')
+        ? '/geoskills/courses/ai-learning/al00/language-models/'
+        : '/courses/ai-learning/al00/language-models/';
+      const coursePath = /^\/(?:geoskills\/)?courses\/ai-learning\/al00\/language-models\/?$/;
+      const safeCourseUrl = value => {
+        try {
+          const candidate = new URL(value, window.location.href);
+          if (candidate.protocol === window.location.protocol
+            && candidate.hostname === window.location.hostname
+            && !candidate.username && !candidate.password
+            && coursePath.test(candidate.pathname)) return candidate.href;
+        } catch (_) {
+          // Ignore malformed or external return values.
+        }
+        return null;
+      };
+      const requestedReturn = new URLSearchParams(window.location.search).get('return');
+      const safeReturn = safeCourseUrl(requestedReturn)
+        || safeCourseUrl(document.referrer);
+      if (safeReturn) returnLink.href = safeReturn;
+      else returnLink.href = new URL(fallbackPath, window.location.origin).href;
+      returnLink.addEventListener('click', event => {
+        if (!safeReturn && window.history.length > 1) {
+          event.preventDefault();
+          window.history.back();
+        }
+      });
+      const answers = ['model', 'app', 'model', 'app'];
+      const explanations = [
+        'Η παραγωγή εξήγησης αποτελεί βασική δυνατότητα ενός γλωσσικού μοντέλου.',
+        'Η αποθήκευση και ανάκτηση ιστορικού ανήκει στη διαχείριση της εφαρμογής.',
+        'Η αναδιατύπωση αποτελεί χαρακτηριστική εργασία γλωσσικής παραγωγής.',
+        'Η διαδικτυακή αναζήτηση απαιτεί πρόσθετο εργαλείο ή λειτουργία της εφαρμογής.'
+      ];
+      const form = document.getElementById('quiz');
+      const result = document.getElementById('result');
+      form.addEventListener('submit', event => {
+        event.preventDefault(); let score = 0;
+        answers.forEach((answer, index) => {
+          const selected = form.querySelector(`input[name="q${index + 1}"]:checked`);
+          const feedback = document.getElementById(`f${index + 1}`);
+          feedback.hidden = false; feedback.className = 'feedback';
+          if (!selected) { feedback.textContent = 'Δεν επιλέχθηκε απάντηση. Δοκίμασε ξανά.'; feedback.classList.add('incorrect'); }
+          else if (selected.value === answer) { score++; feedback.textContent = `Σωστό. ${explanations[index]}`; feedback.classList.add('correct'); }
+          else { feedback.textContent = `Χρειάζεται επανεξέταση. ${explanations[index]}`; feedback.classList.add('incorrect'); }
+        });
+        result.textContent = `Αποτέλεσμα: ${score}/4. Μπορείς να αλλάξεις επιλογές και να ελέγξεις ξανά.`;
+      });
+      form.addEventListener('reset', () => { form.querySelectorAll('.feedback').forEach(el => { el.hidden = true; el.textContent = ''; el.className = 'feedback'; }); result.textContent = ''; });
+    })();
+  </script>
+</body>
+</html>

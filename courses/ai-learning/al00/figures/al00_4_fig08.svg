@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Συνεργασία γλωσσικού μοντέλου και υπολογιστικού εργαλείου</title>
+  <desc id="desc">Η εφαρμογή μεταφέρει το αίτημα στο γλωσσικό μοντέλο. Το μοντέλο οργανώνει ή ζητά υπολογισμό από το εργαλείο. Το εργαλείο επιστρέφει το αποτέλεσμα και το μοντέλο διαμορφώνει την απάντηση. Το αποτέλεσμα 8 είναι υποθετικό.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c35b2d"/></marker></defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324d">Συνεργασία γλωσσικού μοντέλου και υπολογιστικού εργαλείου</text>
+  <rect x="160" y="90" width="880" height="70" rx="16" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="3"/><text x="600" y="133" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#17324d">Αίτημα φοιτήτριας: «Υπολόγισε τον μέσο όρο»</text>
+  <line x1="600" y1="160" x2="600" y2="190" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="120" y="205" width="430" height="150" rx="18" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="3"/><text x="335" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#17324d">Γλωσσικό μοντέλο</text><text x="335" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17324d">οργανώνει το αίτημα και ζητά</text><text x="335" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17324d">τον απαραίτητο υπολογισμό</text>
+  <rect x="650" y="205" width="430" height="150" rx="18" fill="#fff3df" stroke="#2b6f9f" stroke-width="3"/><text x="865" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#17324d">Υπολογιστικό εργαλείο</text><text x="865" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17324d">εκτελεί τον υπολογισμό</text><text x="865" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17324d">μόνο όταν επιλεγεί</text>
+  <line x1="550" y1="265" x2="650" y2="265" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/><text x="600" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#17324d">αίτημα υπολογισμού</text>
+  <line x1="650" y1="335" x2="550" y2="335" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/><text x="600" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#17324d">επιστροφή αποτελέσματος</text>
+  <line x1="335" y1="355" x2="335" y2="445" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="160" y="460" width="880" height="80" rx="16" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="3"/><text x="600" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#17324d">Απάντηση: «Ο μέσος όρος είναι 8»</text>
+  <text x="600" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17324d">Το 8 είναι ρητά υποθετικό αποτέλεσμα· δεν δίνονται αριθμητικά δεδομένα στο παράδειγμα.</text>
+</svg>

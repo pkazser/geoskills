@@ -7,6 +7,11 @@ project:
     - downloads/qgis/GQ_START_05_fyllo_axiologisis.docx
     - downloads/qgis/GQ_START_06_quick_reference.docx
     - downloads/qgis/GQ_START_07_fyllo_ergasias.docx
+    - courses/ai-learning/al00/quiz/al00_4_1_8.html
+    - courses/ai-learning/al00/quiz/al00_4_2_7.html
+    - courses/ai-learning/al00/quiz/al00_4_4_9.html
+    - courses/ai-learning/al00/quiz/al00_4_7_9.html
+    - courses/ai-learning/al00/quiz/al00_4_9_6.html
   toc:
     - file: index.md
     - file: start/index.md

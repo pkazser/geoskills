@@ -112,9 +112,11 @@ main:has(.geoskills-home) article.content { max-width: 92rem; }
   box-shadow: 0 0.5rem 1rem rgba(18, 48, 68, 0.05);
 }
 
-/* AL00 figures: override the theme's inline-image max-height rule only for these five figures. */
+/* AL00 figures: override the theme's inline-image max-height rule only for AL00 assets. */
 .article p > img[data-canonical-url^="figures/AL00_fig"],
-.article p > img[src*="AL00_fig"] {
+.article p > img[src*="AL00_fig"],
+.article p > img[data-canonical-url^="figures/al00_4_fig"],
+.article p > img[src*="al00_4_fig"] {
   display: block !important;
   width: 100% !important;
   max-width: 100% !important;

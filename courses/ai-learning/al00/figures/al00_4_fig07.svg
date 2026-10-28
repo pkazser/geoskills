@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Μια χρήσιμη σχέση μέσα στην πρόταση</title>
+  <desc id="desc">Η φράση Η Μαρία διάβασε το βιβλίο και το επέστρεψε. Η εννοιολογική σχέση αναφοράς συνδέει το βιβλίο με το δεύτερο το, χωρίς να αποτελεί πραγματικό attention weight.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c35b2d"/></marker></defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324d">Μια χρήσιμη σχέση μέσα στην πρόταση</text>
+  <g fill="#f3f7fb" stroke="#2b6f9f" stroke-width="3">
+    <rect x="40" y="220" width="165" height="100" rx="18"/><rect x="225" y="220" width="165" height="100" rx="18"/><rect x="410" y="220" width="165" height="100" rx="18"/><rect x="595" y="220" width="165" height="100" rx="18"/><rect x="780" y="220" width="165" height="100" rx="18"/><rect x="965" y="220" width="165" height="100" rx="18"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17324d" text-anchor="middle">
+    <text x="122" y="278">Η Μαρία</text><text x="307" y="278">διάβασε</text><text x="492" y="278">το βιβλίο</text><text x="677" y="278">και</text><text x="862" y="278">το</text><text x="1047" y="278">επέστρεψε</text>
+  </g>
+  <path d="M492 210 C540 120 814 120 862 210" fill="none" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="677" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17324d">Σχέση αναφοράς</text>
+  <text x="600" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17324d">Το δεύτερο «το» αναφέρεται στο «βιβλίο».</text>
+</svg>

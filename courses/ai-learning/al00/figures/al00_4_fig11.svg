@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+  <title id="title">Από τα δεδομένα στο δικαιολογημένο συμπέρασμα</title>
+  <desc id="desc">Τα ίδια διαθέσιμα επιστημονικά στοιχεία αξιολογούν δύο διαφορετικούς ισχυρισμούς: έναν προσεκτικό, δικαιολογημένο και έναν υπερβολικό, αδικαιολόγητο.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c35b2d"/></marker></defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="60" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324d">Από τα δεδομένα στο δικαιολογημένο συμπέρασμα</text>
+  <rect x="70" y="125" width="420" height="260" rx="18" fill="#eef7ee" stroke="#2b6f9f" stroke-width="3"/>
+  <text x="280" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#17324d">Διαθέσιμα επιστημονικά στοιχεία</text>
+  <text x="100" y="225" font-family="Arial, sans-serif" font-size="18" fill="#17324d">Υποθετική περιγραφή:</text><text x="100" y="260" font-family="Arial, sans-serif" font-size="18" fill="#17324d">τα στοιχεία δείχνουν πιθανή</text><text x="100" y="292" font-family="Arial, sans-serif" font-size="18" fill="#17324d">σχέση ανάμεσα στον επαρκή</text><text x="100" y="324" font-family="Arial, sans-serif" font-size="18" fill="#17324d">ύπνο και την υποστήριξη</text><text x="100" y="356" font-family="Arial, sans-serif" font-size="18" fill="#17324d">της μάθησης.</text>
+  <line x1="490" y1="235" x2="690" y2="180" stroke="#2b6f9f" stroke-width="4" marker-end="url(#arrow)"/><line x1="490" y1="315" x2="690" y2="430" stroke="#2b6f9f" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="710" y="90" width="420" height="180" rx="18" fill="#e9f6ea" stroke="#2b6f9f" stroke-width="3"/><text x="730" y="135" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#17324d">Δικαιολογημένο συμπέρασμα</text><text x="730" y="180" font-family="Arial, sans-serif" font-size="18" fill="#17324d">Ο επαρκής ύπνος μπορεί</text><text x="730" y="210" font-family="Arial, sans-serif" font-size="18" fill="#17324d">να υποστηρίζει τη μάθηση.</text>
+  <rect x="710" y="350" width="420" height="180" rx="18" fill="#fde9e7" stroke="#2b6f9f" stroke-width="3"/><text x="730" y="395" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#17324d">Αδικαιολόγητο συμπέρασμα</text><text x="730" y="440" font-family="Arial, sans-serif" font-size="18" fill="#17324d">Ο ύπνος οκτώ ωρών εγγυάται</text><text x="730" y="470" font-family="Arial, sans-serif" font-size="18" fill="#17324d">την επιτυχία.</text>
+</svg>

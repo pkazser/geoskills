@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Από την απάντηση στην τεκμηριωμένη χρήση</title>
+  <desc id="desc">Πέντε διαδοχικά βήματα ελέγχου: Εντοπίζω, Εξετάζω, Επαληθεύω, Διορθώνω, Χρησιμοποιώ. Η έκταση του ελέγχου προσαρμόζεται στον κίνδυνο.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c35b2d"/></marker></defs>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="600" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17324d">Από την απάντηση στην τεκμηριωμένη χρήση</text>
+  <g font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#17324d" text-anchor="middle">
+    <rect x="260" y="95" width="680" height="100" rx="18" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="3"/><text x="600" y="155">1. Εντοπίζω</text>
+    <line x1="600" y1="195" x2="600" y2="235" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="260" y="250" width="680" height="100" rx="18" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="3"/><text x="600" y="310">2. Εξετάζω</text>
+    <line x1="600" y1="350" x2="600" y2="390" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="260" y="405" width="680" height="100" rx="18" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="3"/><text x="600" y="465">3. Επαληθεύω</text>
+    <line x1="600" y1="505" x2="600" y2="545" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="260" y="560" width="680" height="100" rx="18" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="3"/><text x="600" y="620">4. Διορθώνω</text>
+    <line x1="600" y1="660" x2="600" y2="700" stroke="#c35b2d" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="260" y="715" width="680" height="100" rx="18" fill="#eaf3fb" stroke="#2b6f9f" stroke-width="3"/><text x="600" y="775">5. Χρησιμοποιώ</text>
+  </g>
+  <text x="600" y="855" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#17324d">Η έκταση του ελέγχου προσαρμόζεται στον κίνδυνο.</text>
+</svg>
