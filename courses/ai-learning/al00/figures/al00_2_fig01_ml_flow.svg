@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" role="img" aria-labelledby="title desc">
+<title id="title">Μηχανική Μάθηση: από τα δεδομένα σε νέα εκτίμηση</title>
+<desc id="desc">Διάγραμμα εκπαιδευτικού περιεχομένου με ελληνικές λεζάντες.</desc>
+<rect width="900" height="390" rx="20" fill="#f8fafc"/>
+<path d="M285 180 L350 180" stroke="#64748b" stroke-width="3" stroke-linecap="round" fill="none"/>
+<path d="M550 180 L655 180" stroke="#64748b" stroke-width="3" stroke-linecap="round" fill="none"/>
+<rect x="45" y="115" width="240" height="130" rx="15" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="165.0" y="168.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,DejaVu Sans,sans-serif" fill="#0f172a" font-size="19" font-weight="600">Δεδομένα</text>
+<text x="165.0" y="192.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,DejaVu Sans,sans-serif" fill="#0f172a" font-size="19" font-weight="600">δρομολογίων</text>
+<rect x="350" y="115" width="200" height="130" rx="15" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="450.0" y="168.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,DejaVu Sans,sans-serif" fill="#0f172a" font-size="19" font-weight="600">Εκπαίδευση</text>
+<text x="450.0" y="192.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,DejaVu Sans,sans-serif" fill="#0f172a" font-size="19" font-weight="600">μοντέλου</text>
+<rect x="655" y="115" width="200" height="130" rx="15" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="755.0" y="168.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,DejaVu Sans,sans-serif" fill="#0f172a" font-size="19" font-weight="600">Εκτίμηση</text>
+<text x="755.0" y="192.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,DejaVu Sans,sans-serif" fill="#0f172a" font-size="19" font-weight="600">νέου δρομολογίου</text>
+</svg>
