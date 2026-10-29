@@ -400,7 +400,9 @@
 
 ## Quiz ενδιάμεσου σταδίου 5.1–5.4
 
-[Άνοιγμα quiz «Από το αίτημα στο πλαίσιο» σε νέα καρτέλα](al00_5_q1.html){target="_blank" rel="noopener"}. Περιλαμβάνει πραγματική επιλογή απάντησης, βαθμολόγηση, αιτιολόγηση και επαναφορά.
+<p class="geoskills-quiz-link"><a href="/al00_5_q1.html" target="_blank" rel="noopener" onclick="const u=new URL(this.href,window.location.href);u.searchParams.set('return',window.location.href);this.href=u.href;">Άνοιγμα quiz «Από το αίτημα στο πλαίσιο» σε νέα καρτέλα</a></p>
+
+Περιλαμβάνει πραγματική επιλογή απάντησης, βαθμολόγηση, αιτιολόγηση και επαναφορά.
 
 ## 5.5 — Από ένα prompt σε μια χρήσιμη συνομιλία
 
