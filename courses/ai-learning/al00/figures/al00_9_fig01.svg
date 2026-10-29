@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="575" viewBox="0 0 1000 575" role="img" aria-labelledby="t d">
+<title id="t">Η διαδρομή της αποστολής</title><desc id="d">Κάθε στάδιο αφήνει ελέγξιμο τεκμήριο</desc>
+<rect width="1000" height="100%" fill="#ffffff"/>
+<text x="500" y="52" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="bold" fill="#18324b">Η διαδρομή της αποστολής</text>
+<text x="500" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#18324b">Κάθε στάδιο αφήνει ελέγξιμο τεκμήριο</text>
+<rect x="130" y="105" width="740" height="62" rx="13" fill="#eaf3fa" stroke="#aabed0"/>
+<text x="165" y="131" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#145da0">1. Ορίζω το ερώτημα</text>
+<text x="165" y="154" font-family="Arial,sans-serif" font-size="16" fill="#18324b">Στόχος, αρχική προσπάθεια, όρια</text>
+<path d="M 500 168 v 14 m -7 -7 l 7 7 l 7 -7" stroke="#1a795f" stroke-width="2" fill="none"/>
+<rect x="130" y="183" width="740" height="62" rx="13" fill="#eaf3fa" stroke="#aabed0"/>
+<text x="165" y="209" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#145da0">2. Αναζητώ και ελέγχω</text>
+<text x="165" y="232" font-family="Arial,sans-serif" font-size="16" fill="#18324b">Δύο πηγές και συγκεκριμένα τεκμήρια</text>
+<path d="M 500 246 v 14 m -7 -7 l 7 7 l 7 -7" stroke="#1a795f" stroke-width="2" fill="none"/>
+<rect x="130" y="261" width="740" height="62" rx="13" fill="#eaf3fa" stroke="#aabed0"/>
+<text x="165" y="287" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#145da0">3. Χρησιμοποιώ κριτικά την ΤΝ</text>
+<text x="165" y="310" font-family="Arial,sans-serif" font-size="16" fill="#18324b">Καταγραφή αιτήματος, ελέγχου και απόφασης</text>
+<path d="M 500 324 v 14 m -7 -7 l 7 7 l 7 -7" stroke="#1a795f" stroke-width="2" fill="none"/>
+<rect x="130" y="339" width="740" height="62" rx="13" fill="#eaf3fa" stroke="#aabed0"/>
+<text x="165" y="365" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#145da0">4. Συνθέτω το αποτέλεσμα</text>
+<text x="165" y="388" font-family="Arial,sans-serif" font-size="16" fill="#18324b">Σύντομη τεκμηριωμένη απάντηση</text>
+<path d="M 500 402 v 14 m -7 -7 l 7 7 l 7 -7" stroke="#1a795f" stroke-width="2" fill="none"/>
+<rect x="130" y="417" width="740" height="62" rx="13" fill="#eaf3fa" stroke="#aabed0"/>
+<text x="165" y="443" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#145da0">5. Εφαρμόζω χωρίς ΤΝ</text>
+<text x="165" y="466" font-family="Arial,sans-serif" font-size="16" fill="#18324b">Νέα περίπτωση, δική μου αιτιολόγηση</text>
+</svg>

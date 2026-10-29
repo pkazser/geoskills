@@ -124,7 +124,9 @@ main:has(.geoskills-home) article.content { max-width: 92rem; }
 .article p > img[data-canonical-url^="figures/al00_7_"],
 .article p > img[src*="al00_7_"],
 .article p > img[data-canonical-url^="figures/al00_8_"],
-.article p > img[src*="al00_8_"] {
+.article p > img[src*="al00_8_"],
+.article p > img[data-canonical-url^="figures/al00_9_"],
+.article p > img[src*="al00_9_"] {
   display: block !important;
   width: 100% !important;
   max-width: 100% !important;
