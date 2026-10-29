@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="457" viewBox="0 0 920 457" role="img" aria-labelledby="title desc">
+<title id="title">Κλίμακα διαβαθμισμένων υποδείξεων</title>
+<desc id="desc">Προσπαθώ μόνος/η → Ζητώ μικρή υπόδειξη → Επανεξετάζω τη λύση → Συγκρίνω και ξαναδοκιμάζω</desc>
+<rect width="920" height="100%" rx="18" fill="#f7f9fc"/>
+<text x="460" y="46" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18324b" font-weight="bold" text-anchor="middle">Κλίμακα διαβαθμισμένων υποδείξεων</text>
+<rect x="90" y="70" width="740" height="64" rx="12" fill="#e0f0fd" stroke="#8caebd"/>
+<text x="460" y="109" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172d3a" text-anchor="middle">Προσπαθώ μόνος/η</text>
+<path d="M 460 134 v 18 m -6 -7 l 6 7 l 6 -7" stroke="#35566c" fill="none" stroke-width="2"/>
+<rect x="90" y="153" width="740" height="64" rx="12" fill="#e5f3ea" stroke="#8caebd"/>
+<text x="460" y="192" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172d3a" text-anchor="middle">Ζητώ μικρή υπόδειξη</text>
+<path d="M 460 217 v 18 m -6 -7 l 6 7 l 6 -7" stroke="#35566c" fill="none" stroke-width="2"/>
+<rect x="90" y="236" width="740" height="64" rx="12" fill="#e0f0fd" stroke="#8caebd"/>
+<text x="460" y="275" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172d3a" text-anchor="middle">Επανεξετάζω τη λύση</text>
+<path d="M 460 300 v 18 m -6 -7 l 6 7 l 6 -7" stroke="#35566c" fill="none" stroke-width="2"/>
+<rect x="90" y="319" width="740" height="64" rx="12" fill="#e5f3ea" stroke="#8caebd"/>
+<text x="460" y="358" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172d3a" text-anchor="middle">Συγκρίνω και ξαναδοκιμάζω</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="374" viewBox="0 0 920 374" role="img" aria-labelledby="title desc">
+<title id="title">Η απάντηση δεν ισοδυναμεί με μάθηση</title>
+<desc id="desc">Η ΤΝ παράγει απάντηση → Ο φοιτητής επιχειρεί εξήγηση → Ανεξάρτητη εφαρμογή και έλεγχος</desc>
+<rect width="920" height="100%" rx="18" fill="#f7f9fc"/>
+<text x="460" y="46" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#18324b" font-weight="bold" text-anchor="middle">Η απάντηση δεν ισοδυναμεί με μάθηση</text>
+<rect x="90" y="70" width="740" height="64" rx="12" fill="#e0f0fd" stroke="#8caebd"/>
+<text x="460" y="109" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172d3a" text-anchor="middle">Η ΤΝ παράγει απάντηση</text>
+<path d="M 460 134 v 18 m -6 -7 l 6 7 l 6 -7" stroke="#35566c" fill="none" stroke-width="2"/>
+<rect x="90" y="153" width="740" height="64" rx="12" fill="#e5f3ea" stroke="#8caebd"/>
+<text x="460" y="192" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172d3a" text-anchor="middle">Ο φοιτητής επιχειρεί εξήγηση</text>
+<path d="M 460 217 v 18 m -6 -7 l 6 7 l 6 -7" stroke="#35566c" fill="none" stroke-width="2"/>
+<rect x="90" y="236" width="740" height="64" rx="12" fill="#e0f0fd" stroke="#8caebd"/>
+<text x="460" y="275" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172d3a" text-anchor="middle">Ανεξάρτητη εφαρμογή και έλεγχος</text>
+</svg>
