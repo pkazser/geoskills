@@ -12,6 +12,9 @@ project:
     - courses/ai-learning/al00/quiz/al00_4_4_9.html
     - courses/ai-learning/al00/quiz/al00_4_7_9.html
     - courses/ai-learning/al00/quiz/al00_4_9_6.html
+    - courses/ai-learning/al00/quiz/al00_5_q1.html
+    - courses/ai-learning/al00/quiz/al00_5_q2.html
+    - courses/ai-learning/al00/quiz/al00_5_q3.html
   toc:
     - file: index.md
     - file: start/index.md
