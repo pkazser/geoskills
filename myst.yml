@@ -80,7 +80,9 @@ project:
         - file: courses/ai-learning/al01/core/01-assignment-planning.md
         - file: courses/ai-learning/al01/core/02-literature-search.md
         - file: courses/ai-learning/al01/01-assignment-planning.md
+          hidden: true
         - file: courses/ai-learning/al01/02-literature-search.md
+          hidden: true
     - file: courses/python/index.md
       children:
         - file: courses/python/start-here.md
