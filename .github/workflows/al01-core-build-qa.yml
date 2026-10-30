@@ -53,6 +53,75 @@ jobs:
           test -n "$(find _build/html -type f -iname '*al01_2_core_q1*.html' -print -quit)"
           test -n "$(find _build/html -type f -iname '*al01_2_core_q2*.html' -print -quit)"
 
+      - name: Verify rendered AL01 Core links
+        shell: bash
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlsplit
+
+          root = Path('_build/html').resolve()
+          pages = {
+              root / 'courses/ai-learning/al01/core/assignment-planning/index.html': {
+                  '/geoskills/al01_1_portfolio.html',
+                  '/geoskills/al01_1_core_q1.html',
+                  '/geoskills/al01_1_core_q2.html',
+              },
+              root / 'courses/ai-learning/al01/core/literature-search/index.html': {
+                  '/geoskills/al01_2_portfolio.html',
+                  '/geoskills/al01_2_core_q1.html',
+                  '/geoskills/al01_2_core_q2.html',
+              },
+          }
+
+          class Links(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.hrefs = []
+              def handle_starttag(self, tag, attrs):
+                  if tag == 'a':
+                      href = dict(attrs).get('href')
+                      if href:
+                          self.hrefs.append(href)
+
+          failures = []
+          for page, expected in pages.items():
+              if not page.is_file():
+                  failures.append(f'Missing rendered Core page: {page}')
+                  continue
+              parser = Links()
+              parser.feed(page.read_text(encoding='utf-8'))
+              found = set(parser.hrefs)
+              for href in expected:
+                  if href not in found:
+                      failures.append(f'{page}: missing expected link {href}')
+              for href in parser.hrefs:
+                  parsed = urlsplit(href)
+                  if parsed.scheme or parsed.netloc or href.startswith('#'):
+                      continue
+                  if '..' in parsed.path.split('/'):
+                      failures.append(f'{page}: invalid parent traversal in {href}')
+                      continue
+                  if href.startswith('/geoskills/'):
+                      relative = parsed.path[len('/geoskills/'):]
+                      target = root / relative
+                  else:
+                      target = (page.parent / parsed.path).resolve()
+                  try:
+                      target.relative_to(root)
+                  except ValueError:
+                      failures.append(f'{page}: link escapes build root: {href}')
+                      continue
+                  if not target.is_file() and not (target / 'index.html').is_file():
+                      failures.append(f'{page}: missing target for {href} -> {target}')
+
+          if failures:
+              print('\n'.join(failures))
+              raise SystemExit(1)
+          print('Rendered AL01 Core links: PASS')
+          PY
+
       - name: Upload build QA artifacts
         if: always()
         uses: actions/upload-artifact@v4
