@@ -29,6 +29,8 @@ project:
     - courses/ai-learning/al00/quiz/al00_10_q2.html
     - courses/ai-learning/al00/quiz/al00_r_q1.html
     - courses/ai-learning/al00/quiz/al00_r_q2.html
+    - courses/ai-learning/al01/quiz/al01_1_q1.html
+    - courses/ai-learning/al01/quiz/al01_1_q2.html
   toc:
     - file: index.md
     - file: start/index.md
@@ -65,6 +67,7 @@ project:
             - file: courses/ai-learning/al00/09-guided-learning-activity.md
             - file: courses/ai-learning/al00/10-self-assessment.md
             - file: courses/ai-learning/al00/review.md
+        - file: courses/ai-learning/al01/01-assignment-planning.md
     - file: courses/python/index.md
       children:
         - file: courses/python/start-here.md

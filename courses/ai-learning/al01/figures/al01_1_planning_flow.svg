@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="al011flow-title al011flow-desc">
+  <title id="al011flow-title">Από την εκφώνηση στο σχέδιο ακαδημαϊκής εργασίας</title>
+  <desc id="al011flow-desc">Πέντε διαδοχικά βήματα: κατανόηση εκφώνησης, περιορισμός θέματος, ερευνητικό ερώτημα, έλεγχος εφικτότητας και σχέδιο εργασίας. Ένα βέλος από τον έλεγχο εφικτότητας επιστρέφει στον περιορισμό θέματος, όταν απαιτείται αναθεώρηση.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#376c83"/></marker>
+  </defs>
+  <rect width="1200" height="360" rx="20" fill="#f7fafc" />
+  <g font-family="Arial, sans-serif" font-size="23" fill="#173348" text-anchor="middle">
+    <rect x="20" y="76" width="200" height="95" rx="13" fill="#e4f1f6" stroke="#376c83" stroke-width="2" />
+    <text x="120" y="112"><tspan x="120">Κατανόηση</tspan><tspan x="120" dy="30">εκφώνησης</tspan></text>
+    <rect x="260" y="76" width="200" height="95" rx="13" fill="#e4f1f6" stroke="#376c83" stroke-width="2" />
+    <text x="360" y="112"><tspan x="360">Περιορισμός</tspan><tspan x="360" dy="30">θέματος</tspan></text>
+    <rect x="500" y="76" width="200" height="95" rx="13" fill="#e4f1f6" stroke="#376c83" stroke-width="2" />
+    <text x="600" y="112"><tspan x="600">Ερευνητικό</tspan><tspan x="600" dy="30">ερώτημα</tspan></text>
+    <rect x="740" y="76" width="200" height="95" rx="13" fill="#e4f1f6" stroke="#376c83" stroke-width="2" />
+    <text x="840" y="112"><tspan x="840">Έλεγχος</tspan><tspan x="840" dy="30">εφικτότητας</tspan></text>
+    <rect x="980" y="76" width="200" height="95" rx="13" fill="#d3ebdf" stroke="#28714e" stroke-width="2" />
+    <text x="1080" y="112"><tspan x="1080">Σχέδιο</tspan><tspan x="1080" dy="30">εργασίας</tspan></text>
+  </g>
+  <g stroke="#376c83" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M220 124 H258"/><path d="M460 124 H498"/><path d="M700 124 H738"/><path d="M940 124 H978"/>
+    <path d="M840 172 V250 Q840 272 818 272 H382 Q360 272 360 250 V176" />
+  </g>
+  <text x="600" y="306" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#37566a">Αν χρειάζεται, αναθεωρώ το θέμα και το ερώτημα</text>
+</svg>
