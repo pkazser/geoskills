@@ -77,10 +77,10 @@ project:
             - file: courses/ai-learning/al00/09-guided-learning-activity.md
             - file: courses/ai-learning/al00/10-self-assessment.md
             - file: courses/ai-learning/al00/review.md
-        - file: courses/ai-learning/al01/01-assignment-planning.md
-        - file: courses/ai-learning/al01/02-literature-search.md
         - file: courses/ai-learning/al01/core/01-assignment-planning.md
         - file: courses/ai-learning/al01/core/02-literature-search.md
+        - file: courses/ai-learning/al01/01-assignment-planning.md
+        - file: courses/ai-learning/al01/02-literature-search.md
     - file: courses/python/index.md
       children:
         - file: courses/python/start-here.md
