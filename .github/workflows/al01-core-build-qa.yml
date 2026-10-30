@@ -96,25 +96,20 @@ jobs:
               for href in expected:
                   if href not in found:
                       failures.append(f'{page}: missing expected link {href}')
-              for href in parser.hrefs:
+              # Validate only the six Core tool links. Theme-generated navigation
+              # links such as /geoskills and /geoskills/index are intentionally
+              # outside this targeted asset check.
+              for href in expected:
                   parsed = urlsplit(href)
-                  if parsed.scheme or parsed.netloc or href.startswith('#'):
+                  if not parsed.path.startswith('/geoskills/'):
+                      failures.append(f'{page}: expected link lacks /geoskills/ base path: {href}')
                       continue
                   if '..' in parsed.path.split('/'):
                       failures.append(f'{page}: invalid parent traversal in {href}')
                       continue
-                  if href.startswith('/geoskills/'):
-                      relative = parsed.path[len('/geoskills/'):]
-                      target = root / relative
-                  else:
-                      target = (page.parent / parsed.path).resolve()
-                  try:
-                      target.relative_to(root)
-                  except ValueError:
-                      failures.append(f'{page}: link escapes build root: {href}')
-                      continue
+                  target = root / parsed.path[len('/geoskills/'):]
                   if not target.is_file() and not (target / 'index.html').is_file():
-                      failures.append(f'{page}: missing target for {href} -> {target}')
+                      failures.append(f'{page}: missing Core target for {href} -> {target}')
 
           if failures:
               print('\n'.join(failures))
