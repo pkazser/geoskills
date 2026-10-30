@@ -126,3 +126,37 @@ jobs:
             _build/html
             myst-build.log
           if-no-files-found: warn
+
+      - name: Verify Core quiz return URLs
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          root = Path('_build/html')
+          expected = {
+              'al01_1_core_q1.html': '/geoskills/courses/ai-learning/al01/core/assignment-planning/',
+              'al01_1_core_q2.html': '/geoskills/courses/ai-learning/al01/core/assignment-planning/',
+              'al01_2_core_q1.html': '/geoskills/courses/ai-learning/al01/core/literature-search/',
+              'al01_2_core_q2.html': '/geoskills/courses/ai-learning/al01/core/literature-search/',
+          }
+
+          failures = []
+          for filename, target in expected.items():
+              page = root / filename
+              if not page.is_file():
+                  failures.append(f'Missing Core quiz: {page}')
+                  continue
+              html = page.read_text(encoding='utf-8')
+              if f'href="{target}"' not in html:
+                  failures.append(f'{page}: missing anchor return URL {target}')
+              if f"function coreReturnURL(){{return '{target}';}}" not in html:
+                  failures.append(f'{page}: missing fixed coreReturnURL() target {target}')
+              if 'localhost:3000' in html or 'localhost:3100' in html or "port==='3100'" in html:
+                  failures.append(f'{page}: stale local-port return logic remains')
+
+          if failures:
+              print('\n'.join(failures))
+              raise SystemExit(1)
+          print('Core quiz return URLs: PASS')
+          PY
