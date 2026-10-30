@@ -1,0 +1,64 @@
+name: GeoSkills Core Build QA
+
+on:
+  push:
+    branches:
+      - qa/al01-core-v2-2
+
+permissions:
+  contents: read
+
+env:
+  BASE_URL: /geoskills
+  CI: true
+
+jobs:
+  build-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.22.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pinned MyST Markdown
+        run: npm install -g mystmd@1.11.0
+
+      - name: Prepare pinned MyST Book Theme
+        run: python scripts/prepare_myst_theme.py
+
+      - name: Build static HTML
+        shell: bash
+        run: |
+          set -o pipefail
+          myst build --html --ci 2>&1 | tee myst-build.log
+
+      - name: Verify AL01 Core outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$(find _build/html -type f -path '*al01*' -name '*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_1_portfolio*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_2_portfolio*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_1_core_q1*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_1_core_q2*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_2_core_q1*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_2_core_q2*.html' -print -quit)"
+
+      - name: Upload build QA artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: al01-core-build-qa
+          path: |
+            _build/html
+            myst-build.log
+          if-no-files-found: warn

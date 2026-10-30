@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GeoSkills AL01 Portfolio",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "assignment",
+    "literature",
+    "history"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "assignment": {
+      "type": "object",
+      "required": [
+        "prompt",
+        "requirements",
+        "topic",
+        "question",
+        "plan",
+        "pending"
+      ],
+      "properties": {
+        "prompt": {
+          "type": "string"
+        },
+        "requirements": {
+          "type": "string"
+        },
+        "topic": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string"
+        },
+        "plan": {
+          "type": "string"
+        },
+        "pending": {
+          "type": "string"
+        }
+      }
+    },
+    "literature": {
+      "type": "object",
+      "properties": {
+        "searches": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": "string"
+              },
+              "service": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "observation": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "authors": {
+                "type": "string"
+              },
+              "year": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "relevance": {
+                "type": "string"
+              },
+              "pending": {
+                "type": "string"
+              },
+              "verifiedAt": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "previousQuestion": {
+            "type": "string"
+          },
+          "newQuestion": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
