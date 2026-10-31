@@ -71,6 +71,10 @@
           "items": {
             "type": "object",
             "properties": {
+              "sourceId": {
+                "type": "string",
+                "description": "Σταθερό αναγνωριστικό πηγής για σύνδεση με καρτέλες ανάγνωσης."
+              },
               "title": {
                 "type": "string"
               },
@@ -94,6 +98,25 @@
               }
             }
           }
+        }
+      }
+    },
+    "readingCards": {
+      "type": "array",
+      "description": "Προαιρετικές καρτέλες ανάγνωσης της AL01.3. Η απουσία τους είναι έγκυρη για παλαιότερα portfolio.",
+      "items": {
+        "type": "object",
+        "required": ["sourceId"],
+        "properties": {
+          "sourceId": {"type": "string"},
+          "readingExtent": {"type": "string", "enum": ["", "summary", "partial", "full"]},
+          "purpose": {"type": "string"},
+          "approach": {"type": "string"},
+          "finding": {"type": "string"},
+          "evidenceLocation": {"type": "string"},
+          "limitation": {"type": "string"},
+          "usefulness": {"type": "string"},
+          "pending": {"type": "string"}
         }
       }
     },

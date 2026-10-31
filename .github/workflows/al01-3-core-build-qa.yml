@@ -1,0 +1,147 @@
+name: GeoSkills AL01.3 Core Build QA
+
+on:
+  push:
+    branches:
+      - qa/al01-3-core-v1-0
+
+permissions:
+  contents: read
+
+env:
+  BASE_URL: /geoskills
+  CI: true
+
+jobs:
+  build-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.22.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pinned MyST Markdown
+        run: npm install -g mystmd@1.11.0
+
+      - name: Prepare pinned MyST Book Theme
+        run: python scripts/prepare_myst_theme.py
+
+      - name: Build static HTML
+        shell: bash
+        run: |
+          set -o pipefail
+          myst build --html --ci 2>&1 | tee myst-build.log
+
+      - name: Verify AL01 Core and AL01.3 outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$(find _build/html -type f -path '*al01*' -name '*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_1_portfolio*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_2_portfolio*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_3_portfolio*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_3_core_q1*.html' -print -quit)"
+          test -n "$(find _build/html -type f -iname '*al01_3_core_q2*.html' -print -quit)"
+
+      - name: Verify rendered AL01.3 links and content
+        shell: bash
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlsplit
+
+          root = Path('_build/html').resolve()
+          pages = list(root.glob('courses/ai-learning/al01/core/article-reading/index.html'))
+          if not pages:
+              candidates = list(root.glob('**/article-reading/index.html'))
+              pages = candidates[:1]
+          if not pages:
+              raise SystemExit('Missing rendered AL01.3 Core page')
+
+          class Links(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.hrefs = []
+              def handle_starttag(self, tag, attrs):
+                  if tag == 'a':
+                      href = dict(attrs).get('href')
+                      if href:
+                          self.hrefs.append(href)
+
+          page = pages[0]
+          parser = Links()
+          parser.feed(page.read_text(encoding='utf-8'))
+          hrefs = set(parser.hrefs)
+          required = {
+              '/geoskills/al01_3_portfolio.html',
+              '/geoskills/al01_3_core_q1.html',
+              '/geoskills/al01_3_core_q2.html',
+          }
+          missing = required - hrefs
+          if missing:
+              raise SystemExit(f'Missing AL01.3 rendered links: {sorted(missing)}')
+          for href in required:
+              parsed = urlsplit(href)
+              target = root / parsed.path[len('/geoskills/'):]
+              if not target.is_file() and not (target / 'index.html').is_file():
+                  raise SystemExit(f'Missing target for {href}: {target}')
+          html = page.read_text(encoding='utf-8')
+          if html.count('Βήμα') < 6:
+              raise SystemExit('Rendered AL01.3 page does not contain six steps')
+          if html.count('dropdown') < 4:
+              raise SystemExit('Rendered AL01.3 page does not contain four dropdowns')
+          print('Rendered AL01.3 links/content: PASS')
+          PY
+
+      - name: Verify AL01.3 quiz return URLs
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          root = Path('_build/html')
+          target = '/geoskills/courses/ai-learning/al01/core/article-reading/'
+          failures = []
+          for filename in ('al01_3_core_q1.html', 'al01_3_core_q2.html'):
+              matches = list(root.rglob(filename))
+              if not matches:
+                  failures.append(f'Missing quiz {filename}')
+                  continue
+              html = matches[0].read_text(encoding='utf-8')
+              if f'href="{target}"' not in html:
+                  failures.append(f'{filename}: missing return anchor {target}')
+              if 'localhost:3000' in html or 'localhost:3100' in html:
+                  failures.append(f'{filename}: stale local-port logic')
+          if failures:
+              print('\n'.join(failures))
+              raise SystemExit(1)
+          print('AL01.3 quiz return URLs: PASS')
+          PY
+
+      - name: Regression check AL01.1/AL01.2 Core pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$(find _build/html -type f -path '*al01*assignment-planning*' -name 'index.html' -print -quit)"
+          test -n "$(find _build/html -type f -path '*al01*literature-search*' -name 'index.html' -print -quit)"
+          echo 'AL01.1/AL01.2 Core output regression check: PASS'
+
+      - name: Upload build QA artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: al01-3-core-build-qa
+          path: |
+            _build/html
+            myst-build.log
+          if-no-files-found: warn

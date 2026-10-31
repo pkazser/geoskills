@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AL01.3 Core — Καρτέλες ανάγνωσης</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { max-width: 960px; margin: 0 auto; padding: 1rem; line-height: 1.5; color: #17202a; }
+    fieldset { margin: 1rem 0; padding: 1rem; border: 1px solid #b8c4ce; border-radius: .5rem; }
+    legend { font-weight: 700; padding: 0 .35rem; }
+    label { display: block; margin-top: .75rem; font-weight: 600; }
+    input, textarea, select, button { box-sizing: border-box; width: 100%; margin-top: .25rem; padding: .55rem; font: inherit; }
+    textarea { min-height: 5rem; }
+    button, a { display: inline-block; width: auto; margin: .5rem .5rem .5rem 0; }
+    .muted { color: #53616d; }
+    #status { min-height: 1.5rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AL01.3 Core — Καρτέλες ανάγνωσης</h1>
+    <p class="muted">Συνέχισε το portfolio της AL01.1 και AL01.2 με μία καρτέλα για τουλάχιστον μία πραγματική πηγή.</p>
+    <p><a href="/geoskills/courses/ai-learning/al01/core/article-reading/">← Επιστροφή στο μάθημα</a></p>
+
+    <section id="assignment" aria-labelledby="assignment-heading">
+      <h2 id="assignment-heading">Ερευνητικό ερώτημα</h2>
+      <p id="question" class="muted"></p>
+      <label for="newQuestion">Νέα διατύπωση ερωτήματος</label>
+      <textarea id="newQuestion"></textarea>
+      <label for="reason">Αιτιολόγηση αναθεώρησης</label>
+      <textarea id="reason"></textarea>
+      <button id="revise" type="button">Καταγραφή αναθεώρησης</button>
+    </section>
+
+    <section id="sources" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Βιβλιογραφικές πηγές</h2>
+      <div id="sourceList"></div>
+      <button id="addSource" type="button">Προσθήκη πηγής</button>
+    </section>
+
+    <section id="readingCards" aria-labelledby="cards-heading">
+      <h2 id="cards-heading">Καρτέλες ανάγνωσης</h2>
+      <p class="muted">Σύνδεσε κάθε καρτέλα με συγκεκριμένη πηγή και δήλωσε με ακρίβεια τι διάβασες.</p>
+      <div id="cardList"></div>
+      <button id="addReadingCard" type="button">Προσθήκη καρτέλας ανάγνωσης</button>
+    </section>
+
+    <section aria-labelledby="data-heading">
+      <h2 id="data-heading">Αποθήκευση και εισαγωγή</h2>
+      <p id="status" role="status" aria-live="polite"></p>
+      <label for="load">Φόρτωση υπάρχοντος JSON portfolio</label>
+      <input id="load" type="file" accept=".json,application/json">
+      <button id="save" type="button">Αποθήκευση JSON</button>
+      <button id="txt" type="button">Εξαγωγή κειμένου</button>
+    </section>
+  </main>
+  <script src="portfolio.js"></script>
+</body>
+</html>

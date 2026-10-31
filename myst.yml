@@ -40,6 +40,9 @@ project:
     - courses/ai-learning/al01/core/quizzes/al01_1_core_q2.html
     - courses/ai-learning/al01/core/quizzes/al01_2_core_q1.html
     - courses/ai-learning/al01/core/quizzes/al01_2_core_q2.html
+    - courses/ai-learning/al01/core/tools/al01_3_portfolio.html
+    - courses/ai-learning/al01/core/quizzes/al01_3_core_q1.html
+    - courses/ai-learning/al01/core/quizzes/al01_3_core_q2.html
     - courses/ai-learning/al01/core/docs/portfolio.schema.json
   toc:
     - file: index.md
