@@ -87,6 +87,6 @@ Deng, R., Jiang, M., Yu, X., Lu, Y., & Liu, S. (2025). *Does ChatGPT enhance stu
 
 **Έλεγχος κατανόησης:** <a href="/al01_2_core_q1.html" target="_blank" rel="noopener">Quiz 1 — Αναζητώ</a> · <a href="/al01_2_core_q2.html" target="_blank" rel="noopener">Quiz 2 — Ελέγχω πηγές</a>.
 
-**Επόμενο:** AL01.3 Core — Διαβάζω και κατανοώ ένα από τα άρθρα μου με τη βοήθεια της ΤΝ.
+**Επόμενο:** [AL01.3 Core — Διαβάζω και κατανοώ ένα από τα άρθρα μου με τη βοήθεια της ΤΝ](03-article-reading.md).
 
 **Προηγούμενο Core:** [AL01.1 Core](01-assignment-planning.md).

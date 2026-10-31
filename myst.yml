@@ -40,6 +40,9 @@ project:
     - courses/ai-learning/al01/core/quizzes/al01_1_core_q2.html
     - courses/ai-learning/al01/core/quizzes/al01_2_core_q1.html
     - courses/ai-learning/al01/core/quizzes/al01_2_core_q2.html
+    - courses/ai-learning/al01/core/tools/al01_3_portfolio.html
+    - courses/ai-learning/al01/core/quizzes/al01_3_core_q1.html
+    - courses/ai-learning/al01/core/quizzes/al01_3_core_q2.html
     - courses/ai-learning/al01/core/docs/portfolio.schema.json
   toc:
     - file: index.md
@@ -79,6 +82,7 @@ project:
             - file: courses/ai-learning/al00/review.md
         - file: courses/ai-learning/al01/core/01-assignment-planning.md
         - file: courses/ai-learning/al01/core/02-literature-search.md
+        - file: courses/ai-learning/al01/core/03-article-reading.md
         - file: courses/ai-learning/al01/01-assignment-planning.md
           hidden: true
         - file: courses/ai-learning/al01/02-literature-search.md

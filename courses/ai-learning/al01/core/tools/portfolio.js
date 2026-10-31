@@ -1,18 +1,360 @@
-
 'use strict';
-const empty=()=>({schemaVersion:1,assignment:{prompt:'',requirements:'',topic:'',question:'',plan:'',pending:''},literature:{searches:[],sources:[]},history:[]});
-let data=empty(),dirty=false;
-const $=id=>document.getElementById(id);
-function safeText(x){return typeof x==='string'?x:''}
-function validate(x){if(!x||typeof x!=='object'||Array.isArray(x)||x.schemaVersion!==1)throw Error('Μη υποστηριζόμενη έκδοση ή μορφή αρχείου.');if(!x.assignment||typeof x.assignment!=='object'||!x.literature||typeof x.literature!=='object'||!Array.isArray(x.history)||!Array.isArray(x.literature.searches)||!Array.isArray(x.literature.sources))throw Error('Λείπουν υποχρεωτικές ενότητες.');for(const k of ['prompt','requirements','topic','question','plan','pending'])if(typeof x.assignment[k]!=='string')throw Error('Μη έγκυρο πεδίο σχεδίου: '+k);for(const s of x.literature.searches){if(!s||typeof s!=='object')throw Error('Μη έγκυρη αναζήτηση.');for(const k of ['date','service','terms','observation'])if(typeof s[k]!=='string')throw Error('Μη έγκυρο πεδίο αναζήτησης.')}for(const s of x.literature.sources){if(!s||typeof s!=='object')throw Error('Μη έγκυρη πηγή.');for(const k of ['title','authors','year','url','relevance','pending','verifiedAt'])if(typeof s[k]!=='string')throw Error('Μη έγκυρο πεδίο πηγής.')}for(const h of x.history){if(!h||typeof h!=='object'||['previousQuestion','newQuestion','reason'].some(k=>typeof h[k]!=='string'))throw Error('Μη έγκυρο ιστορικό.')}return x}
-function msg(s){$('status').textContent=s}
-function update(){for(const el of document.querySelectorAll('[data-section]')){const a=el.dataset.section,k=el.dataset.key,i=el.dataset.index; if(i!==undefined&&i!==''){if(!data[a][el.dataset.list][+i])continue;data[a][el.dataset.list][+i][k]=el.value}else data[a][k]=el.value}dirty=true;msg('Υπάρχουν αλλαγές που δεν έχουν αποθηκευτεί.');}
-function syncFields(){for(const el of document.querySelectorAll('[data-section]')){const a=el.dataset.section,k=el.dataset.key,i=el.dataset.index;el.value=i!==undefined&&i!==''?(data[a][el.dataset.list][+i]?.[k]||''):(data[a][k]||'')}}
-function download(content,filename,type){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),5000)}
-function save(){update();validate(data);download(JSON.stringify(data,null,2),'geoskills-al01-portfolio.json','application/json;charset=utf-8');dirty=false;msg('Το αρχείο δόθηκε στον φυλλομετρητή για λήψη. Έλεγξε ότι αποθηκεύτηκε στον υπολογιστή σου.');}
-function exportTxt(){update();const a=data.assignment,l=data.literature;const text=`GEOSKILLS AL01 PORTFOLIO\nΕκφώνηση: ${a.prompt}\nΑπαιτήσεις: ${a.requirements}\nΘέμα: ${a.topic}\nΕρώτημα: ${a.question}\nΒήματα: ${a.plan}\nΕκκρεμότητες: ${a.pending}\n\nΑΝΑΖΗΤΗΣΕΙΣ\n`+l.searches.map((s,i)=>`${i+1}. ${s.date} | ${s.service} | ${s.terms}\n${s.observation}`).join('\n')+'\n\nΠΗΓΕΣ\n'+l.sources.map((s,i)=>`${i+1}. ${s.title}\n${s.authors} (${s.year}) ${s.url}\nΣυνάφεια: ${s.relevance}\nΕκκρεμότητες: ${s.pending}\nΈλεγχος: ${s.verifiedAt}`).join('\n\n')+'\n\nΙΣΤΟΡΙΚΟ\n'+data.history.map(h=>`${h.previousQuestion} -> ${h.newQuestion}: ${h.reason}`).join('\n');download(text,'geoskills-al01-portfolio.txt','text/plain;charset=utf-8');msg('Το αρχείο κειμένου δόθηκε για λήψη.');}
-function importFile(file){if(!file)return;if(dirty&&!confirm('Υπάρχουν μη αποθηκευμένες αλλαγές. Θέλεις να τις αντικαταστήσεις με τα δεδομένα του αρχείου;'))return;if(file.size>1024*1024){msg('Το αρχείο είναι υπερβολικά μεγάλο (όριο 1 MB).');return}const reader=new FileReader();reader.onload=()=>{try{const x=validate(JSON.parse(reader.result));data=x;dirty=false;render();msg('Το αρχείο φορτώθηκε επιτυχώς.')}catch(e){msg('Η φόρτωση απέτυχε: '+e.message)}};reader.onerror=()=>msg('Δεν ήταν δυνατή η ανάγνωση του αρχείου.');reader.readAsText(file,'utf-8')}
-function field(section,key,label,val='',list='',idx=''){const wrap=document.createElement('div');const id='f-'+section+'-'+key+'-'+idx+'-'+list;const lab=document.createElement('label');lab.htmlFor=id;lab.textContent=label;const el=document.createElement(['date','year','url'].includes(key)?'input':'textarea');el.id=id;el.value=val;el.dataset.section=section;el.dataset.key=key;if(list){el.dataset.list=list;el.dataset.index=idx;}el.addEventListener('input',update);wrap.append(lab,el);return wrap}
-function render(){const base=$('assignment');base.replaceChildren();for(const [k,l] of Object.entries({prompt:'Αρχική εκφώνηση',requirements:'Υποχρεωτικές απαιτήσεις',topic:'Επιλεγμένο θέμα',question:'Ερευνητικό ερώτημα',plan:'Σχέδιο 4–6 βημάτων',pending:'Εκκρεμότητες'}))base.append(field('assignment',k,l,data.assignment[k]));if($('searches')){const s=$('searches'),p=$('sources');s.replaceChildren();p.replaceChildren();data.literature.searches.forEach((v,i)=>{const fs=document.createElement('fieldset');const legend=document.createElement('legend');legend.textContent='Αναζήτηση '+(i+1);fs.append(legend);for(const [k,l] of Object.entries({date:'Ημερομηνία (YYYY-MM-DD)',service:'Υπηρεσία',terms:'Ακριβείς όροι',observation:'Παρατήρηση'}))fs.append(field('literature',k,l,v[k],'searches',i));s.append(fs)});data.literature.sources.forEach((v,i)=>{const fs=document.createElement('fieldset');const legend=document.createElement('legend');legend.textContent='Πηγή '+(i+1);fs.append(legend);for(const [k,l] of Object.entries({title:'Τίτλος',authors:'Συγγραφείς',year:'Έτος',url:'DOI ή επίσημο URL',relevance:'Αρχική συνάφεια',pending:'Τι απομένει να ελέγξω',verifiedAt:'Πού επαλήθευσα τα στοιχεία (όχι αυτόματη πιστοποίηση)'}))fs.append(field('literature',k,l,v[k],'sources',i));p.append(fs)})}}
-window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
-window.addEventListener('DOMContentLoaded',()=>{$('save').addEventListener('click',save);$('txt').addEventListener('click',exportTxt);$('load').addEventListener('change',e=>{importFile(e.target.files[0]);e.target.value='' });if($('addSearch'))$('addSearch').addEventListener('click',()=>{update();data.literature.searches.push({date:'',service:'',terms:'',observation:''});dirty=true;render();msg('Προστέθηκε αναζήτηση. Μην ξεχάσεις να αποθηκεύσεις.');});if($('addSource'))$('addSource').addEventListener('click',()=>{update();data.literature.sources.push({title:'',authors:'',year:'',url:'',relevance:'',pending:'',verifiedAt:''});dirty=true;render();msg('Προστέθηκε πηγή. Μην ξεχάσεις να αποθηκεύσεις.');});if($('revise'))$('revise').addEventListener('click',()=>{update();const q=$('newQuestion').value.trim(),r=$('reason').value.trim();if(!q||!r||!data.assignment.question.trim()){msg('Χρειάζεται αρχικό και νέο ερώτημα και αιτιολόγηση.');return}data.history.push({previousQuestion:data.assignment.question,newQuestion:q,reason:r});data.assignment.question=q;dirty=true;render();$('newQuestion').value='';$('reason').value='';msg('Το ερώτημα αναθεωρήθηκε. Το αρχικό διατηρείται στο ιστορικό. Αποθήκευσε το αρχείο.');});render();});
+
+const empty = () => ({
+  schemaVersion: 1,
+  assignment: { prompt: '', requirements: '', topic: '', question: '', plan: '', pending: '' },
+  literature: { searches: [], sources: [] },
+  history: [],
+  readingCards: []
+});
+
+const sourceFields = ['title', 'authors', 'year', 'url', 'relevance', 'pending', 'verifiedAt'];
+const cardFields = [
+  ['readingExtent', 'Έκταση ανάγνωσης'],
+  ['purpose', 'Σκοπός'],
+  ['approach', 'Προσέγγιση'],
+  ['finding', 'Βασικό εύρημα'],
+  ['evidenceLocation', 'Ακριβές σημείο τεκμηρίωσης'],
+  ['limitation', 'Περιορισμός'],
+  ['usefulness', 'Χρησιμότητα για την εργασία'],
+  ['pending', 'Εκκρεμότητα']
+];
+
+let data = empty();
+let dirty = false;
+const $ = id => document.getElementById(id);
+
+function safeText(value) {
+  return typeof value === 'string' ? value : '';
+}
+
+function sourceId(source) {
+  if (typeof source.sourceId === 'string' && source.sourceId.trim()) return source.sourceId;
+  const key = sourceFields.map(field => safeText(source[field]).trim().toLowerCase()).join('|');
+  let hash = 2166136261;
+  for (const char of key) {
+    hash ^= char.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return 'source-' + (hash >>> 0).toString(16).padStart(8, '0');
+}
+
+function normalize(input) {
+  if (!input || typeof input !== 'object' || Array.isArray(input)) throw Error('Μη υποστηριζόμενη μορφή αρχείου.');
+  if (input.schemaVersion !== 1) throw Error('Μη υποστηριζόμενη έκδοση portfolio.');
+  const output = JSON.parse(JSON.stringify(input));
+  output.assignment = output.assignment && typeof output.assignment === 'object' ? output.assignment : {};
+  output.literature = output.literature && typeof output.literature === 'object' ? output.literature : {};
+  output.literature.searches = Array.isArray(output.literature.searches) ? output.literature.searches : [];
+  output.literature.sources = Array.isArray(output.literature.sources) ? output.literature.sources : [];
+  output.history = Array.isArray(output.history) ? output.history : [];
+  output.readingCards = Array.isArray(output.readingCards) ? output.readingCards : [];
+
+  for (const field of ['prompt', 'requirements', 'topic', 'question', 'plan', 'pending']) {
+    if (typeof output.assignment[field] !== 'string') output.assignment[field] = '';
+  }
+  output.literature.sources = output.literature.sources.map(source => {
+    const normalized = source && typeof source === 'object' ? source : {};
+    for (const field of sourceFields) if (typeof normalized[field] !== 'string') normalized[field] = '';
+    normalized.sourceId = sourceId(normalized);
+    return normalized;
+  });
+  output.readingCards = output.readingCards.map(card => {
+    const normalized = card && typeof card === 'object' ? card : {};
+    for (const pair of cardFields) if (typeof normalized[pair[0]] !== 'string') normalized[pair[0]] = '';
+    if (typeof normalized.sourceId !== 'string') normalized.sourceId = '';
+    return normalized;
+  });
+  return output;
+}
+
+function validate(value) {
+  const normalized = normalize(value);
+  for (const item of normalized.literature.searches) {
+    if (!item || typeof item !== 'object') throw Error('Μη έγκυρη αναζήτηση.');
+    for (const field of ['date', 'service', 'terms', 'observation']) {
+      if (typeof item[field] !== 'string') throw Error('Μη έγκυρο πεδίο αναζήτησης: ' + field);
+    }
+  }
+  for (const source of normalized.literature.sources) {
+    for (const field of sourceFields) if (typeof source[field] !== 'string') throw Error('Μη έγκυρο πεδίο πηγής: ' + field);
+  }
+  for (const card of normalized.readingCards) {
+    for (const pair of cardFields) if (typeof card[pair[0]] !== 'string') throw Error('Μη έγκυρο πεδίο καρτέλας: ' + pair[0]);
+  }
+  for (const item of normalized.history) {
+    if (!item || typeof item !== 'object') throw Error('Μη έγκυρο ιστορικό.');
+    for (const field of ['previousQuestion', 'newQuestion', 'reason']) {
+      if (typeof item[field] !== 'string') throw Error('Μη έγκυρο πεδίο ιστορικού: ' + field);
+    }
+  }
+  return normalized;
+}
+
+function msg(text) { $('status').textContent = text; }
+
+function update() {
+  for (const element of document.querySelectorAll('[data-section]')) {
+    const section = element.dataset.section;
+    const key = element.dataset.key;
+    const index = element.dataset.index;
+    if (index !== undefined && index !== '') {
+      if (data[section][element.dataset.list] && data[section][element.dataset.list][+index]) {
+        data[section][element.dataset.list][+index][key] = element.value;
+      }
+    } else {
+      data[section][key] = element.value;
+    }
+  }
+  dirty = true;
+  msg('Υπάρχουν αλλαγές που δεν έχουν αποθηκευτεί.');
+}
+
+function download(content, filename, type) {
+  const blob = new Blob([content], { type });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 5000);
+}
+
+function save() {
+  update();
+  data = validate(data);
+  download(JSON.stringify(data, null, 2), 'geoskills-al01-portfolio.json', 'application/json;charset=utf-8');
+  dirty = false;
+  msg('Το αρχείο δόθηκε στον φυλλομετρητή για λήψη. Έλεγξε ότι αποθηκεύτηκε.');
+}
+
+function exportTxt() {
+  update();
+  data = validate(data);
+  const cards = data.readingCards.map((card, index) => {
+    const source = data.literature.sources.find(item => item.sourceId === card.sourceId);
+    return (index + 1) + '. Πηγή: ' + (source?.title || card.sourceId || 'Δεν επιλέχθηκε') + '\n' +
+      cardFields.map(pair => pair[1] + ': ' + card[pair[0]]).join('\n');
+  }).join('\n\n');
+  const text = 'GEOSKILLS AL01 PORTFOLIO\n' +
+    'Εκφώνηση: ' + data.assignment.prompt + '\n' +
+    'Απαιτήσεις: ' + data.assignment.requirements + '\n' +
+    'Θέμα: ' + data.assignment.topic + '\n' +
+    'Ερώτημα: ' + data.assignment.question + '\n' +
+    'Βήματα: ' + data.assignment.plan + '\n' +
+    'Εκκρεμότητες: ' + data.assignment.pending + '\n\n' +
+    'ΚΑΡΤΕΛΕΣ ΑΝΑΓΝΩΣΗΣ\n' + cards + '\n\n' +
+    'ΙΣΤΟΡΙΚΟ\n' + data.history.map(item => item.previousQuestion + ' -> ' + item.newQuestion + ': ' + item.reason).join('\n');
+  download(text, 'geoskills-al01-portfolio.txt', 'text/plain;charset=utf-8');
+  msg('Το αρχείο κειμένου δόθηκε για λήψη.');
+}
+
+function importFile(file) {
+  if (!file) return;
+  if (dirty && !confirm('Υπάρχουν μη αποθηκευμένες αλλαγές. Θέλεις να τις αντικαταστήσεις;')) return;
+  if (file.size > 1024 * 1024) {
+    msg('Το αρχείο είναι υπερβολικά μεγάλο (όριο 1 MB).');
+    return;
+  }
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      data = validate(JSON.parse(reader.result));
+      dirty = false;
+      render();
+      msg('Το αρχείο φορτώθηκε επιτυχώς.');
+    } catch (error) {
+      msg('Η φόρτωση απέτυχε: ' + error.message);
+    }
+  };
+  reader.onerror = () => msg('Δεν ήταν δυνατή η ανάγνωση του αρχείου.');
+  reader.readAsText(file, 'utf-8');
+}
+
+function field(section, key, label, value = '', list = '', index = '') {
+  const wrap = document.createElement('div');
+  const id = 'f-' + section + '-' + key + '-' + index + '-' + list;
+  const labelElement = document.createElement('label');
+  labelElement.htmlFor = id;
+  labelElement.textContent = label;
+  const element = document.createElement(['date', 'year', 'url'].includes(key) ? 'input' : 'textarea');
+  element.id = id;
+  element.value = value;
+  element.dataset.section = section;
+  element.dataset.key = key;
+  if (list) {
+    element.dataset.list = list;
+    element.dataset.index = index;
+  }
+  element.addEventListener('input', update);
+  wrap.append(labelElement, element);
+  return wrap;
+}
+
+function readingSelect(card, index) {
+  const wrap = document.createElement('div');
+  const id = 'reading-source-' + index;
+  const label = document.createElement('label');
+  label.htmlFor = id;
+  label.textContent = 'Πηγή';
+  const select = document.createElement('select');
+  select.id = id;
+  select.dataset.section = 'readingCards';
+  select.dataset.key = 'sourceId';
+  select.dataset.index = index;
+  select.dataset.list = 'readingCards';
+  select.append(new Option('Επίλεξε καταχωρισμένη πηγή', ''));
+  data.literature.sources.forEach(source => {
+    select.append(new Option((source.title || 'Χωρίς τίτλο') + ' — ' + source.sourceId, source.sourceId));
+  });
+  select.value = card.sourceId;
+  select.addEventListener('change', update);
+  wrap.append(label, select);
+  return wrap;
+}
+
+function render() {
+  const assignment = $('assignment');
+  if (assignment) {
+    assignment.replaceChildren();
+    for (const pair of Object.entries({
+      prompt: 'Αρχική εκφώνηση',
+      requirements: 'Υποχρεωτικές απαιτήσεις',
+      topic: 'Επιλεγμένο θέμα',
+      question: 'Ερευνητικό ερώτημα',
+      plan: 'Σχέδιο 4–6 βημάτων',
+      pending: 'Εκκρεμότητες'
+    })) assignment.append(field('assignment', pair[0], pair[1], data.assignment[pair[0]]));
+  }
+
+  const searches = $('searches');
+  const sources = $('sources');
+  if (searches && sources) {
+    searches.replaceChildren();
+    sources.replaceChildren();
+    data.literature.searches.forEach((value, index) => {
+      const set = document.createElement('fieldset');
+      set.innerHTML = '<legend>Αναζήτηση ' + (index + 1) + '</legend>';
+      for (const pair of Object.entries({
+        date: 'Ημερομηνία (YYYY-MM-DD)',
+        service: 'Υπηρεσία',
+        terms: 'Ακριβείς όροι',
+        observation: 'Παρατήρηση'
+      })) set.append(field('literature', pair[0], pair[1], value[pair[0]], 'searches', index));
+      searches.append(set);
+    });
+    data.literature.sources.forEach((value, index) => {
+      const set = document.createElement('fieldset');
+      set.innerHTML = '<legend>Πηγή ' + (index + 1) + '</legend>';
+      for (const pair of Object.entries({
+        title: 'Τίτλος',
+        authors: 'Συγγραφείς',
+        year: 'Έτος',
+        url: 'DOI ή επίσημο URL',
+        relevance: 'Αρχική συνάφεια',
+        pending: 'Τι απομένει να ελέγξω',
+        verifiedAt: 'Πού επαλήθευσα τα στοιχεία'
+      })) set.append(field('literature', pair[0], pair[1], value[pair[0]], 'sources', index));
+      sources.append(set);
+    });
+  }
+
+  const cards = $('readingCards');
+  if (cards) {
+    cards.replaceChildren();
+    data.readingCards.forEach((value, index) => {
+      const set = document.createElement('fieldset');
+      set.innerHTML = '<legend>Καρτέλα ανάγνωσης ' + (index + 1) + '</legend>';
+      set.append(readingSelect(value, index));
+      for (const pair of cardFields) {
+        const key = pair[0];
+        const label = pair[1];
+        if (key === 'readingExtent') {
+          const wrap = document.createElement('div');
+          const id = 'reading-' + key + '-' + index;
+          const labelElement = document.createElement('label');
+          labelElement.htmlFor = id;
+          labelElement.textContent = label;
+          const select = document.createElement('select');
+          select.id = id;
+          select.dataset.section = 'readingCards';
+          select.dataset.key = key;
+          select.dataset.list = 'readingCards';
+          select.dataset.index = index;
+          [['', 'Επίλεξε έκταση'], ['summary', 'Περίληψη'], ['partial', 'Μερικό κείμενο'], ['full', 'Πλήρες κείμενο']]
+            .forEach(option => select.append(new Option(option[1], option[0])));
+          select.value = value[key];
+          select.addEventListener('change', update);
+          wrap.append(labelElement, select);
+          set.append(wrap);
+        } else {
+          set.append(field('readingCards', key, label, value[key], 'readingCards', index));
+        }
+      }
+      cards.append(set);
+    });
+  }
+}
+
+window.addEventListener('beforeunload', event => {
+  if (dirty) {
+    event.preventDefault();
+    event.returnValue = '';
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  $('save')?.addEventListener('click', save);
+  $('txt')?.addEventListener('click', exportTxt);
+  $('load')?.addEventListener('change', event => {
+    importFile(event.target.files[0]);
+    event.target.value = '';
+  });
+  $('addSearch')?.addEventListener('click', () => {
+    update();
+    data.literature.searches.push({ date: '', service: '', terms: '', observation: '' });
+    render();
+    msg('Προστέθηκε αναζήτηση. Μην ξεχάσεις να αποθηκεύσεις.');
+  });
+  $('addSource')?.addEventListener('click', () => {
+    update();
+    data.literature.sources.push({ sourceId: '', title: '', authors: '', year: '', url: '', relevance: '', pending: '', verifiedAt: '' });
+    data = validate(data);
+    render();
+    msg('Προστέθηκε πηγή. Μην ξεχάσεις να αποθηκεύσεις.');
+  });
+  $('addReadingCard')?.addEventListener('click', () => {
+    update();
+    data.readingCards.push({
+      sourceId: data.literature.sources[0]?.sourceId || '',
+      readingExtent: '',
+      purpose: '',
+      approach: '',
+      finding: '',
+      evidenceLocation: '',
+      limitation: '',
+      usefulness: '',
+      pending: ''
+    });
+    render();
+    msg('Προστέθηκε καρτέλα ανάγνωσης. Μην ξεχάσεις να αποθηκεύσεις.');
+  });
+  $('revise')?.addEventListener('click', () => {
+    update();
+    const question = $('newQuestion').value.trim();
+    const reason = $('reason').value.trim();
+    if (!question || !reason || !data.assignment.question.trim()) {
+      msg('Χρειάζεται αρχικό και νέο ερώτημα και αιτιολόγηση.');
+      return;
+    }
+    data.history.push({ previousQuestion: data.assignment.question, newQuestion: question, reason });
+    data.assignment.question = question;
+    render();
+    $('newQuestion').value = '';
+    $('reason').value = '';
+    msg('Το ερώτημα αναθεωρήθηκε. Το αρχικό διατηρείται στο ιστορικό. Αποθήκευσε το αρχείο.');
+  });
+  render();
+});
