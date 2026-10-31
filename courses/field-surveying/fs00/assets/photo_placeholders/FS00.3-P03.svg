@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 310" role="img" aria-labelledby="title desc"><title id="title">FS00.3-P03 — προσωρινό SVG υποκατάστατο</title><desc id="desc">Προσωρινή σχηματική αναπαράσταση και όχι πραγματική φωτογραφία. Η απαιτούμενη εικόνα είναι: Στενός αστικός χώρος δίπλα σε ψηλά κτίρια· εμφανείς φραγμοί ορατότητας ουρανού.</desc>
+<rect width="780" height="310" rx="14" fill="#f5f8fb"/>
+<rect x="16" y="16" width="748" height="278" rx="12" fill="#fff" stroke="#cad5df" stroke-width="2"/>
+<rect x="116" y="56" width="132" height="87" fill="#b9ccdb" stroke="#5c7891" stroke-width="3"/>
+<path d="M78 180 H419" stroke="#d2bea6" stroke-width="40"/>
+<rect x="298" y="59" width="125" height="89" rx="10" fill="#b8d4b1"/>
+<circle cx="330" cy="93" r="19" fill="#80ae76"/>
+<circle cx="194" cy="214" r="9" fill="#cf9a4e"/>
+<circle cx="263" cy="214" r="9" fill="#cf9a4e"/>
+<text x="470" y="105" font-size="20" fill="#253747">Χώρος αποτύπωσης</text>
+<text x="470" y="145" font-size="17" fill="#516777">Αναγνώριση και έλεγχος</text>
+<text x="36" y="280" font-size="15" fill="#61768a">Εκπαιδευτικό σχηματικό υποκατάστατο · όχι πραγματική φωτογραφία</text>
+</svg>
