@@ -67,15 +67,15 @@
 
 
 
-![Γεωδαιτικός σταθμός σε τρίποδα, σε πραγματική αποτύπωση](https://commons.wikimedia.org/wiki/Special:FilePath/Total_station_coastal_survey.jpg?width=1100)
+![Γεωδαιτικός σταθμός σε τρίποδα, σε πραγματική αποτύπωση](assets/photos/FS00.2-P01-total-station.jpg)
 
-*Φωτογραφία FS00.2-P01. Γεωδαιτικός σταθμός σε τρίποδα, σε πραγματική αποτύπωση. Πηγή: [Cvstr, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Total_station_coastal_survey.jpg) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Φορτώνεται από την εξωτερική πηγή.*
+*Φωτογραφία FS00.2-P01. Γεωδαιτικός σταθμός σε τρίποδα, σε πραγματική αποτύπωση. Πηγή: [Cvstr / HR Surveyors, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Total_station_coastal_survey.jpg) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Χρησιμοποιείται τοπικό αντίγραφο για αξιόπιστο build.*
 
 
 
-![Βάση tribrach με οπτική κέντρωση](https://commons.wikimedia.org/wiki/Special:FilePath/Tribrach_for_surveying_instruments.JPG?width=1100)
+![Βάση tribrach με οπτική κέντρωση](assets/photos/FS00.2-P02-tribrach.jpg)
 
-*Φωτογραφία FS00.2-P02. Βάση tribrach με οπτική κέντρωση. Πηγή: [Johan Gustafsson, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tribrach_for_surveying_instruments.JPG) · [Public domain](https://commons.wikimedia.org/wiki/File:Tribrach_for_surveying_instruments.JPG). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Φορτώνεται από την εξωτερική πηγή.*
+*Φωτογραφία FS00.2-P02. Βάση tribrach με οπτική κέντρωση. Πηγή: [Johan Gustafsson, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tribrach_for_surveying_instruments.JPG) · [Public domain](https://commons.wikimedia.org/wiki/File:Tribrach_for_surveying_instruments.JPG). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Χρησιμοποιείται τοπικό αντίγραφο για αξιόπιστο build.*
 
 
 Ο γεωδαιτικός σταθμός μετρά γωνιακές διευθύνσεις και αποστάσεις προς στόχους, ώστε με σωστή στάση, προσανατολισμό και παραμέτρους να υπολογίζονται συντεταγμένες. Το τηλεσκόπιο χρησιμοποιείται για σκόπευση· το EDM για ηλεκτρονική μέτρηση απόστασης· τα χειριστήρια για ενδείξεις, ρυθμίσεις και καταγραφή. Η βάση, οι κοχλίες, οι φυσαλίδες και η διάταξη κέντρωσης υποστηρίζουν την εγκατάσταση. Η ακριβής κατασκευή διαφέρει ανά όργανο.
@@ -102,9 +102,9 @@
 ### 2.3 Πρίσμα, κοντάρι, χειριστήριο
 
 
-![Ανακλαστικό πρίσμα με στόχο](https://commons.wikimedia.org/wiki/Special:FilePath/Prism_Target_used_with_survey_equipment.jpg?width=1100)
+![Ανακλαστικό πρίσμα με στόχο](assets/photos/FS00.2-P05-prism-target.jpg)
 
-*Φωτογραφία FS00.2-P05. Ανακλαστικό πρίσμα με στόχο. Πηγή: [Jfoster7991, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Prism_Target_used_with_survey_equipment.jpg) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Φορτώνεται από την εξωτερική πηγή.*
+*Φωτογραφία FS00.2-P05. Ανακλαστικό πρίσμα με στόχο. Πηγή: [Jfoster7991, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Prism_Target_used_with_survey_equipment.jpg) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Χρησιμοποιείται τοπικό αντίγραφο για αξιόπιστο build.*
 
 
 
@@ -124,9 +124,9 @@
 ### 2.4 GNSS rover και βοηθητικός εξοπλισμός
 
 
-![Δέκτης GNSS και χειριστήριο](https://commons.wikimedia.org/wiki/Special:FilePath/Trimble_GNSS_Messausr%C3%BCstung_R980_Empf%C3%A4nger.jpg?width=1100)
+![Δέκτης GNSS και χειριστήριο](assets/photos/FS00.2-P08-gnss-receiver.jpg)
 
-*Φωτογραφία FS00.2-P08. Δέκτης GNSS και χειριστήριο. Πηγή: [Best Tech Nick 25, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Trimble_GNSS_Messausr%C3%BCstung_R980_Empf%C3%A4nger.jpg) · [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Φορτώνεται από την εξωτερική πηγή.*
+*Φωτογραφία FS00.2-P08. Δέκτης GNSS και χειριστήριο. Πηγή: [Best Tech Nick 25, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Trimble_GNSS_Messausr%C3%BCstung_R980_Empf%C3%A4nger.jpg) · [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Χρησιμοποιείται τοπικό αντίγραφο για αξιόπιστο build.*
 
 
 
@@ -181,9 +181,9 @@
 
 
 
-![Χειριστής GNSS RTK σε εργασία πεδίου](https://commons.wikimedia.org/wiki/Special:FilePath/Surveyor_Using_GNSS_Receiver_with_RTK_Solution.jpg?width=1100)
+![Χειριστής GNSS RTK σε εργασία πεδίου](assets/photos/FS00.3-P02-gnss-rtk-surveyor.jpg)
 
-*Φωτογραφία FS00.3-P02. Χειριστής GNSS RTK σε εργασία πεδίου. Πηγή: [Cvstr, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Surveyor_Using_GNSS_Receiver_with_RTK_Solution.jpg) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Φορτώνεται από την εξωτερική πηγή.*
+*Φωτογραφία FS00.3-P02. Χειριστής GNSS RTK σε εργασία πεδίου. Πηγή: [SweetCanadianMullet, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Surveyor_Using_GNSS_Receiver_with_RTK_Solution.jpg) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Χρησιμοποιείται τοπικό αντίγραφο για αξιόπιστο build.*
 
 
 Ο δέκτης GNSS λαμβάνει σήματα από δορυφορικά συστήματα πλοήγησης. Από παρατηρήσεις όπως ψευδοαποστάσεις και φάσεις φέροντος, κατάλληλη επεξεργασία και, για RTK, δεδομένα/διορθώσεις αναφοράς, υπολογίζει τη θέση της **κεραίας**. Για να περιγράψει το σημείο στο έδαφος, πρέπει να ληφθούν υπόψη σωστά η εγκατάσταση και το ύψος κεραίας.
@@ -416,9 +416,9 @@
 
 
 
-![Δέκτης GNSS σε περιβάλλον με δέντρα· παράδειγμα πιθανών εμποδίων](https://commons.wikimedia.org/wiki/Special:FilePath/GNSS_receiver_at_dusk_among_eucalyptus_trees.jpg?width=1100)
+![Δέκτης GNSS σε περιβάλλον με δέντρα· παράδειγμα πιθανών εμποδίων](assets/photos/FS00.6-P04-gnss-trees.jpg)
 
-*Φωτογραφία FS00.6-P04. Δέκτης GNSS σε περιβάλλον με δέντρα· παράδειγμα πιθανών εμποδίων. Πηγή: [Cvstr, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GNSS_receiver_at_dusk_among_eucalyptus_trees.jpg) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Φορτώνεται από την εξωτερική πηγή.*
+*Φωτογραφία FS00.6-P04. Δέκτης GNSS σε περιβάλλον με δέντρα· παράδειγμα πιθανών εμποδίων. Πηγή: [Cvstr / HR Surveyors, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GNSS_receiver_at_dusk_among_eucalyptus_trees.jpg) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Η φωτογραφία δείχνει ενδεικτικό εξοπλισμό, όχι κατ’ ανάγκη το μοντέλο του εργαστηρίου. Χρησιμοποιείται τοπικό αντίγραφο για αξιόπιστο build.*
 
 
 ![**Απευθείας και ανακλώμενη διάδοση δορυφορικού σήματος**, σαφής επισήμανση «απλουστευμένη εννοι](assets/FS00_multipath.svg)
