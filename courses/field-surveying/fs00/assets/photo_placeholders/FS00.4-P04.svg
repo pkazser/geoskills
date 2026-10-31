@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 310" role="img" aria-labelledby="title desc"><title id="title">FS00.4-P04 — προσωρινό SVG υποκατάστατο</title><desc id="desc">Προσωρινή σχηματική αναπαράσταση και όχι πραγματική φωτογραφία. Η απαιτούμενη εικόνα είναι: Μετροταινία στο σημείο μέτρησης HI για το πραγματικό όργανο, με σαφή ένδειξη από πού έως πού.</desc>
+<rect width="780" height="310" rx="14" fill="#f5f8fb"/>
+<rect x="16" y="16" width="748" height="278" rx="12" fill="#fff" stroke="#cad5df" stroke-width="2"/>
+<path d="M192 248 V62" stroke="#70869a" stroke-width="9"/>
+<rect x="156" y="52" width="72" height="30" rx="6" fill="#d6a44b"/>
+<path d="M281 68 V250 M273 68 H289 M273 250 H289" stroke="#298e73" stroke-width="4"/>
+<path d="M92 250 H422" stroke="#627383" stroke-width="4"/>
+<text x="321" y="149" font-size="27" fill="#238166">H</text>
+<text x="465" y="120" font-size="20" fill="#253747">Σημείο αναφοράς</text>
+<text x="465" y="154" font-size="18" fill="#516777">και κατακόρυφο ύψος</text>
+<text x="36" y="280" font-size="15" fill="#61768a">Εκπαιδευτικό σχηματικό υποκατάστατο · όχι πραγματική φωτογραφία</text>
+</svg>

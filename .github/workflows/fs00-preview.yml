@@ -1,0 +1,106 @@
+name: FS00 Artifact Preview
+
+on:
+  push:
+    branches:
+      - 'qa/fs00-preview'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fs00-artifact-preview
+  cancel-in-progress: true
+
+env:
+  BASE_URL: /geoskills
+  CI: true
+
+jobs:
+  build-preview:
+    name: Build FS00 MyST artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.22.1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+
+      - name: Install pinned MyST
+        run: npm install -g mystmd@1.11.0
+
+      - name: Capture tool versions
+        shell: bash
+        run: |
+          {
+            echo "node=$(node --version)"
+            echo "npm=$(npm --version)"
+            echo "python=$(python --version 2>&1)"
+            echo "myst=$(myst --version)"
+            echo "base_url=${BASE_URL}"
+          } | tee tool-versions.txt
+
+      - name: Prepare pinned MyST Book Theme
+        run: python scripts/prepare_myst_theme.py
+
+      - name: Build MyST HTML
+        id: myst-build
+        shell: bash
+        run: |
+          set +e
+          myst build --html --ci 2>&1 | tee myst-build.log
+          status=${PIPESTATUS[0]}
+          echo "exit_code=${status}" >> "$GITHUB_OUTPUT"
+          exit "$status"
+
+      - name: Validate FS00 output
+        if: success()
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          root = Path("_build/html")
+          if not root.is_dir():
+              raise SystemExit("Missing _build/html")
+
+          fs00_html = [p for p in root.rglob("*.html") if "field-surveying" in p.parts and "fs00" in p.parts]
+          if not fs00_html:
+              raise SystemExit("FS00 HTML page was not found in rendered output")
+
+          svg_files = [p for p in root.rglob("*.svg") if "FS00" in p.name or "fs00" in p.name.lower()]
+          if len(svg_files) != 41:
+              raise SystemExit(f"Expected 41 FS00 SVG assets, found {len(svg_files)}")
+
+          pending = 0
+          for page in fs00_html:
+              text = page.read_text(encoding="utf-8", errors="replace")
+              pending += text.count("Εκκρεμεί πραγματική φωτογραφία")
+          if pending < 29:
+              raise SystemExit(f"Expected at least 29 pending-photo notices, found {pending}")
+
+          print(f"FS00 HTML: {len(fs00_html)}")
+          print(f"FS00 SVG: {len(svg_files)}")
+          print(f"Pending-photo notices: {pending}")
+          PY
+
+      - name: Upload FS00 build and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fs00-myst-preview
+          if-no-files-found: warn
+          path: |
+            _build/html
+            myst-build.log
+            tool-versions.txt

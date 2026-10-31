@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 310" role="img" aria-labelledby="title desc"><title id="title">FS00.2-P07 — προσωρινό SVG υποκατάστατο</title><desc id="desc">Προσωρινή σχηματική αναπαράσταση και όχι πραγματική φωτογραφία. Η απαιτούμενη εικόνα είναι: Χειριστήριο πεδίου με ενδεικτική οθόνη επιλογής εργασίας ή σημείου, χωρίς προσωπικά δεδομένα/κωδικούς.</desc>
+<rect width="780" height="310" rx="14" fill="#f5f8fb"/>
+<rect x="16" y="16" width="748" height="278" rx="12" fill="#fff" stroke="#cad5df" stroke-width="2"/>
+<rect x="138" y="45" width="244" height="204" rx="10" fill="#eff4f7" stroke="#668197" stroke-width="4"/>
+<path d="M163 95 H347 M163 137 H347 M163 179 H347 M163 221 H347" stroke="#b6c8d4" stroke-width="2"/>
+<text x="167" y="83" font-size="18" fill="#36556f">ID   HR   Έλεγχος</text>
+<text x="426" y="117" font-size="20" fill="#253747">Στοιχεία εργασίας</text>
+<text x="426" y="155" font-size="17" fill="#516777">Κωδικοί · ημερολόγιο</text>
+<text x="36" y="280" font-size="15" fill="#61768a">Εκπαιδευτικό σχηματικό υποκατάστατο · όχι πραγματική φωτογραφία</text>
+</svg>

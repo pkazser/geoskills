@@ -228,6 +228,8 @@ project:
             - file: courses/python/core-capstone/08-deliverables.md
             - file: courses/python/core-capstone/09-self-assessment.md
     - file: courses/field-surveying/index.md
+      children:
+        - file: courses/field-surveying/fs00/index.md
     - file: courses/remote-sensing/index.md
     - file: about.md
 site:
