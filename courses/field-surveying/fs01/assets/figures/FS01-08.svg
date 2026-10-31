@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+<title id="title">FS01-08 — παράγωγο CAMPUS-01</title>
+<desc id="desc">Συνθετικός υπαίθριος χώρος περίπου 60 επί 80 μέτρων. Κτίριο Α βορειοδυτικά, κτίριο Β νοτιοανατολικά, κεντρικός διάδρομος από δυτικά προς ανατολικά, δέντρα νοτιοδυτικά, ανοικτή περιοχή Α βορειοανατολικά, περιοχή εμποδίων Β νοτιοδυτικά και μεικτή περιοχή Γ γύρω από τον διάδρομο. Οι θέσεις Σ1 και Σ2 είναι υποψήφιες και δεν έχουν πραγματικές συντεταγμένες.</desc>
+<rect width="960" height="640" fill="#fff"/>
+<text x="35" y="43" font-family="Arial,DejaVu Sans,sans-serif" font-size="26" font-weight="bold" fill="#172e3c">FS01-08 · CAMPUS-01</text>
+<text x="35" y="70" font-family="Arial,DejaVu Sans,sans-serif" font-size="15" fill="#526371">Συνθετικό εκπαιδευτικό παράδειγμα · όχι τοπογραφική αποτύπωση</text>
+<rect x="42" y="93" width="870" height="443" rx="12" fill="#f0f3ed" stroke="#799183" stroke-width="3"/>
+<rect id="zone-a" x="373" y="112" width="505" height="143" rx="9" fill="#d8eaf8" stroke="#4a88b5" stroke-width="2" stroke-dasharray="10 6"/>
+<rect id="zone-b" x="72" y="344" width="493" height="168" rx="9" fill="#fae6d4" stroke="#b17a41" stroke-width="2" stroke-dasharray="10 6"/>
+<rect id="zone-c" x="367" y="267" width="510" height="70" rx="9" fill="#d8ecdb" stroke="#6e9b73" stroke-width="2" stroke-dasharray="10 6"/>
+<path id="walkway" d="M61 301H888" fill="none" stroke="#e3d4b7" stroke-width="46"/>
+<path d="M61 301H888" fill="none" stroke="#ab9e8a" stroke-width="2" stroke-dasharray="10 8"/>
+<rect id="building-a" x="80" y="133" width="265" height="129" rx="4" fill="#abb7c3" stroke="#607789" stroke-width="3"/>
+<rect id="building-b" x="665" y="376" width="200" height="122" rx="4" fill="#abb7c3" stroke="#607789" stroke-width="3"/>
+<g font-family="Arial,DejaVu Sans,sans-serif" font-size="21" text-anchor="middle" fill="#273d4d"><text x="212" y="199">Κτίριο Α</text><text x="765" y="438">Κτίριο Β</text></g>
+<g id="trees"><circle cx="130" cy="389" r="25" fill="#6d9e70"/><circle cx="204" cy="395" r="27" fill="#6d9e70"/><circle cx="278" cy="386" r="24" fill="#6d9e70"/></g>
+<g font-family="Arial,DejaVu Sans,sans-serif" text-anchor="middle" fill="#1e485b"><text x="610" y="160" font-size="23" font-weight="bold">Περιοχή Α</text><text x="610" y="190" font-size="18">Ανοικτός χώρος</text><text x="448" y="430" font-size="22" font-weight="bold">Περιοχή Β</text><text x="448" y="456" font-size="17">Με εμπόδια</text><text x="640" y="290" font-size="20" font-weight="bold">Περιοχή Γ · Μικτή</text></g>
+<g id="candidate-stations"><circle id="station-s1" cx="505" cy="248" r="13" fill="#ffffff" stroke="#186b77" stroke-width="5"/><circle id="station-s2" cx="516" cy="424" r="13" fill="#ffffff" stroke="#186b77" stroke-width="5"/></g>
+<g font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#135864" font-weight="bold"><text x="526" y="238">Σ1</text><text x="538" y="417">Σ2</text></g>
+<g font-family="Arial,DejaVu Sans,sans-serif" font-size="17" fill="#344f5d"><text x="43" y="575">● Σ1, Σ2: υποψήφιες στάσεις · όχι επιβεβαιωμένα σημεία ελέγχου</text><text x="43" y="602">Δεν απεικονίζονται πραγματικές συντεταγμένες, μετρήσεις ή άδειες πρόσβασης.</text></g>
+<g font-family="DejaVu Sans,Arial" font-size="15"><rect x="43" y="542" width="865" height="86" rx="9" fill="white" stroke="#7893a1"/><text x="60" y="564" fill="#172e3c" font-weight="bold">Ενδεικτική στρατηγική, ΟΧΙ έγκριση μεθόδου</text><text x="60" y="587">Α: πιθανό GNSS RTK  ·  Β: πιθανός γεωδαιτικός σταθμός  ·  Γ: πιθανός συνδυασμός</text><text x="60" y="608">Όλα υπό έλεγχο συνθηκών, αναφοράς, ασφάλειας και ανεξάρτητης επαλήθευσης</text></g></svg>

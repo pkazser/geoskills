@@ -236,6 +236,7 @@ project:
     - file: courses/field-surveying/index.md
       children:
         - file: courses/field-surveying/fs00/index.md
+        - file: courses/field-surveying/fs01/index.md
     - file: courses/remote-sensing/index.md
     - file: about.md
 site:
