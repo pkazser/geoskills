@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="t d">
+<title id="t">FS00.2-P06 — Κοντάρι πρίσματος, φυσαλίδα και κλίμακα ύψους</title>
+<desc id="d">Δύο διακριτά εκπαιδευτικά καρέ: πλήρης ενδεικτική διάταξη και κοντινό στη φυσαλίδα και στην κλίμακα.</desc>
+<defs><style>
+text{font-family:Arial,'Segoe UI',sans-serif;fill:#17202a}.title{font-size:28px;font-weight:700}.panel{fill:#fff;stroke:#9aa7b2;stroke-width:2}.label{font-size:20px}.small{font-size:16px}.accent{fill:#0b5cab}.warn{fill:#fff3cd;stroke:#b58105;stroke-width:2}.pole{fill:#e9edf1;stroke:#273746;stroke-width:3}.red{fill:#d64545}.green{fill:#2e8b57}
+</style></defs>
+<rect width="1200" height="760" fill="#f4f7f9"/>
+<text x="40" y="48" class="title">FS00.2-P06 — Κοντάρι πρίσματος: φυσαλίδα και κλίμακα ύψους</text>
+<text x="40" y="78" class="small">Συνθετική εκπαιδευτική απεικόνιση · ενδεικτική διάταξη · δεν αποτελεί φωτογραφία ή οδηγία συγκεκριμένου μοντέλου.</text>
+<rect x="35" y="105" width="540" height="600" rx="12" class="panel"/>
+<text x="60" y="145" class="label">ΚΑΡΕ Α — πλήρης διάταξη</text>
+<line x1="300" y1="230" x2="300" y2="610" stroke="#273746" stroke-width="8"/>
+<rect x="275" y="215" width="50" height="18" class="red"/>
+<rect x="275" y="285" width="50" height="18" class="red"/>
+<rect x="275" y="355" width="50" height="18" class="red"/>
+<path d="M300 610 L240 665 L360 665 Z" fill="#34495e"/>
+<circle cx="300" cy="178" r="38" fill="#dfeaf2" stroke="#273746" stroke-width="3"/>
+<circle cx="300" cy="178" r="22" fill="#fff" stroke="#2e8b57" stroke-width="4"/>
+<circle cx="307" cy="171" r="7" class="green"/>
+<line x1="300" y1="140" x2="300" y2="216" stroke="#7f8c8d" stroke-width="2"/>
+<line x1="262" y1="178" x2="338" y2="178" stroke="#7f8c8d" stroke-width="2"/>
+<text x="75" y="188" class="label">φυσαλίδα</text><line x1="170" y1="183" x2="258" y2="178" stroke="#0b5cab" stroke-width="2"/>
+<text x="370" y="250" class="label">κλίμακα κονταριού</text><line x1="365" y1="255" x2="325" y2="300" stroke="#0b5cab" stroke-width="2"/>
+<line x1="420" y1="215" x2="420" y2="665" stroke="#0b5cab" stroke-width="3"/>
+<line x1="405" y1="215" x2="435" y2="215" stroke="#0b5cab" stroke-width="3"/>
+<line x1="405" y1="665" x2="435" y2="665" stroke="#0b5cab" stroke-width="3"/>
+<text x="440" y="445" class="label" transform="rotate(90 440 445)">ενδεικτικό ύψος κονταριού</text>
+<text x="75" y="690" class="small">Η φυσαλίδα δείχνει έλεγχο κατακορύφωσης· η κλίμακα δεν ισοδυναμεί αυτόματα με HR.</text>
+<rect x="600" y="105" width="565" height="600" rx="12" class="panel"/>
+<text x="625" y="145" class="label">ΚΑΡΕ Β — κοντινό στη φυσαλίδα και στην κλίμακα</text>
+<rect x="655" y="195" width="220" height="220" rx="16" fill="#dfeaf2" stroke="#273746" stroke-width="4"/>
+<circle cx="765" cy="305" r="86" fill="#fff" stroke="#2e8b57" stroke-width="6"/>
+<circle cx="780" cy="290" r="18" class="green"/>
+<line x1="765" y1="220" x2="765" y2="390" stroke="#7f8c8d" stroke-width="3"/>
+<line x1="680" y1="305" x2="850" y2="305" stroke="#7f8c8d" stroke-width="3"/>
+<text x="665" y="455" class="label">φυσαλίδα κονταριού</text>
+<line x1="1000" y1="190" x2="1000" y2="525" stroke="#273746" stroke-width="14"/>
+<rect x="988" y="225" width="24" height="24" class="red"/><rect x="988" y="305" width="24" height="24" class="red"/><rect x="988" y="385" width="24" height="24" class="red"/>
+<line x1="925" y1="190" x2="925" y2="525" stroke="#0b5cab" stroke-width="3"/>
+<line x1="910" y1="190" x2="940" y2="190" stroke="#0b5cab" stroke-width="3"/><line x1="910" y1="525" x2="940" y2="525" stroke="#0b5cab" stroke-width="3"/>
+<text x="860" y="560" class="label">ενδεικτική κλίμακα</text>
+<text x="625" y="620" class="small">Το ακριβές σημείο αναφοράς και η χρήση της κλίμακας ελέγχονται για το συγκεκριμένο κοντάρι/στόχο.</text>
+<rect x="625" y="645" width="500" height="38" rx="8" class="warn"/><text x="642" y="670" class="small">Δεν παρουσιάζει πραγματική μέτρηση ή συγκεκριμένο εξοπλισμό.</text>
+</svg>

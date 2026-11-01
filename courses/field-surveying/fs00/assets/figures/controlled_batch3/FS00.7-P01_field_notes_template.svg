@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">FS00.7-P01 — Ενδεικτικό υπόδειγμα σημειώσεων πεδίου</title>
+<desc id="desc">Ελεγχόμενο συνθετικό πρότυπο σημειώσεων πεδίου με ενδεικτικά και εσωτερικά συνεπή στοιχεία.</desc>
+<rect width="1200" height="820" fill="#f4f7f9"/>
+<rect x="50" y="45" width="1100" height="720" rx="14" fill="#fffdf5" stroke="#9aa5b1" stroke-width="3"/>
+<text x="80" y="88" fill="#102a43" font-family="Arial, sans-serif" font-size="25" font-weight="700">FS00.7-P01 — Υπόδειγμα ημερολογίου πεδίου</text>
+<text x="80" y="116" fill="#9a6700" font-family="Arial, sans-serif" font-size="15" font-weight="700">ΣΥΝΘΕΤΙΚΟ ΕΚΠΑΙΔΕΥΤΙΚΟ ΠΡΟΤΥΠΟ · όλες οι τιμές και τα IDs είναι ενδεικτικά</text>
+<g font-family="Arial, sans-serif" font-size="16" fill="#243b53">
+  <text x="90" y="160">Εργασία: FS-DEMO-01 (ενδεικτικό)</text><text x="650" y="160">Ημερομηνία: 01/11/2026 (ενδεικτική)</text>
+  <text x="90" y="190">Στάση: Σ1 · backsight: Α1</text><text x="650" y="190">Ομάδα: 1 · σύστημα: τοπικό εκπαιδευτικό σενάριο</text>
+  <text x="90" y="220">Όργανο: TS-LAB-01 (εκπαιδευτικό ID)</text><text x="650" y="220">HI: 1,52 m · αρχικό HR: 1,80 m</text>
+</g>
+<line x1="80" y1="245" x2="1120" y2="245" stroke="#52606d" stroke-width="2"/>
+<g font-family="Arial, sans-serif" font-size="15" fill="#102a43">
+  <rect x="80" y="270" width="1040" height="42" fill="#d9eaf7"/><text x="98" y="297" font-weight="700">Ώρα</text><text x="210" y="297" font-weight="700">Σημείο / ενέργεια</text><text x="540" y="297" font-weight="700">Καταγραφή</text>
+  <line x1="80" y1="312" x2="1120" y2="312" stroke="#829ab1"/><line x1="190" y1="270" x2="190" y2="610" stroke="#829ab1"/><line x1="520" y1="270" x2="520" y2="610" stroke="#829ab1"/>
+  <text x="98" y="350">10:15</text><text x="210" y="350">Κ01</text><text x="540" y="350">Γωνία κτιρίου · HR=1,80 m</text>
+  <text x="98" y="408">10:18</text><text x="210" y="408">Π01</text><text x="540" y="408">Αρχή πεζοδρομίου · HR=1,80 m</text>
+  <text x="98" y="466">10:22</text><text x="210" y="466">Αλλαγή HR</text><text x="540" y="466">Νέο HR=1,60 m · ενημερώθηκε το χειριστήριο</text>
+  <text x="98" y="524">10:23</text><text x="210" y="524">Π02</text><text x="540" y="524">Αλλαγή διεύθυνσης ορίου · HR=1,60 m</text>
+  <text x="98" y="582">10:33</text><text x="210" y="582">Ε1</text><text x="540" y="582">Επαναληπτική παρατήρηση · αξιολόγηση αποτελέσματος εκκρεμεί</text>
+  <line x1="80" y1="370" x2="1120" y2="370" stroke="#d9e2ec"/><line x1="80" y1="428" x2="1120" y2="428" stroke="#d9e2ec"/><line x1="80" y1="486" x2="1120" y2="486" stroke="#d9e2ec"/><line x1="80" y1="544" x2="1120" y2="544" stroke="#d9e2ec"/><line x1="80" y1="610" x2="1120" y2="610" stroke="#829ab1"/>
+</g>
+<rect x="80" y="650" width="1040" height="75" rx="8" fill="#fff3cd" stroke="#9a6700"/>
+<text x="100" y="680" fill="#5c4200" font-family="Arial, sans-serif" font-size="15">Σημείωση: το «εκκρεμεί» δηλώνει ότι δεν έχουν δοθεί αριθμητικά αποτελέσματα ή κριτήρια ανοχών.</text>
+<text x="100" y="705" fill="#5c4200" font-family="Arial, sans-serif" font-size="15">Το υπόδειγμα δεν είναι πραγματικό ημερολόγιο εργασίας ούτε τεκμηριώνει πραγματική μέτρηση.</text>
+</svg>

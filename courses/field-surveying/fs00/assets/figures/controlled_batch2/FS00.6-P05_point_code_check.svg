@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="#f4f7fb"/><rect x="24" y="22" width="1152" height="655" rx="18" fill="white" stroke="#dae3ef" stroke-width="2"/><path d="M24 40 Q24 22 42 22 H1158 Q1176 22 1176 40 V101 H24 Z" fill="#183559"/><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#172941}.head{font-size:31px;font-weight:700;fill:white}.sub{font-size:22px;fill:#44566e}.label{font-size:25px;font-weight:700}.body{font-size:22px}.small{font-size:19px}.big{font-size:38px;font-weight:700}.muted{fill:#50647e}.good{fill:#16764b}.bad{fill:#bc3035}</style><text x="52" y="72" class="head">FS00.6-P05  |  Έλεγχος ασυμφωνίας κωδικού</text>
+<text x="55" y="143" class="sub">Έλεγχος συνέπειας ανάμεσα στο αντικείμενο και στον κωδικό που καταχωρίζεται</text>
+<rect x="58" y="181" width="1080" height="67" rx="9" fill="#e3ebf5"/>
+<text x="95" y="224" class="label">Σημείο</text><text x="300" y="224" class="label">Αντικείμενο</text><text x="760" y="224" class="label">Κωδικός</text>
+<g class="body">
+<rect x="58" y="249" width="1080" height="90" fill="#f9fbfd"/><text x="101" y="306">101</text><text x="300" y="306">Φωτιστικό</text><text x="760" y="306">Φ01</text>
+<rect x="58" y="340" width="1080" height="90" fill="#f0f5fa"/><text x="101" y="397">102</text><text x="300" y="397">Φρεάτιο</text><text x="760" y="397">ΦΡ01</text>
+</g>
+<rect x="58" y="431" width="1080" height="92" fill="#fff0ed" stroke="#bb3639" stroke-width="2"/>
+<text x="101" y="489" class="body">103</text><text x="300" y="489" class="body">Φωτιστικό</text><text x="760" y="489" class="body bad">ΦΡ01</text>
+<text x="914" y="489" class="label bad">ΑΣΥΜΦΩΝΙΑ</text>
+<rect x="58" y="553" width="1080" height="84" rx="12" fill="#fff4dd"/>
+<text x="85" y="588" class="label">Τι ελέγχω;</text>
+<text x="85" y="617" class="small">Το σημείο 103 περιγράφεται ως φωτιστικό, αλλά φέρει κωδικό φρεατίου. Επαληθεύω και διορθώνω.</text>
+</svg>
