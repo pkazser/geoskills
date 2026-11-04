@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+<title id="title">Από την τεχνική προδιαγραφή στην επιλογή drone</title>
+<desc id="desc">Τρία διαδοχικά βήματα: διαβάζω την προδιαγραφή, ελέγχω συνθήκες και περιορισμούς, συνδέω με τις απαιτήσεις της εργασίας. Το τελικό αποτέλεσμα είναι τεκμηριωμένη επιλογή ή λίστα ερωτημάτων.</desc>
+<rect width="1200" height="380" fill="#f7fafc"/>
+<text x="600" y="52" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="bold" fill="#172b4d">Πώς αξιολογώ μια τεχνική προδιαγραφή;</text>
+<g font-family="DejaVu Sans,Arial,sans-serif" text-anchor="middle">
+<rect x="38" y="103" width="326" height="157" rx="19" fill="#e8f3fa" stroke="#4187ac" stroke-width="2"/>
+<text x="201" y="147" font-size="23" fill="#123c57" font-weight="bold">1. Διαβάζω</text>
+<text x="201" y="190" font-size="19" fill="#123c57">Τι ακριβώς περιγράφει</text>
+<text x="201" y="221" font-size="19" fill="#123c57">η αναφερόμενη τιμή;</text>
+<rect x="436" y="103" width="326" height="157" rx="19" fill="#fff3e0" stroke="#b98024" stroke-width="2"/>
+<text x="599" y="147" font-size="23" fill="#6d450b" font-weight="bold">2. Επαληθεύω</text>
+<text x="599" y="190" font-size="19" fill="#6d450b">Σε ποιες συνθήκες</text>
+<text x="599" y="221" font-size="19" fill="#6d450b">ισχύει και τι λείπει;</text>
+<rect x="834" y="103" width="326" height="157" rx="19" fill="#e9f6ef" stroke="#398a62" stroke-width="2"/>
+<text x="997" y="147" font-size="23" fill="#215a40" font-weight="bold">3. Συνδέω</text>
+<text x="997" y="190" font-size="19" fill="#215a40">Καλύπτει τις απαιτήσεις</text>
+<text x="997" y="221" font-size="19" fill="#215a40">της δικής μου εργασίας;</text>
+<path d="M376 179 H417" stroke="#64748b" stroke-width="4" fill="none"/><path d="M413 170 L428 179 L413 188Z" fill="#64748b"/>
+<path d="M774 179 H815" stroke="#64748b" stroke-width="4" fill="none"/><path d="M811 170 L826 179 L811 188Z" fill="#64748b"/>
+<text x="600" y="323" font-size="22" fill="#253858" font-weight="bold">Αποτέλεσμα: αιτιολογημένη επιλογή ή σαφή ερωτήματα προς έλεγχο</text>
+</g>
+</svg>

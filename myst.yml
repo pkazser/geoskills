@@ -238,6 +238,16 @@ project:
         - file: courses/field-surveying/fs00/index.md
         - file: courses/field-surveying/fs01/index.md
     - file: courses/remote-sensing/index.md
+    - file: courses/drone-mapping/index.md
+      children:
+        - file: courses/drone-mapping/dm00/index.md
+          children:
+            - file: courses/drone-mapping/dm00/chapters/dm00_1/chapter.md
+            - file: courses/drone-mapping/dm00/chapters/dm00_2/chapter.md
+            - file: courses/drone-mapping/dm00/chapters/dm00_3/chapter.md
+        - file: courses/drone-mapping/dm01/index.md
+        - file: courses/drone-mapping/dm02/index.md
+        - file: courses/drone-mapping/dm03/index.md
     - file: about.md
 site:
   template: .geoskills-cache/book-theme
@@ -261,6 +271,8 @@ site:
           url: /courses/field-surveying
         - title: Remote Sensing Core
           url: /courses/remote-sensing
+        - title: Drone Mapping Core
+          url: /courses/drone-mapping
     - title: Οδηγός χρήσης
       url: /start
     - title: Σχετικά

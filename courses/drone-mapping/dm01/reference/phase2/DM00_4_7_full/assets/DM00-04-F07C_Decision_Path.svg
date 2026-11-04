@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" role="img" aria-labelledby="ttl desc">
+<title id="ttl">DM00.4.7.3 — Εκπαιδευτική πορεία απόφασης</title>
+<desc id="desc">Παρατηρώ μια νέα ένδειξη, εξετάζω αν υπάρχει άμεσος κίνδυνος, δίνω προτεραιότητα στην προστασία τρίτων ή επανεκτιμώ τα δεδομένα και διακόπτω την εργασία εφόσον δεν εξασφαλίζεται η ασφάλεια.</desc>
+<rect width="1200" height="740" fill="#F7FAFC"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" text-anchor="middle">
+<text x="600" y="49" font-size="27" font-weight="bold" fill="#1E3348">Από την ένδειξη στην ασφαλή απόφαση</text>
+<text x="600" y="78" font-size="17" fill="#465D70">Παιδαγωγικό διάγραμμα — όχι οδηγίες χειρισμού συγκεκριμένου drone</text>
+<rect x="365" y="106" width="470" height="76" rx="15" fill="#D9EAF6" stroke="#3779AC" stroke-width="2"/>
+<text x="600" y="138" fill="#173A59" font-size="21" font-weight="bold">1. Νέα ένδειξη ή μεταβολή</text>
+<text x="600" y="162" fill="#173A59" font-size="16">Τι γνωρίζω; Τι παραμένει άγνωστο;</text>
+<path d="M600 183 V216" stroke="#465D70" stroke-width="3"/><path d="M590 207 L600 221 L610 207" fill="none" stroke="#465D70" stroke-width="3"/>
+<polygon points="600,222 836,323 600,425 364,323" fill="#FBE9CB" stroke="#C48B3C" stroke-width="3"/>
+<text x="600" y="311" fill="#714914" font-size="21" font-weight="bold">Υπάρχει άμεση</text>
+<text x="600" y="339" fill="#714914" font-size="21" font-weight="bold">σοβαρή απειλή;</text>
+<path d="M836 323 H937" stroke="#B74C4D" stroke-width="3"/>
+<text x="883" y="305" fill="#8D3535" font-size="17" font-weight="bold">ΝΑΙ</text>
+<rect x="939" y="258" width="236" height="145" rx="13" fill="#F7DEDE" stroke="#B74C4D" stroke-width="2"/>
+<text x="1056" y="288" font-size="17" font-weight="bold" fill="#762D31">Άμεση προστασία</text>
+<text x="1056" y="313" font-size="14" fill="#762D31">τρίτων και αεροσκαφών</text>
+<text x="1056" y="344" font-size="15" fill="#762D31">Προβλεπόμενες</text>
+<text x="1056" y="368" font-size="16" fill="#762D31">διαδικασίες ανάγκης</text>
+<path d="M364 323 H256 V482" stroke="#3F8C80" stroke-width="3" fill="none"/>
+<text x="310" y="306" font-size="17" font-weight="bold" fill="#286B60">ΟΧΙ</text>
+<rect x="85" y="484" width="460" height="93" rx="14" fill="#DCF2EA" stroke="#3F8C80" stroke-width="2"/>
+<text x="315" y="517" fill="#1E6256" font-size="19" font-weight="bold">2. Εκτιμώ την ασφαλή λειτουργία</text>
+<text x="315" y="544" fill="#1E6256" font-size="16">Εγκαταλείπω την εργασία αν χρειάζεται</text>
+<path d="M545 529 H680" stroke="#45627B" stroke-width="3"/>
+<path d="M672 519 L686 529 L672 539" fill="none" stroke="#45627B" stroke-width="3"/>
+<rect x="687" y="484" width="457" height="93" rx="14" fill="#E7EDF6" stroke="#58799E" stroke-width="2"/>
+<text x="915" y="516" fill="#274563" font-size="19" font-weight="bold">3. Επανεκτιμώ συνεχώς</text>
+<text x="915" y="543" fill="#274563" font-size="16">Νέα δεδομένα → νέα εκτίμηση κινδύνου</text>
+<rect x="158" y="624" width="883" height="70" rx="13" fill="#E6ECF2" stroke="#8797A6"/>
+<text x="600" y="653" fill="#354C5F" font-size="18" font-weight="bold">Προτεραιότητα: προστασία τρίτων, όχι ολοκλήρωση χαρτογράφησης</text>
+<text x="600" y="679" fill="#354C5F" font-size="15">Κάθε πραγματική ενέργεια εξαρτάται από το σύστημα, το εγχειρίδιο και τις συνθήκες</text>
+</g></svg>

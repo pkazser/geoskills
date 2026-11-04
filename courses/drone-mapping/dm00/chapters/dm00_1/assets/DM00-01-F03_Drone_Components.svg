@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1150" viewBox="0 0 1600 1150" role="img" aria-labelledby="title desc">
+<title id="title">Σχήμα 1.3 — Βασικά μέρη τετρακόπτερου</title>
+<desc id="desc">Στην αριστερή πλευρά ορατά μέρη 1 έως 6, στη δεξιά εννοιολογικό πλαίσιο εσωτερικών μονάδων 7 έως 9. Δεν απεικονίζονται πραγματικές θέσεις εγκατάστασης.</desc>
+<rect x="0" y="0" width="1600" height="1150" rx="0" fill="#f6f9fc" stroke="none" stroke-width="1"/>
+<text x="72" y="75" font-family="DejaVu Sans,Arial,sans-serif" font-size="41" font-weight="700" text-anchor="start" fill="#19374f">Βασικά μέρη ενός τετρακόπτερου</text>
+<text x="74" y="120" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#52697b">Τι βλέπουμε εξωτερικά και ποιες μονάδες λειτουργούν εσωτερικά</text>
+<rect x="48" y="158" width="890" height="905" rx="22" fill="white" stroke="#d9e2eb" stroke-width="2"/>
+<rect x="968" y="158" width="584" height="905" rx="22" fill="#edf7f6" stroke="#c1dcd7" stroke-width="2"/>
+<text x="84" y="212" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#1c5873">Εξωτερικά στοιχεία — σχηματική όψη</text>
+<text x="1005" y="212" font-family="DejaVu Sans,Arial,sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#1e675f">Εσωτερικές μονάδες</text>
+<text x="1005" y="251" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#4b7771">Εννοιολογική παρουσίαση · όχι θέσεις</text>
+<g stroke="#637b8b" stroke-width="43" stroke-linecap="round">
+<path d="M500 490 L285 340 M500 490 L735 340 M500 490 L285 730 M500 490 L735 730"/>
+</g>
+<ellipse cx="285" cy="340" rx="113" ry="24" fill="#c4e5f2" stroke="#6291ac" stroke-width="6"/>
+<circle cx="285" cy="340" r="30" fill="#36566b" stroke="#1c3546" stroke-width="4"/>
+<ellipse cx="735" cy="340" rx="113" ry="24" fill="#c4e5f2" stroke="#6291ac" stroke-width="6"/>
+<circle cx="735" cy="340" r="30" fill="#36566b" stroke="#1c3546" stroke-width="4"/>
+<ellipse cx="285" cy="730" rx="113" ry="24" fill="#c4e5f2" stroke="#6291ac" stroke-width="6"/>
+<circle cx="285" cy="730" r="30" fill="#36566b" stroke="#1c3546" stroke-width="4"/>
+<ellipse cx="735" cy="730" rx="113" ry="24" fill="#c4e5f2" stroke="#6291ac" stroke-width="6"/>
+<circle cx="735" cy="730" r="30" fill="#36566b" stroke="#1c3546" stroke-width="4"/>
+<rect x="413" y="414" width="180" height="170" rx="45" fill="#e1ebf2" stroke="#426079" stroke-width="6"/>
+<rect x="443" y="438" width="120" height="65" rx="13" fill="#698ba1" stroke="none" stroke-width="1"/>
+<text x="503" y="479" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="white">ΜΠΑΤΑΡΙΑ</text>
+<path d="M445 581 L445 622 Q502 652 562 622 L562 581" fill="none" stroke="#536d80" stroke-width="13"/>
+<rect x="451" y="612" width="108" height="87" rx="16" fill="#536e83" stroke="none" stroke-width="1"/>
+<circle cx="504" cy="653" r="31" fill="#0e2c42" stroke="#a4d8ef" stroke-width="9"/>
+<circle cx="172" cy="268" r="22" fill="#166a83"/><text x="172" y="276" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">1</text>
+<circle cx="195" cy="380" r="22" fill="#166a83"/><text x="195" y="388" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">2</text>
+<circle cx="392" cy="375" r="22" fill="#166a83"/><text x="392" y="383" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">3</text>
+<circle cx="609" cy="425" r="22" fill="#166a83"/><text x="609" y="433" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">4</text>
+<circle cx="623" cy="545" r="22" fill="#166a83"/><text x="623" y="553" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">5</text>
+<circle cx="624" cy="689" r="22" fill="#166a83"/><text x="624" y="697" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">6</text>
+<circle cx="100" cy="836" r="22" fill="#166a83"/><text x="100" y="844" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">1</text>
+<text x="140" y="845" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#22394d">Έλικες</text>
+<circle cx="490" cy="836" r="22" fill="#166a83"/><text x="490" y="844" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">2</text>
+<text x="530" y="845" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#22394d">Κινητήρες</text>
+<circle cx="100" cy="898" r="22" fill="#166a83"/><text x="100" y="906" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">3</text>
+<text x="140" y="907" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#22394d">Βραχίονες</text>
+<circle cx="490" cy="898" r="22" fill="#166a83"/><text x="490" y="906" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">4</text>
+<text x="530" y="907" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#22394d">Κεντρικό σώμα</text>
+<circle cx="100" cy="960" r="22" fill="#166a83"/><text x="100" y="968" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">5</text>
+<text x="140" y="969" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#22394d">Μπαταρία</text>
+<circle cx="490" cy="960" r="22" fill="#166a83"/><text x="490" y="968" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">6</text>
+<text x="530" y="969" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#22394d">Κάμερα / gimbal</text>
+<rect x="1000" y="305" width="514" height="142" rx="18" fill="white" stroke="#c5dfd9" stroke-width="2"/>
+<circle cx="1046" cy="362" r="22" fill="#25816d"/><text x="1046" y="370" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">7</text>
+<text x="1092" y="360" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#1c665a">Ελεγκτής πτήσης</text>
+<text x="1092" y="401" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#4f6972">Υπολογίζει και εκτελεί εντολές</text>
+<rect x="1000" y="485" width="514" height="142" rx="18" fill="white" stroke="#c5dfd9" stroke-width="2"/>
+<circle cx="1046" cy="542" r="22" fill="#25816d"/><text x="1046" y="550" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">8</text>
+<text x="1092" y="540" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#1c665a">IMU</text>
+<text x="1092" y="581" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#4f6972">Αισθητήρες κίνησης και στάσης</text>
+<rect x="1000" y="665" width="514" height="142" rx="18" fill="white" stroke="#c5dfd9" stroke-width="2"/>
+<circle cx="1046" cy="722" r="22" fill="#25816d"/><text x="1046" y="730" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="white">9</text>
+<text x="1092" y="720" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#1c665a">Δέκτης GNSS</text>
+<text x="1092" y="761" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#4f6972">Πληροφορία θέσης και χρόνου</text>
+<text x="1007" y="880" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#376b65">Οι μονάδες 7–9 συχνά είναι εντός</text>
+<text x="1007" y="913" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#376b65">του σώματος ή ενσωματωμένες.</text>
+<rect x="78" y="1084" width="1460" height="42" rx="10" fill="#e8f0f7" stroke="none" stroke-width="1"/>
+<text x="103" y="1112" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#39556d">Σχηματικό παράδειγμα · Η διάταξη των εξαρτημάτων διαφέρει ανά κατασκευαστή και μοντέλο.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="330" viewBox="0 0 1140 330">
+<rect width="1140" height="330" rx="16" fill="#f8fafc"/>
+<text x="48" y="55" font-family="DejaVu Sans,sans-serif" font-size="26" font-weight="bold" fill="#16324b">F06-E · Από τη μεταφορά στον ελεγμένο φάκελο</text>
+<g font-family="DejaVu Sans,sans-serif" text-anchor="middle">
+ <rect x="48" y="106" width="302" height="128" rx="15" fill="#e2effa" stroke="#3575a6" stroke-width="2"/>
+ <text x="199" y="149" font-size="22" font-weight="bold" fill="#174e78">1. Αντιγράφω</text><text x="199" y="182" font-size="15" fill="#16324b">Πρωτότυπα → φάκελος έργου</text><text x="199" y="208" font-size="15" fill="#16324b">Χωρίς διαγραφή ή αλλοίωση</text>
+ <rect x="417" y="106" width="302" height="128" rx="15" fill="#fff0d9" stroke="#bf7b18" stroke-width="2"/>
+ <text x="568" y="149" font-size="22" font-weight="bold" fill="#925d0b">2. Επαληθεύω</text><text x="568" y="182" font-size="15" fill="#483913">Ίδιο SHA-256 ανά ζεύγος</text><text x="568" y="208" font-size="15" fill="#483913">Απόκλιση → νέα αντιγραφή</text>
+ <rect x="786" y="106" width="306" height="128" rx="15" fill="#def3e9" stroke="#3f9572" stroke-width="2"/>
+ <text x="939" y="149" font-size="22" font-weight="bold" fill="#176747">3. Οργανώνω</text><text x="939" y="182" font-size="15" fill="#164533">Φωτογραφίες / ημερολόγιο</text><text x="939" y="208" font-size="15" fill="#164533">Αποτελέσματα ελέγχου</text>
+</g>
+<g fill="none" stroke="#51677a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M350 170 H406 M397 163 L407 170 L397 177"/><path d="M719 170 H776 M767 163 L777 170 L767 177"/></g>
+<text x="570" y="283" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="17" fill="#355069">Το checksum ελέγχει την αντιγραφή · όχι τη φωτογραμμετρική ποιότητα</text>
+</svg>

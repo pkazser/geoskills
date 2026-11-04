@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" role="img" aria-label="Σχηματική σχέση απόστασης λήψης και αποτυπώματος φωτογραφίας στο έδαφος">
+<rect width="1100" height="620" fill="#f6f9fc"/><text x="42" y="52" font-family="DejaVu Sans" font-size="28" font-weight="bold" fill="#16334b">F05-A2 · Απόσταση λήψης και αποτύπωμα στο έδαφος</text>
+<text x="42" y="87" font-family="DejaVu Sans" font-size="17" fill="#526477">Ίδια υποθετική κάμερα · κατακόρυφη λήψη · επίπεδο έδαφος</text>
+<rect x="45" y="122" width="490" height="435" rx="15" fill="#ffffff" stroke="#d4e1eb"/><rect x="565" y="122" width="490" height="435" rx="15" fill="#ffffff" stroke="#d4e1eb"/>
+<text x="70" y="163" font-family="DejaVu Sans" font-size="24" font-weight="bold" fill="#1c4a66">Α · Απόσταση 60 m</text><text x="590" y="163" font-family="DejaVu Sans" font-size="24" font-weight="bold" fill="#1c4a66">Β · Απόσταση 90 m</text>
+<g stroke="#497d9b" stroke-width="3" fill="none"><path d="M280 210 L150 418 M280 210 L410 418"/><path d="M800 187 L635 430 M800 187 L965 430"/></g>
+<g fill="#204e6d"><rect x="253" y="191" width="54" height="19" rx="5"/><rect x="773" y="169" width="54" height="19" rx="5"/></g>
+<g stroke="#d89c37" stroke-width="2.5" stroke-dasharray="7 6"><line x1="280" y1="212" x2="280" y2="443"/><line x1="800" y1="190" x2="800" y2="455"/></g>
+<g fill="#c9e6c4" stroke="#48835c" stroke-width="2"><polygon points="150,418 410,418 445,463 115,463"/><polygon points="635,430 965,430 1015,490 585,490"/></g>
+<g fill="#1a3c58" font-family="DejaVu Sans" font-size="20"><text x="290" y="313">60 m</text><text x="814" y="313">90 m</text></g>
+<g font-family="DejaVu Sans" font-size="18" fill="#255747" text-anchor="middle"><text x="280" y="495">90 × 67,5 m</text><text x="280" y="522">6.075 m²</text><text x="800" y="521">135 × 101,25 m</text><text x="800" y="548">13.668,75 m²</text></g>
+<text x="45" y="593" font-family="DejaVu Sans" font-size="15" fill="#526477">Σχηματικό, όχι σε κλίμακα · το αποτύπωμα δεν είναι η μοναδική κάλυψη κάθε φωτογραφίας</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="t d">
+<title id="t">F07-D — Χαρτογραφική αποστολή και κίνδυνοι από τρίτους</title><desc id="d">Συνθετικός αγρός, πεζός σε μονοπάτι, όχημα σε δρόμο, επανδρωμένο αεροσκάφος, θέση προσγείωσης και προγραμματισμένες γραμμές χαρτογράφησης.</desc>
+<rect width="1200" height="660" fill="#f7f9fa"/>
+<text x="54" y="49" font-family="DejaVu Sans" font-size="27" font-weight="bold" fill="#193c54">F07-D — Η περιοχή μπορεί να αλλάξει κατά την πτήση</text>
+<text x="54" y="79" font-family="DejaVu Sans" font-size="16" fill="#576979">Συνθετική εκπαιδευτική σκηνή · όχι πραγματικός χάρτης ή υπόδειξη αποστάσεων</text>
+<rect x="78" y="130" width="770" height="390" rx="16" fill="#e4f0df" stroke="#5e8c60" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="104" y="163" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#315d36">Αγρός 25 ha — περιοχή φωτογράφησης</text>
+<path d="M150 235H785 M150 290H785 M150 345H785 M150 400H785 M150 455H785" fill="none" stroke="#598eac" stroke-width="4" stroke-dasharray="18 8"/>
+<text x="300" y="218" font-family="DejaVu Sans" font-size="16" fill="#285979">Προγραμματισμένες γραμμές λήψης</text>
+<g transform="translate(550 330)"><circle cx="0" cy="0" r="18" fill="#24556d"/><path d="M-44 0H44 M0 -30V30" stroke="#24556d" stroke-width="9" stroke-linecap="round"/><circle cx="-45" cy="0" r="12" fill="#edf4f6" stroke="#24556d" stroke-width="4"/><circle cx="45" cy="0" r="12" fill="#edf4f6" stroke="#24556d" stroke-width="4"/></g>
+<rect x="845" y="130" width="100" height="455" fill="#c4cbd0"/><path d="M895 135V575" stroke="white" stroke-width="5" stroke-dasharray="18 17"/>
+<text x="865" y="115" font-family="DejaVu Sans" font-size="17" fill="#444">Δρόμος</text>
+<g transform="translate(883 422)"><rect x="-24" y="-34" width="48" height="69" rx="12" fill="#e2a044" stroke="#83581f" stroke-width="3"/><rect x="-17" y="-19" width="34" height="20" fill="#b9ddf2"/><circle cx="-24" cy="-18" r="8" fill="#484848"/><circle cx="24" cy="-18" r="8" fill="#484848"/></g>
+<text x="950" y="411" font-family="DejaVu Sans" font-size="19" font-weight="bold" fill="#805319">2. Όχημα</text>
+<path d="M90 552H850" stroke="#b59e7c" stroke-width="30"/>
+<text x="105" y="594" font-family="DejaVu Sans" font-size="17" fill="#6b5845">Μονοπάτι πρόσβασης</text>
+<g transform="translate(355 545)"><circle cx="0" cy="-27" r="13" fill="#b56e65"/><path d="M0 -12V28 M0 5L-22 17 M0 5L22 17 M0 27L-16 49 M0 27L18 49" stroke="#b56e65" stroke-width="8" stroke-linecap="round" fill="none"/></g>
+<text x="380" y="560" font-family="DejaVu Sans" font-size="20" font-weight="bold" fill="#8a413e">1. Πεζός</text>
+<circle cx="750" cy="473" r="20" fill="#f5c66c" stroke="#a46c28" stroke-width="4"/><text x="735" y="480" font-family="DejaVu Sans" font-size="16" font-weight="bold" fill="#61400e">H</text>
+<text x="646" y="505" font-family="DejaVu Sans" font-size="15" fill="#725320">Πιθανό Home Point</text>
+<g transform="translate(1035 215)"><path d="M-70 0L-7 -8L0 -38L11 -38L18 -8L75 0L75 10L18 12L8 37L0 37L-10 12L-70 10Z" fill="#427f9d"/></g>
+<text x="953" y="288" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#245777">3. Επανδρωμένο</text><text x="953" y="313" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#245777">αεροσκάφος</text>
+<path d="M1050 345L970 365L920 360" fill="none" stroke="#427f9d" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="74" y="616" width="1060" height="29" fill="#e6eaf0" rx="7"/><text x="100" y="636" font-family="DejaVu Sans" font-size="16" fill="#314553">Οι κίνδυνοι μεταβάλλονται — επανεκτίμηση πριν από κάθε συνέχιση ή ανάκτηση</text>
+</svg>

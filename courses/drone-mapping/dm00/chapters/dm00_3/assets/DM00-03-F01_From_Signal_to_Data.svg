@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+<title id="title">Από το φυσικό σήμα στα ψηφιακά δεδομένα</title><desc id="desc">Τρεις διακριτές αλυσίδες: RGB καταγράφει ορατό φως και παράγει έγχρωμη εικόνα, θερμικός αισθητήρας καταγράφει θερμική υπέρυθρη ακτινοβολία και παράγει θερμικά δεδομένα, LiDAR εκπέμπει και ανιχνεύει παλμούς laser για εκτίμηση αποστάσεων και δημιουργία νέφους σημείων.</desc>
+<defs><style>text{font-family:'DejaVu Sans',Arial,sans-serif;fill:#193047}.heading{font-size:34px;font-weight:bold}.sub{font-size:19px;fill:#516879}.rowtitle{font-size:27px;font-weight:bold}.body{font-size:21px}.small{font-size:17px;fill:#536879}.tag{font-size:19px;font-weight:bold} .box{fill:#fff;stroke:#c8d7e4;stroke-width:2} </style><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#397d98"/></marker></defs>
+<rect width="1440" height="900" fill="#f7fafc"/>
+<text x="70" y="70" class="heading">Από την παρατήρηση στο ψηφιακό αρχείο</text>
+<text x="70" y="110" class="sub">Διαφορετικά φυσικά σήματα → διαφορετικά δεδομένα και δυνατότητες ερμηνείας</text>
+<!-- labels -->
+<text x="360" y="153" class="tag" text-anchor="middle">ΦΥΣΙΚΟ ΣΗΜΑ</text><text x="756" y="153" class="tag" text-anchor="middle">ΑΙΣΘΗΤΗΡΑΣ / ΣΥΣΤΗΜΑ</text><text x="1150" y="153" class="tag" text-anchor="middle">ΔΕΔΟΜΕΝΑ</text>
+<!-- row 1 -->
+<rect x="50" y="182" rx="20" width="1340" height="191" fill="#e8f2fc"/>
+<text x="80" y="221" class="rowtitle">RGB</text><rect class="box" x="185" y="238" width="340" height="100" rx="16"/><text x="355" y="278" class="body" text-anchor="middle">Ορατό φως</text><text x="355" y="309" class="small" text-anchor="middle">ανακλώμενο από επιφάνειες</text>
+<rect class="box" x="595" y="238" width="315" height="100" rx="16"/><text x="752" y="278" class="body" text-anchor="middle">Κάμερα RGB</text><text x="752" y="309" class="small" text-anchor="middle">3 χρωματικά κανάλια</text>
+<rect class="box" x="980" y="238" width="340" height="100" rx="16"/><text x="1150" y="278" class="body" text-anchor="middle">Έγχρωμη εικόνα</text><text x="1150" y="309" class="small" text-anchor="middle">π.χ. JPEG</text><path d="M533 287 H580 M918 287 H965" stroke="#397d98" stroke-width="3.5" marker-end="url(#arrow)"/>
+<!-- row2 -->
+<rect x="50" y="395" rx="20" width="1340" height="191" fill="#fff2e9"/><text x="80" y="434" class="rowtitle">Θερμικό</text>
+<rect class="box" x="185" y="451" width="340" height="100" rx="16"/><text x="355" y="491" class="body" text-anchor="middle">Θερμική υπέρυθρη</text><text x="355" y="522" class="small" text-anchor="middle">ακτινοβολία</text>
+<rect class="box" x="595" y="451" width="315" height="100" rx="16"/><text x="752" y="491" class="body" text-anchor="middle">Θερμική κάμερα</text><text x="752" y="522" class="small" text-anchor="middle">ανίχνευση ακτινοβολίας</text>
+<rect class="box" x="980" y="451" width="340" height="100" rx="16"/><text x="1150" y="491" class="body" text-anchor="middle">Θερμικά δεδομένα</text><text x="1150" y="522" class="small" text-anchor="middle">τιμές / απεικόνιση παλέτας</text><path d="M533 500 H580 M918 500 H965" stroke="#397d98" stroke-width="3.5" marker-end="url(#arrow)"/>
+<!-- row3 -->
+<rect x="50" y="608" rx="20" width="1340" height="191" fill="#eaf8f2"/><text x="80" y="647" class="rowtitle">LiDAR</text>
+<rect class="box" x="185" y="664" width="340" height="100" rx="16"/><text x="355" y="704" class="body" text-anchor="middle">Παλμοί laser</text><text x="355" y="735" class="small" text-anchor="middle">και επιστρεφόμενο σήμα</text>
+<rect class="box" x="595" y="664" width="315" height="100" rx="16"/><text x="752" y="704" class="body" text-anchor="middle">Σύστημα LiDAR</text><text x="752" y="735" class="small" text-anchor="middle">εκτίμηση αποστάσεων</text>
+<rect class="box" x="980" y="664" width="340" height="100" rx="16"/><text x="1150" y="704" class="body" text-anchor="middle">3D νέφος σημείων</text><text x="1150" y="735" class="small" text-anchor="middle">π.χ. LAS / LAZ</text><path d="M533 713 H580 M918 713 H965" stroke="#397d98" stroke-width="3.5" marker-end="url(#arrow)"/>
+<text x="70" y="854" class="small">Ενδεικτικό εκπαιδευτικό σχήμα · Οι τύποι αρχείων εξαρτώνται από τη συσκευή και τη ροή επεξεργασίας.</text>
+</svg>

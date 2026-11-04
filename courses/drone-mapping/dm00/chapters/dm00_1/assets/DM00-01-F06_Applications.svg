@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1930" viewBox="0 0 1200 1930" role="img" aria-labelledby="title desc">
+<title id="title">Σχήμα 1.6 — Πέντε εφαρμογές των drones</title>
+<desc id="desc">Πέντε μεγάλες κατακόρυφες κάρτες με ανάγκη, δεδομένα, παραδοτέο και περιορισμό ερμηνείας.</desc>
+<rect x="0" y="0" width="1200" height="1930" rx="0" fill="#f6f9fc" stroke="none" stroke-width="1"/>
+<text x="54" y="69" font-family="DejaVu Sans,Arial,sans-serif" font-size="40" font-weight="700" text-anchor="start" fill="#19374f">Πέντε εφαρμογές των drones</text>
+<text x="55" y="115" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#536c7c">Κάθε αποστολή ξεκινά από την ανάγκη, όχι από τον εξοπλισμό.</text>
+<rect x="43" y="151" width="1114" height="332" rx="20" fill="white" stroke="#d9e3ed" stroke-width="2"/>
+<rect x="43" y="151" width="12" height="332" rx="8" fill="#247c86" stroke="none" stroke-width="1"/>
+<rect x="74" y="171" width="62" height="56" rx="12" fill="#dcedf0" stroke="none" stroke-width="1"/>
+<text x="105" y="209" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#176b79">01</text>
+<text x="162" y="212" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#183a50">Χαρτογράφηση</text>
+<text x="90" y="259" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Ανάγκη:</text>
+<text x="300" y="259" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Πρόσφατο γεωχωρικό υπόβαθρο</text>
+<text x="90" y="310" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Δεδομένα:</text>
+<text x="300" y="310" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Επικαλυπτόμενες RGB λήψεις</text>
+<text x="90" y="361" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Παραδοτέο:</text>
+<text x="300" y="361" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Ορθοφωτοχάρτης</text>
+<text x="90" y="412" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Όριο ερμηνείας:</text>
+<text x="300" y="412" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Απαιτείται έλεγχος χωρικής ακρίβειας</text>
+<rect x="43" y="499" width="1114" height="332" rx="20" fill="white" stroke="#d9e3ed" stroke-width="2"/>
+<rect x="43" y="499" width="12" height="332" rx="8" fill="#247c86" stroke="none" stroke-width="1"/>
+<rect x="74" y="519" width="62" height="56" rx="12" fill="#dcedf0" stroke="none" stroke-width="1"/>
+<text x="105" y="557" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#176b79">02</text>
+<text x="162" y="560" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#183a50">Γεωργία</text>
+<text x="90" y="607" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Ανάγκη:</text>
+<text x="300" y="607" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Εντοπισμός διαφοροποιήσεων βλάστησης</text>
+<text x="90" y="658" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Δεδομένα:</text>
+<text x="300" y="658" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Πολυφασματικές ή RGB λήψεις</text>
+<text x="90" y="709" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Παραδοτέο:</text>
+<text x="300" y="709" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Χάρτης δείκτη / περιοχών ενδιαφέροντος</text>
+<text x="90" y="760" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Όριο ερμηνείας:</text>
+<text x="300" y="760" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Ο δείκτης δεν διαγιγνώσκει την αιτία</text>
+<rect x="43" y="847" width="1114" height="332" rx="20" fill="white" stroke="#d9e3ed" stroke-width="2"/>
+<rect x="43" y="847" width="12" height="332" rx="8" fill="#247c86" stroke="none" stroke-width="1"/>
+<rect x="74" y="867" width="62" height="56" rx="12" fill="#dcedf0" stroke="none" stroke-width="1"/>
+<text x="105" y="905" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#176b79">03</text>
+<text x="162" y="908" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#183a50">Κατασκευές</text>
+<text x="90" y="955" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Ανάγκη:</text>
+<text x="300" y="955" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Τεκμηρίωση κατάστασης έργου</text>
+<text x="90" y="1006" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Δεδομένα:</text>
+<text x="300" y="1006" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Επαναλαμβανόμενες εναέριες εικόνες</text>
+<text x="90" y="1057" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Παραδοτέο:</text>
+<text x="300" y="1057" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Φωτογραφικό αρχείο ή μοντέλο</text>
+<text x="90" y="1108" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Όριο ερμηνείας:</text>
+<text x="300" y="1108" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Μία λήψη δεν αποδεικνύει πρόοδο</text>
+<rect x="43" y="1195" width="1114" height="332" rx="20" fill="white" stroke="#d9e3ed" stroke-width="2"/>
+<rect x="43" y="1195" width="12" height="332" rx="8" fill="#247c86" stroke="none" stroke-width="1"/>
+<rect x="74" y="1215" width="62" height="56" rx="12" fill="#dcedf0" stroke="none" stroke-width="1"/>
+<text x="105" y="1253" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#176b79">04</text>
+<text x="162" y="1256" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#183a50">Περιβάλλον</text>
+<text x="90" y="1303" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Ανάγκη:</text>
+<text x="300" y="1303" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Παρακολούθηση μεταβολών</text>
+<text x="90" y="1354" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Δεδομένα:</text>
+<text x="300" y="1354" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Συγκρίσιμες λήψεις ανά ημερομηνία</text>
+<text x="90" y="1405" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Παραδοτέο:</text>
+<text x="300" y="1405" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Χάρτης μεταβολών</text>
+<text x="90" y="1456" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Όριο ερμηνείας:</text>
+<text x="300" y="1456" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Επηρεάζουν εποχικότητα και γεωαναφορά</text>
+<rect x="43" y="1543" width="1114" height="332" rx="20" fill="white" stroke="#d9e3ed" stroke-width="2"/>
+<rect x="43" y="1543" width="12" height="332" rx="8" fill="#247c86" stroke="none" stroke-width="1"/>
+<rect x="74" y="1563" width="62" height="56" rx="12" fill="#dcedf0" stroke="none" stroke-width="1"/>
+<text x="105" y="1601" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#176b79">05</text>
+<text x="162" y="1604" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#183a50">Επιθεωρήσεις</text>
+<text x="90" y="1651" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Ανάγκη:</text>
+<text x="300" y="1651" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Προσέγγιση δυσπρόσιτων σημείων</text>
+<text x="90" y="1702" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Δεδομένα:</text>
+<text x="300" y="1702" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Φωτογραφίες υψηλής ανάλυσης</text>
+<text x="90" y="1753" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Παραδοτέο:</text>
+<text x="300" y="1753" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Τεκμηριωμένες εικόνες / παρατηρήσεις</text>
+<text x="90" y="1804" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Όριο ερμηνείας:</text>
+<text x="300" y="1804" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Δεν υποκαθιστά τεχνική πιστοποίηση</text>
+<text x="54" y="1913" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#536a7e">Οι επιλογές είναι ενδεικτικές: κάθε έργο απαιτεί τεκμηρίωση και έλεγχο ποιότητας.</text>
+</svg>

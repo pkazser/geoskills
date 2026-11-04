@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1120 550" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Από τις απαιτήσεις της εργασίας στην επιλογή drone</title><desc id="desc">Τρία μεγάλα διαδοχικά πλαίσια: 1 ορίζω εργασία, 2 ελέγχω χαρακτηριστικά, 3 τεκμηριώνω επιλογή. Στο κάτω μέρος τρεις βασικές ερωτήσεις: τι παραδίδω, πού επιχειρώ, τι δεν γνωρίζω ακόμη.</desc>
+<rect width="1120" height="550" fill="#f8fafc"/><text x="560" y="62" font-family="DejaVu Sans,Arial" font-size="28" fill="#1b3853" font-weight="bold" text-anchor="middle">Από την ανάγκη στην κατάλληλη πλατφόρμα</text>
+<g font-family="DejaVu Sans,Arial" font-size="18" text-anchor="middle">
+<rect x="36" y="117" width="318" height="235" rx="21" fill="#e6f3fb" stroke="#347aa8" stroke-width="2"/>
+<text x="195" y="158" font-size="21" font-weight="bold" fill="#173f5d">1. Ορίζω την εργασία</text><text x="195" y="215" fill="#254a63">Παραδοτέο και δεδομένα</text><text x="195" y="253" fill="#254a63">Έκταση και ανάγλυφο</text><text x="195" y="291" fill="#254a63">Πρόσβαση και κίνδυνοι</text>
+<path d="M368 233 L396 233" stroke="#315c70" stroke-width="5" stroke-linecap="round"/><path d="M396 233 l-12 -11 m12 11 l-12 11" stroke="#315c70" stroke-width="4" fill="none"/>
+<rect x="408" y="117" width="316" height="235" rx="21" fill="#e9f6eb" stroke="#479b61" stroke-width="2"/>
+<text x="566" y="158" font-size="21" font-weight="bold" fill="#245c34">2. Ελέγχω δυνατότητες</text><text x="566" y="215" fill="#2d5a3e">Αιώρηση ή κάλυψη;</text><text x="566" y="253" fill="#2d5a3e">Απογείωση και αυτονομία</text><text x="566" y="291" fill="#2d5a3e">Κάμερα και συμβατότητα</text>
+<path d="M739 233 L767 233" stroke="#315c70" stroke-width="5" stroke-linecap="round"/><path d="M767 233 l-12 -11 m12 11 l-12 11" stroke="#315c70" stroke-width="4" fill="none"/>
+<rect x="779" y="117" width="306" height="235" rx="21" fill="#fff3df" stroke="#c1842c" stroke-width="2"/>
+<text x="932" y="158" font-size="21" font-weight="bold" fill="#765016">3. Επιλέγω τεκμηριωμένα</text><text x="932" y="215" fill="#765016">Κατάλληλη κατηγορία</text><text x="932" y="253" fill="#765016">Συμβιβασμοί</text><text x="932" y="291" fill="#765016">Στοιχεία προς επαλήθευση</text>
+<rect x="78" y="398" width="964" height="94" rx="18" fill="#eef0f4"/><text x="560" y="432" font-size="21" font-weight="bold" fill="#243447">Τρεις ερωτήσεις που προηγούνται της αγοράς:</text><text x="560" y="469" font-size="20" fill="#354b62">Τι παραδίδω;   •   Πού θα επιχειρήσω;   •   Τι δεν γνωρίζω ακόμη;</text>
+</g></svg>

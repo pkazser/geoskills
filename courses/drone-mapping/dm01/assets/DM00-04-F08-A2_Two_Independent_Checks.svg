@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="740" viewBox="0 0 1320 740">
+<rect width="1320" height="740" rx="28" fill="#f4f7fb"/><text x="660" y="67" font-family="DejaVu Sans" font-size="29" fill="#18354e" text-anchor="middle" font-weight="bold">Μία αποστολή — δύο ανεξάρτητοι έλεγχοι</text>
+<rect x="80" y="110" width="560" height="410" rx="20" fill="#e3eef9" stroke="#5180ac" stroke-width="3"/><rect x="680" y="110" width="560" height="410" rx="20" fill="#e5f3eb" stroke="#48916d" stroke-width="3"/>
+<text x="360" y="161" font-family="DejaVu Sans" font-size="25" font-weight="bold" fill="#17416b" text-anchor="middle">Α. Επιτρέπεται η πτήση;</text>
+<text x="960" y="161" font-family="DejaVu Sans" font-size="25" font-weight="bold" fill="#1b6348" text-anchor="middle">Β. Πώς χρησιμοποιούμε τις εικόνες;</text>
+<g font-family="DejaVu Sans" font-size="21" fill="#1b334c">
+<text x="113" y="225">• Περιοχή, γεωγραφικές ζώνες</text><text x="113" y="280">• Drone, κατηγορία, χειριστής</text><text x="113" y="335">• Ύψος, VLOS, τρίτοι</text><text x="113" y="390">• Όροι πτήσης και ασφάλειας</text>
+<text x="710" y="225">• Σκοπός συλλογής</text><text x="710" y="280">• Αναγνωρίσιμα πρόσωπα / στοιχεία</text><text x="710" y="335">• Νομική βάση, ενημέρωση</text><text x="710" y="390">• Πρόσβαση, διατήρηση, κοινοποίηση</text>
+</g>
+<rect x="184" y="445" width="345" height="51" rx="14" fill="#275e8a"/><text x="357" y="478" font-family="DejaVu Sans" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Αποτέλεσμα ελέγχου Α</text>
+<rect x="786" y="445" width="345" height="51" rx="14" fill="#287853"/><text x="958" y="478" font-family="DejaVu Sans" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Αποτέλεσμα ελέγχου Β</text>
+<path d="M355 522 L355 580 L660 580" fill="none" stroke="#52718c" stroke-width="4"/><path d="M965 522 L965 580 L660 580" fill="none" stroke="#52718c" stroke-width="4"/><path d="M660 580 L660 608" stroke="#52718c" stroke-width="4"/>
+<rect x="180" y="610" width="960" height="76" rx="15" fill="#fff4d6" stroke="#cc9b3d" stroke-width="2"/><text x="660" y="642" font-family="DejaVu Sans" font-size="22" font-weight="bold" text-anchor="middle" fill="#604719">Προχωρούμε μόνο στο μέρος της εργασίας</text><text x="660" y="669" font-family="DejaVu Sans" font-size="20" text-anchor="middle" fill="#604719">που καλύπτεται από τις αντίστοιχες προϋποθέσεις.</text>
+<text x="660" y="717" font-family="DejaVu Sans" font-size="15" text-anchor="middle" fill="#557085">F08-A2 · Συνθετικό εκπαιδευτικό σχήμα · Δεν αποτελεί άδεια ή νομική γνωμοδότηση</text></svg>

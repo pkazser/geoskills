@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="790" viewBox="0 0 1200 790" role="img" aria-labelledby="title desc">
+<title id="title">Υποθετική περιοχή μελέτης αγροτικής αποτύπωσης</title>
+<desc id="desc">Σχηματικός χάρτης για εκπαιδευτική αποστολή περίπου 25 εκταρίων. Δείχνει αγροτεμάχια, δρόμο πρόσβασης, κτίσμα, δενδροστοιχία, ρέμα και ενδεικτική περιοχή ενδιαφέροντος, χωρίς πραγματική κλίμακα ή συντεταγμένες.</desc>
+<rect width="1200" height="790" fill="#f6f9f6"/>
+<rect x="35" y="25" width="1130" height="730" rx="20" fill="white" stroke="#d2dddc" stroke-width="2"/>
+<text x="68" y="76" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="bold" fill="#153e43">Εκπαιδευτική αποστολή — Αγροτική περιοχή</text>
+<text x="68" y="108" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#527074">Σχηματικό παράδειγμα · έκταση περίπου 25 ha · όχι πραγματικός χάρτης</text>
+<rect x="67" y="137" width="750" height="540" fill="#e7edda" stroke="#cad3be" stroke-width="2" rx="8"/>
+<!-- fields -->
+<path d="M78 148 L313 148 L300 356 L78 356 Z" fill="#c6d9a0" stroke="#f6f8f1" stroke-width="5"/>
+<path d="M319 148 L545 148 L532 348 L305 356 Z" fill="#aac985" stroke="#f6f8f1" stroke-width="5"/>
+<path d="M551 148 L805 148 L805 338 L539 347 Z" fill="#d8dea3" stroke="#f6f8f1" stroke-width="5"/>
+<path d="M78 361 L300 362 L289 658 L78 658 Z" fill="#d4c98e" stroke="#f6f8f1" stroke-width="5"/>
+<path d="M307 364 L523 353 L502 659 L297 659 Z" fill="#afce9a" stroke="#f6f8f1" stroke-width="5"/>
+<path d="M540 355 L804 344 L804 663 L508 663 Z" fill="#bed29e" stroke="#f6f8f1" stroke-width="5"/>
+<!-- river on right -->
+<path d="M756 147 C705 236 784 267 744 355 S794 542 760 674" fill="none" stroke="#7cbad3" stroke-width="18" opacity="0.75"/>
+<!-- access roads -->
+<path d="M58 533 C250 522 369 513 536 491 S753 470 825 469" fill="none" stroke="#fff" stroke-width="24"/>
+<path d="M58 533 C250 522 369 513 536 491 S753 470 825 469" fill="none" stroke="#a58f7a" stroke-width="15"/>
+<path d="M444 138 L431 500" fill="none" stroke="#fff" stroke-width="17"/>
+<path d="M444 138 L431 500" fill="none" stroke="#ad967b" stroke-width="10"/>
+<!-- trees -->
+<g fill="#3b7d53" stroke="#25603e" stroke-width="2">
+<circle cx="109" cy="401" r="13"/><circle cx="135" cy="404" r="13"/><circle cx="161" cy="402" r="13"/><circle cx="187" cy="402" r="13"/><circle cx="213" cy="400" r="13"/><circle cx="239" cy="398" r="13"/>
+<circle cx="672" cy="210" r="11"/><circle cx="685" cy="232" r="11"/><circle cx="699" cy="256" r="11"/>
+</g>
+<!-- buildings -->
+<rect x="335" y="408" width="65" height="43" fill="#f7e8ca" stroke="#855d4d" stroke-width="3"/>
+<path d="M329 408 L368 387 L409 408Z" fill="#bd7763" stroke="#855d4d" stroke-width="3"/>
+<rect x="577" y="553" width="48" height="35" fill="#f7e8ca" stroke="#855d4d" stroke-width="3"/>
+<path d="M572 554 L600 535 L632 554Z" fill="#bd7763" stroke="#855d4d" stroke-width="3"/>
+<!-- AOI dotted boundary -->
+<path d="M105 183 L672 180 L693 324 L701 621 L131 625 Z" fill="none" stroke="#ef8e30" stroke-width="5" stroke-dasharray="13 9" stroke-linejoin="round"/>
+<rect x="110" y="187" width="236" height="33" rx="7" fill="#fffdf7" opacity="0.94"/>
+<text x="121" y="211" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="bold" fill="#8a521a">Περιοχή ενδιαφέροντος (AOI)</text>
+<!-- N arrow -->
+<g transform="translate(752 172)"><path d="M0 0 L-13 35 L0 27 L13 35Z" fill="#163f4b"/><text x="-6" y="-10" font-family="DejaVu Sans" font-weight="bold" font-size="21" fill="#163f4b">Β</text></g>
+<!-- sidebar -->
+<rect x="837" y="137" width="299" height="540" rx="12" fill="#f5f8f7" stroke="#d4e0de"/>
+<text x="857" y="173" font-family="DejaVu Sans" font-size="20" font-weight="bold" fill="#244b52">Τι παρατηρούμε;</text>
+<g font-family="DejaVu Sans" font-size="17" fill="#31535a">
+<rect x="857" y="200" width="22" height="22" fill="#aac985"/><text x="889" y="218">Αγροτικά τμήματα</text>
+<line x1="858" y1="255" x2="879" y2="255" stroke="#a58f7a" stroke-width="8"/><text x="889" y="261">Δρόμοι πρόσβασης</text>
+<rect x="858" y="285" width="21" height="20" fill="#bd7763"/><text x="889" y="302">Κτίσματα</text>
+<circle cx="870" cy="344" r="10" fill="#3b7d53"/><text x="889" y="350">Δενδροστοιχία</text>
+<path d="M859 392 Q869 379 879 392" stroke="#7cbad3" stroke-width="8" fill="none"/><text x="889" y="399">Ρέμα</text>
+<path d="M856 444 L881 444" stroke="#ef8e30" stroke-width="4" stroke-dasharray="6 3"/><text x="889" y="450">Ενδεικτική AOI</text>
+</g>
+<line x1="853" y1="480" x2="1118" y2="480" stroke="#ccdad6"/>
+<text x="855" y="511" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#244b52">Τι δεν γνωρίζουμε;</text>
+<g font-family="DejaVu Sans" font-size="15.5" fill="#496368">
+<text x="855" y="544">• Ακριβή όρια και πρόσβαση</text>
+<text x="855" y="574">• Απαιτούμενη ακρίβεια</text>
+<text x="855" y="604">• Επιτρεπτότητα πτήσης</text>
+<text x="855" y="634">• Πραγματικές συνθήκες</text>
+</g>
+<text x="67" y="717" font-family="DejaVu Sans" font-size="15" fill="#657575">Διδακτικό σχήμα GeoSkills · χωρίς κλίμακα, συντεταγμένες ή πραγματική γεωαναφορά</text>
+</svg>

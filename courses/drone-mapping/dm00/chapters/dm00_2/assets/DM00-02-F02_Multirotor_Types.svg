@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="690" viewBox="0 0 1440 690" role="img" aria-labelledby="title desc">
+<title id="title">Σχήμα 2.2 — Τύποι πολυκόπτερων</title>
+<desc id="desc">Σχηματική κάτοψη τετρακόπτερου με τέσσερις, εξακόπτερου με έξι και οκτακόπτερου με οκτώ θέσεις κινητήρων και ελίκων. Δεν συγκρίνονται επιδόσεις ή πραγματικά μεγέθη.</desc>
+<rect width="1440" height="690" fill="#f8fafc"/>
+<text x="720" y="62" font-family="DejaVu Sans" font-size="31" font-weight="bold" text-anchor="middle" fill="#102e42">Πολυκόπτερα: 4, 6 ή 8 κινητήρες</text>
+<text x="720" y="103" font-family="DejaVu Sans" font-size="19" text-anchor="middle" fill="#405666">Σχηματική κάτοψη — όχι πραγματική κλίμακα ή σύγκριση επιδόσεων</text>
+<rect x="40" y="142" width="410" height="462" rx="25" fill="#fff" stroke="#dbe4eb" stroke-width="2"/>
+<text x="245" y="195" font-family="DejaVu Sans" font-size="27" font-weight="bold" text-anchor="middle" fill="#1b3344">Τετρακόπτερο</text>
+<line x1="245" y1="367" x2="245.0" y2="255.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="245.0" cy="255.0" r="32" fill="#177b86" fill-opacity=".12" stroke="#177b86" stroke-width="4"/>
+<circle cx="245.0" cy="255.0" r="9" fill="#177b86"/>
+<line x1="245" y1="367" x2="357.0" y2="367.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="357.0" cy="367.0" r="32" fill="#177b86" fill-opacity=".12" stroke="#177b86" stroke-width="4"/>
+<circle cx="357.0" cy="367.0" r="9" fill="#177b86"/>
+<line x1="245" y1="367" x2="245.0" y2="479.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="245.0" cy="479.0" r="32" fill="#177b86" fill-opacity=".12" stroke="#177b86" stroke-width="4"/>
+<circle cx="245.0" cy="479.0" r="9" fill="#177b86"/>
+<line x1="245" y1="367" x2="133.0" y2="367.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="133.0" cy="367.0" r="32" fill="#177b86" fill-opacity=".12" stroke="#177b86" stroke-width="4"/>
+<circle cx="133.0" cy="367.0" r="9" fill="#177b86"/>
+<rect x="194" y="327" width="102" height="80" rx="21" fill="#263d4e"/>
+<rect x="226" y="317" width="38" height="20" rx="6" fill="#b9d8e1"/>
+<text x="245" y="571" font-family="DejaVu Sans" font-size="23" text-anchor="middle" fill="#177b86" font-weight="bold">4 κινητήρες / έλικες</text>
+<rect x="515" y="142" width="410" height="462" rx="25" fill="#fff" stroke="#dbe4eb" stroke-width="2"/>
+<text x="720" y="195" font-family="DejaVu Sans" font-size="27" font-weight="bold" text-anchor="middle" fill="#1b3344">Εξακόπτερο</text>
+<line x1="720" y1="367" x2="720.0" y2="255.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="720.0" cy="255.0" r="32" fill="#7d52a2" fill-opacity=".12" stroke="#7d52a2" stroke-width="4"/>
+<circle cx="720.0" cy="255.0" r="9" fill="#7d52a2"/>
+<line x1="720" y1="367" x2="817.0" y2="311.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="817.0" cy="311.0" r="32" fill="#7d52a2" fill-opacity=".12" stroke="#7d52a2" stroke-width="4"/>
+<circle cx="817.0" cy="311.0" r="9" fill="#7d52a2"/>
+<line x1="720" y1="367" x2="817.0" y2="423.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="817.0" cy="423.0" r="32" fill="#7d52a2" fill-opacity=".12" stroke="#7d52a2" stroke-width="4"/>
+<circle cx="817.0" cy="423.0" r="9" fill="#7d52a2"/>
+<line x1="720" y1="367" x2="720.0" y2="479.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="720.0" cy="479.0" r="32" fill="#7d52a2" fill-opacity=".12" stroke="#7d52a2" stroke-width="4"/>
+<circle cx="720.0" cy="479.0" r="9" fill="#7d52a2"/>
+<line x1="720" y1="367" x2="623.0" y2="423.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="623.0" cy="423.0" r="32" fill="#7d52a2" fill-opacity=".12" stroke="#7d52a2" stroke-width="4"/>
+<circle cx="623.0" cy="423.0" r="9" fill="#7d52a2"/>
+<line x1="720" y1="367" x2="623.0" y2="311.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="623.0" cy="311.0" r="32" fill="#7d52a2" fill-opacity=".12" stroke="#7d52a2" stroke-width="4"/>
+<circle cx="623.0" cy="311.0" r="9" fill="#7d52a2"/>
+<rect x="669" y="327" width="102" height="80" rx="21" fill="#263d4e"/>
+<rect x="701" y="317" width="38" height="20" rx="6" fill="#b9d8e1"/>
+<text x="720" y="571" font-family="DejaVu Sans" font-size="23" text-anchor="middle" fill="#7d52a2" font-weight="bold">6 κινητήρες / έλικες</text>
+<rect x="990" y="142" width="410" height="462" rx="25" fill="#fff" stroke="#dbe4eb" stroke-width="2"/>
+<text x="1195" y="195" font-family="DejaVu Sans" font-size="27" font-weight="bold" text-anchor="middle" fill="#1b3344">Οκτακόπτερο</text>
+<line x1="1195" y1="367" x2="1195.0" y2="255.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="1195.0" cy="255.0" r="32" fill="#bc7042" fill-opacity=".12" stroke="#bc7042" stroke-width="4"/>
+<circle cx="1195.0" cy="255.0" r="9" fill="#bc7042"/>
+<line x1="1195" y1="367" x2="1274.2" y2="287.8" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="1274.2" cy="287.8" r="32" fill="#bc7042" fill-opacity=".12" stroke="#bc7042" stroke-width="4"/>
+<circle cx="1274.2" cy="287.8" r="9" fill="#bc7042"/>
+<line x1="1195" y1="367" x2="1307.0" y2="367.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="1307.0" cy="367.0" r="32" fill="#bc7042" fill-opacity=".12" stroke="#bc7042" stroke-width="4"/>
+<circle cx="1307.0" cy="367.0" r="9" fill="#bc7042"/>
+<line x1="1195" y1="367" x2="1274.2" y2="446.2" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="1274.2" cy="446.2" r="32" fill="#bc7042" fill-opacity=".12" stroke="#bc7042" stroke-width="4"/>
+<circle cx="1274.2" cy="446.2" r="9" fill="#bc7042"/>
+<line x1="1195" y1="367" x2="1195.0" y2="479.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="1195.0" cy="479.0" r="32" fill="#bc7042" fill-opacity=".12" stroke="#bc7042" stroke-width="4"/>
+<circle cx="1195.0" cy="479.0" r="9" fill="#bc7042"/>
+<line x1="1195" y1="367" x2="1115.8" y2="446.2" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="1115.8" cy="446.2" r="32" fill="#bc7042" fill-opacity=".12" stroke="#bc7042" stroke-width="4"/>
+<circle cx="1115.8" cy="446.2" r="9" fill="#bc7042"/>
+<line x1="1195" y1="367" x2="1083.0" y2="367.0" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="1083.0" cy="367.0" r="32" fill="#bc7042" fill-opacity=".12" stroke="#bc7042" stroke-width="4"/>
+<circle cx="1083.0" cy="367.0" r="9" fill="#bc7042"/>
+<line x1="1195" y1="367" x2="1115.8" y2="287.8" stroke="#526574" stroke-width="19" stroke-linecap="round"/>
+<circle cx="1115.8" cy="287.8" r="32" fill="#bc7042" fill-opacity=".12" stroke="#bc7042" stroke-width="4"/>
+<circle cx="1115.8" cy="287.8" r="9" fill="#bc7042"/>
+<rect x="1144" y="327" width="102" height="80" rx="21" fill="#263d4e"/>
+<rect x="1176" y="317" width="38" height="20" rx="6" fill="#b9d8e1"/>
+<text x="1195" y="571" font-family="DejaVu Sans" font-size="23" text-anchor="middle" fill="#bc7042" font-weight="bold">8 κινητήρες / έλικες</text>
+<text x="720" y="653" font-family="DejaVu Sans" font-size="17" text-anchor="middle" fill="#516878">Κάθε κύκλος είναι θέση έλικας · Περισσότεροι κινητήρες ≠ αυτόματα καλύτερη επίδοση</text>
+</svg>

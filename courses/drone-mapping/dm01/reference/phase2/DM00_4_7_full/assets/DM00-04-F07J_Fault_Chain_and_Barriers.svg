@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690">
+<rect width="1200" height="690" fill="#f5f8fc"/>
+<text x="65" y="64" font-size="35" font-weight="bold" font-family="DejaVu Sans" fill="#18304a">F07-J · Από το σύμπτωμα στην προστασία τρίτων</text>
+<text x="65" y="104" font-size="19" font-family="DejaVu Sans" fill="#53677a">Εκπαιδευτικό μοντέλο — όχι καθολική αλληλουχία ή διαδικασία χειρισμού</text>
+<g font-family="DejaVu Sans" text-anchor="middle" font-size="20" font-weight="bold">
+<rect x="55" y="170" width="242" height="142" rx="20" fill="#e2eef9" stroke="#27669c" stroke-width="3"/><text x="176" y="221" fill="#163b5a">Ένδειξη</text><text x="176" y="251" font-size="17" font-weight="normal" fill="#163b5a">ήχος · κραδασμός</text><text x="176" y="279" font-size="17" font-weight="normal" fill="#163b5a">προειδοποίηση</text>
+<rect x="348" y="170" width="242" height="142" rx="20" fill="#fff0d8" stroke="#c18a2b" stroke-width="3"/><text x="469" y="218" fill="#6d4c17">Πιθανή</text><text x="469" y="249" fill="#6d4c17">υποβάθμιση</text><text x="469" y="278" font-size="17" font-weight="normal" fill="#6d4c17">περιορίζονται επιλογές</text>
+<rect x="641" y="170" width="242" height="142" rx="20" fill="#ffe5df" stroke="#c65f4c" stroke-width="3"/><text x="762" y="220" fill="#8d3124">Κίνδυνος</text><text x="762" y="251" font-size="17" font-weight="normal" fill="#8d3124">απώλειας ελέγχου</text><text x="762" y="279" font-size="17" font-weight="normal" fill="#8d3124">ή πρόσκρουσης</text>
+<rect x="933" y="170" width="220" height="142" rx="20" fill="#fce6e6" stroke="#ae3f4a" stroke-width="3"/><text x="1043" y="218" fill="#812c36">Έκθεση</text><text x="1043" y="249" fill="#812c36">τρίτων</text><text x="1043" y="279" font-size="17" font-weight="normal" fill="#812c36">και περιουσίας</text>
+</g>
+<g fill="none" stroke="#66788c" stroke-width="4" stroke-linecap="round"><path d="M304 240 H340"/><path d="M597 240 H633"/><path d="M891 240 H925"/></g>
+<g fill="#66788c"><path d="M340 240 l-12 -8 v16 z"/><path d="M633 240 l-12 -8 v16 z"/><path d="M925 240 l-12 -8 v16 z"/></g>
+<text x="65" y="375" font-size="26" font-family="DejaVu Sans" font-weight="bold" fill="#18304a">Φραγμοί ασφάλειας: μειώνουν την πιθανότητα και τις συνέπειες</text>
+<g font-family="DejaVu Sans" text-anchor="middle" font-size="19">
+<rect x="55" y="405" width="340" height="155" rx="18" fill="#e5f4ed" stroke="#378360" stroke-width="2"/><text x="225" y="453" font-weight="bold" fill="#1b5940">Πριν την πτήση</text><text x="225" y="485" fill="#1b5940">Επιθεώρηση ελίκων,</text><text x="225" y="514" fill="#1b5940">κινητήρων και αισθητήρων</text>
+<rect x="430" y="405" width="340" height="155" rx="18" fill="#e5f4ed" stroke="#378360" stroke-width="2"/><text x="600" y="453" font-weight="bold" fill="#1b5940">Κατά την πτήση</text><text x="600" y="485" fill="#1b5940">Επίγνωση, έγκαιρη</text><text x="600" y="514" fill="#1b5940">απόφαση, προστασία τρίτων</text>
+<rect x="805" y="405" width="348" height="155" rx="18" fill="#e5f4ed" stroke="#378360" stroke-width="2"/><text x="979" y="453" font-weight="bold" fill="#1b5940">Μετά το περιστατικό</text><text x="979" y="485" fill="#1b5940">Ασφάλεια περιοχής,</text><text x="979" y="514" fill="#1b5940">τεκμηρίωση, τεχνικός έλεγχος</text>
+</g>
+<rect x="55" y="593" width="1098" height="56" rx="14" fill="#253f57"/><text x="604" y="629" text-anchor="middle" font-family="DejaVu Sans" font-size="19" fill="white">Προειδοποίηση: πλήρης μηχανική αστοχία μπορεί να συμβεί χωρίς χρόνο αντίδρασης</text>
+</svg>

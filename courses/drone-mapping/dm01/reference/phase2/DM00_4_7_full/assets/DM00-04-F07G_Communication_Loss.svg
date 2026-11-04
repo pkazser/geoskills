@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Διακρίνουμε απώλεια C2, εικόνας και τηλεμετρίας πριν αποφασίσουμε">
+<rect width="1200" height="720" fill="#f7fafc"/>
+<text x="600" y="63" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="29" font-weight="bold" fill="#163047">«Χάθηκε το σήμα» — τι χάθηκε πραγματικά;</text>
+<rect x="360" y="94" width="480" height="82" rx="19" fill="#dcebf7" stroke="#5484ad" stroke-width="2"/>
+<text x="600" y="127" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="23" fill="#173650">Παρατηρούμε την ένδειξη</text>
+<text x="600" y="156" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="17" fill="#173650">Δεν υποθέτουμε αυτόματα RTH</text>
+<path d="M600 176 V222 M210 222 H990 M210 222 V254 M600 222 V254 M990 222 V254" stroke="#63849b" stroke-width="3" fill="none"/>
+<g font-family="DejaVu Sans,Arial" text-anchor="middle"><rect x="43" y="254" width="335" height="190" rx="18" fill="#e7f1fa" stroke="#5b86aa" stroke-width="2"/><text x="210" y="294" font-size="22" font-weight="bold" fill="#214964">Απώλεια βίντεο</text><text x="210" y="330" font-size="17" fill="#214964">Δεν έχουμε εικόνα</text><text x="210" y="362" font-size="17" fill="#214964">C2 ίσως παραμένει</text><text x="210" y="394" font-size="17" fill="#214964">VLOS και ασφάλεια</text>
+<rect x="433" y="254" width="335" height="190" rx="18" fill="#fff1d9" stroke="#c79442" stroke-width="2"/><text x="600" y="294" font-size="22" font-weight="bold" fill="#754e14">Απώλεια τηλεμετρίας</text><text x="600" y="330" font-size="17" fill="#754e14">Θέση / ενδείξεις παλιές</text><text x="600" y="362" font-size="17" fill="#754e14">Δεν είναι τρέχουσα θέση</text><text x="600" y="394" font-size="17" fill="#754e14">Ελέγχουμε αξιοπιστία</text>
+<rect x="823" y="254" width="335" height="190" rx="18" fill="#f9e5e6" stroke="#b6686d" stroke-width="2"/><text x="990" y="294" font-size="22" font-weight="bold" fill="#82383d">Απώλεια C2</text><text x="990" y="330" font-size="17" fill="#82383d">Δεν μπορούμε να επέμβουμε</text><text x="990" y="362" font-size="17" fill="#82383d">Ισχύει γνωστό failsafe;</text><text x="990" y="394" font-size="17" fill="#82383d">Σχέδιο lost link</text></g>
+<path d="M210 444 V484 M600 444 V484 M990 444 V484 M210 484 H990 M600 484 V517" stroke="#63849b" stroke-width="3" fill="none"/>
+<rect x="245" y="517" width="710" height="116" rx="18" fill="#dfefe9" stroke="#478875" stroke-width="2"/>
+<text x="600" y="555" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="23" font-weight="bold" fill="#1e5747">Προστασία τρίτων και κατάλληλη διαδικασία</text>
+<text x="600" y="589" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="18" fill="#1e5747">Μόνο οι επιβεβαιωμένες δυνατότητες του συγκεκριμένου drone</text>
+<text x="600" y="676" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="15" fill="#476276">F07-G · Εκπαιδευτικό διάγραμμα — όχι εγχειρίδιο χειρισμών έκτακτης ανάγκης</text></svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="830" viewBox="0 0 1400 830">
+<rect width="1400" height="830" fill="#f8fafc"/><text x="65" y="65" font-family="DejaVu Sans" font-size="34" font-weight="bold" fill="#172b4d">Σταθερή πτέρυγα: πτήση, απογείωση και ανάκτηση</text>
+<text x="65" y="103" font-family="DejaVu Sans" font-size="20" fill="#43536b">Σχηματική παρουσίαση — όχι οδηγίες χειρισμού συγκεκριμένου αεροσκάφους</text>
+<rect x="55" y="140" rx="20" width="1290" height="310" fill="#e7f1ff" stroke="#b5d0ed" stroke-width="3"/>
+<text x="85" y="183" font-family="DejaVu Sans" font-size="26" font-weight="bold" fill="#153b69">1. Πτήση με συνεχή κίνηση προς τα εμπρός</text>
+<!-- Aircraft schematic side elevation: fuselage, wing, tail and propeller -->
+<path d="M390 313 L610 291 L746 303 L800 326 L739 344 L605 340 L390 329 Z" fill="#5f7287" stroke="#26374a" stroke-width="3"/>
+<path d="M545 285 L624 225 L679 225 L651 290 Z" fill="#879ab0" stroke="#26374a" stroke-width="3"/>
+<path d="M410 316 L388 255 L408 258 L440 308 Z" fill="#879ab0" stroke="#26374a" stroke-width="3"/>
+<line x1="805" y1="269" x2="805" y2="375" stroke="#364657" stroke-width="9" stroke-linecap="round"/>
+<text x="822" y="325" font-family="DejaVu Sans" font-size="19" fill="#273b54">Έλικας</text>
+<!-- force arrows -->
+<path d="M620 290 L620 214" stroke="#16825d" stroke-width="8"/><path d="M620 204 L605 229 L635 229 Z" fill="#16825d"/>
+<text x="645" y="213" font-family="DejaVu Sans" font-size="22" fill="#0e6349">Άντωση</text>
+<path d="M620 344 L620 405" stroke="#cf5b37" stroke-width="8"/><path d="M620 414 L605 388 L635 388 Z" fill="#cf5b37"/>
+<text x="643" y="405" font-family="DejaVu Sans" font-size="22" fill="#a83d21">Βάρος</text>
+<path d="M890 328 L1030 328" stroke="#2465a5" stroke-width="8"/><path d="M1042 328 L1015 313 L1015 343 Z" fill="#2465a5"/>
+<text x="882" y="302" font-family="DejaVu Sans" font-size="21" fill="#1f5184">Προώθηση / πορεία</text>
+<text x="86" y="428" font-family="DejaVu Sans" font-size="18" fill="#43536b">Οι δυνάμεις απεικονίζονται απλουστευμένα. Η άντωση εξαρτάται από τη ροή αέρα γύρω από τις πτέρυγες.</text>
+<rect x="55" y="475" rx="18" width="620" height="290" fill="white" stroke="#c9d5e4" stroke-width="3"/>
+<rect x="725" y="475" rx="18" width="620" height="290" fill="white" stroke="#c9d5e4" stroke-width="3"/>
+<text x="85" y="521" font-family="DejaVu Sans" font-size="25" font-weight="bold" fill="#153b69">2. Απογείωση — ανά μοντέλο</text>
+<text x="85" y="558" font-family="DejaVu Sans" font-size="20" fill="#283d52">• Διάδρομος ή κατάλληλη λωρίδα</text>
+<text x="85" y="597" font-family="DejaVu Sans" font-size="20" fill="#283d52">• Εκτόξευση με το χέρι ή καταπέλτη</text>
+<text x="85" y="654" font-family="DejaVu Sans" font-size="19" fill="#4b5e72">Απαιτείται έλεγχος του χώρου, των εμποδίων</text>
+<text x="85" y="685" font-family="DejaVu Sans" font-size="19" fill="#4b5e72">και των προδιαγραφών του συστήματος.</text>
+<text x="755" y="521" font-family="DejaVu Sans" font-size="25" font-weight="bold" fill="#153b69">3. Ανάκτηση — ανά μοντέλο</text>
+<text x="755" y="558" font-family="DejaVu Sans" font-size="20" fill="#283d52">• Προσγείωση σε κατάλληλο έδαφος</text>
+<text x="755" y="597" font-family="DejaVu Sans" font-size="20" fill="#283d52">• Ειδικό σύστημα ανάκτησης</text>
+<text x="755" y="654" font-family="DejaVu Sans" font-size="19" fill="#4b5e72">Η διαθέσιμη περιοχή ανάκτησης μπορεί</text>
+<text x="755" y="685" font-family="DejaVu Sans" font-size="19" fill="#4b5e72">να αποκλείσει μια κατά τα άλλα κατάλληλη λύση.</text>
+<text x="65" y="810" font-family="DejaVu Sans" font-size="17" fill="#596a80">GeoSkills · DM00-02-F03 · Πρωτότυπο εκπαιδευτικό διάγραμμα</text>
+</svg>

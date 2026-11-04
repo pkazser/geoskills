@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<rect width="1200" height="680" fill="#f7f9fc"/>
+<text x="55" y="58" font-family="DejaVu Sans,sans-serif" font-size="29" font-weight="bold" fill="#20334d">F05-A3 · Δύο κατευθύνσεις επικάλυψης</text>
+<text x="55" y="90" font-family="DejaVu Sans,sans-serif" font-size="18" fill="#51647e">Κάτοψη · Η ίδια κάμερα, παράλληλες γραμμές πτήσης · Σχηματικά, όχι υπό κλίμακα</text>
+<rect x="50" y="120" width="520" height="480" rx="16" fill="white" stroke="#ced9e7" stroke-width="2"/>
+<text x="75" y="155" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#244c70">Α · Εμπρόσθια επικάλυψη</text>
+<text x="75" y="183" font-family="DejaVu Sans" font-size="17" fill="#51647e">Διαδοχικές εικόνες στην ίδια γραμμή</text>
+<path d="M 170 555 L 170 230" stroke="#384d63" stroke-width="4" stroke-dasharray="10,8"/>
+<path d="M 158 248 L170 225 L182 248" stroke="#384d63" stroke-width="4" fill="none"/>
+<rect x="110" y="260" width="270" height="190" fill="#2c80bb" fill-opacity=".22" stroke="#2c80bb" stroke-width="3"/>
+<rect x="110" y="290" width="270" height="190" fill="#eb9750" fill-opacity=".25" stroke="#cf762e" stroke-width="3"/>
+<rect x="112" y="291" width="266" height="159" fill="#6bba9c" fill-opacity=".30"/>
+<circle cx="245" cy="355" r="8" fill="#2c80bb"/><circle cx="245" cy="385" r="8" fill="#cf762e"/>
+<path d="M 417 355 L 472 355 M 417 385 L 472 385" stroke="#475569" stroke-width="2"/>
+<path d="M 455 356 L455 385" stroke="#475569" stroke-width="2"/>
+<text x="408" y="417" font-family="DejaVu Sans" font-size="18" fill="#20334d">13,5 m</text>
+<text x="408" y="439" font-family="DejaVu Sans" font-size="15" fill="#526579">απόσταση</text>
+<text x="75" y="550" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#244c70">80% κοινό μήκος λήψεων</text>
+<rect x="620" y="120" width="530" height="480" rx="16" fill="white" stroke="#ced9e7" stroke-width="2"/>
+<text x="645" y="155" font-family="DejaVu Sans" font-size="23" font-weight="bold" fill="#244c70">Β · Πλευρική επικάλυψη</text>
+<text x="645" y="183" font-family="DejaVu Sans" font-size="17" fill="#51647e">Εικόνες από δύο γειτονικές γραμμές</text>
+<path d="M 780 555 L780 235 M835 555 L835 235" stroke="#45576e" stroke-width="4" stroke-dasharray="10,8"/>
+<path d="M 768 251 L780 230 L792 251 M823 251 L835 230 L847 251" stroke="#45576e" stroke-width="3" fill="none"/>
+<rect x="665" y="285" width="255" height="190" fill="#2c80bb" fill-opacity=".23" stroke="#2c80bb" stroke-width="3"/>
+<rect x="714" y="285" width="255" height="190" fill="#eb9750" fill-opacity=".25" stroke="#cf762e" stroke-width="3"/>
+<rect x="715" y="287" width="203" height="186" fill="#6bba9c" fill-opacity=".30"/>
+<circle cx="780" cy="380" r="8" fill="#2c80bb"/><circle cx="835" cy="380" r="8" fill="#cf762e"/>
+<path d="M780 495 L835 495 M780 486 L780 504 M835 486 L835 504" stroke="#475569" stroke-width="2"/>
+<text x="858" y="503" font-family="DejaVu Sans" font-size="18" fill="#20334d">18 m</text>
+<text x="645" y="567" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#244c70">80% κοινό εγκάρσιο πλάτος</text>
+<rect x="52" y="625" width="22" height="22" fill="#6bba9c" fill-opacity=".70" stroke="#4a9d7f"/><text x="86" y="642" font-family="DejaVu Sans" font-size="17" fill="#40546c">Περιοχή επικάλυψης</text>
+<rect x="335" y="625" width="22" height="22" fill="#2c80bb" fill-opacity=".45" stroke="#2c80bb"/><text x="370" y="642" font-family="DejaVu Sans" font-size="17" fill="#40546c">1η εικόνα</text>
+<rect x="550" y="625" width="22" height="22" fill="#eb9750" fill-opacity=".50" stroke="#cf762e"/><text x="585" y="642" font-family="DejaVu Sans" font-size="17" fill="#40546c">2η εικόνα</text>
+<text x="975" y="645" font-family="DejaVu Sans" font-size="15" fill="#6b7b8f">GeoSkills · DM00.5.3</text>
+</svg>

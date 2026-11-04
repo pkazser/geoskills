@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="tit desc">
+<title id="tit">Κατανομή χρόνου πτήσης και διαθέσιμος χρόνος φωτογράφισης</title><desc id="desc">Παράδειγμα 35 λεπτών μέγιστης αναφερόμενης διάρκειας: 6 λεπτά μετάβασης, 18 λεπτά φωτογράφισης, 6 λεπτά επιστροφής, και 5 λεπτά μη προγραμματισμένου περιθωρίου. Δεν είναι πραγματική προδιαγραφή ασφαλείας.</desc>
+<rect width="1200" height="630" fill="#fafbfc"/>
+<text x="72" y="76" font-size="34" font-weight="700" fill="#162c42" font-family="DejaVu Sans, sans-serif">Πού πηγαίνει ο χρόνος πτήσης;</text>
+<text x="72" y="116" font-size="21" fill="#40566b" font-family="DejaVu Sans, sans-serif">Εκπαιδευτικό παράδειγμα: αναφερόμενη μέγιστη διάρκεια 35 λεπτά</text>
+<rect x="70" y="180" width="1050" height="116" rx="15" fill="#e5edf1"/>
+<rect x="70" y="180" width="180" height="116" rx="10" fill="#4a7b9b"/>
+<rect x="250" y="180" width="540" height="116" fill="#26796c"/>
+<rect x="790" y="180" width="180" height="116" fill="#4a7b9b"/>
+<rect x="970" y="180" width="150" height="116" rx="10" fill="#aebbc5"/>
+<g font-family="DejaVu Sans, sans-serif" font-weight="700" fill="white" text-anchor="middle">
+<text x="160" y="224" font-size="19">Μετάβαση</text><text x="160" y="262" font-size="29">6′</text>
+<text x="520" y="224" font-size="24">Φωτογράφιση</text><text x="520" y="266" font-size="32">18′</text>
+<text x="880" y="224" font-size="18">Επιστροφή</text><text x="880" y="262" font-size="29">6′</text>
+</g>
+<g font-family="DejaVu Sans, sans-serif" fill="#182b38" text-anchor="middle"><text x="1045" y="222" font-size="16" font-weight="700">Περιθώριο</text><text x="1045" y="260" font-size="28" font-weight="700">5′</text></g>
+<path d="M70 314 v20 h900 v-20" fill="none" stroke="#243e55" stroke-width="3"/>
+<text x="520" y="366" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#243e55">Προγραμματισμένη πτήση: 30 λεπτά</text>
+<path d="M970 314 v20 h150 v-20" fill="none" stroke="#64798b" stroke-width="3"/>
+<text x="1045" y="372" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#435668">Δεν το</text><text x="1045" y="394" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#435668">προγραμματίζουμε</text>
+<rect x="70" y="438" width="1050" height="119" rx="15" fill="#eaf1f4"/>
+<text x="94" y="478" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#1d3d4a" font-weight="700">Τα 35 λεπτά δεν ισοδυναμούν με 35 λεπτά λήψεων.</text>
+<text x="94" y="513" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#334b5b">Οι χρόνοι και το περιθώριο είναι υποθέσεις άσκησης, όχι καθολικές τιμές.</text>
+<text x="94" y="541" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#334b5b">Στην πράξη ισχύουν το εγχειρίδιο του drone και οι πραγματικές συνθήκες.</text>
+<text x="72" y="604" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#617889">GeoSkills · DM00.2.6 · Σχήμα F06</text>
+</svg>

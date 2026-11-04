@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+<title id="title">Σκηνή αγροτικής αποστολής: πέντε παράγοντες κινδύνου</title>
+<desc id="desc">Σχηματικός αγρός, δρόμος και όχημα αριστερά, γραμμή ηλεκτρικού ρεύματος δεξιά, δέντρο δίπλα στον χειριστή, δύο περαστικοί, σύννεφο και ενδεικτική ριπή. Σημεία 1 έως 5.</desc>
+<rect width="1100" height="600" rx="20" fill="#eff5f3"/>
+<rect x="30" y="88" width="1040" height="478" rx="16" fill="#dcebd8" stroke="#779d7b" stroke-width="2"/>
+<path d="M30 160 L1070 160" stroke="#88b18a" stroke-width="3" stroke-dasharray="7 10"/>
+<path d="M30 270 L1070 270 M30 377 L1070 377 M30 486 L1070 486" stroke="#96bd91" stroke-width="5" stroke-dasharray="26 15" opacity=".5"/>
+<rect x="30" y="88" width="128" height="478" rx="12" fill="#777e86"/>
+<path d="M93 105 L93 545" stroke="white" stroke-width="4" stroke-dasharray="30 20"/>
+<rect x="56" y="240" width="76" height="135" rx="16" fill="#e9c267" stroke="#50535c" stroke-width="4"/>
+<rect x="65" y="261" width="58" height="34" rx="5" fill="#a9d5e7"/>
+<rect x="65" y="320" width="58" height="30" rx="5" fill="#a9d5e7"/>
+<g stroke="#4c5a54" stroke-width="6"><path d="M905 182 L905 512 M1030 182 L1030 512"/><path d="M867 228 L1065 228 M867 265 L1065 265"/><path d="M902 225 L1030 208 M902 264 L1030 248" stroke="#d0952d" stroke-width="3"/></g>
+<g fill="#528f5a" stroke="#3e6c43" stroke-width="4"><circle cx="350" cy="180" r="62"/><circle cx="407" cy="207" r="43"/></g><path d="M359 226 L359 327" stroke="#7a563a" stroke-width="23"/>
+<g stroke="#364b58" stroke-width="5" stroke-linecap="round" fill="none"><circle cx="580" cy="433" r="13"/><path d="M580 448 L580 486 M580 459 L559 477 M580 459 L600 477 M580 486 L564 515 M580 486 L597 515"/><circle cx="641" cy="433" r="13"/><path d="M641 448 L641 486 M641 459 L620 477 M641 459 L661 477 M641 486 L625 515 M641 486 L658 515"/></g>
+<g fill="#a7c3cf"><ellipse cx="660" cy="140" rx="92" ry="31"/><circle cx="620" cy="122" r="40"/><circle cx="685" cy="115" r="45"/></g>
+<g stroke="#4a879f" stroke-width="5" fill="none" stroke-linecap="round"><path d="M735 125 q45 -20 87 0"/><path d="M735 147 q65 -18 129 0"/><path d="M735 169 q32 -12 68 0"/></g>
+<g font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" font-size="27">
+<g><circle cx="181" cy="305" r="27" fill="#d57433" stroke="white" stroke-width="4"/><text x="181" y="315" fill="white">1</text></g>
+<g><circle cx="972" cy="317" r="27" fill="#d57433" stroke="white" stroke-width="4"/><text x="972" y="327" fill="white">2</text></g>
+<g><circle cx="434" cy="219" r="27" fill="#d57433" stroke="white" stroke-width="4"/><text x="434" y="229" fill="white">3</text></g>
+<g><circle cx="690" cy="469" r="27" fill="#d57433" stroke="white" stroke-width="4"/><text x="690" y="479" fill="white">4</text></g>
+<g><circle cx="858" cy="120" r="27" fill="#d57433" stroke="white" stroke-width="4"/><text x="858" y="130" fill="white">5</text></g>
+</g>
+<g font-family="DejaVu Sans, sans-serif" font-size="19" fill="#233b42"><text x="30" y="51" font-size="26" font-weight="bold">Πέντε σημεία που ελέγχουμε πριν από μια αποστολή</text><text x="192" y="300">Δρόμος</text><text x="929" y="360">Καλώδια</text><text x="290" y="355">Δέντρο</text><text x="566" y="549">Περαστικοί</text><text x="725" y="205">Ριπές</text></g>
+</svg>
