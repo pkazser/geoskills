@@ -6,85 +6,24 @@ site:
   hide_title_block: true
 ---
 
-::::{div}
-:class: geoskills-home col-screen
-
-::::{div}
-:class: geoskills-hero
-
-# Μάθε Γεωπληροφορική στην πράξη
-
-**Μάθε · Εφάρμοσε · Δημιούργησε**
-
-Από το πρώτο σου GIS μέχρι ένα ολοκληρωμένο γεωχωρικό αποτέλεσμα, μαθαίνεις με πραγματικά προβλήματα, καθοδηγούμενη πρακτική και σαφή επόμενα βήματα.
-
-:::{div}
-:class: geoskills-hero-actions
-{button}`Ξεκίνα με τα GIS <courses/qgis/index.md>`
-{button}`Εκπαιδευτικές διαδρομές <courses/qgis/index.md>`
-:::
-
-## Εκπαιδευτική ανάπτυξη και επιμέλεια
-
-**Παναγιώτης Καζάκης**
-
-Μέλος ΕΔΙΠ
-
-Τμήμα Μηχανικών Τοπογραφίας και Γεωπληροφορικής
-
-Σχολή Μηχανικών
-
-Διεθνές Πανεπιστήμιο της Ελλάδος (ΔΙ.ΠΑ.Ε.)
-
-
-## Διαδρομές μάθησης
-
-Επίλεξε τον δρόμο που ταιριάζει στον στόχο σου. Η κατάσταση κάθε διαδρομής δηλώνεται καθαρά, ώστε να ξέρεις τι μπορείς να ξεκινήσεις σήμερα.
-
-::::{div}
-:class: geoskills-paths col-screen
-:::{card} 🗺️ GIS / QGIS Core
-:link: courses/qgis/index.md
-**Διαθέσιμο τώρα**
-
-Από τις βασικές έννοιες του GIS μέχρι την παραγωγή και ανάλυση γεωχωρικών δεδομένων. Ξεκίνα χωρίς προηγούμενη γνώση με το GQ-START και το GQ00.
-:::
-:::{card} 🐍 GeoPython Core
-:link: courses/python/index.md
-**Διαθέσιμο τώρα**
-
-Python για Γεωπληροφορικούς: διαθέσιμα μαθήματα GP00–GP10 και Core Capstone, με πρακτικές ασκήσεις, notebooks και εκπαιδευτικά δεδομένα. Το υλικό βρίσκεται σε πιλοτική έκδοση και συνεχίζει να αξιολογείται.
-:::
-:::{card} 🧠 AI Learning Core — Μαθαίνω αποτελεσματικά με την ΤΝ
-:link: courses/ai-learning/index.md
-**Πιλοτική έκδοση v1.0-RC1 — υπό αξιολόγηση**
-
-Γνώρισε την Τεχνητή Νοημοσύνη και μάθε να την αξιοποιείς για κατανόηση, εξάσκηση, κριτική σκέψη και αυτόνομη μάθηση. Ξεκίνα χωρίς προαπαιτούμενες τεχνικές γνώσεις από το AL00.
-:::
-:::{card} 📐 Field Surveying Core
-:link: courses/field-surveying/index.md
-**Σε σχεδιασμό**
-
-Γεωδαιτικός σταθμός και GNSS: προετοιμασία, στήσιμο, προσανατολισμός, μέτρηση, έλεγχος και παράδοση.
-:::
-:::{card} 🛰️ Remote Sensing Core
-:link: courses/remote-sensing/index.md
-**Μελλοντική διαδρομή**
-
-Δορυφορικά δεδομένα, πολυφασματικές εικόνες και εισαγωγή στην τηλεπισκοπική ανάλυση.
-:::
-:::{card} 🚁 Drone Mapping Core
-:link: courses/drone-mapping/index.md
-**Δοκιμαστική εκπαιδευτική έκδοση — Preview v0.1**
-
-Από τις βασικές έννοιες και την ασφάλεια έως τον σχεδιασμό και τον αρχικό ποιοτικό έλεγχο μιας χαρτογραφικής αποστολής.
-:::
-::::
-
-## Πώς θα μαθαίνεις
-
-**1. Κατανοώ** το πρόβλημα και τις βασικές έννοιες · **2. Εφαρμόζω** βήμα προς βήμα · **3. Ελέγχω** το αποτέλεσμα · **4. Δοκιμάζω** μόνος μου · **5. Κρατώ** το παραδοτέο στον προσωπικό μου φάκελο.
-
-:::{note} Ανοιχτό και προσβάσιμο
-Τα μαθήματα είναι σχεδιασμένα για αυτομελέτη χωρίς λογαριασμό χρήστη. Τα δεδομένα διατίθενται μέσω ξεχωριστών πακέτων λήψης. Οι ενότητες που δεν έχουν δημοσιευθεί ακόμη δηλώνονται ρητά.
-:::
+<div class="geoskills-v3-page" id="top">
+  <section class="geoskills-v3-hero" aria-labelledby="home-title">
+    <div class="geoskills-v3-shell geoskills-v3-hero-inner">
+      <div><p class="geoskills-v3-eyebrow">Ανοιχτή πλατφόρμα πρακτικών δεξιοτήτων</p><h1 id="home-title">Μάθε. Εφάρμοσε. Δημιούργησε.</h1><p class="geoskills-v3-hero-copy">Από τον πρώτο σου ψηφιακό χάρτη μέχρι την ανάλυση γεωχωρικών δεδομένων. Καθαρές διαδρομές, καθοδηγούμενη πρακτική και τεκμηριωμένα επόμενα βήματα.</p><div class="geoskills-v3-actions"><a class="geoskills-v3-button geoskills-v3-button-primary" href="#beginner">Ξεκίνα από την αρχή</a><a class="geoskills-v3-button geoskills-v3-button-secondary" href="#paths">Εξερεύνησε τα μαθήματα</a></div></div>
+      <div class="geoskills-v3-hero-visual" aria-label="Απλοποιημένη γεωχωρική εικονογράφηση"><svg class="geoskills-v3-geo-art" viewBox="0 0 520 300" role="img" aria-labelledby="geo-title geo-desc"><title id="geo-title">Γεωχωρική διαδρομή από δεδομένα σε χάρτη</title><desc id="geo-desc">Σχηματική σύνδεση σημείων, γραμμών και περιοχής πάνω σε κάνναβο.</desc><path class="geoskills-v3-geo-grid" d="M30 55H490M30 110H490M30 165H490M30 220H490M85 25V265M175 25V265M265 25V265M355 25V265M445 25V265"/><path class="geoskills-v3-geo-line faint" d="M46 225C125 180 130 72 223 91S315 223 389 176 456 99 480 72"/><path class="geoskills-v3-geo-line" d="M56 218C131 180 151 105 224 110S313 206 378 169 432 112 470 80"/><path class="geoskills-v3-geo-line" d="M120 241L213 134L302 188L394 75"/><circle class="geoskills-v3-geo-dot" cx="120" cy="241" r="7"/><circle class="geoskills-v3-geo-dot" cx="213" cy="134" r="7"/><circle class="geoskills-v3-geo-dot" cx="302" cy="188" r="7"/><circle class="geoskills-v3-geo-dot" cx="394" cy="75" r="7"/><path class="geoskills-v3-geo-pin" d="M432 187c0-17 14-30 30-30s30 13 30 30c0 22-30 52-30 52s-30-30-30-52Z"/><circle fill="#fff" cx="462" cy="187" r="8"/><text class="geoskills-v3-geo-label" x="34" y="285">δεδομένα</text><text class="geoskills-v3-geo-label" x="398" y="35">παραδοτέο</text></svg><div class="geoskills-v3-geo-badge">δεδομένα → χάρτης → απόφαση</div></div>
+    </div>
+  </section>
+  <main>
+    <section id="paths" class="geoskills-v3-shell" aria-labelledby="paths-title"><div class="geoskills-v3-heading"><div><h2 id="paths-title">Εκπαιδευτικές διαδρομές</h2><p>Διάλεξε το αντικείμενο που ταιριάζει στον στόχο σου. Η κατάσταση κάθε διαδρομής δηλώνεται καθαρά.</p></div></div><div class="geoskills-v3-paths">
+      <article class="geoskills-v3-card"><div class="geoskills-v3-icon" aria-hidden="true">🗺️</div><h3>GIS / QGIS Core</h3><p>Χάρτες, δεδομένα και γεωχωρική σκέψη.</p><span class="geoskills-v3-status">Διαθέσιμο τώρα</span><a class="geoskills-v3-card-link" href="/courses/qgis">Άνοιξε τη διαδρομή →</a></article>
+      <article class="geoskills-v3-card"><div class="geoskills-v3-icon" aria-hidden="true">🐍</div><h3>GeoPython Core</h3><p>Python, pandas και γεωχωρικά workflows.</p><span class="geoskills-v3-status">Πιλοτική έκδοση — υπό αξιολόγηση</span><a class="geoskills-v3-card-link" href="/courses/python">Προβολή διαδρομής →</a></article>
+      <article class="geoskills-v3-card"><div class="geoskills-v3-icon" aria-hidden="true">🧠</div><h3>AI Learning Core</h3><p>Κριτική και δημιουργική χρήση της AI.</p><span class="geoskills-v3-status">Πιλοτική έκδοση — υπό αξιολόγηση</span><a class="geoskills-v3-card-link" href="/courses/ai-learning">Προβολή διαδρομής →</a></article>
+      <article class="geoskills-v3-card"><div class="geoskills-v3-icon" aria-hidden="true">📐</div><h3>Field Surveying</h3><p>Προετοιμασία και τεκμηρίωση εργασίας πεδίου.</p><span class="geoskills-v3-status">Τοπική υποψήφια έκδοση — προς αξιολόγηση</span><a class="geoskills-v3-card-link" href="/courses/field-surveying">Προβολή διαδρομής →</a></article>
+      <article class="geoskills-v3-card"><div class="geoskills-v3-icon" aria-hidden="true">🚁</div><h3>Drone Mapping</h3><p>Ασφάλεια, σχεδιασμός και έλεγχος αποστολής.</p><span class="geoskills-v3-status">Preview v0.1 — δοκιμαστική έκδοση</span><a class="geoskills-v3-card-link" href="/courses/drone-mapping">Προβολή preview →</a></article>
+      <article class="geoskills-v3-card"><div class="geoskills-v3-icon" aria-hidden="true">🛰️</div><h3>Remote Sensing</h3><p>Φασματικές ζώνες και τηλεπισκοπική ανάλυση.</p><span class="geoskills-v3-status geoskills-v3-status-future">Υπό ανάπτυξη — δεν έχει δημοσιευθεί</span><a class="geoskills-v3-card-link" href="/courses/remote-sensing">Προβολή κατάστασης →</a></article>
+    </div></section>
+    <section id="beginner" class="geoskills-v3-shell" aria-labelledby="beginner-title"><div class="geoskills-v3-beginner"><div><h2 id="beginner-title">Δεν έχω προηγούμενες γνώσεις.</h2><p>Ξεκίνα από το <strong>GQ-START</strong> για ένα κοινό λεξιλόγιο στη γεωπληροφορική. Είναι μια ενδεικτική αφετηρία — το QGIS δεν αποτελεί υποχρεωτικό προαπαιτούμενο για κάθε διαδρομή.</p></div><a class="geoskills-v3-button" href="/courses/qgis/intro">Ξεκίνα με το GQ-START →</a></div></section>
+    <section id="stages" class="geoskills-v3-shell" aria-labelledby="stages-title"><div class="geoskills-v3-heading"><div><h2 id="stages-title">Πώς μαθαίνεις</h2><p>Μια απλή ροή που συνδέει την κατανόηση με ένα τεκμηριωμένο αποτέλεσμα.</p></div></div><div class="geoskills-v3-stages"><article class="geoskills-v3-stage"><span>1</span><h3>Κατανοώ</h3><p>Ξεκαθαρίζω το ερώτημα και τις έννοιες.</p></article><article class="geoskills-v3-stage"><span>2</span><h3>Εφαρμόζω</h3><p>Ακολουθώ επαναλήψιμα βήματα.</p></article><article class="geoskills-v3-stage"><span>3</span><h3>Ελέγχω</h3><p>Ελέγχω παραδοχές και αποτέλεσμα.</p></article><article class="geoskills-v3-stage"><span>4</span><h3>Δημιουργώ</h3><p>Παραδίδω τεκμηριωμένη εργασία.</p></article></div></section>
+    <section class="geoskills-v3-shell geoskills-v3-identity"><h2>Ακαδημαϊκή ταυτότητα</h2><p><strong>Παναγιώτης Καζάκης</strong><br>Μέλος ΕΔΙΠ<br>Τμήμα Μηχανικών Τοπογραφίας και Γεωπληροφορικής<br>Σχολή Μηχανικών<br>Διεθνές Πανεπιστήμιο της Ελλάδος (ΔΙ.ΠΑ.Ε.)</p></section>
+  </main>
+</div>
