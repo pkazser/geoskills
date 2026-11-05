@@ -4,7 +4,7 @@ downloads:
   - file: ../../../downloads/qgis/GQ00_student_v2.1.zip
     title: Πακέτο φοιτητή GQ00 v2.1 (ZIP)
   - file: ../../../downloads/qgis/GQ00_Odigos_Foititi_v2.1.docx
-    title: Οδηγός φοιτητή GQ00 v2.0 (Word)
+    title: Οδηγός φοιτητή GQ00 v2.1 (Word)
 ---
 
 # GQ00 — Ο πρώτος μου χάρτης στο QGIS
