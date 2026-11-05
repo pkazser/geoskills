@@ -53,3 +53,15 @@ Every result records command/environment, exact scope, status (`PASS`, `FAIL`, `
 - `QA001B2_FIX_REPORT_GR.md`
 - `GeoSkills_MASTER_HANDOFF_2026-11-05.md`
 - `QA001B2_BUILD_RECOVERY_REPORT.md`
+
+## 8. Static artifact preflight (mandatory before browser QA)
+
+1. Run the pinned `prepare_myst_theme.py` and `myst build --html --ci` procedure.
+2. Wait for static export completion; do not inspect or package an intermediate preview state.
+3. Treat `_build/html` as the only candidate artifact and enumerate all HTML/CSS/JS references.
+4. For every referenced resource, verify both filesystem existence and HTTP 200 from a server rooted at exactly `_build/html` under `/geoskills/`.
+5. Require expected MIME, non-zero body and binary signatures for DOCX/ZIP/GPKG/CSV downloads.
+6. Fail the gate if any runtime asset or download resolves to `/myst_assets_folder/` without a real file in the candidate artifact, even if the MyST preview server responds successfully.
+7. Run Playwright only after this preflight passes; record console errors, failed requests and viewport results.
+
+The preflight does not authorize manual copying or mass URL rewriting. Any packaging fix must be implemented in the supported build/CI mechanism and revalidated from a clean artifact.

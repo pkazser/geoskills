@@ -4,7 +4,7 @@ downloads:
   - file: ../../../downloads/qgis/GQ05_student_v1.1.zip
     title: Πακέτο φοιτητή GQ05 v1.1 (ZIP)
   - file: ../../../downloads/qgis/GQ05_Odigos_Foititi_v1.1.docx
-    title: Οδηγός φοιτητή GQ05 v1.0 (Word)
+    title: Οδηγός φοιτητή GQ05 v1.1 (Word)
 ---
 
 # GQ05 — Ψηφιοποίηση στο QGIS: σημεία, γραμμές και πολύγωνα

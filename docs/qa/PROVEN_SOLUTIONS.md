@@ -44,3 +44,18 @@
 - **Αποτέλεσμα:** verified in `qa001b2-integrate-worktree`: `Built 182 pages`, 230 final HTML files after route crawl, GQ01–GQ03 artifact checks PASS, Playwright desktop/mobile PASS.
 - **Περιορισμοί:** this is a local recovery using a validated generated cache; it does not change the CI workflow or prove a fresh Windows download. GitHub Actions remains the production-equivalent validation path.
 - **Πηγή:** `QA001B2_BUILD_RECOVERY_REPORT.md`; `myst.yml`; `scripts/prepare_myst_theme.py`; MyST official template guidance: https://mystmd.org/guide/quickstart and https://mystmd.org/guide/website-templates.
+
+## PS-006 — Static artifact preflight before browser QA
+
+- **Στόχος:** επιβεβαίωση ότι το artifact που θα ανέβει είναι αυτοτελές.
+- **Διαδικασία:** μετά το `myst build --html --ci`, ελέγξτε στο ίδιο `_build/html` κάθε `src`, `href`, `srcset` και download URL με filesystem resolution και HTTP request. Ελέγξτε επίσης ότι `myst_assets_folder` και όλα τα κοινά JS/CSS assets υπάρχουν πριν από Playwright.
+- **Αποτέλεσμα:** η διαδικασία QA-001B.3A εντόπισε ότι τα GQ04/GQ05 binaries υπάρχουν κάτω από `_build/html/build`, αλλά τα runtime-resolved URLs `/myst_assets_folder/...` δεν έχουν αντίστοιχο φάκελο στο artifact και αποτυγχάνουν με 404.
+- **Περιορισμοί:** δεν αποτελεί λύση η αντιγραφή assets από το preview cache· απαιτείται CI-compatible packaging από την πραγματική διαδικασία build.
+- **Πηγή:** `QA001B3A_RUNTIME_ROOT_CAUSE.md`, `QA001B3A_ASSET_VALIDATION.csv`.
+
+## PS-007 — Explicit BASE_URL invocation and final artifact validation
+
+- **Στόχος:** αποφυγή false 404 diagnosis από local MyST invocation.
+- **Διαδικασία:** set `BASE_URL=/geoskills`, `CI=true`, `NODE_USE_SYSTEM_CA=1` in the same process; run pinned theme preparation and `myst build --html --ci`; wait for completion; validate the exact `_build/html`; then run Playwright with `/geoskills/` server mapping.
+- **Αποτέλεσμα:** with the explicit environment, generated HTML used `/geoskills/build/...`, the validator found 11,885 references and 0 missing, and GQ04/GQ05 runtime/download checks passed.
+- **Πηγή:** `STATIC_EXPORT_ROOT_CAUSE.md`, `STATIC_EXPORT_FIX_REPORT.md`, `STATIC_ARTIFACT_VALIDATION.csv`.
