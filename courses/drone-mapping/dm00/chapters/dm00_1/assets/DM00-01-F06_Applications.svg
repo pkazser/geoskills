@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1930" viewBox="0 0 1200 1930" role="img" aria-labelledby="title desc">
-<title id="title">Σχήμα 1.6 — Πέντε εφαρμογές των drones</title>
-<desc id="desc">Πέντε μεγάλες κατακόρυφες κάρτες με ανάγκη, δεδομένα, παραδοτέο και περιορισμό ερμηνείας.</desc>
-<rect x="0" y="0" width="1200" height="1930" rx="0" fill="#f6f9fc" stroke="none" stroke-width="1"/>
-<text x="54" y="69" font-family="DejaVu Sans,Arial,sans-serif" font-size="40" font-weight="700" text-anchor="start" fill="#19374f">Πέντε εφαρμογές των drones</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2310" viewBox="0 0 1200 2310" role="img" aria-labelledby="title desc">
+<title id="title">Σχήμα 1.6 — Έξι εφαρμογές των drones</title>
+<desc id="desc">Έξι μεγάλες κατακόρυφες κάρτες με ανάγκη, δεδομένα, παραδοτέο και περιορισμό ερμηνείας.</desc>
+<rect x="0" y="0" width="1200" height="2310" rx="0" fill="#f6f9fc" stroke="none" stroke-width="1"/>
+<text x="54" y="69" font-family="DejaVu Sans,Arial,sans-serif" font-size="40" font-weight="700" text-anchor="start" fill="#19374f">Έξι εφαρμογές των drones</text>
 <text x="55" y="115" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#536c7c">Κάθε αποστολή ξεκινά από την ανάγκη, όχι από τον εξοπλισμό.</text>
 <rect x="43" y="151" width="1114" height="332" rx="20" fill="white" stroke="#d9e3ed" stroke-width="2"/>
 <rect x="43" y="151" width="12" height="332" rx="8" fill="#247c86" stroke="none" stroke-width="1"/>
@@ -69,5 +69,18 @@
 <text x="300" y="1753" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Τεκμηριωμένες εικόνες / παρατηρήσεις</text>
 <text x="90" y="1804" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Όριο ερμηνείας:</text>
 <text x="300" y="1804" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Δεν υποκαθιστά τεχνική πιστοποίηση</text>
-<text x="54" y="1913" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#536a7e">Οι επιλογές είναι ενδεικτικές: κάθε έργο απαιτεί τεκμηρίωση και έλεγχο ποιότητας.</text>
+<rect x="43" y="1891" width="1114" height="332" rx="20" fill="white" stroke="#d9e3ed" stroke-width="2"/>
+<rect x="43" y="1891" width="12" height="332" rx="8" fill="#247c86" stroke="none" stroke-width="1"/>
+<rect x="74" y="1911" width="62" height="56" rx="12" fill="#dcedf0" stroke="none" stroke-width="1"/>
+<text x="105" y="1949" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#176b79">06</text>
+<text x="162" y="1952" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#183a50">3D αποτύπωση</text>
+<text x="90" y="1999" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Ανάγκη:</text>
+<text x="300" y="1999" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Μορφή ή παρακολούθηση όγκου</text>
+<text x="90" y="2050" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Δεδομένα:</text>
+<text x="300" y="2050" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Επικαλυπτόμενες λήψεις</text>
+<text x="90" y="2101" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Παραδοτέο:</text>
+<text x="300" y="2101" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Νέφος σημείων, πλέγμα ή DSM</text>
+<text x="90" y="2152" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#4a6473">Όριο ερμηνείας:</text>
+<text x="300" y="2152" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#1c364b">Δεν εγγυάται ακρίβεια όγκου</text>
+<text x="54" y="2265" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#536a7e">Οι επιλογές είναι ενδεικτικές: κάθε έργο απαιτεί τεκμηρίωση και έλεγχο ποιότητας.</text>
 </svg>

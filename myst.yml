@@ -243,8 +243,14 @@ project:
         - file: courses/drone-mapping/dm00/index.md
           children:
             - file: courses/drone-mapping/dm00/chapters/dm00_1/chapter.md
+            - file: courses/drone-mapping/dm00/chapters/dm00_1/fakelos_ergasias/DM00_Kartela_01_Aitima.md
+              hidden: true
             - file: courses/drone-mapping/dm00/chapters/dm00_2/chapter.md
+            - file: courses/drone-mapping/dm00/chapters/dm00_2/fakelos_ergasias/DM00_Kartela_02_Epilogi_Platformas.md
+              hidden: true
             - file: courses/drone-mapping/dm00/chapters/dm00_3/chapter.md
+            - file: courses/drone-mapping/dm00/chapters/dm00_3/fakelos_ergasias/DM00_Kartela_03_Epilogi_Aisthitira_kai_Dedomenon.md
+              hidden: true
         - file: courses/drone-mapping/dm01/index.md
         - file: courses/drone-mapping/dm02/index.md
         - file: courses/drone-mapping/dm03/index.md
