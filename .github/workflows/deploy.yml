@@ -40,6 +40,10 @@ jobs:
         run: myst build --html --ci
       - name: Install standalone homepage
         run: python scripts/install_homepage.py
+      - name: Finalize MyST asset paths
+        run: python scripts/finalize_static_asset_paths.py _build/html --base-url /geoskills
+      - name: Validate final static artifact
+        run: python scripts/validate_static_artifact.py _build/html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./_build/html
