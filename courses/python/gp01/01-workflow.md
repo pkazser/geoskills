@@ -14,6 +14,13 @@
 
 ## Από τα δεδομένα στο αποτέλεσμα
 
+:::{figure} assets/gp01-workflow.svg
+:alt: Διάγραμμα επτά σταδίων GeoPython workflow από Load έως Export
+:width: 100%
+
+Σχήμα GP01.1. Η ίδια ροή επαναχρησιμοποιείται σταδιακά στο κοινό starter notebook.
+:::
+
 1. **Load** — φορτώνουμε το αρχείο.
 2. **Inspect** — βλέπουμε τη δομή του.
 3. **Understand** — εξηγούμε τι σημαίνουν τα πεδία.
@@ -33,11 +40,12 @@
 ```python
 import pandas as pd
 
-points = pd.read_csv("../../../downloads/python/data/gp01/survey_points.csv")
+csv_path = DATA_ROOT / "gp01" / "survey_points.csv"
+points = pd.read_csv(csv_path)
 points.head()
 ```
 
-Δεν βιαζόμαστε να κάνουμε χάρτη. Πρώτα πρέπει να καταλάβουμε τι φορτώσαμε.
+Προηγείται η εκτέλεση του κελιού προετοιμασίας δεδομένων στο starter notebook, ώστε να δημιουργηθεί το `DATA_ROOT`. Δεν βιαζόμαστε να κάνουμε χάρτη. Πρώτα πρέπει να καταλάβουμε τι φορτώσαμε.
 
 ## Checkpoint
 

@@ -9,8 +9,23 @@
 Ένας πίνακας μπορεί να φαίνεται λογικός ενώ ένα σημείο έχει αντιστραμμένες coordinates ή βρίσκεται πολύ μακριά. Ο χάρτης είναι οπτικό QA, όχι απλώς παρουσίαση.
 
 ```python
-ax = gdf.plot(figsize=(8, 6), color="lightgray", edgecolor="black")
-selected.plot(ax=ax, color="red", markersize=60)
+ax = gdf.plot(
+    figsize=(8, 6),
+    color="lightgray",
+    edgecolor="black",
+    markersize=35,
+    label="Όλα τα σημεία"
+)
+selected.plot(
+    ax=ax,
+    color="red",
+    markersize=60,
+    label="Επιλεγμένα σημεία"
+)
+ax.set_title("GP01: αρχικά και επιλεγμένα σημεία")
+ax.set_xlabel("Longitude (μοίρες)")
+ax.set_ylabel("Latitude (μοίρες)")
+ax.legend()
 ```
 
 Το `ax=ax` βάζει το δεύτερο plot στον ίδιο άξονα. Χωρίς αυτό, θα δημιουργούσες ξεχωριστό γράφημα και δεν θα μπορούσες εύκολα να συγκρίνεις όλα τα σημεία με το subset.
@@ -29,7 +44,7 @@ selected.plot(ax=ax, color="red", markersize=60)
 
 ### Checkpoint
 
-Πρόσθεσε τίτλο ή διαφορετικό marker size και γράψε μία πρόταση για το τι αποδεικνύει ο χάρτης και τι δεν μπορεί να αποδείξει. Δεν επιβεβαιώνει μόνος του το CRS metadata.
+Γράψε μία πρόταση για το τι αποδεικνύει ο χάρτης και τι δεν μπορεί να αποδείξει. Δεν επιβεβαιώνει μόνος του το CRS metadata ούτε την ακριβή γεωγραφική θέση χωρίς αριθμητικούς ελέγχους.
 
 Το `plot()` δημιουργεί γρήγορη απεικόνιση για εξερεύνηση. Δεν είναι ακόμη πλήρης cartographic map με υπόβαθρο, κλίμακα και υπόμνημα.
 

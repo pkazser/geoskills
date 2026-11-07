@@ -25,6 +25,9 @@ selected.to_file(output_path, driver="GeoJSON")
 exported = gpd.read_file(output_path)
 print("Γραμμές:", len(exported))
 print("CRS:", exported.crs)
+assert len(exported) == len(selected)
+assert exported.crs.to_epsg() == 4326
+assert exported.geometry.geom_type.eq("Point").all()
 ```
 
 Σύγκρινε `len(exported)` με `len(selected)`, έλεγξε ότι υπάρχει geometry και ότι τα βασικά attributes διατηρήθηκαν. Η επαναφόρτωση αποκαλύπτει προβλήματα path, driver ή schema που δεν φαίνονται κατά το write.
@@ -33,7 +36,7 @@ print("CRS:", exported.crs)
 
 ## Τι παραδίδουμε πραγματικά;
 
-Το `high_checked_points.geojson` πρέπει να περιέχει μόνο τα selected rows, geometry `Point` και το CRS που δήλωσε το `gdf`. Η επαναφόρτωση είναι ουσιαστικός έλεγχος: σύγκρινε rows, columns, geometry types και bounds. Αν το αρχείο δημιουργήθηκε αλλά δεν ξαναδιαβάζεται ή έχει διαφορετικό πλήθος, το output δεν είναι έτοιμο.
+Το `high_checked_points.geojson` πρέπει να περιέχει μόνο τα selected rows, δηλαδή P04 και P06, geometry `Point` και το CRS που δήλωσε το `gdf`. Η επαναφόρτωση είναι ουσιαστικός έλεγχος: σύγκρινε rows, columns, geometry types και bounds. Δεν απαιτείται ταυτότητα pandas index μετά το GeoJSON round-trip. Αν το αρχείο δημιουργήθηκε αλλά δεν ξαναδιαβάζεται ή έχει διαφορετικό πλήθος, το output δεν είναι έτοιμο.
 
 ## Συνηθισμένο λάθος
 
@@ -42,6 +45,15 @@ print("CRS:", exported.crs)
 ### Checkpoint
 
 Άνοιξε το exported αρχείο με `gpd.read_file`, κάνε `assert len(exported) == len(selected)` και εμφάνισε `exported.total_bounds`. Αν ο αριθμός γραμμών άλλαξε, μην προχωρήσεις: έλεγξε το path και το format.
+
+Σε Google Colab μπορείς προαιρετικά να κατεβάσεις το αποτέλεσμα μετά την επιτυχή επαλήθευση:
+
+```python
+from google.colab import files
+files.download(str(output_path))
+```
+
+Το βήμα αυτό είναι ειδικά για Colab και δεν απαιτείται σε τοπική εκτέλεση. Η σωστή γεωμετρία και το CRS του `GeoDataFrame` είναι απαραίτητα για την προβλεπόμενη γεωχωρική εξαγωγή.
 
 ## Επόμενο βήμα
 

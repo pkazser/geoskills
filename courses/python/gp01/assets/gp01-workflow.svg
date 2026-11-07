@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 190" role="img" aria-labelledby="title desc">
+  <title id="title">Επτά στάδια GeoPython workflow</title>
+  <desc id="desc">Load, Inspect, Understand, Filter, Map, Validate και Export σε διαδοχική ροή.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1f6f78"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="190" rx="18" fill="#f4f8f9"/>
+  <g font-family="Arial, sans-serif" font-size="18" text-anchor="middle">
+    <g fill="#ffffff" stroke="#1f6f78" stroke-width="3">
+      <rect x="25" y="65" width="130" height="58" rx="12"/><rect x="180" y="65" width="130" height="58" rx="12"/>
+      <rect x="335" y="65" width="130" height="58" rx="12"/><rect x="490" y="65" width="130" height="58" rx="12"/>
+      <rect x="645" y="65" width="130" height="58" rx="12"/><rect x="800" y="65" width="130" height="58" rx="12"/>
+      <rect x="955" y="65" width="140" height="58" rx="12"/>
+    </g>
+    <g stroke="#1f6f78" stroke-width="3" marker-end="url(#arrow)">
+      <line x1="155" y1="94" x2="175" y2="94"/><line x1="310" y1="94" x2="330" y2="94"/>
+      <line x1="465" y1="94" x2="485" y2="94"/><line x1="620" y1="94" x2="640" y2="94"/>
+      <line x1="775" y1="94" x2="795" y2="94"/><line x1="930" y1="94" x2="950" y2="94"/>
+    </g>
+    <g fill="#17324d" font-weight="700">
+      <text x="90" y="100">Load</text><text x="245" y="100">Inspect</text><text x="400" y="100">Understand</text>
+      <text x="555" y="100">Filter</text><text x="710" y="100">Map</text><text x="865" y="100">Validate</text><text x="1025" y="100">Export</text>
+    </g>
+  </g>
+</svg>

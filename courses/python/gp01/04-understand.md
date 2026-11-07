@@ -15,7 +15,7 @@
 | `longitude` | γεωγραφικό μήκος |
 | `latitude` | γεωγραφικό πλάτος |
 | `elevation_m` | υψόμετρο σε μέτρα |
-| `status` | αποτέλεσμα ελέγχου |
+| `status` | κατάσταση ελέγχου της εγγραφής |
 
 Τα `longitude` και `latitude` είναι συντεταγμένες σε μοίρες. Δεν είναι μέτρα.
 
@@ -23,13 +23,20 @@
 
 ```python
 import geopandas as gpd
-from shapely.geometry import Point
 
-geometry = [Point(xy) for xy in zip(points["longitude"], points["latitude"])]
-gdf = gpd.GeoDataFrame(points, geometry=geometry, crs="EPSG:4326")
+gdf = gpd.GeoDataFrame(
+    points,
+    geometry=gpd.points_from_xy(
+        points["longitude"],
+        points["latitude"]
+    ),
+    crs="EPSG:4326"
+)
 print(gdf.crs)
 print(gdf.geometry.geom_type.unique())
 ```
+
+Η εναλλακτική με `shapely.geometry.Point` είναι επίσης δυνατή, αλλά δεν χρειάζεται εδώ νέα ανάλυση της `zip()`.
 
 Το `GeoDataFrame` κρατά τις αρχικές columns και προσθέτει geometry. Το `crs="EPSG:4326"` δηλώνει την ερμηνεία των υπαρχουσών coordinates· δεν μετατρέπει ακόμη τις θέσεις. Η αναμενόμενη geometry type είναι `Point`.
 
@@ -38,6 +45,10 @@ print(gdf.geometry.geom_type.unique())
 Έλεγξε rows πριν/μετά, μη κενές geometry, τύπους `Point`, bounds και CRS. Αν τα bounds είναι περίπου longitude 23–24 και latitude 41, το dataset βρίσκεται στην αναμενόμενη περιοχή. Αν τα x/y είναι ανάποδα, το GeoDataFrame μπορεί να δημιουργηθεί χωρίς error αλλά ο χάρτης θα το αποκαλύψει.
 
 Τώρα ο πίνακας έχει στήλη `geometry` και CRS.
+
+### Checkpoint
+
+Έλεγξε ότι υπάρχουν 8 μη κενές γεωμετρίες `Point`, ότι το CRS είναι `EPSG:4326` και ότι τα αρχικά γνωρίσματα του `points` παραμένουν στο `gdf`.
 
 ## GeoTip
 

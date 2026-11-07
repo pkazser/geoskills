@@ -8,10 +8,12 @@
 
 Πριν κάνουμε οποιαδήποτε GIS πράξη πρέπει να είμαστε βέβαιοι ότι διαβάσαμε το σωστό αρχείο. Ένα λάθος working directory ή ένα παρόμοιο filename μπορεί να οδηγήσει σε ανάλυση άλλου dataset.
 
+Το πρώτο κελί προετοιμασίας του starter notebook δημιουργεί το `DATA_ROOT`. Για ανεξάρτητη τοπική εκτέλεση χρειάζεται να προσαρμόσεις τη διαδρομή στο δικό σου περιβάλλον.
+
 ```python
 import pandas as pd
 
-csv_path = "../../../downloads/python/data/gp01/survey_points.csv"
+csv_path = DATA_ROOT / "gp01" / "survey_points.csv"
 points = pd.read_csv(csv_path)
 print("Γραμμές:", len(points))
 print("Στήλες:", list(points.columns))
@@ -25,7 +27,7 @@ points.head()
 
 ## Αναμενόμενο αποτέλεσμα και QA
 
-Περίμενε το αρχείο να υπάρχει, στήλες `name`, `category`, `longitude`, `latitude`, `elevation_m`, `status` και ένα μικρό πλήθος rows. Έλεγξε `points.shape` και `points.dtypes`. Αν οι coordinates είναι strings, μην προχωρήσεις μηχανικά στη δημιουργία geometry· σημείωσέ το για το στάδιο καθαρισμού.
+Περίμενε 8 εγγραφές και 6 στήλες: `name`, `category`, `longitude`, `latitude`, `elevation_m`, `status`. Έλεγξε `points.shape` και `points.dtypes`. Αν οι coordinates είναι strings, μην προχωρήσεις μηχανικά στη δημιουργία geometry· σημείωσέ το για το στάδιο καθαρισμού.
 
 ## Συνηθισμένο λάθος
 
