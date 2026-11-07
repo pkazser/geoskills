@@ -4,6 +4,9 @@ project:
   description: Ελληνόφωνη εκπαιδευτική πλατφόρμα για GIS, QGIS, Python και εργασίες πεδίου.
   keywords: [GIS, QGIS, GeoPython, Γεωπληροφορική, εκπαίδευση]
   static_files:
+    - downloads/python/notebooks/starter/gp00_01_python_colab_starter.ipynb
+    - downloads/python/GeoPython_Core_GP00-GP10_v1.0.zip
+    - downloads/python/GeoPython_Core_GP00-GP10_v1.1.zip
     - downloads/qgis/GQ_START_05_fyllo_axiologisis.docx
     - downloads/qgis/GQ_START_06_quick_reference.docx
     - downloads/qgis/GQ_START_07_fyllo_ergasias.docx

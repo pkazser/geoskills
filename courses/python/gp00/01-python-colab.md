@@ -2,7 +2,7 @@
 
 ## Πρακτική άσκηση στο Colab
 
-[Άνοιγμα στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/gp00_python_basics_starter.ipynb)
+[Άνοιγμα στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/gp00_01_python_colab_starter.ipynb)
 
 ## Τι θα μάθεις
 
@@ -84,7 +84,7 @@ GeoPython
 ---
 ## Άνοιξε το notebook στο Google Colab
 
-Μπορείς να δουλέψεις πάνω στο έτοιμο starter notebook χωρίς να εγκαταστήσεις τίποτα στον υπολογιστή σου.
+Μπορείς να δουλέψεις πάνω στο σύντομο starter notebook χωρίς να εγκαταστήσεις τίποτα στον υπολογιστή σου. Το παλιό συγκεντρωτικό notebook παραμένει διαθέσιμο μόνο ως προαιρετικό επαναληπτικό υλικό GP00.
 
 Το notebook ανοίγει σε δικό σου περιβάλλον Colab.
 Οι αλλαγές που κάνεις εκεί δεν αλλάζουν το αρχικό αρχείο του repository.
@@ -92,7 +92,7 @@ GeoPython
 
 ## Το πρώτο σου πρόγραμμα
 
-Γράψε μέσα στο πρώτο κελί:
+Γράψε μέσα στο πρώτο κελί κώδικα:
 
 ```python
 print("Hello GeoPython!")

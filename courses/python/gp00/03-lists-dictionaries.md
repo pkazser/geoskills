@@ -8,7 +8,7 @@
 
 - λίστες,
 - indexes,
-- `append()`, `remove()`, `len()`,
+- `append()`, `len()`,
 - dictionaries,
 - list of dictionaries,
 - μετάβαση προς DataFrame.
@@ -38,6 +38,12 @@ print(cities[0])
 
 ```python
 cities.append("Thessaloniki")
+```
+
+Το `len(cities)` μετρά πόσες εγγραφές περιέχει η λίστα:
+
+```python
+print(len(cities))
 ```
 
 ## Αριθμητικές λίστες
@@ -96,14 +102,14 @@ df
 
 ## Mini άσκηση
 
-Δημιούργησε τρία σημεία με `id`, `name`, `x`, `y`, `elevation` και εμφάνισε:
+Δημιούργησε τρία σημεία με `id`, `name`, `longitude`, `latitude`, `elevation` και εμφάνισε:
 - το δεύτερο σημείο,
 - το elevation του τρίτου,
 - πόσα σημεία υπάρχουν.
 
 ### Checkpoint
 
-Πριν εκτελέσεις, πρόβλεψε τα outputs: ο δεύτερος δείκτης είναι `1`, το πλήθος είναι `3` και το elevation του τρίτου προέρχεται από το key `elevation`, όχι από τη θέση του μέσα στο dictionary. Έλεγξε επίσης ότι τα keys έχουν συνεπή ονοματολογία (`longitude`/`latitude` και όχι άλλοτε `x`/`y`).
+Πριν εκτελέσεις, πρόβλεψε τα outputs: ο δεύτερος δείκτης είναι `1`, το πλήθος είναι `3` και το elevation του τρίτου προέρχεται από το key `elevation`, όχι από τη θέση του μέσα στο dictionary. Έλεγξε ότι χρησιμοποιείς παντού `longitude`/`latitude` στο συγκεκριμένο παράδειγμα.
 
 ## Τι κρατάμε
 

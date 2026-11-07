@@ -61,6 +61,11 @@ df["country"] = "Greece"
 Υπολογισμός σε ολόκληρη στήλη:
 
 ```python
+parcel_data = {
+    "parcel": ["P1", "P2", "P3"],
+    "area_m2": [5000, 12500, 30000]
+}
+df = pd.DataFrame(parcel_data)
 df["area_ha"] = df["area_m2"] / 10000
 ```
 
@@ -73,6 +78,12 @@ df[df["population"] > 50000]
 Πολλαπλές συνθήκες:
 
 ```python
+points_data = {
+    "name": ["A", "B", "C", "D"],
+    "elevation": [80, 125, 95, 160],
+    "active": [True, True, False, True]
+}
+df = pd.DataFrame(points_data)
 df[
     df["active"] &
     (df["elevation"] > 100)
@@ -90,7 +101,13 @@ df.isna().sum()
 ## CSV
 
 ```python
-df = pd.read_csv("cities.csv")
+cities = pd.DataFrame({
+    "city": ["Serres", "Drama", "Kavala"],
+    "population": [60000, 45000, 70000]
+})
+cities.to_csv("cities.csv", index=False)
+cities_from_csv = pd.read_csv("cities.csv")
+print(len(cities_from_csv), list(cities_from_csv.columns))
 ```
 
 και:
@@ -109,9 +126,11 @@ df.to_csv("output.csv", index=False)
 
 Δημιούργησε DataFrame 5 σημείων και κράτησε μόνο active σημεία με elevation > 100.
 
+Η `sort_values()` ταξινομεί τις γραμμές με βάση μία στήλη, για παράδειγμα `df.sort_values("elevation", ascending=False)`.
+
 ### Αναμενόμενο αποτέλεσμα και QA
 
-Πριν από το filter κράτησε `len(df)`. Μετά έλεγξε ότι `len(filtered) <= len(df)`, ότι όλες οι γραμμές έχουν `active == True` και ότι καμία επιλεγμένη elevation δεν είναι μικρότερη ή ίση του ορίου. Κάνε export με `index=False`, ώστε ο pandas index να μην γίνει ακούσια νέα στήλη.
+Πριν από το filter κράτησε `len(df)`. Μετά έλεγξε ότι `len(filtered) <= len(df)`, ότι όλες οι γραμμές έχουν `active == True` και ότι καμία επιλεγμένη elevation δεν είναι μικρότερη ή ίση του ορίου. Κάνε export με `index=False`, ώστε ο pandas index να μην γίνει ακούσια νέα στήλη. Αν επαναχρησιμοποιήσεις το όνομα `df`, η νέα ανάθεση αντικαθιστά την προηγούμενη αναφορά· κράτησε άλλο όνομα όταν χρειάζεσαι σύγκριση.
 
 ## Τι κρατάμε
 

@@ -27,7 +27,12 @@
 ```python
 def m2_to_ha(area_m2):
     return area_m2 / 10000
+
+result = m2_to_ha(25000)
+print(result)
 ```
+
+Το αποτέλεσμα του πρώτου λυμένου παραδείγματος είναι `2.5`. Οι επόμενες συναρτήσεις στο notebook παραμένουν προς συμπλήρωση.
 
 Η συνάρτηση δεν υποθέτει μονάδες από μόνη της. Η ευθύνη να δώσεις m² είναι δική σου. Για αυτό καλά ονόματα όπως `area_m2` μειώνουν τον κίνδυνο λανθασμένης μετατροπής.
 
@@ -84,8 +89,8 @@ print(point)
 ```python
 from shapely.geometry import Point
 
-def create_point(longitude, latitude):
-    return Point(longitude, latitude)
+def make_point(x, y):
+    return Point(x, y)
 ```
 
 Η συνάρτηση επιστρέφει geometry, αλλά δεν περιλαμβάνει CRS. Ένα `Point` μόνο του είναι αριθμητική γεωμετρία· το CRS θα προστεθεί όταν δημιουργήσεις GeoDataFrame.

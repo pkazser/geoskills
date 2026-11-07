@@ -33,6 +33,8 @@ data = {
 8. νέα στήλη `elevation_class`
 9. export GPKG και GeoJSON
 
+Η προτεινόμενη σειρά είναι: δημιουργία GeoDataFrame, έλεγχος δεδομένων, δημιουργία της στήλης `elevation_class`, φιλτράρισμα και εξαγωγή. Ένα ήδη δημιουργημένο subset δεν ενημερώνεται αυτόματα όταν προσθέτεις νέα στήλη στο αρχικό `gdf`.
+
 ## Αναμενόμενα
 
 Για active & elevation > 100:
@@ -68,6 +70,8 @@ def elevation_class(elevation):
 gdf.to_file("gp00_points.gpkg", layer="points", driver="GPKG")
 selected.to_file("gp00_selected.geojson", driver="GeoJSON")
 ```
+
+Μετά την εξαγωγή, επανεισήγαγε τα δύο αρχεία και έλεγξε πλήθος εγγραφών, geometry types και CRS όπου υποστηρίζεται.
 
 ## Bonus
 

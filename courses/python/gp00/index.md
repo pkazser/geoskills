@@ -30,9 +30,12 @@
 
 Για τοπική εργασία χρησιμοποίησε τα παρακάτω πραγματικά αρχεία. Το Colab παραμένει διαθέσιμο από τον σύνδεσμο της πρακτικής άσκησης.
 
-[Άνοιγμα του πρώτου notebook στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/gp00_python_basics_starter.ipynb)
+[Άνοιγμα του σύντομου πρώτου notebook στο Google Colab](https://colab.research.google.com/github/pkazser/geoskills/blob/main/downloads/python/notebooks/starter/gp00_01_python_colab_starter.ipynb)
 
-- {download}`Λήψη starter notebook: gp00_python_basics_starter.ipynb <../../../downloads/python/notebooks/starter/gp00_python_basics_starter.ipynb>`
+- {download}`Λήψη σύντομου starter notebook GP00.1 <../../../downloads/python/notebooks/starter/gp00_01_python_colab_starter.ipynb>`
+- {download}`Προαιρετικό επαναληπτικό notebook GP00 <../../../downloads/python/notebooks/starter/gp00_python_basics_starter.ipynb>`
+- {download}`Συγκεντρωτικό πακέτο GeoPython Core GP00–GP10 v1.1 <../../../downloads/python/GeoPython_Core_GP00-GP10_v1.1.zip>`
+- {download}`Παλαιό συγκεντρωτικό πακέτο GeoPython Core GP00–GP10 v1.0 <../../../downloads/python/GeoPython_Core_GP00-GP10_v1.0.zip>`
 - {download}`Λήψη starter notebook: gp00_02_variables_types_starter.ipynb <../../../downloads/python/notebooks/starter/gp00_02_variables_types_starter.ipynb>`
 - {download}`Λήψη starter notebook: gp00_03_lists_dictionaries_starter.ipynb <../../../downloads/python/notebooks/starter/gp00_03_lists_dictionaries_starter.ipynb>`
 - {download}`Λήψη starter notebook: gp00_04_if_for_starter.ipynb <../../../downloads/python/notebooks/starter/gp00_04_if_for_starter.ipynb>`
