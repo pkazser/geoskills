@@ -260,6 +260,19 @@ project:
             - file: courses/drone-mapping/dm01/cards/Kartela_04_Teliki_Apostoli.md
               hidden: true
         - file: courses/drone-mapping/dm02/index.md
+          children:
+            - file: courses/drone-mapping/dm02/worksheets/DM02_Kartela_05A_GSD.md
+              hidden: true
+            - file: courses/drone-mapping/dm02/worksheets/DM02_Kartela_05B_Apotypoma.md
+              hidden: true
+            - file: courses/drone-mapping/dm02/worksheets/DM02_Kartela_05G_Epikalipsi.md
+              hidden: true
+            - file: courses/drone-mapping/dm02/worksheets/DM02_Kartela_05D_Grammes_Kalypsi.md
+              hidden: true
+            - file: courses/drone-mapping/dm02/worksheets/DM02_Kartela_05E_Xronos_Energeia.md
+              hidden: true
+            - file: courses/drone-mapping/dm02/worksheets/DM02_Kartela_05_Telikos_Elegxos.md
+              hidden: true
         - file: courses/drone-mapping/dm03/index.md
     - file: about.md
 site:
