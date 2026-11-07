@@ -7,6 +7,7 @@ project:
     - downloads/qgis/GQ_START_05_fyllo_axiologisis.docx
     - downloads/qgis/GQ_START_06_quick_reference.docx
     - downloads/qgis/GQ_START_07_fyllo_ergasias.docx
+    - courses/drone-mapping/dm03/practice/DM03_SHA256_Practice_v0.3.zip
     - courses/ai-learning/al00/quiz/al00_4_1_8.html
     - courses/ai-learning/al00/quiz/al00_4_2_7.html
     - courses/ai-learning/al00/quiz/al00_4_4_9.html
@@ -274,6 +275,19 @@ project:
             - file: courses/drone-mapping/dm02/worksheets/DM02_Kartela_05_Telikos_Elegxos.md
               hidden: true
         - file: courses/drone-mapping/dm03/index.md
+          children:
+            - file: courses/drone-mapping/dm03/cards/DM03_Kartela_06A_Antistoixisi.md
+              hidden: true
+            - file: courses/drone-mapping/dm03/cards/DM03_Kartela_06B_Parakolouthisi.md
+              hidden: true
+            - file: courses/drone-mapping/dm03/cards/DM00_Kartela_06G_Elegxos_Poiotitas.md
+              hidden: true
+            - file: courses/drone-mapping/dm03/cards/DM00_Kartela_06D_Plirotita_Kalypsis.md
+              hidden: true
+            - file: courses/drone-mapping/dm03/cards/DM00_Kartela_06E_Metafora_Arxeion.md
+              hidden: true
+            - file: courses/drone-mapping/dm03/cards/DM00_Kartela_06_Teliki_Paradosi.md
+              hidden: true
     - file: about.md
 site:
   template: .geoskills-cache/book-theme
