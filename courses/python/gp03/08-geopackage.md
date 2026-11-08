@@ -17,12 +17,19 @@ gpkg_path = output_dir / "city_assets.gpkg"
 gdf.to_file(gpkg_path, layer="assets", driver="GPKG")
 ```
 
+Και εδώ η κύρια ροή γράφει το πλήρες `gdf`. Το `assets` είναι προαιρετικό επιλεγμένο layer για το προηγούμενο παράδειγμα και χρησιμοποιείται μόνο αν θέλεις σκόπιμα να εξάγεις περιορισμένα πεδία.
+
 ## Έλεγχος layer
 
 ```python
-check = gpd.read_file(gpkg_path, layer="assets")
-print(check.crs)
-print(check.geometry.geom_type.value_counts())
+gpkg_readback = gpd.read_file(gpkg_path, layer="assets")
+assert len(gpkg_readback) == 8
+assert gpkg_readback["asset_id"].tolist() == gdf["asset_id"].tolist()
+assert gpkg_readback.geometry.geom_type.eq("Point").all()
+assert gpkg_readback.crs.to_epsg() == 4326
+assert gpkg_readback.total_bounds.tolist() == gdf.total_bounds.tolist()
+print(gpkg_readback.crs)
+print(gpkg_readback.geometry.geom_type.value_counts())
 ```
 
 Το όνομα του layer είναι μέρος του workflow και πρέπει να είναι σαφές.
@@ -42,7 +49,7 @@ print(gpd.list_layers(gpkg_path))
 assert "assets" in gpd.list_layers(gpkg_path)["name"].tolist()
 ```
 
-Αν το περιβάλλον δεν υποστηρίζει `list_layers()`, διάβασε το layer με το γνωστό όνομα και έλεγξε rows, CRS και geometry type.
+Αν το περιβάλλον δεν υποστηρίζει `list_layers()`, διάβασε το layer με το γνωστό όνομα και έλεγξε rows, IDs, CRS, geometry type και bounds.
 
 ## Πρόσεξε
 

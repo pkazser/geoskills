@@ -15,6 +15,10 @@
 ```python
 import geopandas as gpd
 
+for column in ["longitude", "latitude"]:
+    df[column] = pd.to_numeric(df[column], errors="coerce")
+assert df[["longitude", "latitude"]].notna().all().all()
+
 gdf = gpd.GeoDataFrame(
     df,
     geometry=gpd.points_from_xy(df["longitude"], df["latitude"]),
@@ -22,7 +26,7 @@ gdf = gpd.GeoDataFrame(
 )
 ```
 
-Η σειρά είναι πάντα `longitude` ως X και `latitude` ως Y.
+Η σειρά είναι πάντα `longitude` ως X και `latitude` ως Y. Το `crs="EPSG:4326"` δηλώνει την ερμηνεία των ήδη γνωστών longitude/latitude· δεν μετασχηματίζει τις τιμές.
 
 ## Πρώτος έλεγχος
 
@@ -58,4 +62,4 @@ print(gdf.total_bounds)
 
 ## Επόμενο βήμα
 
-Αφού ελέγξαμε X/Y, θα δημιουργήσουμε τη geometry column με `points_from_xy()`.
+Αφού ελέγξαμε X/Y και δημιουργήσαμε τη geometry με `points_from_xy()`, συνεχίζουμε με τον έλεγχο του CRS.

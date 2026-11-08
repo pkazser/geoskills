@@ -11,7 +11,7 @@ print(gdf.crs)
 print(gdf.geometry.geom_type.unique())
 ```
 
-Το `GeoDataFrame` είναι DataFrame με μία ενεργή geometry column και CRS.
+Το `GeoDataFrame` είναι DataFrame με μία ενεργή geometry column και CRS. Η geometry δεν αντικαθιστά τα attributes· συνυπάρχει με αυτά.
 
 ## Τι πρόβλημα λύνουμε
 
@@ -23,8 +23,11 @@ print(gdf.geometry.geom_type.unique())
 
 ## Επιλογή πεδίων
 
+Το `assets` είναι προαιρετικό παράδειγμα επιλογής πεδίων για ένα ελαφρύτερο layer. Η κύρια ροή και τα επόμενα exports χρησιμοποιούν το πλήρες `gdf`, ώστε να διατηρούνται όλα τα εγκεκριμένα attributes.
+
 ```python
 assets = gdf[["asset_id", "asset_type", "condition", "geometry"]].copy()
+assert len(assets) == 8
 ```
 
 Κρατάμε μόνο τις στήλες που έχουν νόημα για το παραγόμενο GIS dataset.

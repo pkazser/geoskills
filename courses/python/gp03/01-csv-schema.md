@@ -2,7 +2,9 @@
 
 ## Τι θα μάθεις
 
-Το CSV είναι πίνακας τιμών. Για να γίνει GIS dataset χρειάζεται geometry και CRS.
+Το CSV είναι πίνακας τιμών. Για να γίνει GIS dataset χρειάζεται geometry και γνωστό CRS.
+
+Στο starter notebook εκτέλεσε πρώτα το κελί προετοιμασίας δεδομένων, ώστε να οριστεί το `DATA_ROOT` πριν τρέξεις τα παραδείγματα.
 
 ## Τι πρόβλημα λύνουμε
 
@@ -15,12 +17,12 @@
 ```python
 import pandas as pd
 
-df = pd.read_csv("../../../downloads/python/data/gp03/city_assets.csv")
+df = pd.read_csv(DATA_ROOT / "gp03" / "city_assets.csv")
 print(df.columns)
 print(df.dtypes)
 ```
 
-Τα `asset_id`, `asset_type` και `condition` είναι περιγραφικά πεδία. Τα `longitude` και `latitude` είναι οι είσοδοι για τη geometry.
+Τα `asset_id`, `asset_type` και `condition` είναι περιγραφικά πεδία. Τα `longitude` και `latitude` είναι οι είσοδοι για τη geometry. Το CSV δεν έχει ακόμη geometry ή CRS metadata.
 
 ## Η νοητική μετατροπή
 
@@ -48,7 +50,7 @@ assert required.issubset(df.columns)
 assert df["asset_id"].is_unique
 ```
 
-Το `required.issubset()` ελέγχει ότι υπάρχουν όλα τα απαραίτητα πεδία. Έτσι αποτυγχάνουμε νωρίς, πριν δημιουργήσουμε geometry.
+Το `required.issubset()` ελέγχει μόνο την παρουσία των στηλών· δεν αποδεικνύει ότι οι τιμές είναι σωστές ή ότι τα σημεία βρίσκονται στη σωστή περιοχή. Έτσι όμως αποτυγχάνουμε νωρίς, πριν δημιουργήσουμε geometry.
 
 ## Αναμενόμενο αποτέλεσμα
 

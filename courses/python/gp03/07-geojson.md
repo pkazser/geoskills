@@ -21,13 +21,18 @@ geojson_path = output_dir / "city_assets.geojson"
 gdf.to_file(geojson_path, driver="GeoJSON")
 ```
 
+Η κύρια ροή εξάγει το πλήρες `gdf`. Το `assets` από την GP03.5 είναι προαιρετικό υποσύνολο για επίδειξη επιλογής πεδίων και δεν αντικαθιστά το βασικό export.
+
 ## Επαλήθευση
 
 ```python
-check = gpd.read_file(geojson_path)
-assert len(check) == len(gdf)
-assert check.crs is not None
-print(check.head())
+geojson_readback = gpd.read_file(geojson_path)
+assert len(geojson_readback) == 8
+assert geojson_readback["asset_id"].tolist() == gdf["asset_id"].tolist()
+assert geojson_readback.geometry.geom_type.eq("Point").all()
+assert geojson_readback.crs.to_epsg() == 4326
+assert geojson_readback.total_bounds.tolist() == gdf.total_bounds.tolist()
+print(geojson_readback.head())
 ```
 
 Το export δεν ολοκληρώνεται παιδαγωγικά αν δεν ξαναδιαβάσουμε το αρχείο.
@@ -38,10 +43,10 @@ print(check.head())
 
 ## Αναμενόμενο αποτέλεσμα
 
-Το `check` πρέπει να έχει 8 features, Points και CRS. Αν το αρχείο ανοίγει αλλά έχει 0 rows ή λείπει το CRS, το export δεν είναι επιτυχές.
+Το `geojson_readback` πρέπει να έχει 8 features, Points, τα ίδια IDs και CRS. Αν το αρχείο ανοίγει αλλά έχει 0 rows, διαφορετικά IDs ή λείπει το CRS, το export δεν είναι επιτυχές.
 
 ## Checkpoint
 
-Πρόσθεσε έλεγχο ότι `check["asset_id"]` είναι μοναδικό και ότι τα bounds του `check` είναι ίδια με του `gdf`.
+Οι έλεγχοι `asset_id`, geometry type, CRS και bounds συγκρίνουν το `geojson_readback` με το αρχικό `gdf`.
 
 Το GeoJSON είναι πρακτικό για ελαφρύ, portable exchange ενός ή λίγων layers, αλλά μπορεί να γίνει μεγάλο και δεν είναι container πολλών θεματικών layers. Για ένα οργανωμένο GIS workflow, το GeoPackage συνήθως κρατά πολλά layers σε ένα αρχείο και αποφεύγει τη διάσπαση σε πολλά παράλληλα αρχεία.
