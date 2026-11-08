@@ -33,7 +33,7 @@ water.plot(ax=ax, color="blue")
 
 ## Τι πρέπει να παρατηρήσεις
 
-Τα πάρκα και τα water points πρέπει να εμφανίζονται στην ίδια περιοχή. Αν τα σημεία είναι πολύ μακριά από τα polygons, έλεγξε CRS, σειρά longitude/latitude και το layer που διάβασες.
+Τα πάρκα και τα water points πρέπει να εμφανίζονται στην ίδια περιοχή. Αν τα σημεία είναι πολύ μακριά από τα polygons, έλεγξε CRS, layer και bounds πριν αλλάξεις geometry.
 
 ## QA checkpoint
 

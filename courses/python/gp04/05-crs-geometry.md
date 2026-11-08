@@ -13,6 +13,10 @@ assert parks.crs is not None
 print(parks.geometry.geom_type.value_counts())
 print("Empty:", parks.geometry.is_empty.sum())
 print("Invalid:", (~parks.geometry.is_valid).sum())
+assert water.crs is not None
+print(water.geometry.geom_type.value_counts())
+print("Water empty:", water.geometry.is_empty.sum())
+print("Water invalid:", (~water.geometry.is_valid).sum())
 ```
 
 Δεν υποθέτουμε ότι όλα τα layers ενός GeoPackage έχουν την ίδια geometry type. Τη διαβάζουμε και την επιβεβαιώνουμε.
@@ -37,7 +41,7 @@ print("Water:", water.crs, water.geometry.geom_type.unique())
 
 ## Πρόσεξε
 
-Το `is_valid` δεν σημαίνει «είναι στη σωστή θέση». Συνδύασέ το με bounds και οπτικό έλεγχο.
+Το `is_valid` δεν σημαίνει «είναι στη σωστή θέση». Συνδύασέ το με bounds και οπτικό έλεγχο. Το CRS και το geometry type ελέγχονται χωριστά για κάθε layer.
 
 ### Checkpoint
 

@@ -16,8 +16,9 @@
 
 ```python
 import geopandas as gpd
+from pathlib import Path
 
-gpkg_path = "../../../downloads/python/data/gp04/serres_assets.gpkg"
+gpkg_path = DATA_ROOT / "gp04" / "serres_assets.gpkg"
 ```
 
 ## Η σωστή ερώτηση
@@ -37,13 +38,12 @@ gpkg_path = "../../../downloads/python/data/gp04/serres_assets.gpkg"
 ## Πρακτική εκτέλεση
 
 ```python
-from pathlib import Path
-
-gpkg_path = Path("../../../downloads/python/data/gp04/serres_assets.gpkg")
-assert gpkg_path.exists()
+assert gpkg_path.is_file()
+with gpkg_path.open("rb") as handle:
+    assert handle.read(16) == b"SQLite format 3\x00"
 ```
 
-Το path είναι αρχείο, όχι φάκελος. Το πρώτο QA check είναι να επιβεβαιώσουμε ότι υπάρχει πριν ζητήσουμε layer.
+Το path είναι αρχείο, όχι φάκελος. Πριν ζητήσουμε layer ελέγχουμε ότι υπάρχει, είναι αναγνώσιμο και έχει την αναμενόμενη SQLite υπογραφή.
 
 ## Επόμενο βήμα
 

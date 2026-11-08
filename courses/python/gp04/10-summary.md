@@ -25,8 +25,11 @@ Open → List layers → Read → Inspect → Filter → Validate → Export
 ## Τελικός αυτοέλεγχος
 
 ```python
-layers = gpd.list_layers("../../../downloads/python/data/gp04/serres_assets.gpkg")
+layers = gpd.list_layers(gpkg_path)
 assert {"parks", "water_points"}.issubset(set(layers["name"]))
+assert len(parks) == 3 and parks.geometry.geom_type.eq("Polygon").all()
+assert len(water) == 3 and water.geometry.geom_type.eq("Point").all()
+assert len(active_water) == 2
 ```
 
 Αν μπορείς να εντοπίσεις layers, να διαβάσεις το σωστό layer, να καταλάβεις το schema, να ελέγξεις CRS/geometry/bounds και να αιτιολογήσεις το filtering, είσαι έτοιμος για επόμενη χωρική ανάλυση.

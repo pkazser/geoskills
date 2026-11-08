@@ -10,11 +10,12 @@
 
 ```python
 parks = gpd.read_file(gpkg_path, layer="parks")
+water = gpd.read_file(gpkg_path, layer="water_points")
 print(parks.head())
 print("Rows:", len(parks))
 ```
 
-Το αποτέλεσμα είναι `GeoDataFrame`. Από εδώ και πέρα εφαρμόζουμε τις ίδιες βασικές συνήθειες που έμαθες στο GP01.
+Κάθε ανάγνωση επιστρέφει `GeoDataFrame`. Κρατάμε χωριστά τα `parks` και `water`, επειδή τα layers έχουν διαφορετικό geometry type και schema.
 
 ## Πρώτος έλεγχος
 
@@ -22,9 +23,12 @@ print("Rows:", len(parks))
 print(parks.columns)
 print(parks.crs)
 print(parks.geometry.geom_type.value_counts())
+print(water.columns)
+print(water.crs)
+print(water.geometry.geom_type.value_counts())
 ```
 
-Πρόβλεψε τρία rows και Polygon geometry. Αν το output διαφέρει, σταμάτησε και έλεγξε ότι διάβασες το σωστό layer και όχι ότι “διορθώνεις” τον κώδικα για να ταιριάξει στην προσδοκία.
+Πρόβλεψε 3 Polygon features στο `parks` και 3 Point features στο `water_points` (τη μεταβλητή `water` στον κώδικα). Αν το output διαφέρει, σταμάτησε και έλεγξε το layer και το dataset αντί να προσαρμόσεις αυθαίρετα την προσδοκία.
 
 ## Επόμενο βήμα
 
@@ -38,8 +42,11 @@ print(parks.geometry.geom_type.value_counts())
 
 ```python
 parks = gpd.read_file(gpkg_path, layer="parks")
+water = gpd.read_file(gpkg_path, layer="water_points")
 print(parks.shape)
 print(parks.head(2))
+print(water.shape)
+print(water.head(2))
 ```
 
 Περιμένουμε 3 rows και geometry τύπου Polygon. Αν ο αριθμός ή ο τύπος διαφέρει, δεν συνεχίζουμε με assumptions.
@@ -49,6 +56,8 @@ print(parks.head(2))
 ```python
 assert len(parks) == 3
 assert parks.geometry.notna().all()
+assert len(water) == 3
+assert water.geometry.notna().all()
 ```
 
 Το `read_file()` περιμένει path και συγκεκριμένο layer name και επιστρέφει `GeoDataFrame`. Το ότι η ανάγνωση πέτυχε δεν σημαίνει ότι επέλεξες το σωστό layer. Σύγκρινε το όνομα με το αποτέλεσμα του `list_layers()` και κράτησε χωριστά τα `parks` και `water_points`, επειδή έχουν διαφορετικές geometry και πιθανόν διαφορετικά attributes.

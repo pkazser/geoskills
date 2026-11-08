@@ -25,6 +25,8 @@
 
 ## QA checkpoint
 
+Εκτέλεσε τα assertions αφού ολοκληρώσεις το φιλτράρισμα και το export. Η μεταβλητή `active_water` πρέπει να είναι δικό σου αποτέλεσμα της άσκησης, όχι αντιγραφή έτοιμης λύσης.
+
 ```python
 assert active_water.geometry.geom_type.eq("Point").all()
 assert active_water.crs.to_epsg() == 4326
@@ -32,5 +34,20 @@ assert (active_water["status"] == "active").all()
 ```
 
 Η άσκηση ολοκληρώνεται όταν μπορείς να εξηγήσεις γιατί χρησιμοποίησες Point checks και όχι Polygon checks.
+
+## Επαλήθευση export
+
+Μετά τη δική σου επιλογή, γράψε το αποτέλεσμα και ξαναδιάβασέ το. Η επιτυχία του `to_file()` από μόνη της δεν αποδεικνύει ότι το παραγόμενο αρχείο έχει το σωστό πλήθος ή CRS.
+
+```python
+challenge_path = Path("outputs/gp04/active_water.geojson")
+challenge_path.parent.mkdir(parents=True, exist_ok=True)
+active_water.to_file(challenge_path, driver="GeoJSON")
+active_water_readback = gpd.read_file(challenge_path)
+assert len(active_water_readback) == 2
+assert active_water_readback.geometry.geom_type.eq("Point").all()
+assert active_water_readback.crs.to_epsg() == 4326
+assert active_water_readback["name"].tolist() == active_water["name"].tolist()
+```
 
 Πρόσθεσε μία πρόταση readiness: ποιο layer θα επέλεγες για επόμενη ανάλυση και ποιο check σε κάνει να το εμπιστεύεσαι; Αν δεν μπορείς να αναφέρεις schema, CRS, geometry και bounds, το challenge δεν έχει ολοκληρωθεί.

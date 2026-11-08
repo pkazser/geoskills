@@ -8,13 +8,16 @@
 print(parks.dtypes)
 print(parks.isna().sum())
 print(parks["name"].unique())
+print(water.dtypes)
+print(water.isna().sum())
+print(water["status"].unique())
 ```
 
 Τα attributes απαντούν στο «τι είναι» κάθε γεωμετρία. Η geometry απαντά στο «πού είναι».
 
 ## Νοητικό μοντέλο
 
-Το schema είναι το λεξιλόγιο του layer. Το `name` αναγνωρίζει, το `area_ha` μετρά και η geometry τοποθετεί. Πριν από filtering πρέπει να γνωρίζεις μονάδες, missing values και types.
+Το schema είναι το λεξιλόγιο κάθε layer. Στα `parks`, το `name` αναγνωρίζει και το `area_ha` μετρά· στα `water_points`, το `status` περιγράφει την κατάσταση. Πριν από filtering πρέπει να γνωρίζεις units, missing values και types.
 
 ## Missing values
 
