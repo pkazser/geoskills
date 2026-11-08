@@ -11,14 +11,17 @@ df.dtypes
 ## Μετατροπή με έλεγχο
 
 ```python
+before_missing = clean[["longitude", "latitude", "elevation_m"]].isna().sum()
 for column in ["longitude", "latitude", "elevation_m"]:
-    df[column] = pd.to_numeric(df[column], errors="coerce")
+    clean[column] = pd.to_numeric(clean[column], errors="coerce")
+after_missing = clean[["longitude", "latitude", "elevation_m"]].isna().sum()
+print("Νέα missing μετά τη μετατροπή:", after_missing - before_missing)
 ```
 
 Το `errors="coerce"` μετατρέπει μη αναγνώσιμες τιμές σε `NaN`. Αυτό είναι χρήσιμο μόνο αν στη συνέχεια μετρήσουμε και χειριστούμε τα νέα κενά.
 
 ```python
-df.isna().sum()
+clean.isna().sum()
 ```
 
 ## Συνηθισμένο λάθος
@@ -31,7 +34,7 @@ df.isna().sum()
 
 ## Αναμενόμενο αποτέλεσμα
 
-Οι `longitude` και `latitude` πρέπει να είναι numeric πριν από το `points_from_xy`. Η τιμή `not_available` του dataset γίνεται missing elevation, όχι έγκυρη μέτρηση. Το QA αποδεικνύει τον τύπο, όχι ότι κάθε αριθμός είναι γεωγραφικά λογικός· αυτό θα το ελέγξεις με bounds.
+Οι `longitude` και `latitude` πρέπει να είναι numeric πριν από το `points_from_xy`. Η τιμή `not_available` του `O07` γίνεται ένα νέο `NaN` στο `elevation_m`, όχι έγκυρη μέτρηση. Το `999` παραμένει αριθμητική τιμή, αλλά δεν είναι έγκυρο γεωγραφικό μήκος· αυτό θα το ελέγξεις με bounds.
 
 ## Checkpoint
 
@@ -44,18 +47,20 @@ df.isna().sum()
 ## Πρακτική εκτέλεση και QA
 
 ```python
-before = df["elevation_m"].dtype
-df["elevation_m"] = pd.to_numeric(df["elevation_m"], errors="coerce")
-after = df["elevation_m"].dtype
-print("Πριν:", before, "Μετά:", after)
-print("Νέα missing:", df["elevation_m"].isna().sum())
+source_dtype = df["elevation_m"].dtype
+converted_dtype = clean["elevation_m"].dtype
+new_missing = after_missing - before_missing
+print("Πηγή df:", source_dtype, "clean μετά τη μετατροπή:", converted_dtype)
+print("Νέα missing:", int(new_missing["elevation_m"]))
 ```
 
 Η τιμή `not_available` γίνεται `NaN`. Δεν τη μετατρέψαμε αυθαίρετα σε μηδέν· την κάναμε ορατό πρόβλημα. Ο έλεγχος τύπου αποδεικνύει ότι οι επόμενες αριθμητικές πράξεις είναι τεχνικά δυνατές, όχι ότι οι αριθμοί είναι σωστοί.
 
+Στο συγκεκριμένο dataset η διαφορά `after_missing - before_missing` πρέπει να δείχνει ένα νέο `NaN` στο `elevation_m`. Μετράμε τα νέα κενά, όχι μόνο το συνολικό πλήθος μετά τη μετατροπή. Το `df` παραμένει η αμετάβλητη πηγή, ενώ το `clean` είναι το αντίγραφο εργασίας.
+
 ```python
 for column in ["longitude", "latitude", "elevation_m"]:
-    assert pd.api.types.is_numeric_dtype(df[column])
+    assert pd.api.types.is_numeric_dtype(clean[column])
 ```
 
 ## GeoTip

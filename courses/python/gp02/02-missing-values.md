@@ -7,7 +7,7 @@
 ```python
 import pandas as pd
 
-df = pd.read_csv("../../../downloads/python/data/gp02/observations_dirty.csv")
+df = pd.read_csv(DATA_ROOT / "gp02" / "observations_dirty.csv")
 df.isna().sum()
 ```
 
@@ -19,7 +19,7 @@ df.isna().sum()
 df[df["latitude"].isna()]
 ```
 
-Για το workflow μας θα κρατήσουμε μόνο γραμμές με απαραίτητο `observation_id`, `longitude` και `latitude`.
+Για το workflow μας θα κρατήσουμε μόνο γραμμές με απαραίτητο `observation_id`, `longitude` και `latitude`. Η `category` και το `elevation_m` είναι προαιρετικά για τη δημιουργία Point, αλλά τα κενά τους θα καταγραφούν και θα ληφθούν υπόψη όταν χρησιμοποιηθούν σε φίλτρο.
 
 ```python
 clean = df.dropna(subset=["observation_id", "longitude", "latitude"]).copy()
@@ -35,7 +35,7 @@ clean = df.dropna(subset=["observation_id", "longitude", "latitude"]).copy()
 
 ### QA και ερμηνεία
 
-Αν αφαιρέθηκε μία γραμμή, το `len(df) - len(clean)` είναι audit trail. Έλεγξε ότι καμία επιλεγμένη γραμμή δεν έχει missing στα βασικά πεδία, αλλά μην ισχυριστείς ότι όλο το dataset είναι πλέον καθαρό: οι τύποι και τα όρια συντεταγμένων ελέγχονται στα επόμενα στάδια.
+Αναμένουμε 10 → 9 γραμμές και αποκλεισμό της `O06`. Το `len(df) - len(clean)` είναι audit trail. Μην ισχυριστείς ότι όλο το dataset είναι πλέον καθαρό: οι τύποι και τα όρια συντεταγμένων ελέγχονται στα επόμενα στάδια.
 
 ## Γιατί είναι χρήσιμο
 
@@ -46,7 +46,7 @@ clean = df.dropna(subset=["observation_id", "longitude", "latitude"]).copy()
 ```python
 print("Πριν:", len(df))
 clean = df.dropna(subset=["observation_id", "longitude", "latitude"]).copy()
-print("Μετά:", len(clean))
+print("Μετά:", len(clean), "Αποκλείστηκαν:", len(df) - len(clean))
 ```
 
 Το `subset` είναι σημαντικό: δεν πετάμε όλες τις γραμμές που έχουν οποιοδήποτε κενό. Αποκλείουμε μόνο όσες λείπουν από τα πεδία που είναι απαραίτητα για το συγκεκριμένο workflow.
@@ -60,6 +60,7 @@ print("Μετά:", len(clean))
 ```python
 assert clean["longitude"].notna().all()
 assert clean["latitude"].notna().all()
+assert len(clean) == 9
 ```
 
 Πόσες γραμμές αφαιρέθηκαν και γιατί; Κράτησε την απάντηση πριν περάσεις στο επόμενο lesson. Ο έλεγχος αποδεικνύει μόνο ότι τα essential fields δεν είναι κενά· δεν αποδεικνύει ότι είναι αριθμητικά ή γεωγραφικά λογικά.

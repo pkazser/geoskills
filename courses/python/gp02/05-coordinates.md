@@ -9,10 +9,11 @@ valid_coordinates = (
     clean["longitude"].between(-180, 180) &
     clean["latitude"].between(-90, 90)
 )
-clean = clean[valid_coordinates].copy()
+excluded_coordinate_ids = clean.loc[~valid_coordinates, "observation_id"].tolist()
+print("Αποκλεισμένα IDs:", excluded_coordinate_ids)
 ```
 
-Μια τιμή `999` μπορεί να είναι αριθμητικά έγκυρη ως Python number, αλλά όχι ως γεωγραφικό μήκος.
+Μια τιμή `999` μπορεί να είναι αριθμητικά έγκυρη ως Python number, αλλά όχι ως γεωγραφικό μήκος. Δεν την αντικαθιστούμε με αυθαίρετη συντεταγμένη· καταγράφουμε την `O05` ως αποκλεισμένη.
 
 ## Έλεγχος περιοχής
 
@@ -38,8 +39,14 @@ print(clean[["longitude", "latitude"]].describe())
 
 ```python
 print(clean[["observation_id", "longitude", "latitude"]])
-valid = clean[clean["longitude"].between(-180, 180) & clean["latitude"].between(-90, 90)].copy()
-print("Valid coordinates:", len(valid))
+valid_coordinates = (
+    clean["longitude"].between(-180, 180)
+    & clean["latitude"].between(-90, 90)
+)
+excluded_coordinate_ids = clean.loc[~valid_coordinates, "observation_id"].tolist()
+clean = clean[valid_coordinates].copy()
+print("Valid coordinates:", len(clean))
+print("Αποκλεισμένα IDs:", excluded_coordinate_ids)
 ```
 
 Η `O05` απορρίπτεται επειδή το longitude `999` δεν είναι γεωγραφικά δυνατό. Η `O06` έχει ήδη αποκλειστεί λόγω missing latitude.
@@ -47,12 +54,12 @@ print("Valid coordinates:", len(valid))
 ## QA checkpoint
 
 ```python
-assert valid["longitude"].between(-180, 180).all()
-assert valid["latitude"].between(-90, 90).all()
+assert clean["longitude"].between(-180, 180).all()
+assert clean["latitude"].between(-90, 90).all()
 ```
 
 ### Checkpoint
 
-Κράτησε τα IDs που απορρίφθηκαν και εξήγησε αν ήταν missing ή out-of-range. Μην αλλάξεις το `999` σε “κάποιο λογικό longitude” χωρίς εξωτερική πηγή.
+Κράτησε τα IDs που απορρίφθηκαν και εξήγησε αν ήταν missing ή out-of-range. Για το παρόν workflow αναμένουμε 8 → 7 γραμμές και αποκλεισμό της `O05`. Μην αλλάξεις το `999` σε “κάποιο λογικό longitude” χωρίς εξωτερική πηγή.
 
 Αυτός είναι γενικός έλεγχος ορίων. Για έργα συγκεκριμένης περιοχής μπορείς να προσθέσεις και έλεγχο αναμενόμενων τοπικών bounds.

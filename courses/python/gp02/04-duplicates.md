@@ -13,9 +13,14 @@ df[df["observation_id"].duplicated(keep=False)]
 
 ## Κανόνας επιλογής
 
-Αν δύο εγγραφές έχουν το ίδιο ID, κρατάμε την πιο πρόσφατη ή την πιο πλήρη μόνο όταν αυτός ο κανόνας τεκμηριώνεται. Για το εκπαιδευτικό dataset θα κρατήσουμε την πρώτη εγγραφή:
+Αν δύο εγγραφές έχουν το ίδιο ID, πρώτα ελέγχουμε αν είναι πλήρως ίδιες. Για το εκπαιδευτικό dataset οι δύο `O04` είναι ίδιες σε όλα τα πεδία, οπότε επιτρέπεται να κρατήσουμε την πρώτη. Αν οι τιμές διέφεραν, θα σταματούσαμε πριν από τη διαγραφή και θα τεκμηριώναμε σύγκριση πηγής, timestamp ή πληρότητας.
 
 ```python
+duplicate_ids = clean.loc[clean["observation_id"].duplicated(keep=False), "observation_id"].unique()
+for observation_id in duplicate_ids:
+    group = clean[clean["observation_id"] == observation_id]
+    if len(group.drop_duplicates()) != 1:
+        raise ValueError(f"Σύγκρουση δεδομένων για ID {observation_id}")
 clean = clean.drop_duplicates(subset="observation_id", keep="first")
 ```
 
@@ -48,13 +53,14 @@ print(duplicates[["observation_id", "category", "elevation_m"]])
 
 ## Πρόσεξε
 
-Μην χρησιμοποιείς `drop_duplicates()` χωρίς `subset`. Μπορεί να αφαιρέσει γραμμές που έχουν διαφορετικό ID αλλά τυχαία ίδιες τιμές σε άλλα πεδία.
+Μην χρησιμοποιείς `drop_duplicates()` χωρίς `subset` ως υποκατάστατο του ελέγχου IDs: αυτό ελέγχει πλήρως ίδιες γραμμές και όχι το αν κάθε ID είναι μοναδικό. Εδώ, μετά τον έλεγχο σύγκρουσης, ο κανόνας `keep="first"` είναι τεκμηριωμένη παραδοχή του συγκεκριμένου συνθετικού dataset.
 
 ## QA check
 
 ```python
 clean = clean.drop_duplicates("observation_id", keep="first")
 assert clean["observation_id"].is_unique
+assert len(clean) == 8
 ```
 
 ## Επόμενο βήμα

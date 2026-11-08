@@ -8,6 +8,8 @@
 - να ελέγχεις συντεταγμένες,
 - να δημιουργείς και να ελέγχεις Point geometries,
 - να γράφεις GeoPython QA checks.
+- να διακρίνεις τα απαραίτητα πεδία από τα προαιρετικά και να τεκμηριώνεις τις
+  εγγραφές που αποκλείστηκαν.
 
 ## Ο βασικός κανόνας
 
@@ -27,9 +29,14 @@
 ## Τελικός αυτοέλεγχος
 
 ```python
-assert clean["observation_id"].is_unique
-assert clean["longitude"].between(-180, 180).all()
-assert clean["latitude"].between(-90, 90).all()
+assert len(gdf) == 7
+assert len(gdf) > 0
+assert gdf["observation_id"].is_unique
+assert gdf["longitude"].between(-180, 180).all()
+assert gdf["latitude"].between(-90, 90).all()
+assert gdf.crs.to_epsg() == 4326
+assert gdf.geometry.geom_type.eq("Point").all()
+assert not gdf.geometry.is_empty.any()
 ```
 
-Αν μπορείς να εξηγήσεις κάθε assertion, να αναφέρεις πόσες γραμμές αφαιρέθηκαν και να ερμηνεύσεις τον χάρτη, είσαι έτοιμος να μετατρέψεις καθαρά CSV δεδομένα σε GIS dataset στο GP03.
+Αν μπορείς να εξηγήσεις κάθε assertion, να αναφέρεις τους τρεις αποκλεισμούς (`O06`, μία ίδια `O04`, `O05`), να εξηγήσεις γιατί η `O07` διατηρείται και να ερμηνεύσεις τα όρια των geometry checks, είσαι έτοιμος για το GP03. Εκεί θα δημιουργήσεις και θα παραδώσεις αποθηκευμένο GIS dataset, με εξαγωγή και επαλήθευση μετά την αποθήκευση.
