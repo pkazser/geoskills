@@ -14,6 +14,8 @@
 
 Το GP10 ολοκληρώνει τη μετάβαση από μεταφορά attributes του GP09 σε δημιουργία νέων γεωμετριών.
 
+Για το επόμενο βήμα, μπορείς να εξασκηθείς στον [συμπληρωματικό οδηγό εκτέλεσης Python από Windows Command Prompt](../local-python-command-prompt.md) ή να συνεχίσεις στο [Core Capstone](../core-capstone/index.md).
+
 ## Τελικό παραδοτέο
 
 Παρέδωσε clipped και overlay layers, area/union report, round-trip QA και σύντομη ερμηνεία των περιορισμών των συνθετικών δεδομένων.

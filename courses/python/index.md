@@ -35,6 +35,7 @@
 - [GP08 — Buffer analysis](gp08/index.md)
 - [GP09 — Spatial join](gp09/index.md)
 - [GP10 — Clip, intersection και overlay](gp10/index.md)
+- [Από το Colab στο Command Prompt — η πρώτη μου τοπική εκτέλεση Python](local-python-command-prompt.md)
 - [Core Capstone — Public Services Coverage](core-capstone/index.md)
 
 Τα GP11–GP15 δεν περιλαμβάνονται σε αυτή την έκδοση.

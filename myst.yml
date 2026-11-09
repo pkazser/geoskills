@@ -226,6 +226,7 @@ project:
             - file: courses/python/gp10/08-area-export.md
             - file: courses/python/gp10/09-mini-challenge.md
             - file: courses/python/gp10/10-summary.md
+        - file: courses/python/local-python-command-prompt.md
         - file: courses/python/core-capstone/index.md
           children:
             - file: courses/python/core-capstone/01-mission.md
