@@ -14,6 +14,11 @@
 print(gdf.crs)
 print(gdf.crs.to_epsg())
 projected = gdf.to_crs(epsg=2100)
+assert gdf.crs.to_epsg() == 4326
+assert projected.crs.to_epsg() == 2100
+assert len(gdf) == len(projected) == 5
+assert gdf.geometry.geom_type.eq("Point").all()
+assert projected.geometry.geom_type.eq("Point").all()
 ```
 
 Το `4326` είναι το WGS 84 που χρησιμοποιούμε για longitude/latitude. Το `2100` είναι το Greek Grid, χρήσιμο για ελληνικά δεδομένα και μονάδες μέτρων.

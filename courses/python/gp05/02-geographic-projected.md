@@ -12,16 +12,16 @@
 
 ```python
 sites_wgs84 = gdf
-sites_greek_grid = gdf.to_crs("EPSG:2100")
+projected = gdf.to_crs("EPSG:2100")
 print(sites_wgs84.total_bounds)
-print(sites_greek_grid.total_bounds)
+print(projected.total_bounds)
 ```
 
 Οι γεωμετρίες αναπαριστούν τα ίδια σημεία, αλλά οι αριθμοί αλλάζουν επειδή αλλάζει το σύστημα αναφοράς. Το δεύτερο bounds είναι σε μέτρα και όχι σε μοίρες.
 
 ## Εφαρμογή και QA
 
-Σύγκρινε `sites_wgs84.crs`, `sites_greek_grid.crs`, το πλήθος γραμμών και τους τύπους geometry. Πρέπει να έχεις πέντε σημεία και στις δύο εκδοχές. Μην συγκρίνεις τα bounds σαν να είχαν τις ίδιες μονάδες.
+Σύγκρινε `sites_wgs84.crs`, `projected.crs`, το πλήθος γραμμών και τους τύπους geometry. Πρέπει να έχεις πέντε σημεία και στις δύο εκδοχές. Μην συγκρίνεις τα bounds σαν να είχαν τις ίδιες μονάδες.
 
 ## Συνηθισμένο λάθος
 

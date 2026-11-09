@@ -11,6 +11,15 @@
 
 Πάρε το `greek_sites.csv`, δημιούργησε σωστά το GeoDataFrame και γράψε ένα export για web χρήση και ένα για μέτρηση. Κράτησε τα δύο CRS ρητά ονομασμένα.
 
+```python
+assert len(gdf) == len(projected) == 5
+assert gdf.crs.to_epsg() == 4326
+assert projected.crs.to_epsg() == 2100
+assert gdf["site_id"].is_unique
+assert gdf.geometry.geom_type.eq("Point").all()
+assert projected.geometry.geom_type.eq("Point").all()
+```
+
 ## Συχνά λάθη
 
 Μην αλλάζεις CRS με `set_crs` για να “διορθώσεις” μονάδες. Μην κάνεις απόσταση πριν βεβαιωθείς ότι το CRS είναι projected και σε κατάλληλη περιοχή.

@@ -6,12 +6,12 @@
 
 ## Το πρόβλημα
 
-Αν πάρεις longitude/latitude και κάνεις `set_crs("EPSG:2100", allow_override=True)`, οι αριθμοί μένουν ίδιοι αλλά ερμηνεύονται ως μέτρα. Η geometry δεν είναι πλέον στην Ελλάδα.
+Αν πάρεις geometry χωρίς CRS και κάνεις `set_crs("EPSG:2100")`, οι αριθμοί μένουν ίδιοι αλλά ερμηνεύονται ως μέτρα. Η geometry δεν είναι πλέον σωστά γεωαναφερμένη.
 
 ## Μικρό πείραμα
 
 ```python
-wrong = gdf.set_crs("EPSG:2100", allow_override=True)
+wrong = raw_gdf.set_crs("EPSG:2100")
 print(wrong.total_bounds)
 ```
 

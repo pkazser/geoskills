@@ -11,8 +11,10 @@ CSV αρχεία συχνά έχουν longitude/latitude αλλά κανένα 
 ## Παράδειγμα
 
 ```python
-gdf = gpd.GeoDataFrame(df, geometry=points)
-gdf = gdf.set_crs("EPSG:4326")
+raw_gdf = gpd.GeoDataFrame(df, geometry=points)
+before = raw_gdf.geometry.copy()
+gdf = raw_gdf.set_crs("EPSG:4326")
+assert gdf.geometry.equals(before)
 ```
 
 Το `set_crs` προσθέτει πληροφορία στο GeoDataFrame. Οι αριθμοί των σημείων δεν αλλάζουν.
@@ -31,7 +33,7 @@ Input είναι geometry χωρίς σωστό metadata και output η ίδι
 
 ### Σωστό και λάθος παράδειγμα
 
-Αν οι raw columns είναι longitude/latitude, πρώτα δημιουργείς geometry και κάνεις `set_crs("EPSG:4326")`. Μετά κάνεις `to_crs("EPSG:2100")`. Το λάθος `set_crs("EPSG:2100", allow_override=True)` δεν μετακινεί τα σημεία· απλώς βαφτίζει degrees ως metres. Έτσι καταστρέφεται η χωρική ερμηνεία και κάθε μέτρηση που ακολουθεί είναι αναξιόπιστη.
+Αν οι raw columns είναι longitude/latitude, πρώτα δημιουργείς geometry και κάνεις `set_crs("EPSG:4326")`. Μετά κάνεις `to_crs("EPSG:2100")`. Το ελεγχόμενα λανθασμένο `raw_gdf.set_crs("EPSG:2100")` δεν μετακινεί τα σημεία· απλώς βαφτίζει degrees ως metres. Έτσι καταστρέφεται η χωρική ερμηνεία και κάθε μέτρηση που ακολουθεί είναι αναξιόπιστη.
 
 Το `set_crs` είναι δήλωση: “αυτοί οι αριθμοί ήδη ανήκουν εδώ”. Δεν είναι εργαλείο μετατροπής.
 

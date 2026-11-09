@@ -10,19 +10,20 @@
 
 ## Η έννοια
 
-Το CRS περιγράφει πώς συνδέονται οι αριθμητικές συντεταγμένες με τη Γη. Στο dataset του GP05 οι στήλες `longitude` και `latitude` είναι γεωγραφικές συντεταγμένες σε μοίρες, άρα ξεκινάμε με `EPSG:4326`.
+Το CRS περιγράφει πώς συνδέονται οι αριθμητικές συντεταγμένες με τη Γη. Στο dataset του GP05 οι στήλες `longitude` και `latitude` είναι γεωγραφικές συντεταγμένες σε μοίρες, άρα ξεκινάμε με `EPSG:4326`. Εκτέλεσε πρώτα το κελί προετοιμασίας του notebook, το οποίο ορίζει το `DATA_ROOT`.
 
 ```python
-gdf = gpd.GeoDataFrame(
-    df, geometry=gpd.points_from_xy(df.longitude, df.latitude), crs="EPSG:4326"
-)
+data_path = DATA_ROOT / "gp05" / "greek_sites.csv"
+df = pd.read_csv(data_path)
+points = gpd.points_from_xy(df["longitude"], df["latitude"])
+gdf = gpd.GeoDataFrame(df, geometry=points, crs="EPSG:4326")
 ```
 
 Το `points_from_xy` δημιουργεί geometry και το `crs` δηλώνει την ερμηνεία της. Δεν μετακινεί τα σημεία.
 
 ## QA και checkpoint
 
-Εκτύπωσε `gdf.crs`, `len(gdf)`, `gdf.geom_type.value_counts()` και `gdf.total_bounds`. Περίμενε πέντε `Point` και bounds περίπου longitude 21–26, latitude 35–41. Αν δεν μπορείς να εξηγήσεις αυτά τα τέσσερα outputs, επανάλαβε την ανάγνωση πριν συνεχίσεις.
+Εκτύπωσε `gdf.crs`, `len(gdf)`, `gdf.geom_type.value_counts()` και `gdf.total_bounds`. Περίμενε πέντε `Point` και bounds περίπου longitude 21–26, latitude 35–41. Το `longitude` είναι x και το `latitude` y· αν δεν μπορείς να εξηγήσεις αυτά τα outputs, επανάλαβε την ανάγνωση πριν συνεχίσεις.
 
 ## Τι αλλάζει στα δεδομένα
 

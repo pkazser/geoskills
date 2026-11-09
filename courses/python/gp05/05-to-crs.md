@@ -8,6 +8,9 @@
 
 ```python
 projected = gdf.to_crs("EPSG:2100")
+assert projected.crs.to_epsg() == 2100
+assert len(projected) == len(gdf) == 5
+assert projected.geometry.geom_type.eq("Point").all()
 ```
 
 Το GeoPandas χρησιμοποιεί το αρχικό CRS ως αφετηρία και υπολογίζει νέες συντεταγμένες. Το αρχικό `gdf` παραμένει ως έχει, εκτός αν αναθέσεις το αποτέλεσμα ξανά.
